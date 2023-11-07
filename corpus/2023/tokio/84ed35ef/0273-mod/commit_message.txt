@@ -1,0 +1,2 @@
+process: document that `Child::wait` is cancel safe (#5977)
+

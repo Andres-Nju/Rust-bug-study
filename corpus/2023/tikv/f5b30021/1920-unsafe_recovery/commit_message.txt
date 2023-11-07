@@ -1,0 +1,9 @@
+raftstore: online unsafe recovery aborts on timeout (#15283)
+
+close tikv/tikv#15346
+
+Make online unsafe recovery abort on timeout
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

@@ -1,0 +1,2 @@
+macros: fix type resolution error in #[tokio::main] (#4176)
+

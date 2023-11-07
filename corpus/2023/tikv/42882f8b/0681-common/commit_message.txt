@@ -1,0 +1,8 @@
+txn: Fix possible assertion failure in next_last_change_info (#15241)
+
+close tikv/tikv#15109
+
+This PR updates the way to calculate the last_change_info, which is not very proper before. This also fixes a assertion failure 
+in `next_last_change_info` that might happen when it executes in parallel with GC in compaction filter.
+
+Signed-off-by: MyonKeminta <MyonKeminta@users.noreply.github.com>

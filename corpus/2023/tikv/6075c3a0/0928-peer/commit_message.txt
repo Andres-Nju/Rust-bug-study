@@ -1,0 +1,7 @@
+raftstore: calculate group id for every peer when it is syn-recover status (#15785)
+
+close tikv/tikv#15784
+
+Signed-off-by: TonsnakeLin <lpbgytong@163.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

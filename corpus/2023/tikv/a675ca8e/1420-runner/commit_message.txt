@@ -1,0 +1,8 @@
+copr: early stop paging copr when resultset is drained. (#14209)
+
+close tikv/tikv#14254
+
+When the result set is drained, it indicates that no more data is required in the range.
+This PR set the scanned range to None to avoid the following paging requests in the current range.
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

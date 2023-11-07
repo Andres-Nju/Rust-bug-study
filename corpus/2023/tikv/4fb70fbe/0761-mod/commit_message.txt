@@ -1,0 +1,9 @@
+config: disable rocksdb ribbon filter (#15331)
+
+close tikv/tikv#15324
+
+Ribbon filter may cause OOM  when compacting a sst with many entries.
+
+See tikv/tikv#15324
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>

@@ -1,0 +1,7 @@
+raftstore-v2: fix chaos between on_memtable_sealed and on_flush_completed (#15543)
+
+close tikv/tikv#15534
+
+fix chaos between on_memtable_sealed and on_flush_completed
+
+Signed-off-by: SpadeA-Tang <u6748471@anu.edu.au>

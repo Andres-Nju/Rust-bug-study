@@ -1,0 +1,2 @@
+signal: don't register write interest on signal pipe (#4898)
+

@@ -1,0 +1,19 @@
+resolved_ts: fix online changing `resolved-ts.advance-ts-interval` can't take effect immediately (#10471)
+
+* fix advance_ts_interval can't take effect immediately
+
+Signed-off-by: linning <linningde25@gmail.com>
+
+* add test
+
+Signed-off-by: linning <linningde25@gmail.com>
+
+* fix test suite
+
+Signed-off-by: linning <linningde25@gmail.com>
+
+* fix test
+
+Signed-off-by: linning <linningde25@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

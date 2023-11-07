@@ -1,0 +1,7 @@
+raftstore-v2: fix "failed to get merge entries" panic (#15649)
+
+close tikv/tikv#15633
+
+fix "failed to get merge entries" panic
+
+Signed-off-by: SpadeA-Tang <u6748471@anu.edu.au>

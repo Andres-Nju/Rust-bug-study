@@ -1,0 +1,2 @@
+metrics: use mocked `AtomicU64` in IO metrics driver (#4649)
+

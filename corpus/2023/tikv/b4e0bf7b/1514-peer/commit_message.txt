@@ -1,0 +1,11 @@
+raftstore: Introduce failed state for unsafe recovery to fix rollback merge timeout (#15635)
+
+close tikv/tikv#15629
+
+Introduce failed state for unsafe recovery to fix rollback merge timeout. 
+
+To rollback merge, it has to be in force leader state when performing online recovery. Force leader state would exit after executing the plan no matter succeeded or failed. While rollback merge is triggered on check merge tick periodically. So there is a chance that check merge can't always be in the time window of being force leader state. To solve that, let it skip exiting force leader state when failed to demote, so later rollback merge can be triggered.
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

@@ -1,0 +1,9 @@
+copr: fix cannot get the request source for resource control (#15606)
+
+close tikv/tikv#15663
+
+copr: fix cannot get the request source for analyze with resource control
+
+Signed-off-by: nolouch <nolouch@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

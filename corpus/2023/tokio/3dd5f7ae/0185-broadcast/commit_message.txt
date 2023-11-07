@@ -1,0 +1,11 @@
+sync: move broadcast waiters into separate list before waking (#5925)
+
+Within `notify_rx`, looping while re-locking and re-reading from
+`Shared.tail` as long as there are still available wakers causes a
+quadratic slowdown as receivers which are looping receiving from the
+channel are added. Instead of continually re-reading from the original
+list, this commit modifies `notify_rx` to move the waiters into a
+separate list immediately similar to how `Notify::notify_waiters` works,
+using a new `WaitersList` struct modified after NotifyWaitersList.
+
+Fixes #5923

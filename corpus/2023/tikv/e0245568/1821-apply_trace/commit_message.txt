@@ -1,0 +1,7 @@
+raftstore-v2: schedule raft tick after apply snapshot  (#14550)
+
+ref tikv/tikv#14532, close tikv/tikv#14548
+
+schedule raft tick after apply snapshot
+
+Signed-off-by: Spade A <u6748471@anu.edu.au>

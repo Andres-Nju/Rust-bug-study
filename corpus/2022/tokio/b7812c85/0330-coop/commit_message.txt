@@ -1,0 +1,20 @@
+rt: fix `LocalSet` drop in thread local (#5179)
+
+`LocalSet` cleans up any tasks that have not yet been completed when it is
+dropped. Previously, this cleanup process required access to a thread-local.
+Suppose a `LocalSet` is stored in a thread-local itself. In that case, when it is
+dropped, there is no guarantee the drop implementation will be able to
+access the internal `LocalSet` thread-local as it may already have been
+destroyed.
+
+The internal `LocalSet` thread local is mainly used to avoid writing unsafe
+code. All `LocalState` that cannot be moved across threads is stored in the
+thread-local and accessed on demand.
+
+This patch moves this local-only state into the `LocalSet`'s "shared" struct.
+Because this struct *is* `Send`, the local-only state is stored in `UnsafeCell`,
+and callers must ensure not to touch it from other threads.
+
+A debug assertion is added to enforce this requirement in tests.
+
+Fixes #5162

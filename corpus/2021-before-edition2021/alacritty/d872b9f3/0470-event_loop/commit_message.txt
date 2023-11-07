@@ -1,0 +1,6 @@
+Update dependencies
+
+This introduces some duplicate dependencies, though they are necessary
+to build properly without any warnings.
+
+Fixes #4735.

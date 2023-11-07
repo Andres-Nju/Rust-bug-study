@@ -1,0 +1,9 @@
+copr: fix cast_bytes_like_as_duration encoding failed (#15819)
+
+close tikv/tikv#15820
+
+fix cast_bytes_like_as_duration encoding failed
+
+Signed-off-by: wshwsh12 <793703860@qq.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

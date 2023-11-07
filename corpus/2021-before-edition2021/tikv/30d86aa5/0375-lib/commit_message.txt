@@ -1,0 +1,27 @@
+copr: fix IN expr didn't handle unsigned/signed int properly (#9823)
+
+* copr: fix IN expr didn't handle unsigned/signed int properly
+
+Signed-off-by: guo-shaoge <shaoge1994@163.com>
+
+* format code
+
+Signed-off-by: guo-shaoge <shaoge1994@163.com>
+
+* change generic type in NormalInCmpByHash for Int
+
+Signed-off-by: guo-shaoge <shaoge1994@163.com>
+
+* add tests/comments
+
+Signed-off-by: guo-shaoge <shaoge1994@163.com>
+
+* change code format
+
+Signed-off-by: guo-shaoge <shaoge1994@163.com>
+
+* add more tests
+
+Signed-off-by: guo-shaoge <shaoge1994@163.com>
+
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

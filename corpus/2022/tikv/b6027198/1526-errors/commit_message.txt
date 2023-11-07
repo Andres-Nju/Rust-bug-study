@@ -1,0 +1,5 @@
+raftstore: Introduce force leader state (#11932)
+
+close tikv/tikv#6107, ref tikv/tikv#10483
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>

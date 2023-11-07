@@ -1,0 +1,5 @@
+br: show the details of the error occurred when get the azure ad token (#15385)
+
+close tikv/tikv#15384
+
+Signed-off-by: Leavrth <jianjun.liao@outlook.com>

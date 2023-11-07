@@ -1,0 +1,11 @@
+engine: fix engine metrics not resetting (#10295)
+
+* fix rocks metrics flushing
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* revert metrics flushing related changes in #10223
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,0 +1,9 @@
+storage: skip the lock and rollback record in scan_latest_user_keys (#15220)
+
+close tikv/tikv#15219
+
+Skip the `WriteType:Lock` and `WriteType::Rollback` record in `scan_latest_user_keys`.
+
+Signed-off-by: JmPotato <ghzpotato@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

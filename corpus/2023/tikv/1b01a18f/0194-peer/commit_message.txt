@@ -1,0 +1,9 @@
+raftstore-v2: fix split removes records unexpectedly (#14690)
+
+close tikv/tikv#14689
+
+raftstore-v2: fix split removes records unexpectedly
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

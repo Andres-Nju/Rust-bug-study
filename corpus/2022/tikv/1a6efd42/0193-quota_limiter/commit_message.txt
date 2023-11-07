@@ -1,0 +1,7 @@
+quota-limiter: fix panic when set limiter value to 0 (#12623)
+
+close tikv/tikv#12622
+
+Signed-off-by: glorv <glorvs@163.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

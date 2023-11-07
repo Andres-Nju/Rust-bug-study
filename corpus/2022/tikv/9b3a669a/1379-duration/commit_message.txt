@@ -1,0 +1,7 @@
+duration: keep duration parser compatible with tidb (#13031)
+
+close tikv/tikv#12932, ref tikv/tikv#35455
+
+Signed-off-by: Willendless <317500141@qq.com>
+
+Co-authored-by: Liqi Geng <gengliqiii@gmail.com>

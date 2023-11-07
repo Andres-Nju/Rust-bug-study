@@ -1,0 +1,8 @@
+Fix vi cursor moving incorrectly with new output
+
+This fixes an issue where the vi cursor would move down one line if it's
+positioned at the topmost visible line, while at least partially scrolled
+up into history, when new lines are added to the terminal.
+
+This problem is caused by using a display offset of a grid not scrolled
+yet when scrolling and determining a new vi cursor position.

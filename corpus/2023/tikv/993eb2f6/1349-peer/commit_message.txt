@@ -1,0 +1,11 @@
+raftstore-v2: fix issues of encryption and merge (#14820)
+
+ref tikv/tikv#12842, fix tikv/tikv#15052, fix tikv/tikv#15059
+
+- Do not try to compact log when peer is destroyed
+- Check `apply_scheduler.is_some()` when handling CaptureChange
+- Fix encrypted dir deletion unable to traverse directory that was renamed
+- Fix a bug that encryption key can be lost when there're racing snapshots for a same region
+- Fix a bug that checkpoint of a to-be-destroyed tablet can cause deadlock
+
+Signed-off-by: tabokie <xy.tao@outlook.com>

@@ -1,0 +1,9 @@
+sst_import: run size check after ingest sst file (#14771)
+
+close tikv/tikv#14752
+
+run size check after ingest sst file
+
+Signed-off-by: bufferflies <1045931706@qq.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

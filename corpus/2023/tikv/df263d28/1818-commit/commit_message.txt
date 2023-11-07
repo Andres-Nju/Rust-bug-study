@@ -1,0 +1,15 @@
+raftstore-v2: check gc peer after commit merge (#15693)
+
+close tikv/tikv#15672
+
+This commit addresses the issue of orphan peers remaining in TiKV due to the
+absence of GcPeer tick registration after commit merge. The lack of regular
+checks on removed_records and merged_records can lead to delays in detecting
+and resolving these issues.
+
+To improve this, we have implemented a solution that ensures TiKV registers
+the GcPeer tick after commit merge. This change enables regular checks on
+the removed_records and merged_records, preventing them from being overlooked
+for an extended period.
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>

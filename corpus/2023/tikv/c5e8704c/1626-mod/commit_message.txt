@@ -1,0 +1,7 @@
+raftkv: allow cancel error in snapshot (#14183)
+
+close tikv/tikv#13926
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

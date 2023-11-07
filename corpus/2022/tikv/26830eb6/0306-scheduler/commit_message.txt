@@ -1,0 +1,12 @@
+scheduler: Optimize CPU usage of waking up (#13697)
+
+close tikv/tikv#13692, ref tikv/tikv#13692
+
+Optimize CPU usage of waking up.
+
+1. When popped entries are empty in `on_release_locks`, do not do anything in the high priority pool. This seems to be the reason of the performance regression mentioned in #13692 .
+2. Skip waking up if the `LockWaitQueues` is empty.
+
+Signed-off-by: MyonKeminta <MyonKeminta@users.noreply.github.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

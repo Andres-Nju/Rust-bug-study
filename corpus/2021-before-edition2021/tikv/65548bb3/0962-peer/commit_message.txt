@@ -1,0 +1,36 @@
+raftstore: fix the region meta inconsistency bug during splitting (#9495)
+
+### What problem does this PR solve?
+
+Issue Number: close https://github.com/tikv/tikv/issues/8783
+
+Problem Summary:
+https://github.com/tikv/tikv/issues/8783#issuecomment-708298415
+The bug is located in function `on_ready_split_region` which is introduced by https://github.com/tikv/tikv/pull/8084.
+https://github.com/tikv/tikv/blob/7c9850040ba58d48f0f1a93345c0392dffb2fc5b/components/raftstore/src/store/fsm/peer.rs#L2084-L2112
+Line 2111 `continue` means this region has already existed so it should be skipped.
+But line 2087-2090 has already added this region to `region_ranges` which leads to metadata inconsistency.
+
+### What is changed and how it works?
+
+What's Changed:
+Fix this bug and add 2 tests.
+
+Run `test_split_not_to_split_existed_tombstone_region ` and `test_split_not_to_split_existed_different_uninitialied_peer` can panic in different place in previous code.
+
+### Related changes
+
+- Need to cherry-pick to the release branch
+
+### Check List <!--REMOVE the items that are not applicable-->
+
+Tests <!-- At least one of them must be included. -->
+
+- Integration test
+
+Side effects
+
+- No
+
+### Release note <!-- bugfixes or new feature need a release note -->
+* No release note

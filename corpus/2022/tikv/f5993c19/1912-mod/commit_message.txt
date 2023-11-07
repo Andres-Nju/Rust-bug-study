@@ -1,0 +1,5 @@
+[apiv2] encode key range in raw_checksum interface (#12951)
+
+close tikv/tikv#12950
+
+Signed-off-by: haojinming <jinming.hao@pingcap.com>

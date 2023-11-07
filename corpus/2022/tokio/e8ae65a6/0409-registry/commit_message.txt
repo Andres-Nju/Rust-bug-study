@@ -1,0 +1,4 @@
+tokio: add support for signals up to SIGRTMAX (#4555)
+
+The POSIX standard not only supports "reliable signals", but also
+"real-time signals". This commit adds support for the latter.

@@ -1,0 +1,19 @@
+Check stale file information and remove `Rename` operation in encryption module (#9285)
+
+* remove rename && check stale file in encryption file dict
+
+Signed-off-by: Xintao <hunterlxt@live.com>
+
+* fix
+
+Signed-off-by: Xintao <hunterlxt@live.com>
+
+* address comment
+
+Signed-off-by: Xintao <hunterlxt@live.com>
+
+* fix cargo.lock hash
+
+Signed-off-by: Xintao <hunterlxt@live.com>
+
+Co-authored-by: Ti Prow Robot <71242396+ti-community-prow-bot@users.noreply.github.com>

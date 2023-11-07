@@ -1,0 +1,2 @@
+time: update deadline on removal in `DelayQueue` (#4178)
+

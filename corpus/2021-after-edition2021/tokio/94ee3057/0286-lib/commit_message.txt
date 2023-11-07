@@ -1,0 +1,2 @@
+macros: fix mut patterns in `select!` macro (#4211)
+

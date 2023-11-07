@@ -1,0 +1,11 @@
+tidb_query: fix panic when input of cast_string_as_time is invalid UTF-8 bytes (#9978)
+
+* tidb_query: fix panic when input of cast_string_as_time is invalid UTF-8 bytes
+
+Signed-off-by: Yilin Chen <sticnarf@gmail.com>
+
+* fix test
+
+Signed-off-by: Yilin Chen <sticnarf@gmail.com>
+
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

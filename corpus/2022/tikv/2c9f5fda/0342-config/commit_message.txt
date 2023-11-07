@@ -1,0 +1,5 @@
+config: override rocksdb config when flow control enabled (#11840)
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

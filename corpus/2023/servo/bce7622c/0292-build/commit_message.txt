@@ -1,0 +1,31 @@
+Switch to rustls and webpki-roots (#30025)
+
+This change replaces OpenSSL with rustls and also the manually curated
+CA certs file with webpki-roots (effectively the same thing, but as a
+crate).
+
+Generally speaking the design of the network stack is the same. Changes:
+
+- Code around certificate overrides needed to be refactored to work with
+  rustls so the various thread-safe list of certificates is refactored
+  into `CertificateErrorOverrideManager`
+- hyper-rustls takes care of setting ALPN protocols for HTTP requests,
+  so for WebSockets this is moved to the WebSocket code.
+- The safe set of cypher suites is chosen, which seem to correspond to
+  the "Modern" configuration from [1]. This can be adjusted later.
+- Instead of passing a string of PEM CA certificates around, an enum is
+  used that includes parsed Certificates (or the default which reads
+  them from webpki-roots).
+- Code for starting up an SSL server for testing is cleaned up a little,
+  due to the fact that the certificates need to be overriden explicitly
+  now. This is due to the fact that the `webpki` crate is more stringent
+  with self-signed certificates than SSL (CA certificates cannot used as
+  end-entity certificates). [2]
+
+1. https://wiki.mozilla.org/Security/Server_Side_TLS
+2. https://github.com/briansmith/webpki/issues/114
+
+Fixes #7888.
+Fixes #13749.
+Fixes #26835.
+Fixes #29291.

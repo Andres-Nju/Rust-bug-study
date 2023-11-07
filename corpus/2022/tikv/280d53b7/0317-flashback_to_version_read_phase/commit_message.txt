@@ -1,0 +1,11 @@
+raftstore: remove is_in_flashback field in peer fsm (#13877)
+
+close tikv/tikv#13868
+
+- Remove `is_in_flashback` field and use the region meta as the only source of truth in `PeerFSM`.
+- Add a corresponding test case.
+- Some minor refinement to the code and tests.
+
+Signed-off-by: JmPotato <ghzpotato@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,0 +1,7 @@
+Revert changes that may cause performance regression introduced by write prioirty scheduling (#14412)
+
+close tikv/tikv#14375
+
+Revert the parsed entry that may lead to performance regression and disable priority pool for sched worker
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>

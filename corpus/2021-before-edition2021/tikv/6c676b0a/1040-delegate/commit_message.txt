@@ -1,0 +1,15 @@
+cdc, mvcc: always read old value when cdc requires (#10197)
+
+* cdc, mvcc: always read old value when cdc requires
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+* address comments
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+* add more assert messages
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

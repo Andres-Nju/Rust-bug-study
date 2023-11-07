@@ -1,0 +1,10 @@
+raftstore: respond gc peer immediately if region state not found (#15057)
+
+ref pingcap/tiflash#7727, close tikv/tikv#15074
+
+A peer may never be created if its parent peer skips split by applying a new snapshot.
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

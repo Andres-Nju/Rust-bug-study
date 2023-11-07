@@ -1,0 +1,13 @@
+rocksdb: fix panic caused by ingest multiple files (#10948)
+
+* add test
+
+Signed-off-by: Little-Wallace <bupt2013211450@gmail.com>
+
+* fix bug
+
+Signed-off-by: Little-Wallace <bupt2013211450@gmail.com>
+
+* close #10947
+
+Signed-off-by: Little-Wallace <bupt2013211450@gmail.com>

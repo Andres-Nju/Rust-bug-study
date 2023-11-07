@@ -1,0 +1,8 @@
+Update winit to 0.28
+
+Fixes #6644.
+Fixes #6615.
+Fixes #6558.
+Fixes #6515.
+Fixes #3187.
+Fixes #62.

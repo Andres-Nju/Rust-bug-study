@@ -1,0 +1,11 @@
+resolved_ts: re-register region if memory quota exceeded  (#15411)
+
+close tikv/tikv#14864
+
+Fix resolved ts OOM caused by Resolver tracking large txns. `ObserveRegion` is
+deregistered if it exceeds memory quota. It may cause higher CPU usage because
+of scanning locks, but it's better than OOM.
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

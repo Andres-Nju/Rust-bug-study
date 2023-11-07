@@ -1,0 +1,7 @@
+raftstore-v2: consider `None` when getting mailbox (#14234)
+
+ref tikv/tikv#12842, close tikv/tikv#14233
+
+consider None when getting mailbox
+
+Signed-off-by: SpadeA-Tang <u6748471@anu.edu.au>

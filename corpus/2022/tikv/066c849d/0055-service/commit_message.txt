@@ -1,0 +1,8 @@
+cdc: capture old value from txn layer dynamically (#11896)
+
+close tikv/tikv#10091
+
+Signed-off-by: hi-rustin <rustin.liu@gmail.com>
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+Co-authored-by: hi-rustin <rustin.liu@gmail.com>

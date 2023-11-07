@@ -1,0 +1,7 @@
+Fix fullwidth char regex search infinite loop
+
+This resolves an issue where the regex search could loop indefinitely
+when the end point was defined in a location containing a fullwidth
+character, thus skipping over the end before termination.
+
+Fixes #5753.

@@ -1,0 +1,9 @@
+stablize case test_store_disconnect_with_hibernate (#15596)
+
+close tikv/tikv#15607
+
+None
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

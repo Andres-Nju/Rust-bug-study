@@ -1,0 +1,5 @@
+sst_importer: load SST start key from sst while cleaning up (#14746)
+
+close tikv/tikv#14745
+
+Signed-off-by: hillium <yujuncen@pingcap.com>

@@ -1,0 +1,14 @@
+fix a panic about parsing memory.limit_in_bytes (#11354)
+
+* handle int overflow for memory.limit_in_bytes
+
+clsoe #11353.
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* close #11353
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* address comments
+
+Signed-off-by: qupeng <qupeng@pingcap.com>

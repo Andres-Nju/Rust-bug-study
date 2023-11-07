@@ -1,0 +1,13 @@
+raft_client: check context and extra_ctx size in BatchMessageBuffer::push (#11056)
+
+* raft_client: check context size in BatchMessageBuffer::push
+
+Due to the #9714, the context field could have large key ranges which could make the estimate very inaccurate.
+
+Signed-off-by: tonyxuqqi <tonyxuqi@outlook.com>
+
+* add extra_ctx into check as well
+
+Signed-off-by: tonyxuqqi <tonyxuqi@outlook.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

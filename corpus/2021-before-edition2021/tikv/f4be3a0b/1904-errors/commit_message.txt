@@ -1,0 +1,57 @@
+importer: Check whether file exist before importing (#9522)
+
+<!--
+Thank you for contributing to TiKV!
+
+If you haven't already, please read TiKV's [CONTRIBUTING](https://github.com/tikv/tikv/blob/master/CONTRIBUTING.md) document.
+
+If you're unsure about anything, just ask; somebody should be along to answer within a day or two.
+
+PR Title Format:
+1. module [, module2, module3]: what's changed
+2. *: what's changed
+
+If you want to open the **Challenge Program** pull request, please use the following template:
+https://raw.githubusercontent.com/tikv/.github/master/.github/PULL_REQUEST_TEMPLATE/challenge-program.md
+You can use it with query parameters: https://github.com/tikv/tikv/compare/master...${you branch}?template=challenge-program.md
+-->
+
+### What problem does this PR solve?
+
+Issue Number: close https://github.com/tikv/tikv/issues/9496
+
+Problem Summary:
+If TiKV has applied one command of ingest but tidb-lightning(import-client) thinks this request has failed, it would send the same ingest-request to TiKV again, which may cause TiKV panic because the file has been ingested and could not be found.
+There is many case which may cause request failed while it has been applied. Such as:
+1. Network lost some packets of ingest-response.
+2. The command had been copied to more than half of the members of raft-group but the original leader crashed before the entry of this command committed, then the new leader committed this entry but the client has received  fail messages by the response from the original leader.
+
+
+### What is changed and how it works?
+
+We can propose one ingest-request when all the following conditions are met:
+1. There is not any pending ingest-request for this sst.
+2. The current leader has applied to current term, and we can ensure that the file which we want to ingest exist.
+3. The ingest file must be removed before we return response to client, so that the new request will never see the same file again.
+
+### Related changes
+
+- PR to update `pingcap/docs`/`pingcap/docs-cn`:
+- PR to update `pingcap/tidb-ansible`:
+- Need to cherry-pick to the release branch
+
+### Check List <!--REMOVE the items that are not applicable-->
+
+Tests <!-- At least one of them must be included. -->
+
+- Unit test
+
+Side effects
+
+- Performance regression
+    - It may increase the duration of ingest request.
+- Breaking backward compatibility
+
+### Release note <!-- bugfixes or new feature need a release note -->
+
+- No release note.

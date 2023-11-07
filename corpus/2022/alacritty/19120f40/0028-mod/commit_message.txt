@@ -1,0 +1,7 @@
+Fix padding update not updating renderer
+
+This fixes an issue where it was possible to update the padding of the
+terminal without actually queueing an update for the renderer
+projection, leading to a blurry projection.
+
+Closes #6502.

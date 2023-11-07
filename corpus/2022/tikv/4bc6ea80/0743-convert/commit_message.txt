@@ -1,0 +1,9 @@
+components: handle invalid utf8 characters in `produce_str_with_specified_tp` func (#12565)
+
+close tikv/tikv#12542
+
+handle invalid utf8 characters in `produce_str_with_specified_tp` func
+
+Signed-off-by: Jason Mo <mohangjie1995@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

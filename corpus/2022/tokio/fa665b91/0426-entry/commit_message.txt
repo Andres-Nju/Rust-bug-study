@@ -1,0 +1,3 @@
+macros: always emit return statement (#4636)
+
+Fixes #4635

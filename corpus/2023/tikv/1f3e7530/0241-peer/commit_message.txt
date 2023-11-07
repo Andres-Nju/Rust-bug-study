@@ -1,0 +1,11 @@
+raftstore: set availability_context (#15152)
+
+close tikv/tikv#15151
+
+Set availability_context in raftstore v1
+
+Signed-off-by: CalvinNeo <calvinneo1995@gmail.com>
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: Neil Shen <overvenus@gmail.com>
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

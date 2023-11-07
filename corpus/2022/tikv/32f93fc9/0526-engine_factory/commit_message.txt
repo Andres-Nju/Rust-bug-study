@@ -1,0 +1,7 @@
+multi-rocksdb: avoid mutex deadlock between open_tablet() and create_shared_db() (#13465)
+
+close tikv/tikv#13463
+
+Signed-off-by: BornChanger <dawn_catcher@126.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

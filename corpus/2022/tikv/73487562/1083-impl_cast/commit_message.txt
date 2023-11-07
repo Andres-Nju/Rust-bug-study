@@ -1,0 +1,7 @@
+tidb_query_expr: fix the problem that the result of castFloatAsTime is different with TiDB. (#13472)
+
+close tikv/tikv#13458
+
+Signed-off-by: Meng Xin <tregoldmeng@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

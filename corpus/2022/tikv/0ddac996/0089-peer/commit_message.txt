@@ -1,0 +1,10 @@
+*: check last sent snapshot for prepare merge (#12682)
+
+close tikv/tikv#12663
+
+Guarantee min index of prepare merge larger than the index of last sent snapshot
+by recording an approximate last sent snapshot index.
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

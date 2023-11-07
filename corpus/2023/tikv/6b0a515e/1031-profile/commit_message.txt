@@ -1,0 +1,12 @@
+server: make cpu and heap profiling can be running concurrently (#15761)
+
+close tikv/tikv#15760
+
+Make cpu and heap profiling can be running concurrently. 
+Beside, change the behavior of 
+- "debug/pprof/heap_activate": do not dump heap profile periodically by default
+- "debug/pprof/heap": dump heap profile without any delay and use embedded jeprof script
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

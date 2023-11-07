@@ -1,0 +1,17 @@
+storage: precheck whether the peer is leader when acquiring latches failed (#13254)
+
+close tikv/tikv#12966, ref tikv/tikv#12966
+
+When a tikv is isolated from other tikv instances, some requests will be 
+blocked in raftstore and the corresponding latches are not released. 
+Following requests which require the latches will receive ServerIsBusy error
+and keep retrying. However, In such case, peers on the tikv are not leader
+anymore. The client is supposed to receive NotLeader error immediately.
+
+This commit introduces fail fast mode to scheduler. When a request 
+fails to acquire any latch, scheduler checks if the peer is still leader.
+If it still the leader, schedule the request as usual, fail fast otherwise.
+
+Signed-off-by: cosven <yinshaowen241@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

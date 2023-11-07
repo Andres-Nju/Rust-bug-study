@@ -1,0 +1,10 @@
+Fix legacy bindings taking precedence over new ones
+
+They were compared by len, but it's was wrong from the start, since
+a user provided binding could remove more than one builtin binding,
+so it was impossible for users to use their own bindings.
+
+The most reliable way to do so is to use `Option`, given that we fill
+default during deserialization.
+
+Fixes #7050.

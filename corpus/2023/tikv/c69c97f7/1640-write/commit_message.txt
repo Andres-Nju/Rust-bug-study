@@ -1,0 +1,15 @@
+fix: find the correct last_change_ts after upgrade from versions < 6.5 (#14784)
+
+close tikv/tikv#14780
+
+When making a LOCK record, if we do not know `last_change_ts`, iterate to the 
+last actual write to find out.
+This also fixes the problem that ROLLBACK may prevent LOCKs making using of 
+the optimization as mentioned in https://github.com/tikv/tikv/pull/13834
+NOTE a implementation change:
+If versions_to_last_change > 0 but last_change_ts == 0, the key does not
+have a PUT/DELETE record before this write record, **OR the previous change is a DELETE**.
+
+Signed-off-by: ekexium <eke@fastmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

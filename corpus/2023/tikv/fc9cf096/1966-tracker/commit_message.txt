@@ -1,0 +1,5 @@
+*: more accurate time detail in kv response (#14358)
+
+close tikv/tikv#14262
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

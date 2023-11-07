@@ -1,0 +1,7 @@
+rt: fix panic in JoinHandle::abort() when called from other thread (#3672)
+
+When aborting a task registered with a current-thread scheduler from off runtime, the tasks may not
+be immediately unlinked from the runtime. Instead, send a message to the runtime, notifying it to
+remove the aborted task.
+
+Fixes #3662 

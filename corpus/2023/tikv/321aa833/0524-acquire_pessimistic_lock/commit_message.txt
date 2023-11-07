@@ -1,0 +1,11 @@
+txn: Do constraint check when handling repeated acqurie_pessimsitic_lock request (#14037)
+
+close tikv/tikv#14038, close pingcap/tidb#40114
+
+Fixes the problem that when handling repeated acquire_pessimistic_lock requests is recevied, should_not_exist is ignored. 
+
+TiKV provides idempotency for these RPC requests, but for acquire_pessimistic_lock, it ignored the possibility that the client may expect a pessimistic_rollback between two acquire_pessimistic_lock request on the same key. In this case the second request may come from another statement and carries `should_not_exist` that wasn't set in the previously finished pessimistic lock request. If the first request successfully acquired the lock and the pessimistic_rollback failed, TiKV may return a sucessful response, making the client believe that the key doesn't exist before. In some rare cases, this has risk to cause data inconsistency.
+
+Signed-off-by: MyonKeminta <MyonKeminta@users.noreply.github.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

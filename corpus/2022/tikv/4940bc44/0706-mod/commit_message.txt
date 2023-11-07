@@ -1,0 +1,7 @@
+fixbug:when enable api v2 , TiDB resolve lock meet error (#12596)
+
+close tikv/tikv#12595
+
+Signed-off-by: ystaticy <y_static_y@sina.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

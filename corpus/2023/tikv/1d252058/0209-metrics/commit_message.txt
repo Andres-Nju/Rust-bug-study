@@ -1,0 +1,9 @@
+add more specific error type in ErrorHeaderKind (#14809)
+
+close tikv/tikv#14808
+
+Add more specific error type of raftstore error to metrics
+
+Signed-off-by: Qi Xu <tonyxuqqi@outlook.com>
+
+Co-authored-by: Qi Xu <tonyxuqqi@outlook.com>

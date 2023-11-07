@@ -1,0 +1,7 @@
+tikv-ctl: fix tikv-ctl's output is incomplete on calling process::exit (#11231)
+
+Signed-off-by: Yao Zongyou <yaozongyou@vip.qq.com>
+
+Co-authored-by: Xinye Tao <xy.tao@outlook.com>
+Co-authored-by: Connor <zbk602423539@gmail.com>
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

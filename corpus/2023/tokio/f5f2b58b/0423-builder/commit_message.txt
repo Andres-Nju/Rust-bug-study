@@ -1,0 +1,3 @@
+rt: improve docs for Builder::max_blocking_threads (#5793)
+
+Closes #5777

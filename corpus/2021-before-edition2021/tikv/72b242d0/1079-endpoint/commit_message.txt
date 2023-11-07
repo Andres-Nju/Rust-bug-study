@@ -1,0 +1,9 @@
+cdc: reduce events batch to solve congest error (#11086)
+
+* cdc: reduce events batch to save memory
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+* cdc: remove histogram in hot path
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>

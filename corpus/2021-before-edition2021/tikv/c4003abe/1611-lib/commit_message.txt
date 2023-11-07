@@ -1,0 +1,11 @@
+pd_client: reconnect leader only when members change (#9788)
+
+* introduce PdConnector to clean up code
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+* don't reconnect if members are the same
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

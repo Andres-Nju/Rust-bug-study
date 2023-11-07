@@ -1,0 +1,10 @@
+pd_client: reduce store heartbeat retires to prevent heartbeat storm (#15191)
+
+ref tikv/pd#6556, close tikv/tikv#15184
+
+The store heartbeat will report periodically, no need to do retires
+- do not retry the store heartbeat
+- change `remain_reconnect_count` as `remain_request_count`
+- fix some metrics
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

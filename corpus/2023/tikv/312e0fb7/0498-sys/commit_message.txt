@@ -1,0 +1,8 @@
+*: Revert "*: update rust-toolchain (#15584)" (#15683)
+
+close tikv/tikv#15653
+
+Signed-off-by: glorv <glorvs@163.com>
+Signed-off-by: tonyxuqqi <tonyxuqi@outlook.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

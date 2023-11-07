@@ -1,0 +1,5 @@
+cdc: fix deregister panic when old value is not enabled (#10206)
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

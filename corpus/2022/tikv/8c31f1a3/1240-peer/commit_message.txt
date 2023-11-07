@@ -1,0 +1,29 @@
+raftstore: skip deleting snapshot files in peer pending_remove is true (#11782)
+
+* raftstore: skip deleting snapshot files in peer when the peer is pending removal and the snapshot is being applied and canceled -- close #11746
+
+This is to avoid the potential panic when the snapshot files are deleted, but the peer's status (Tombstone) is not persisted in disk due to tikv crash.
+
+Signed-off-by: tonyxuqqi <tonyxuqi@outlook.com>
+
+* address code review feedback  -- close #11746
+
+Signed-off-by: qi.xu <tonxuqi@outlook.com>
+
+* address code review feedback 2  -- close #11746
+
+Signed-off-by: qi.xu <tonxuqi@outlook.com>
+
+* address code review feedback 2  -- close #11746
+
+Signed-off-by: qi.xu <tonxuqi@outlook.com>
+
+* address code review feedback 2  -- close #11746
+
+Signed-off-by: qi.xu <tonxuqi@outlook.com>
+
+* address code review feedback 2  -- close #11746
+
+Signed-off-by: qi.xu <tonxuqi@outlook.com>
+
+Co-authored-by: qi.xu <tonxuqi@outlook.com>

@@ -1,0 +1,13 @@
+tikv_util: make cgroup parsing more robust (#11786)
+
+* make cgroup parsing more robust
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* fix error message
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* parse cpu quota in floats
+
+Signed-off-by: tabokie <xy.tao@outlook.com>

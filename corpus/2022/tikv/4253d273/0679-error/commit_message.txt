@@ -1,0 +1,5 @@
+copr: forbid empty pattern for regexp (#13514)
+
+close tikv/tikv#13513
+
+Signed-off-by: gengliqi <gengliqiii@gmail.com>

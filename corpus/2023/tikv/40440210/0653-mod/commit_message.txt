@@ -1,0 +1,9 @@
+batch-system: use concurrent hashmap to avoid router cache (#15431)
+
+close tikv/tikv#15430
+
+Use concurrent hashmap to avoid router cache occupying too much memory
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

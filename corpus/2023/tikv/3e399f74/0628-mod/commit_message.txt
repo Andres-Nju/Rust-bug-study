@@ -1,0 +1,11 @@
+bucket polish and enable evict-cache-on-memory-ratio by default (#15096)
+
+close tikv/tikv#14356
+
+1) avoid sending PeerTick::SplitRegionCheck for each write
+2) reduce default bucket size from 96MB to 50MB to reduce chance of client side timeout
+3) change the default value of evict-cache-on-memory-ratio to 0.1.
+
+Signed-off-by: tonyxuqqi <tonyxuqi@outlook.com>
+
+Co-authored-by: Spade  A <71589810+SpadeA-Tang@users.noreply.github.com>

@@ -1,0 +1,7 @@
+copr: fix _ pattern in like behavior for old collation (#13785)
+
+close tikv/tikv#13769
+
+Signed-off-by: YangKeao <yangkeao@chunibyo.icu>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

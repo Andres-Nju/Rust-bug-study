@@ -1,0 +1,9 @@
+raftstore: remove ts for bucket keys (#12551)
+
+close tikv/tikv#12549
+
+remove ts from bucket keys
+
+Signed-off-by: qi.xu <tonxuqi@outlook.com>
+
+Co-authored-by: qi.xu <tonxuqi@outlook.com>

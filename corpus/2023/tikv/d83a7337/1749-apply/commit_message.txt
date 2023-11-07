@@ -1,0 +1,11 @@
+raftstore: Fix incorrect raftstore applys memory trace (#15372)
+
+close tikv/tikv#15371
+
+Fix incorrect raftstore applys memory trace. When performing dropping apply fsm, it should reset the 
+memory trace to zero instead of calling `update_memory_trace`, otherwise it would record extra footage
+of the interior vector capacity.
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

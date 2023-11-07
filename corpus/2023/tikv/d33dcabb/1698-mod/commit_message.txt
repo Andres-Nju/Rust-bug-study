@@ -1,0 +1,11 @@
+raftkv: Fix the problem that writing with failpoint raftkv_early_error_report enabled will cause TiKV panic (#15037)
+
+close tikv/tikv#15020
+
+Fix the problem that writing with failpoint raftkv_early_error_report enabled will cause TiKV panic.
+
+We only wrap the `on_applied` callback with `must_call` when there's no error happening in-place in `async_write` function.
+
+Signed-off-by: MyonKeminta <MyonKeminta@users.noreply.github.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

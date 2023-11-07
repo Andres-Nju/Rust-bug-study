@@ -1,0 +1,20 @@
+allow to custom region-split-check-diff (#9525)
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+### What problem does this PR solve?
+Issue Number: close https://github.com/tikv/tikv/issues/9327.
+
+### What is changed and how it works?
+
+### Related changes
+
+### Check List <!--REMOVE the items that are not applicable-->
+
+Tests <!-- At least one of them must be included. -->
+- Unit test
+
+Side effects
+
+### Release note <!-- bugfixes or new feature need a release note -->
+* No release note.

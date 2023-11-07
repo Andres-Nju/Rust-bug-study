@@ -1,0 +1,6 @@
+macros: custom crate name for #[tokio::main] and #[tokio::test] (#4613)
+
+This also enables `#[crate::test(crate = "crate")]` in unit tests.
+
+See: rust-lang/cargo#5653
+Fixes: #2312

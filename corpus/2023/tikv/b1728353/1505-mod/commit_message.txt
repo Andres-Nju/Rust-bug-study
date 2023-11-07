@@ -1,0 +1,7 @@
+add option to update config without persist (#15587)
+
+close tikv/tikv#15588
+
+add option to update TiKV config without persist in status API  "POST /config?persist=false|true"
+
+Signed-off-by: tonyxuqqi <tonyxuqi@outlook.com>

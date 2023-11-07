@@ -1,0 +1,7 @@
+coprocessor: use the deadline in kvrpcpb::Context (#15564)
+
+close tikv/tikv#15565
+
+Signed-off-by: lance6716 <lance6716@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

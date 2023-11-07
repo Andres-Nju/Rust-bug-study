@@ -1,0 +1,13 @@
+time: prevent `time::advance` from going too far (#3712)
+
+Previously, `time::advance` would set the mocked clock forward the
+requested amount, then yield. However, if there was no work ready to
+perform immediately, this would result in advancing to the next expiring
+sleep.
+
+Now, `time::advance(...)` will unblock at the requested time. The
+difference between `time::advance(...)` and `time::sleep(...)` is a bit
+fuzzy. The main difference is `time::sleep(...)` operates on the current
+task and `time::advance(...)` operates at the runtime level.
+
+Fixes #3710

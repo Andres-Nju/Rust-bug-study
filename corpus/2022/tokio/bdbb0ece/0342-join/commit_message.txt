@@ -1,0 +1,2 @@
+task: add cancel safety docs to `JoinHandle` (#4901)
+

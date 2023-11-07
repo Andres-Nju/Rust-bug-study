@@ -1,0 +1,10 @@
+raftstore: skip flushing raft logs for uninitialized peer (#12847)
+
+close tikv/tikv#12825
+
+Uninitialized peer has not received any logs, so it doesn't need to
+clean up any logs.
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

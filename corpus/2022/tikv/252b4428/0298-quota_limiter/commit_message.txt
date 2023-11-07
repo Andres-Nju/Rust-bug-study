@@ -1,0 +1,10 @@
+make read quota limiter work for coprocessor as well (#13257)
+
+close tikv/tikv#13256
+
+The coprocessor's read bytes are not calculated by foreground quota limiter.
+
+Signed-off-by: qi.xu <tonxuqi@outlook.com>
+
+Co-authored-by: qi.xu <tonxuqi@outlook.com>
+Co-authored-by: 5kbpers <hustmh@gmail.com>

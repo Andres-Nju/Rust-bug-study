@@ -1,0 +1,3 @@
+util: anotate time module as requiring time feature (#3606)
+
+Signed-off-by: Zahari Dichev <zaharidichev@gmail.com>

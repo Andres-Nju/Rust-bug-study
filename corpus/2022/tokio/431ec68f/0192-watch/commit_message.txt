@@ -1,0 +1,13 @@
+sync: doc of `watch::Sender::send` improved (#4959)
+
+Current documentation of `sync::watch::Sender::send` may be intepreted
+as the method failing if at some point in past the channel has been
+closed because every receiver has been dropped. This isn't true,
+however, as the channel could have been reopened by using
+`sync::watch::Sender::subscribe`.
+
+This fix clarifies the behavior. Moreover, it is noted that on failure,
+the value isn't made available to future subscribers (but returned as
+part of the `SendError`).
+
+Fixes #4957.

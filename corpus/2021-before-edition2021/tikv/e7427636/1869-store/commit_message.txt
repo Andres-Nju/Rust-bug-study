@@ -1,0 +1,9 @@
+raftstore: fix TiKV delete files before ingesting (#10439)
+
+* do not delete file during import
+
+Signed-off-by: Little-Wallace <bupt2013211450@gmail.com>
+
+* do not delete files during import
+
+Signed-off-by: Little-Wallace <bupt2013211450@gmail.com>

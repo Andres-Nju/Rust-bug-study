@@ -1,0 +1,7 @@
+raftstorev2: avoid unnecessary snapshot after split (#14830)
+
+close tikv/tikv#14787
+
+raftstorev2: avoid unnecessary snapshot after split
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>

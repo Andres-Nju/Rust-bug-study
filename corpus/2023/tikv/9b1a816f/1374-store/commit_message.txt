@@ -1,0 +1,7 @@
+raftstore: trigger compaction when no valid split key can be found (#15284)
+
+close tikv/tikv#15282
+
+trigger compaction when no valid split key can be found
+
+Signed-off-by: SpadeA-Tang <u6748471@anu.edu.au>

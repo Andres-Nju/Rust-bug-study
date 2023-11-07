@@ -1,0 +1,5 @@
+raftstore: fix metrics for Apply wait duration (#9933)
+
+Signed-off-by: Xu Qiaolun <jamesxql@gmail.com>
+
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

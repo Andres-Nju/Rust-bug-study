@@ -1,0 +1,7 @@
+txn: check memory lock for max ts replica read (#14716)
+
+close tikv/tikv#14715
+
+Signed-off-by: cfzjywxk <lsswxrxr@163.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

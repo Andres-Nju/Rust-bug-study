@@ -1,0 +1,3 @@
+ cdc: send all observed events before sending init event (#11098)
+
+Signed-off-by: qupeng <qupeng@pingcap.com>

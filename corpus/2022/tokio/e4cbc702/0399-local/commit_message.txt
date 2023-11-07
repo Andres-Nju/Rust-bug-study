@@ -1,0 +1,2 @@
+task: ignore failure to set TLS in LocalSet Drop (#4976)
+

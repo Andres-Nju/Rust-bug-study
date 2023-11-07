@@ -1,0 +1,7 @@
+components, src: avoid cpu quota limitation contamination  (#13085)
+
+close tikv/tikv#13084
+
+Signed-off-by: BornChanger <dawn_catcher@126.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,0 +1,5 @@
+fix the issue that TiKV starts failed. (#13863)
+
+close tikv/tikv#13862
+
+Signed-off-by: joccau <zak.zhao@pingcap.com>

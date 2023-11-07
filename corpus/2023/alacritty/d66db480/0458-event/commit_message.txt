@@ -1,0 +1,3 @@
+Fix crash due to wrong drop order of clipboard
+
+Fixes #7309.

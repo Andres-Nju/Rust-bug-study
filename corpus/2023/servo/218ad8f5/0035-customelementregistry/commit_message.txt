@@ -1,0 +1,7 @@
+Fix /custom-elements/when-defined-reentry-crash.html (#30121)
+
+The problem is a double-borrow of the `when_defined` member. The fix is
+to let go of the borrow before resolving the promise which will
+eventually try to borrow `when_defined` again.
+
+Fixes #30120.

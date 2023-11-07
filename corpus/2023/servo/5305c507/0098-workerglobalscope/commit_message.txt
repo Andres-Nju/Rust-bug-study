@@ -1,0 +1,55 @@
+Fix race condition and other issues related to Worker destruction. (#30066)
+
+* Fix race condition in Worker destruction
+
+During shutdown, the main script thread calls
+JS_RequestInterruptCallback(cx) for each worker thread it owns
+where cx is the JSContext* created for that worker.
+Although JS_RequestInterruptCallback is safe to call
+from threads other than the worker thread, it is possible
+the JSContext* has already been destroyed
+
+For example, as noted in #30022, since the main thread sets
+the worker's `closing` flag to true to signal termination before it
+calls JS_RequestInterruptCallback, we can have a race condition
+where the worker exits its event loop when `closing` flags is set
+and then it (worker thread) destroys its own JSContext and JSRuntime.
+When the main thread resumes, it will call
+JS_RequestInterruptCallback for the worker's context, leading to
+a use-after-free bug.
+
+This patch solves this issue by improving the existing
+`ContextForRequestInterrupt` abstraction used for sharing the Worker's
+associated JSContext* with the parent script thread.
+Instead of simply wrapping a plain `*mut JSContext`, we now wrap the
+`*mut JSContext` in a nullable mutex i.e Mutex<Option<*mut JSContext>>
+
+The mutex lock needs to be held by the parent thread when it
+calls JS_RequestInterruptCallback.
+Similary, before the worker destroys its JSContext, it locks and
+sets the Option to None, signaling that the JSContext can no longer
+be used for interrupting the worker.
+
+This patch also fixes the issue in #30052 by enforcing the use
+of ContextForRequestInterrupt abstraction which ensures the correct
+JSContext is used by the main thread when Worker.terminate is called.
+
+Fixes #30022, #30052
+
+* Fix Worker.importScripts to handle termination
+
+Fixing #30052 uncovered this issue in the implementation
+of `importScripts` method. After the fix for #30052,
+the WPT test `/workers/Worker-terminate-forever-during-evaluation.html`
+started to crash because when evaluation doesn't succeed
+`importScripts` always returns Error::JSFailed code to the caller,
+which indicates that there is a Dom/JS exception to be thrown. However,
+this is not true when the script is terminated, which causes
+the generated binding layer for 'importScript` to fail
+the assertion that there is a pending exception.
+
+This patch makes `importScripts` work similar to the [logic that
+evaluates the top-level script][1] of the Worker - it simply prints
+`evaluate_script failed - (terminated)' if the worker is terminating
+
+[1]: https://github.com/servo/servo/blob/3fea90a231a94338d67712398fe3d2ba9d402211/components/script/dom/workerglobalscope.rs#L434

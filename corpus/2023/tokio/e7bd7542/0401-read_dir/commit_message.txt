@@ -1,0 +1,5 @@
+fs: fuse std iterator in `ReadDir` (#5555)
+
+Implementation of Tokio's ReadDir assumes that ReadDir from std is
+fused, but that's not the case on Windows. This change wraps the std
+iterator in std::iter::Fuse to make its usage correct.

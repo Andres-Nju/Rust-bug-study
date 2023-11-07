@@ -1,0 +1,7 @@
+server: fix the bug that metrics data returns twice (#12671)
+
+ref tikv/tikv#12602, close tikv/tikv#12670
+
+Signed-off-by: glorv <glorvs@163.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

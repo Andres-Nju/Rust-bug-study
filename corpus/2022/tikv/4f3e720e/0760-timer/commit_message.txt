@@ -1,0 +1,9 @@
+*: update grpcio (#12203)
+
+close tikv/tikv#12198, close tikv/tikv#12202
+
+update grpcio to fix UAF
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

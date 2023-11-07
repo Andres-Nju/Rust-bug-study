@@ -1,0 +1,2 @@
+sync: allow configuring RwLock max reads (#3644)
+

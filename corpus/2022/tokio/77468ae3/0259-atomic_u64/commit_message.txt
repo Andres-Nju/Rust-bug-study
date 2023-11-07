@@ -1,0 +1,2 @@
+metrics: add `fetch_add` for `AtomicU64` (#4453)
+

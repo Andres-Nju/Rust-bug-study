@@ -1,0 +1,5 @@
+expr: fix wrong result of 0 / decimal and 0 % decimal (#15675)
+
+close tikv/tikv#15631
+
+Signed-off-by: SeaRise <hhssearise@foxmail.com>

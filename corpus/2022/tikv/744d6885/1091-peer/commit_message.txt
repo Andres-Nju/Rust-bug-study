@@ -1,0 +1,7 @@
+Raftstore: fix split skip bug due to incorrectly setting has_calculated_region_size (#12505)
+
+ref tikv/pd#4926, close tikv/tikv#12510
+
+Signed-off-by: qi.xu <tonxuqi@outlook.com>
+
+Co-authored-by: qi.xu <tonxuqi@outlook.com>

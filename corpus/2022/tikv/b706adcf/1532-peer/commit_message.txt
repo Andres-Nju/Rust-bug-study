@@ -1,0 +1,10 @@
+raftstore: fix race between split check and destroy (#12386)
+
+close tikv/tikv#12368
+
+If an uninitialized peer is destroyed during split check, it can either
+panic or create stale peer with corrupted state.
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

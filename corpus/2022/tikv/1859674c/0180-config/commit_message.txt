@@ -1,0 +1,11 @@
+raftclient: enable delay only in high load (#11772)
+
+and improve CPU efficiency under high load. But it turns out
+this can lead to significant regression in normal load. So
+this PR adds CPU stats and only enabling delay in high load.
+
+This is also the same strategy used in v4.x.
+
+Close #11769.
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>

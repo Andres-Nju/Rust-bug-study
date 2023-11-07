@@ -1,0 +1,14 @@
+log-backup: don't run the cond function if the entry state is removal (#13043)
+
+close tikv/tikv#13044
+
+`SubscriptionManager::deregister_region_if` won't call the `cond` argument 
+if the target has been removed by setting the state to `Removal`.
+This would fix some patterns like:
+let mut exists = false;
+subs.deregister_region_if(42,|_, _| exists = true);
+do_with(exists);
+
+Signed-off-by: Yu Juncen <yujuncen@pingcap.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

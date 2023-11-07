@@ -1,0 +1,9 @@
+raftstore-v2: fix stale read by correct updating peers (#14665)
+
+close tikv/tikv#14664
+
+Fix stale read by correct updating peers
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

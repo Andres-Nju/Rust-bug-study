@@ -1,0 +1,5 @@
+CDC: fix rawkv resolved ts issue (#13142)
+
+close tikv/tikv#13144
+
+Signed-off-by: haojinming <jinming.hao@pingcap.com>

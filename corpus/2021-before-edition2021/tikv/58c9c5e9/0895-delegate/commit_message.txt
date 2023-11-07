@@ -1,0 +1,26 @@
+resolver: untracking locks by key (#9529)
+
+### What problem does this PR solve?
+
+Issue Number: close #9523
+
+### What is changed and how it works?
+
+Let the resolver maintain a HashMap that maps lock key to start_ts. Then, when we untrack a lock, we only need the key.
+
+### Check List <!--REMOVE the items that are not applicable-->
+
+Tests <!-- At least one of them must be included. -->
+
+- Unit test
+- Manual test using the reproducing steps in #9523
+
+Side effects
+
+- Performance regression
+    - Consumes more CPU
+    - Consumes more MEM
+
+### Release note <!-- bugfixes or new feature need a release note -->
+
+- Fix that CDC's resolved_ts may not advance when using async commit.

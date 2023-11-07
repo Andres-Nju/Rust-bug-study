@@ -1,0 +1,9 @@
+io: optimize shutdown check on I/O operations (#5300)
+
+The global flag remains and is used to prevent duplicated shutdowns and
+new io operations after shutdown.
+
+On shutdown, the driver flips the shutdown flag of every pending io
+operations and wake them to fail with a shutdown error.
+
+Fixes: #5227

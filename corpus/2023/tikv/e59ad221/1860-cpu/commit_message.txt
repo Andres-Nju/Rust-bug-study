@@ -1,0 +1,9 @@
+resource_metering: free leaked thread CPU stats (#15373)
+
+close tikv/tikv#15304
+
+resource_metering: free leaked thread CPU stats
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

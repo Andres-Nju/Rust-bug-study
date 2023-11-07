@@ -1,0 +1,5 @@
+scanner/forward: move to next key if accesses a lock with delete type (#11544)
+
+close #11541
+
+Signed-off-by: youjiali1995 <zlwgx1023@gmail.com>

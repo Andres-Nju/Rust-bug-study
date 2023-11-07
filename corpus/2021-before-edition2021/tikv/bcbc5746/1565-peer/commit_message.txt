@@ -1,0 +1,15 @@
+raftstore: remove unnecessary assert on merge check (#9982)
+
+* remove assert
+
+Signed-off-by: linning <linningde25@gmail.com>
+
+* address comment
+
+Signed-off-by: linning <linningde25@gmail.com>
+
+* update comment
+
+Signed-off-by: linning <linningde25@gmail.com>
+
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

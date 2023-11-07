@@ -1,0 +1,17 @@
+import: remove verify checksum in apply thread (#10950)
+
+* remove verify checksum in apply thread
+
+Signed-off-by: Little-Wallace <bupt2013211450@gmail.com>
+
+* fix compile
+
+Signed-off-by: Little-Wallace <bupt2013211450@gmail.com>
+
+* fix compile
+
+Signed-off-by: Little-Wallace <bupt2013211450@gmail.com>
+
+* fix test
+
+Signed-off-by: Little-Wallace <bupt2013211450@gmail.com>

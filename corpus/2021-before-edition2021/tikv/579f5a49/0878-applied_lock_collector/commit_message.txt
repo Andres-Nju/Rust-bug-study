@@ -1,0 +1,53 @@
+storage, gc_worker: Update max_ts when invoking scan_lock and register_lock_observer (#9558)
+
+<!--
+Thank you for contributing to TiKV!
+
+If you haven't already, please read TiKV's [CONTRIBUTING](https://github.com/tikv/tikv/blob/master/CONTRIBUTING.md) document.
+
+If you're unsure about anything, just ask; somebody should be along to answer within a day or two.
+
+PR Title Format:
+1. module [, module2, module3]: what's changed
+2. *: what's changed
+
+If you want to open the **Challenge Program** pull request, please use the following template:
+https://raw.githubusercontent.com/tikv/.github/master/.github/PULL_REQUEST_TEMPLATE/challenge-program.md
+You can use it with query parameters: https://github.com/tikv/tikv/compare/master...${you branch}?template=challenge-program.md
+-->
+
+### What problem does this PR solve?
+
+Issue Number: close #9526 
+
+Problem Summary: In some very-rare corner cases, if prewrite requests of async commit transactions arrives  so late that when it arrives, GC safepoint already exceeds its start_ts, it's possible that GC breaks the transaction's atomicity.
+
+### What is changed and how it works?
+
+What's Changed:
+
+This PR mades a few changes to fix the issue.
+
+* Move `scan_lock` out of scheduler, and uses similar handling logic as other kv read requests like `get`, `batch_get`, `scan`, etc.
+  * Including updating `max_ts` of concurrency manager and checking memory locks. This fixes the issue for non green gc.
+* Add an optional `end_key` parameter for `scan_lock`.
+* Update `max_ts` of concurrency manager and check memory locks when `register_lock_observer` is invoked. This fixes the issue for green gc.
+
+### Related changes
+
+- Though this PR fixes #9526 , but for non green gc, the scan_lock phase may not be very efficient since each scan_lock request will cause scanning memory lock from that region until the very end. Therefore we need an additional PR to TiDB to fill the `end_key` parameter of scan_lock reuqest.
+
+### Check List <!--REMOVE the items that are not applicable-->
+
+Tests <!-- At least one of them must be included. -->
+
+- Unit test
+
+Side effects
+
+- Performance regression
+    - Consumes more CPU
+
+### Release note <!-- bugfixes or new feature need a release note -->
+
+* Fix an issue that in some very rare cases, GC may break the atomicity of async commit transactions.

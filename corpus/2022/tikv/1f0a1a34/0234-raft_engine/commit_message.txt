@@ -1,0 +1,19 @@
+raftstore: fix high commit log duration when adding new peer  (#13078)
+
+close tikv/tikv#13077
+
+When adding a new peer, `alive_cache_idx` would not consider the new peer still
+in applying snapshot. Then it may trigger compacting entry cache due to 
+`alive_cache_idx` being equal to `applied_idx`. After the snapshot is applied,
+the log gap of new peer is not in entry cache, which triggers async fetch to 
+read disk. 
+
+Considering raft engine's read performance is not as good as rocksdb's, once 
+there are a lot of Regions triggering async fetch, the process of replicating
+log to new peer would be slow. If there is a conf change promoting the learner
+and demoting another peer, the commit index can't be advanced in joint state
+because the to-be-learner peer doesn't catch up logs in time.
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

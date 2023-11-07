@@ -1,0 +1,3 @@
+metrics: fix compilation with unstable, process, and rt (#4682)
+
+Fixes #4681.

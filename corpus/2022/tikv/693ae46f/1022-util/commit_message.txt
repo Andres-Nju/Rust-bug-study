@@ -1,0 +1,9 @@
+pd-client: tikv should continue if cluster-id is zero. (#13242)
+
+close tikv/tikv#13240
+
+using warn to replace panic.
+
+Signed-off-by: bufferflies <1045931706@qq.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

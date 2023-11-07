@@ -1,0 +1,7 @@
+[Dynamic Region]: bucket key range should be updated after ingested sst (#15164)
+
+close tikv/tikv#15147
+
+bucket write keys and bytes should be updated after ingested sst. So  the bucket key range will be refreshed .
+
+Signed-off-by: bufferflies <1045931706@qq.com>

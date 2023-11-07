@@ -1,0 +1,7 @@
+raftstore: make `UNREACHABLE_BACKOFF` configurable (#13193)
+
+close tikv/tikv#13054
+
+make `UNREACHABLE_BACKOFF` configurable.
+
+Signed-off-by: 5kbpers <hustmh@gmail.com>

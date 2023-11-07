@@ -1,0 +1,7 @@
+raftstore-v2: flush memtable before proposing split (#14437)
+
+close tikv/tikv#14447
+
+flush memtable before proposing split
+
+Signed-off-by: SpadeA-Tang <u6748471@anu.edu.au>

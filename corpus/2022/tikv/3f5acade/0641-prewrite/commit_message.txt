@@ -1,0 +1,18 @@
+storage: skip Rollback when checking newer version for non-pessimisitc keys (#13426)
+
+close tikv/tikv#13425, ref pingcap/tidb#35525
+
+Don't treat newer Rollback records as write conflicts for non-pessimistic
+keys in pessimistic transactions. They can cause false positive errors
+because they can be written even if the pessimistic lock of the
+corresponding row key exists.
+
+Rollback records are only used to prevent retried prewrite from
+succeeding. Even if the Rollback record of the current transaction is
+collapsed by a newer record, it is safe to prewrite this non-pessimistic
+key because either the primary key is rolled back or it's protected
+because it's written by CheckSecondaryLocks.
+
+Signed-off-by: Yilin Chen <sticnarf@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

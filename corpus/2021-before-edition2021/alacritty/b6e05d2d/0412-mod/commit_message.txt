@@ -1,0 +1,3 @@
+Fix vi indicator obstructing vi mode cursor
+
+Fixes #5504.

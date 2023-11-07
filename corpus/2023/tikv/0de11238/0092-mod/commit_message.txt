@@ -1,0 +1,16 @@
+raftstore-v2: prevent resolving store 0 (#14645)
+
+* raftstore-v2: prevent resolving store 0
+
+Do not cache invaild peer otherwise it may send raft message to
+store 0 during region split.
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+* address comments
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+---------
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>

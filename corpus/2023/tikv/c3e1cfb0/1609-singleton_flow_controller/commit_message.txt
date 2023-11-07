@@ -1,0 +1,12 @@
+storage: Fix flow controller pending compaction bytes always be zero (#14393)
+
+close tikv/tikv#14392
+
+Fix the issue that flow control may not work when pending compaction bytes is high.
+
+If the pending compaction bytes is 0, then 0.log2() is -INF which would cause the later
+average always be zero even if the pending compaction bytes is already high.
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

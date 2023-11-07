@@ -1,0 +1,13 @@
+mvcc: fix get_write may return Delete when skipping versions (#13840)
+
+close tikv/tikv#13839
+
+The mvcc get_write methods should return None if the found record is a Delete.
+
+This constraint is broken after the introduction of skipping locks, causing
+panic when reading values.
+
+Now, it's changed to use the same logic in the loop (just like the PointGetter and
+the ForwardScanner) to avoid the problem.
+
+Signed-off-by: Yilin Chen <sticnarf@gmail.com>

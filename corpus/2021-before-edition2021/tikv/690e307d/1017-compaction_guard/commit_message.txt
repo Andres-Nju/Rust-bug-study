@@ -1,0 +1,23 @@
+handle gc keys task more effectively (#9959)
+
+* use prefix seek for gc keys task
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* add gc scan panels
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* handle gc keys with region info provider
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* make clippy
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* update metrics for gc speed
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

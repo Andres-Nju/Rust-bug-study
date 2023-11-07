@@ -1,0 +1,9 @@
+raftstore-v2: split init may be out of dated when conf change ocurred (#14407)
+
+close tikv/tikv#14389
+
+split init may be out of dated
+
+Signed-off-by: Spade A <u6748471@anu.edu.au>
+
+Co-authored-by: Xinye Tao <xy.tao@outlook.com>

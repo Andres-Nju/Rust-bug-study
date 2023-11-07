@@ -1,0 +1,14 @@
+raftstore: improve the bucket split strategy  (#15798)
+
+close tikv/tikv#13671
+
+there are three reason may cause the bucket not split:
+1. split check tick will refresh bucket info even info the bucket version not change 
+2. the suspect buckets only conside the increment flow 
+3. all the bucket increment flows are reset if one bucket is updated.
+
+To solve this, bucket stats only record the increment flow and reset it after meta size updated.
+
+Signed-off-by: bufferflies <1045931706@qq.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

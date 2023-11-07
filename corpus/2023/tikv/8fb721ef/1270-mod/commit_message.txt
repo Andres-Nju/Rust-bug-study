@@ -1,0 +1,7 @@
+raftstore-v2: adjust lockcf default write buffer size and limit (#15678)
+
+close tikv/tikv#15630
+
+Signed-off-by: glorv <glorvs@163.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

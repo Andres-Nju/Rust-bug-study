@@ -1,0 +1,11 @@
+raftstore: check uninitialized destroy for merge (#12055)
+
+close tikv/tikv#12048
+
+When a peer is destroyed without being initialized, it will store
+itself to peer list and the region epoch is missing. In merge if
+such state is detected, it should abort merging instead of panicking.
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

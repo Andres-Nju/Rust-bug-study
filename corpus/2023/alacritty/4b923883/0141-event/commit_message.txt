@@ -1,0 +1,7 @@
+Fix crash on ScaleFactorChange on Windows
+
+Windows is known to send zero sizes from winit in Risezed and now
+in ScaleFactorChanged events. They were handled in Resized, but
+not in ScaleFactorChanged.
+
+Fixes #6949.

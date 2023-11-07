@@ -1,0 +1,12 @@
+raftstore-v2: reduce file count (#14318)
+
+close tikv/tikv#14306, close tikv/tikv#14316, close tikv/tikv#14324
+
+Compaction guard is disabled in v2, which will use 8MiB for file size. We need
+set multiplier to reduce sst file count.
+
+This PR also fixes a race between region creation and destroy.
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

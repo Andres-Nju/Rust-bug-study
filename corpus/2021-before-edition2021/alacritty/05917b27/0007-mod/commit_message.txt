@@ -1,0 +1,3 @@
+Fix initial vi cursor position while in scrollback
+
+Fixes #4968.

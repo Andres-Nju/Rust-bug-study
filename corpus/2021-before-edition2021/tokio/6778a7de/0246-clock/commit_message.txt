@@ -1,0 +1,2 @@
+time: document paused time details better (#4061)
+

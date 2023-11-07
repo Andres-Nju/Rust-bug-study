@@ -1,0 +1,7 @@
+Fix cursor position when scrolled into history
+
+This fixes a regression introduced in 530de00, where the terminal cursor
+would move up when the user scrolled up in the terminal history, rather
+than staying in place.
+
+Fixes #4784.

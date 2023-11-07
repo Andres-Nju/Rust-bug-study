@@ -1,0 +1,8 @@
+Bump glutin to 0.29.1
+
+Fixes #6239.
+Fixes #5975.
+Fixes #5876.
+Fixes #5767.
+Fixes #4484.
+Fixes #3139.

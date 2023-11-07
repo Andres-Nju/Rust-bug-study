@@ -1,0 +1,38 @@
+raftstore: destroy uninitialized peer can make it possible to recreate old peer (#11457)
+
+* add issue test
+
+Signed-off-by: p4tr1ck <patricknicholas@foxmail.com>
+
+* raftstore: prevent creating staled peer
+
+For an uninitialized peer, both epoch and peer list are empty, so
+a message target to a staled peer which override by an uninitialized
+peer will be create again. This PR will save the current peer into
+peer list if this region is uninitialized.
+
+close #10533
+
+Signed-off-by: p4tr1ck <patricknicholas@foxmail.com>
+
+* address comments
+
+Signed-off-by: p4tr1ck <patricknicholas@foxmail.com>
+
+* address  comments
+
+Signed-off-by: p4tr1ck <patricknicholas@foxmail.com>
+
+* fix test
+
+Signed-off-by: p4tr1ck <patricknicholas@foxmail.com>
+
+* address comment
+
+Signed-off-by: p4tr1ck <patricknicholas@foxmail.com>
+
+* fix test
+
+Signed-off-by: p4tr1ck <patricknicholas@foxmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

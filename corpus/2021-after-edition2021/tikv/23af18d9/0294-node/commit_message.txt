@@ -1,0 +1,47 @@
+fix check_api_version() unexpectedly skipped on bootstrap (#11590)
+
+* close #11588 server: fix check_api_version() unexpectedly skipped on bootstrap
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+* update comment
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+* improve test
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+* improve config check
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+* improve test
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+* improve test
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+* improve test
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+* improve test
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+* fmt
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+* Update tests/integrations/raftstore/test_bootstrap.rs
+
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+Co-authored-by: Connor <zbk602423539@gmail.com>
+Signed-off-by: andylokandy <andylokandy@hotmail.com>
+
+Co-authored-by: Connor <zbk602423539@gmail.com>
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,0 +1,8 @@
+reader: fix the invisible write record flashback bug (#13845)
+
+close tikv/tikv#13844
+
+Fix the bug that when a key's last write record is `WriteType::Lock` or `WriteType::Rollback`,
+the `scan_writes` will return the invisible write record as the result, which will affect the flashback correctness.
+
+Signed-off-by: JmPotato <ghzpotato@gmail.com>

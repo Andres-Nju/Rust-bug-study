@@ -1,0 +1,23 @@
+gc: Fix GC scan effectiveness to avoid OOM (#11416)
+
+* close #11410 limit the pending task for gc worker
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+* avoid using prefix seek
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+* rename test
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+* address comment
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+* fix build
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

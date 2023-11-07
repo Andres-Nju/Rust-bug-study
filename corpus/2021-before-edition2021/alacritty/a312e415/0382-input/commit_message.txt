@@ -1,0 +1,10 @@
+Fix selection flooding Wayland connection
+
+This resolves an issue where an excessive clipboard update frequency
+would cause the Wayland display server to ignore necessary selection
+updates.
+
+Instead of copying the selection to the clipboard during the selection
+process, it is now only copied once the mouse button is released.
+
+Fixes #4953.

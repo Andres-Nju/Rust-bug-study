@@ -1,0 +1,7 @@
+config: make split config can update (#15473)
+
+close tikv/tikv#15403
+
+1. split config support to update dynamic. In past, the `optimize_for` function will set the config immutable.
+
+Signed-off-by: bufferflies <1045931706@qq.com>

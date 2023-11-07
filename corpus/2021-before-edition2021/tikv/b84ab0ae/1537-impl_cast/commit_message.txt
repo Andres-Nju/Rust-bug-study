@@ -1,0 +1,56 @@
+copr: fix cast expr when cast empty string to float (#9704) (#9710)
+
+Signed-off-by: guo-shaoge <shaoge1994@163.com>
+
+<!--
+Thank you for contributing to TiKV!
+
+If you haven't already, please read TiKV's [CONTRIBUTING](https://github.com/tikv/tikv/blob/master/CONTRIBUTING.md) document.
+
+If you're unsure about anything, just ask; somebody should be along to answer within a day or two.
+
+PR Title Format:
+1. module [, module2, module3]: what's changed
+2. *: what's changed
+
+If you want to open the **Challenge Program** pull request, please use the following template:
+https://raw.githubusercontent.com/tikv/.github/master/.github/PULL_REQUEST_TEMPLATE/challenge-program.md
+You can use it with query parameters: https://github.com/tikv/tikv/compare/master...${you branch}?template=challenge-program.md
+-->
+
+### What problem does this PR solve?
+
+Issue Number: close #9704 <!-- REMOVE this line if no issue to close -->
+
+Problem Summary: 
+
+    drop table t;
+    create table t (a varchar(30));
+    insert into t values ('');
+    delete from t where a=10;
+
+Delete statement should be ok. In MySQL, the result of empty stringcasting to float is zero. But in TiDB, it gives "Data Truncated" errors. Because cast expr got bug when cast empty string to float.
+
+That was fixed in TiDB [here](https://github.com/pingcap/tidb/issues/10806), but we still need to fix it in copr. 
+
+### What is changed and how it works?
+
+What's Changed:  Change function cast_string_as_signed_real(). When input string is empty, result will be 0.0
+
+### Related changes
+
+- Need to cherry-pick to the release branch
+
+### Check List <!--REMOVE the items that are not applicable-->
+
+Tests <!-- At least one of them must be included. -->
+
+- Unit test
+
+
+Side effects: no side effects.
+
+
+### Release note <!-- bugfixes or new feature need a release note -->
+
+- fix cast expr when cast empty string to float in copr.

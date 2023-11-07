@@ -1,0 +1,7 @@
+raftstore: ignore async fetch result when the peer is pending removed (#12038)
+
+close tikv/tikv#11973, close tikv/tikv#12026
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,0 +1,7 @@
+raftstore: Fetch raft log in async manner (#11409)
+
+close tikv/tikv#10408, close tikv/tikv#11320
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

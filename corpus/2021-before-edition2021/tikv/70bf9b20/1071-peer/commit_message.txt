@@ -1,0 +1,29 @@
+avoid stale result for read index command (#9549)
+
+* avoid stale result for read index command
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* stabilize CI.
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* address comments
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* address comments
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* remove other code
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* address comments
+
+Signed-off-by: qupeng <qupeng@pingcap.com>
+
+* make clippy
+
+Signed-off-by: qupeng <qupeng@pingcap.com>

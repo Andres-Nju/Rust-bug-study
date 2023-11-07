@@ -1,0 +1,11 @@
+raftstore: fix find_propose_time may return older instant (#9754)
+
+* fix find_propose_time
+
+Signed-off-by: linning <linningde25@gmail.com>
+
+* address comment
+
+Signed-off-by: linning <linningde25@gmail.com>
+
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

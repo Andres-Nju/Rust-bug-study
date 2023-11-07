@@ -1,0 +1,7 @@
+raft_log_engine: fix managedfs create encrypted file (#12163)
+
+close tikv/tikv#12162
+
+Signed-off-by: glorv <glorvs@163.com>
+
+Co-authored-by: Xinye Tao <xy.tao@outlook.com>

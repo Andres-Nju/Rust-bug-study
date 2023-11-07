@@ -1,0 +1,5 @@
+storage: fix reverse scan check memory locks (#11447)
+
+close #11440
+
+Signed-off-by: youjiali1995 <zlwgx1023@gmail.com>

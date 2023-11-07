@@ -1,0 +1,59 @@
+server: disallow coexist of raft engine and raftdb (#12047)
+
+* disallow coexist of raft engine and raftdb
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* add defer block
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* minor cleanup
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* check not clear
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* print out rm failure
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* print log for non-empty target engine
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* even more logs
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* use a state machine to monitor the switch
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* fix and add test
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* clippy
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* address comments
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* address comments
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* remove tempfile from engine_traits
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* address comments
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

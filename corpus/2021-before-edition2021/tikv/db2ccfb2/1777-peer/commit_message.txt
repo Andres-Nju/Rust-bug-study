@@ -1,0 +1,13 @@
+raftstore: generate snapshot(if any) after getting ready (#9863)
+
+* fix generate snapshot
+
+Signed-off-by: gengliqi <gengliqiii@gmail.com>
+
+* add comments
+
+Signed-off-by: gengliqi <gengliqiii@gmail.com>
+
+Co-authored-by: qupeng <qupeng@pingcap.com>
+Co-authored-by: zhangjinpeng1987 <zhangjinpeng@pingcap.com>
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

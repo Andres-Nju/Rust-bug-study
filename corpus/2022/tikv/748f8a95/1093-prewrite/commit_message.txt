@@ -1,0 +1,7 @@
+txn: do conflict check before returning assertion failure (#12488)
+
+close tikv/tikv#12487
+
+Signed-off-by: ekexium <ekexium@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

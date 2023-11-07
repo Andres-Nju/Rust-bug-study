@@ -1,0 +1,30 @@
+Add support for synchronized updates
+
+This implements support for temporarily freezing the terminal grid to
+prevent rendering of incomplete frames.
+
+This can be triggered using the escapes `DCS = 1 s` (start) and
+`DCS = 2 s` (end).
+
+The synchronization is implemented by forwarding all received PTY bytes
+to a 2 MiB buffer. This should allow updating the entire grid even if it
+is fairly dense. Unfortunately this also means that another branch is
+necessary in Alacritty's parser which does have a slight performance
+impact.
+
+In a previous version the freezing was implemented by caching the
+renderable grid state whenever a synchronized update is started. While
+this strategy makes it possible to implement this without any
+performance impact without synchronized updates, a significant
+performance overhead is introduced whenever a synchronized update is
+started. Since this can happen thousands of times per frame, it is not a
+feasible solution.
+
+While it would be possible to render at most one synchronized update per
+frame, it is possible that another synchronized update comes in at any
+time and stays active for an extended period. As a result the state
+visible before the long synchronization would be the first received
+update per frame, not the last, which could lead to the user missing
+important information during the long freezing interval.
+
+Fixes #598.

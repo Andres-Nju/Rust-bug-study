@@ -1,0 +1,16 @@
+raftstore-v2: fix paused checkpoint and other issues (#15174)
+
+close tikv/tikv#15059, fix tikv/tikv#15181, fix tikv/tikv#15209
+
+- Fix checkpoint being paused forever.
+- Abort prepare merge if target is merging another.
+- Fix block-cache size is set to sum of cf's cache size by default.
+- Fix tablet being asked to destroy twice after commit merge.
+- Fix life.rs using the wrong fields of `CommitMergeRequest` to rollback.
+- Disable RocksDB stats dumping altogether.
+- Shutdown high priority pool manually before drop.
+- Add catch up logs into the prepare merge state machine to fix some corner case panics.
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

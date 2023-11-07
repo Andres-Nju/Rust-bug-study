@@ -1,0 +1,13 @@
+resolved_ts: shrink resolver lock map (#15484)
+
+close tikv/tikv#15458
+
+Resolver owns a hash map to tracking locks and unlock events, and so
+for calculating resolved ts. However, it does not shrink map even after
+all lock are removed, this may result OOM if there are transactions
+that modify many rows across many regions. The total memory usage is
+proportional to the number of modified rows.
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

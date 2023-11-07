@@ -1,0 +1,7 @@
+local_reader: solve the race condition when acquiring the snapshot (#13568)
+
+close tikv/tikv#13553
+
+Signed-off-by: SpadeA-Tang <u6748471@anu.edu.au>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

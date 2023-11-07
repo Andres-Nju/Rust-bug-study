@@ -1,0 +1,9 @@
+storage: refactor flashback to use the MVCC overwriting (#13450)
+
+ref tikv/tikv#13303, close tikv/tikv#13448
+
+Since deleting the old MVCC keys directly will cause the GC Compaction Filter to mishandle the deletion entry,
+this PR refactors the `FlashbackToVersionReadPhase` and `FlashbackToVersion` commands to use the MVCC
+overwriting to achieve the flashback.
+
+Signed-off-by: JmPotato <ghzpotato@gmail.com>

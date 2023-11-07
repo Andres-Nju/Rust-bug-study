@@ -1,0 +1,7 @@
+file_system: detect procfs accessibility before using it (#13117)
+
+close tikv/tikv#13116
+
+None
+
+Signed-off-by: tabokie <xy.tao@outlook.com>

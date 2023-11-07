@@ -1,0 +1,9 @@
+cdc: filter changes based on the range in request (#14213)
+
+close pingcap/tiflow#6346, close tikv/tikv#10073
+
+cdc: filter changes based on the range in request
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

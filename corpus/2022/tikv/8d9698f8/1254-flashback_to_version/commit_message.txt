@@ -1,0 +1,11 @@
+storage: Unify the flashback reader and fix the start_key bug (#13860)
+
+close pingcap/tiflash#6379, ref tikv/tikv#13800, close tikv/tikv#13861
+
+SnapshotReader typically uses its own start_ts for something. Since it doesn't need the start_ts of SnapshotReader itself,  
+we can unify the reader into MvccReader.
+And the start key from the client is actually a range, which is used to limit the upper bound of this flashback when scanning data, so it may not be a real key.
+
+Signed-off-by: husharp <jinhao.hu@pingcap.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

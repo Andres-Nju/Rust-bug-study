@@ -1,0 +1,27 @@
+Fix reuse of invalid write cursor (#9916)
+
+* stash write_cursor during constraint check
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* safely reuse write_cursor in get_old_value
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* remove cursor usage in get_old_value
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* remove stale code
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* address comment and fix test
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+* fix test
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

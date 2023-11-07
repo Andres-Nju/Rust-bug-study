@@ -1,0 +1,2 @@
+runtime: immediately drop new task when runtime is shut down (#3752)
+

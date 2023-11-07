@@ -1,0 +1,9 @@
+Update winit to 0.29.2 and copypasta to 0.10.0
+
+Fixes #7236.
+Fixes #7201.
+Fixes #7146.
+Fixes #6848.
+Fixes #3601.
+Fixes #3108.
+Fixes #2453.

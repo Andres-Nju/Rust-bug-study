@@ -1,0 +1,12 @@
+Skip write `prewrite_lock` in flashback locks (#13960)
+
+close tikv/tikv#13958, ref tikv/tikv#13958
+
+Since the rollback ts for flashback are derived from the ts of the lock, we wrote prewrite lock which start_ts is flashback in Prewrite Phase. 
+So the Prewrite lock we wrote in the flashback was rollbacked when we retry prepare. 
+This introduces the case mentioned in https://github.com/tikv/tikv/issues/13958
+The solution is: if such a lock exists, skip it and go to the Commit Phase.
+
+Signed-off-by: husharp <jinhao.hu@pingcap.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

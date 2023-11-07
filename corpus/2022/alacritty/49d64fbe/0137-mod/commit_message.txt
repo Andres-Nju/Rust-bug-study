@@ -1,0 +1,10 @@
+Fix OSC 4 color response format
+
+The commit 60ef17e introduced support for the color query response
+escape for OSC 4, however it did omit the `4;` prefix and started the
+OSC with just the color index.
+
+This patch fixes this bug and correctly responds to queries with full
+OSC 4 format, including prefix plus color index.
+
+Fixes #5981.

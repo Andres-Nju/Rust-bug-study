@@ -1,0 +1,7 @@
+log-backup: report when watch canceled (#14154)
+
+close tikv/tikv#14159
+
+Signed-off-by: hillium <yujuncen@pingcap.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

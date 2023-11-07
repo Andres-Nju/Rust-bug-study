@@ -1,0 +1,18 @@
+server: do not update background cpu limit when auto-tune is off (#13056)
+
+ref tikv/tikv#12679, close tikv/tikv#13055
+
+ThreadTime is collected when the cpu limit in the QuotaLimiter
+is not infinity.
+
+#12679 updated the background cpu limit even if auto-tune is off,
+which is unnecessary. So, that causes additional cost of collecting
+thread CPU time in some critical paths.
+
+This commit sets cpu_time_limit of the QuotaLimiter only if auto-tune
+is enabled, so we don't waste effort to collect CPU time when
+auto-tune is not enabled.
+
+Signed-off-by: Yilin Chen <sticnarf@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

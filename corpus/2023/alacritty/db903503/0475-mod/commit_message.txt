@@ -1,0 +1,29 @@
+Update to the new winit keyboard API
+
+The main highlight of this update is that alacritty will now use new
+keyboard API from the winit, which resolves a lot of issues around
+key bindings, such as ability to bind dead keys. It also fixes long
+standing issues with the virtual key code bindings and make bindings
+in general more predictable. It also makes our default Vi key bindings
+fully working.
+
+Given that alacritty was using `VirtualKey` directly in the bindings
+from the winit, and winit simply removed the enum, we've added internal
+conversions to minimize the fallout, but new way to specify the bindings
+should be more intuitive.
+
+Other part of this update fixes some forward compatibility bugs with the
+Wayland backend, given that wayland-rs 0.30 is fully forward compatible.
+The update also fixes weird Maximized startup issues on GNOME Wayland,
+however they were present on any sane compositor.
+
+Fixes #6842.
+Fixes #6455.
+Fixes #6184.
+Fixes #5684.
+Fixes #3574.
+Fixes #3460.
+Fixes #1336.
+Fixes #892.
+Fixes #458.
+Fixes #55.

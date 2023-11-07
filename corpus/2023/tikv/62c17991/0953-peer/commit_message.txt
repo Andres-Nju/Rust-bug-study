@@ -1,0 +1,9 @@
+unsafe recovery: Enable force leader to rollback merge (#15578)
+
+close tikv/tikv#15580
+
+Enable force leader to rollback merges when they are not able to proceed, previously, only regions with quorum can do this.
+
+Signed-off-by: Yang Zhang <yang.zhang@pingcap.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

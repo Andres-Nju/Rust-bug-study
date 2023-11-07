@@ -1,0 +1,3 @@
+Fix replacement of fullwidth characters
+
+Fixes #3726.

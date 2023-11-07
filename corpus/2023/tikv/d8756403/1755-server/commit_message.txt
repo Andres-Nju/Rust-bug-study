@@ -1,0 +1,7 @@
+import: write RPC will check region epoch before continue (#15013)
+
+close tikv/tikv#15003
+
+Signed-off-by: lance6716 <lance6716@gmail.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

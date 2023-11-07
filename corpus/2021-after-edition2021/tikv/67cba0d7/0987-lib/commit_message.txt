@@ -1,0 +1,95 @@
+config: support configuring rocksdb enum item with string literals (#11068)
+
+* config: Fix compaction-style setting is broken
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* config: Fix compaction-style setting is broken, fix discussion
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* config: Fix compaction-style setting is broken, fix discussion again
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* config: Fix compaction-style setting is broken, fix test error
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* config: Fix compaction-style setting is broken
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* config: Fix compaction-style setting is broken
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* config: Fix compaction-style setting is broken
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* config: Fix compaction-style setting is broken
+
+Change macro `numeric_enum_mod`:
+ 1. serialize config value as string instead of int
+ 2. accept int and string as config value for backwards compatibility
+
+Close #11028
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* config: Fix compaction-style setting is broken
+
+Change macro `numeric_enum_mod`:
+ 1. serialize config value as string instead of int
+ 2. accept int and string as config value for backwards compatibility
+
+Close #11028
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* config: Fix compaction-style setting is broken
+
+Change macro `numeric_enum_mod`:
+ 1. serialize config value as string instead of int
+ 2. accept int and string as config value for backwards compatibility
+
+Close #11028
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* merge master and use case macros to replace some code
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* rename numeric_enum_mod and move mirror type to macros
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* fix format in toml
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* remove enums in macro and merge test
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* replace numeric value with string value about config in `config-template.toml` and `test-template.toml` respectively
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* resolve disscussion about rate-limiter-mode
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* fix unittest about config-template.toml
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* revert changes thats serialize config value as str
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>
+
+* resolve discussion about comment content
+
+Signed-off-by: yuqi1129 <yuqi4733@gmail.com>

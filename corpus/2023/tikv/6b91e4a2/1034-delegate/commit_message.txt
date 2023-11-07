@@ -1,0 +1,11 @@
+cdc: deregister delegate if memory quota exceeded (#15486)
+
+close tikv/tikv#15412
+
+Similar to resolved-ts endpoint, cdc endpoint maintains resolvers for
+subscribed regions. These resolvers also need memory quota, otherwise
+they may cause OOM.
+This commit lets cdc endpoint deregister regions if they exceed
+memory quota.
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>

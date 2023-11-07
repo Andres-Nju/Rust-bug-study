@@ -1,0 +1,7 @@
+snap_restore: fix snapshot recovery leader election (#15297)
+
+close tikv/tikv#15296
+
+Signed-off-by: hillium <yujuncen@pingcap.com>
+
+Co-authored-by: qupeng <qupeng@pingcap.com>

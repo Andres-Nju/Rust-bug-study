@@ -1,0 +1,21 @@
+*: fix mailbox leak (#9892)
+
+* *: use forked crossbeam channel
+
+We add a patch to free memory when all receivers are dropped.
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+* router: clear cache of unused router
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+* fix warnings
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+* address comment
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

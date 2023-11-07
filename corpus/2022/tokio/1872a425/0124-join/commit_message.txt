@@ -1,0 +1,3 @@
+macros: avoid starvation in `join!` and `try_join!` (#4624)
+
+Fixes: #4612

@@ -1,0 +1,5 @@
+log-backup: added check leader call before flushing (#14108)
+
+close tikv/tikv#14099
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

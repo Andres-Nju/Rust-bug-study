@@ -1,0 +1,9 @@
+coprocessor:  request key needs to encode for `tls_collect_read_flow` (#14999)
+
+close tikv/tikv#14998
+
+the request key needs to encode. If not , the bucket's key range has no intersection for the request's key range
+
+Signed-off-by: bufferflies <1045931706@qq.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

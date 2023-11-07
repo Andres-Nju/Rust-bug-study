@@ -1,0 +1,27 @@
+resolved_ts: add more metrics (#11809)
+
+* add metrics
+
+Signed-off-by: 5kbpers <tangminghua@pingcap.com>
+
+* add slow log
+
+Signed-off-by: 5kbpers <tangminghua@pingcap.com>
+
+* remove duplicate metric
+
+Signed-off-by: 5kbpers <tangminghua@pingcap.com>
+
+* add resolved ts metrics for leader peers
+
+Signed-off-by: 5kbpers <tangminghua@pingcap.com>
+
+* close #11767
+
+Signed-off-by: 5kbpers <tangminghua@pingcap.com>
+
+* init endpoint with store meta
+
+Signed-off-by: 5kbpers <tangminghua@pingcap.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

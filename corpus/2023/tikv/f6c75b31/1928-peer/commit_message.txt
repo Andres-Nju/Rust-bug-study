@@ -1,0 +1,7 @@
+raft-store-v2: fix report down peers (#15317)
+
+close tikv/tikv#15316
+
+Signed-off-by: glorv <glorvs@163.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

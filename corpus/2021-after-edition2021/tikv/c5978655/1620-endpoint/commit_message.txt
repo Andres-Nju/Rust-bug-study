@@ -1,0 +1,15 @@
+cdc: fix missing downstream panic (#11133)
+
+* cdc: add test to cover missing downstream panic
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+* cdc: fix missing downstream panic
+
+Close #11123
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+* stable test
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>

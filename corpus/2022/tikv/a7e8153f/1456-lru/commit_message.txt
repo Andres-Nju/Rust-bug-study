@@ -1,0 +1,10 @@
+tikv_util: make LruCache sound (#13552)
+
+close tikv/tikv#13551
+
+It's error-prone to use reference/`Box` and raw pointer/`NonNull` at the same time. 
+This PR replaces `Box` by `NonNull` and always use it as parameter.
+
+Signed-off-by: youjiali1995 <zlwgx1023@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

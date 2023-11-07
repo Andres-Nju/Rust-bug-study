@@ -1,0 +1,7 @@
+raftstore-v2: fix panic of dynamic changing write-buffer-limit (#15504)
+
+close tikv/tikv#15503
+
+fix panic of dynamic changing write-buffer-limit
+
+Signed-off-by: SpadeA-Tang <u6748471@anu.edu.au>

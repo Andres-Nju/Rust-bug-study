@@ -1,0 +1,9 @@
+encryption: fix offset inconsistency between crypter and file (#15092)
+
+close tikv/tikv#15080
+
+Fix offset inconsistency between crypter and file that could cause data corruption when file I/O is interrupted.
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

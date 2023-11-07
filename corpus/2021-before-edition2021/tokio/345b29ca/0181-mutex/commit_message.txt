@@ -1,0 +1,2 @@
+sync: improve Mutex FIFO explanation (#3615)
+

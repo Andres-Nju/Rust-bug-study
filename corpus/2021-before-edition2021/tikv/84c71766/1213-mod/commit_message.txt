@@ -1,0 +1,23 @@
+fix unencoded keys in load-base-split (#10543)
+
+* fix encode key
+
+Signed-off-by: lhy1024 <admin@liudos.us>
+
+* fix lint
+
+Signed-off-by: lhy1024 <admin@liudos.us>
+
+* fix lint
+
+Signed-off-by: lhy1024 <admin@liudos.us>
+
+* fix lint
+
+Signed-off-by: lhy1024 <admin@liudos.us>
+
+* upate test
+
+Signed-off-by: lhy1024 <admin@liudos.us>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,0 +1,9 @@
+pd_client: add backoff for the reconnect retries (#15429)
+
+ref tikv/pd#6556, close tikv/tikv#15428
+
+pc_client: add store-level backoff for the reconnect retries
+
+Signed-off-by: nolouch <nolouch@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

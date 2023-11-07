@@ -1,0 +1,8 @@
+config:consider config change in readstats (#12164)
+
+close tikv/tikv#12014
+
+Signed-off-by: Jayice <1185430411@qq.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>
+Co-authored-by: disksing <i@disksing.com>

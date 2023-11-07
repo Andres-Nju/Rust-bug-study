@@ -1,0 +1,14 @@
+raftstore-v2: fix destroy blocked by apply progress (#14223)
+
+close tikv/tikv#14215
+
+If a peer is marked for destroy, it will skip all apply result, which
+will make it never apply to committed index. This PR relaxes the check
+to last_applying_index and always process apply result.
+
+It also fixes a bug that new peer created by large ID may not survive
+restart.
+
+Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,0 +1,15 @@
+cdc, txn: improve CDC old value cache hit ratio in pessimistic txn (#10072)
+
+* txn: correct get old value for acquire_pessimistic_lock
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+* txn: add more tests
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+* cdc: test old value cache in pessimistic txn
+
+Signed-off-by: Neil Shen <overvenus@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

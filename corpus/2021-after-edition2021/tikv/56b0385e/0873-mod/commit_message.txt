@@ -1,0 +1,15 @@
+*: Fix tikv-ctl region-properties doesn't work on rawkv (#11584)
+
+* close #11571 fix read metrics for raw scan
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+* close #11583 fix tikv-ctl region-properties for rawkv
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+* fix clippy
+
+Signed-off-by: Connor1996 <zbk602423539@gmail.com>
+
+Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

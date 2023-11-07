@@ -1,0 +1,10 @@
+engine: fix raft-engine encryption key deletion order (#14770)
+
+close tikv/tikv#14761
+
+Fix a race between encryption key and raft log file deletion that can cause server unable to boot.
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

@@ -1,0 +1,3 @@
+Fix search regressions
+
+Fixes #5315.

@@ -1,0 +1,9 @@
+encryption: Set Iv to empty if using plaintext encryption (#13083)
+
+close tikv/tikv#13081
+
+Using empty IV for plaintext encryption
+
+Signed-off-by: Jarvis Zheng <jiayang@hust.edu.cn>
+
+Co-authored-by: Xinye Tao <xy.tao@outlook.com>

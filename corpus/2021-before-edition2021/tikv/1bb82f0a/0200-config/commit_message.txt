@@ -1,0 +1,85 @@
+backup: support split big region into small backup files (#9283)
+
+* support split big region into small files
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix unit test
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* make format
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix clippy
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* address comments
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix clippy
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix clippy
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* address comments
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* address comment
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* add ut
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* add writer_builder
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix make format
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* address comment
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix bug
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix key bug, update config.toml
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix format
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix test
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* address comment
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix format
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* fix clippy
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>
+
+* address comment
+
+Signed-off-by: Chunzhu Li <lichunzhu@stu.xjtu.edu.cn>

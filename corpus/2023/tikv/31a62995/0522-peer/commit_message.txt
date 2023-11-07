@@ -1,0 +1,10 @@
+raftstore: allow DrAutoSync to majority commit log during SyncRecover phase (#15103)
+
+close tikv/tikv#14975
+
+raftstore: do not enable group commit when replication mode is SyncRecover
+- during DR mode, the SyncRecover state should be committed in majority mode. otherwise, the qps may drop
+
+Signed-off-by: nolouch <nolouch@gmail.com>
+
+Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

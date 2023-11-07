@@ -1,0 +1,7 @@
+server: fix issues with critical config check (#12250)
+
+close tikv/tikv#12238, ref tikv/tikv#12238
+
+Signed-off-by: tabokie <xy.tao@outlook.com>
+
+Co-authored-by: Xintao <hunterlxt@live.com>
