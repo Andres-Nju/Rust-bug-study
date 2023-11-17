@@ -4,8 +4,13 @@ safety = ["unsafe", "safe", "Interior unsafe"]
 
 def process_class_file(class_file_path, repo_commit):
     with open(class_file_path, 'r') as file:
+        # print(class_file_path)
         lines = file.readlines()
+        if len(lines[0].split()) == 1:
+            return None
         root_cause, symptom = map(int, lines[0].split())
+        if root_cause == 0 and symptom == 0:
+            return None
         code_add, code_remove = map(int, lines[1].split())
         platform_related = int(lines[2])
         error_handling = int(lines[3])
@@ -40,7 +45,8 @@ def process_corpus(corpus_folder, output_file):
                                 class_file_path = os.path.join(commit_path, 'class.txt')
                                 if os.path.exists(class_file_path):
                                     class_data = process_class_file(class_file_path, repo_commit)
-                                    csv_file.write(','.join(map(str, class_data)) + '\n')
+                                    if class_data is not None:
+                                        csv_file.write(','.join(map(str, class_data)) + '\n')
 
 if __name__ == "__main__":
     corpus_folder = "."  # 替换为你的语料库文件夹路径
