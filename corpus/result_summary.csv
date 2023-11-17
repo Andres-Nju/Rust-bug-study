@@ -1,0 +1,4 @@
+repo_commit,root_cause,symptom,code_add,code_remove,platform_related,error_handling,propagation_chain_1,propagation_chain_2
+alacritty/3af19401,1,5,55,60,0,0,1,1
+alacritty/4c6a7638,16,5,212,331,1,0,1,1
+alacritty/6d1a63ef,5,5,123,86,1,0,2,1
