@@ -4,9 +4,12 @@ def count_occurrences(file_path, target_value, column_index):
     count = 0
     with open(file_path, 'r') as file:
         reader = csv.reader(file)
+        rows = 0
         for row in reader:
+            rows += 1
             if row[column_index] == target_value:
                 count += 1
+        print(rows)
     return count
 
 # 使用示例
