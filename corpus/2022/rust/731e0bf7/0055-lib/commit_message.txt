@@ -1,0 +1,7 @@
+Auto merge of #103828 - cassaundra:fix-format-args-span2, r=cjgillot
+
+Fix incorrect span when using byte-escaped rbrace
+
+Fix #103826, a format args span issue introduced in #102214.
+
+The current solution for tracking skipped characters made it so that certain situations were ambiguous enough that the original span couldn't be worked out later. This PR improves on the original solution by keeping track of groups of skipped characters using a map, and fixes the previous bug. See an example of this ambiguity in the [previous PR's discussion](https://github.com/rust-lang/rust/pull/102214#issuecomment-1258711015).

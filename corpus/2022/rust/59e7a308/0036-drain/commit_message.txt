@@ -1,0 +1,7 @@
+Auto merge of #101299 - saethlin:vecdeque-drain-drop, r=thomcc
+
+Remove &[T] from vec_deque::Drain
+
+Fixes https://github.com/rust-lang/rust/issues/60076
+
+I don't know what the right approach is here. There were a few suggestions in the issue, and they all seem a bit thorny to implement. So I just picked one that was kind of familiar.

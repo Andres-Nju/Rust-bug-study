@@ -1,0 +1,23 @@
+Auto merge of #91527 - the8472:retain-opt, r=dtolnay
+
+Optimize `vec::retain` performance
+
+This simply moves the loops into the inner function which leads to better results.
+
+```
+old:
+
+test vec::bench_retain_100000                            ... bench:     203,828 ns/iter (+/- 2,101)
+test vec::bench_retain_iter_100000                       ... bench:      63,324 ns/iter (+/- 12,305)
+test vec::bench_retain_whole_100000                      ... bench:      42,989 ns/iter (+/- 291)
+
+new:
+
+test vec::bench_retain_100000                            ... bench:      42,180 ns/iter (+/- 451)
+test vec::bench_retain_iter_100000                       ... bench:      65,167 ns/iter (+/- 11,971)
+test vec::bench_retain_whole_100000                      ... bench:      33,736 ns/iter (+/- 12,404)
+```
+
+Measured on x86_64-unknown-linux-gnu, Zen2
+
+Fixes #91497

@@ -1,0 +1,26 @@
+Merge #3120
+
+3120: libraries: tickv: Convert panics to errors r=lschuermann a=alistair23
+
+### Pull Request Overview
+
+Convert existing panics to instead return a useful error
+
+This should fix: https://github.com/tock/tock/issues/3081
+
+### Testing Strategy
+
+CI
+
+### TODO or Help Wanted
+
+### Documentation Updated
+
+- [X] Updated the relevant files in `/docs`, or no updates are required.
+
+### Formatting
+
+- [X] Ran `make prepush`.
+
+
+Co-authored-by: Alistair Francis <alistair.francis@wdc.com>

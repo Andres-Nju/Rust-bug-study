@@ -1,0 +1,5 @@
+Auto merge of #116301 - mj10021:issue-115737-fix, r=cuviper
+
+fix rounding issue with exponents in fmt
+
+fixes issue #115737 , where the decimal places are rounded incorrectly when formatting scientific notation

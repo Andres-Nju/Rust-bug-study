@@ -1,0 +1,11 @@
+Auto merge of #102935 - ajtribick:display-float-0.5-fixed-0, r=scottmcm
+
+Fix inconsistent rounding of 0.5 when formatted to 0 decimal places
+
+As described in #70336, when displaying values to zero decimal places the value of 0.5 is rounded to 1, which is inconsistent with the display of other half-integer values which round to even.
+
+From testing the flt2dec implementation, it looks like this comes down to the condition in the fixed-width Dragon implementation where an empty buffer is treated as a case to apply rounding up. I believe the change below fixes it and updates only the relevant tests.
+
+Nevertheless I am aware this is very much a core piece of functionality, so please take a very careful look to make sure I haven't missed anything. I hope this change does not break anything in the wider ecosystem as having a consistent rounding behaviour in floating point formatting is in my opinion a useful feature to have.
+
+Resolves #70336

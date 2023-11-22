@@ -1,0 +1,6 @@
+Rollup merge of #109235 - chaitanyav:master, r=ChrisDenton
+
+fallback to lstat when stat fails on Windows
+
+Fixes #109106
+````@ChrisDenton```` please let me know if this is the expected behavior for stat on windows

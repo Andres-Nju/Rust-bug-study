@@ -1,0 +1,7 @@
+Auto merge of #108235 - tmiasko:read-buf, r=the8472
+
+Use custom implementation of read_buf in Read for &'a FileDesc
+
+This allows to skip an unnecessary buffer initialization.
+
+Fixes #108223.

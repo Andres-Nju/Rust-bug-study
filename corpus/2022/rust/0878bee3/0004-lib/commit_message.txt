@@ -1,0 +1,7 @@
+Rollup merge of #102214 - cassaundra:fix-format-args-span, r=cjgillot
+
+Fix span of byte-escaped left format args brace
+
+Fix #102057 (see issue for example).
+
+Previously, the use of escaped left braces (`\x7B`) in format args resulted in an incorrectly offset span. This patch fixes that by considering any escaped characters within the string instead of using a constant offset.

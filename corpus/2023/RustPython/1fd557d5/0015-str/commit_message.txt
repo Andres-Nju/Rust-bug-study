@@ -1,0 +1,3 @@
+Merge pull request #4499 from jonathanslenders/fix-sqlite-aarch64
+
+Fix aarch64 compatibility for sqlite.

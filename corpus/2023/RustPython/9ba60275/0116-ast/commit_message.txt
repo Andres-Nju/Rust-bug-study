@@ -1,0 +1,3 @@
+Merge pull request #4979 from patrickzbhe/del-local-scope
+
+Check variables in local scope in DeleteFast

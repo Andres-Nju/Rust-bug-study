@@ -1,0 +1,5 @@
+Rollup merge of #90942 - JohnTitor:should-os-error-3, r=m-ou-se
+
+windows: Return the "Not Found" error when a path is empty
+
+Fixes #90940

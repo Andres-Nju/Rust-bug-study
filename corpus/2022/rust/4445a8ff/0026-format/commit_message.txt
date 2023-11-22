@@ -1,0 +1,5 @@
+Rollup merge of #93394 - m-ou-se:fix-93378, r=estebank
+
+Don't allow {} to refer to implicit captures in format_args.
+
+Fixes #93378

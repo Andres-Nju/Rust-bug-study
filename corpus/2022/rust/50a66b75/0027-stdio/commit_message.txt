@@ -1,0 +1,19 @@
+Rollup merge of #91754 - Patrick-Poitras:rm-4byte-minimum-stdio-windows, r=Mark-Simulacrum
+
+Modifications to `std::io::Stdin` on Windows so that there is no longer a 4-byte buffer minimum in read().
+
+This is an attempted fix of issue #91722, where a too-small buffer was passed to the read function of stdio on Windows. This caused an error to be returned when `read_to_end` or `read_to_string` were called. Both delegate to `std::io::default_read_to_end`, which creates a buffer that is of length >0, and forwards it to `std::io::Stdin::read()`. The latter method returns an error if the length of the buffer is less than 4, as there might not be enough space to allocate a UTF-16 character. This creates a problem when the buffer length is in `0 < N < 4`, causing the bug.
+
+The current modification creates an internal buffer, much like the one used for the write functions
+
+I'd also like to acknowledge the help of ``@agausmann`` and ``@hkratz`` in detecting and isolating the bug, and for suggestions that made the fix possible.
+
+Couple disclaimers:
+
+- Firstly, I didn't know where to put code to replicate the bug found in the issue. It would probably be wise to add that case to the testing suite, but I'm afraid that I don't know _where_ that test should be added.
+- Secondly, the code is fairly fundamental to IO operations, so my fears are that this may cause some undesired side effects ~or performance loss in benchmarks.~ The testing suite runs on my computer, and it does fix the issue noted in #91722.
+- Thirdly, I left the "surrogate" field in the Stdin struct, but from a cursory glance, it seems to be serving the same purpose for other functions. Perhaps merging the two would be appropriate.
+
+Finally, this is my first pull request to the rust language, and as such some things may be weird/unidiomatic/plain out bad. If there are any obvious improvements I could do to the code, or any other suggestions, I would appreciate them.
+
+Edit: Closes #91722

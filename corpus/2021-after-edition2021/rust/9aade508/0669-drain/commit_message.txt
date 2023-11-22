@@ -1,0 +1,7 @@
+Rollup merge of #91797 - the8472:fix-invalid-deref, r=Mark-Simulacrum
+
+Fix zero-sized reference to deallocated memory
+
+fixes #91772
+
+r? `@camelid`

@@ -1,0 +1,3 @@
+Merge pull request #4226 from jopemachine/fix-class-static
+
+Fix lambda expression's  unexpected `UnboundLocalError`
