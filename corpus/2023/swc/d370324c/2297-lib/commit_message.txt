@@ -1,0 +1,5 @@
+fix(css/modules): Don't drop the correct selector (#7450)
+
+**Related issue:**
+
+ - Closes #7447.

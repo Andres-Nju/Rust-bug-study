@@ -1,0 +1,4 @@
+fix(es/helpers): Fix decorators (#3105)
+
+swc_ecma_transforms_base:
+ - Fix `_applyDecoratedDescriptor`. (Closes #2127)

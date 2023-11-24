@@ -1,0 +1,5 @@
+Auto merge of #12190 - harpsword:fix_diagostics_map_incorrectly, r=harpsword
+
+fix cargo check diagnostics are mapped incorrectly with non-BMP codepoints
+
+fix #11945

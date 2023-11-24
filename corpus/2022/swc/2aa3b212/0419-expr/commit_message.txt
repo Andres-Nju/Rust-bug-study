@@ -1,0 +1,2 @@
+feat(es/parser): Raise a syntax error on an invalid shorthand assignment (#3734)
+

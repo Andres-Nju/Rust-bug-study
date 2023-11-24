@@ -1,0 +1,13 @@
+Merge #3049 #3063
+
+3049: Plural on task query r=Kerollmops a=irevoire
+
+Fixes #3045 and fixes #3046
+
+3063: Update the analytics on the search r=Kerollmops a=irevoire
+
+Partially fix https://github.com/meilisearch/meilisearch/issues/2955
+
+Must be merged after https://github.com/meilisearch/meilisearch/pull/3060
+
+Co-authored-by: Tamo <tamo@meilisearch.com>

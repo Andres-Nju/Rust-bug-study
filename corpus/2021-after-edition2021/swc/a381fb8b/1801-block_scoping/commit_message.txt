@@ -1,0 +1,4 @@
+fix(es/compat): Fix `block_scoping` (#3058)
+
+swc_ecma_transforms_compat:
+ - `block_scoping`: Consider the location of variable declarations. (Closes #2998)

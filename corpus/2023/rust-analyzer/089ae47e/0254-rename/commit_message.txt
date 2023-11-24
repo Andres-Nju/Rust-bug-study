@@ -1,0 +1,5 @@
+Auto merge of #15606 - Veykril:annotation-above-item-fi, r=Veykril
+
+fix: Fix lens location "above_whole_item" breaking lenses
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/15602

@@ -1,0 +1,14 @@
+Merge #10902
+
+10902: Handle multiple cargo check quick fix spans r=Veykril a=brandondong
+
+Resolves https://github.com/rust-analyzer/rust-analyzer/issues/10705.
+
+**Cause:**
+- For a cargo check diagnostic with multiple spans, only a single quick fix action would be created at the location of `spans[0]`. Additionally, the hover window details would only show the location of `spans[0]` next to the message.
+
+**Fix:**
+- Allow cargo check quick fix actions to be triggerable from multiple selection ranges. Specifically, if the selection intersects with any of the replacement spans, the quick fix action is shown.
+- No change in behavior for the hover window details. It's pretty minor and I think showing multiple locations next to the message may be more confusing anyways.
+
+Co-authored-by: Brandon <brandondong604@hotmail.com>

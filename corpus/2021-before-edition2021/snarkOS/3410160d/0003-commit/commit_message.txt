@@ -1,0 +1,3 @@
+Merge pull request #1200 from AleoHQ/internal-state-check
+
+Internal state check for block state

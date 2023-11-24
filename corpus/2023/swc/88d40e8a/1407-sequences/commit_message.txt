@@ -1,0 +1,9 @@
+fix(es/minifier): Fix usage counter to fix infinite loop (#6744)
+
+**Description:**
+
+We skip non-computed property names while checking if we can inline an expression.
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6729.

@@ -1,0 +1,5 @@
+fix(es/module): Don't resolve as `node_modules` from `TscResolver` (#7866)
+
+**Related issue:**
+
+ - Closes #7863

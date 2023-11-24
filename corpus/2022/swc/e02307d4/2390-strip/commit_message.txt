@@ -1,0 +1,2 @@
+fix(es/typescript): Fix handling of references in a TypeScript enum (#3163)
+

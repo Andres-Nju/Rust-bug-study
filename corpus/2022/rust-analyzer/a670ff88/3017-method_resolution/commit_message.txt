@@ -1,0 +1,8 @@
+Auto merge of #13074 - lowr:fix/method-resolution-with-impl-predicate, r=lowr
+
+Consider bounds on inherent impl in method resolution
+
+There are three type-related things we should consider in method resolution: `Self` type, receiver type, and impl bounds. While we check the first two and impl bounds on trait impls, we've been ignoring the impl bounds on inherent impls. With this patch rust-analyzer now takes them into account and is able to select the appropriate inherent method.
+
+Resolves #5441
+Resolves #12308

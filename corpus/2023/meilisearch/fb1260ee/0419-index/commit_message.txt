@@ -1,0 +1,82 @@
+Merge #3568 #3569
+
+3568: CI: Fix `publish-aarch64` job that still uses ubuntu-18.04 r=Kerollmops a=curquiza
+
+Fixes #3563 
+
+Main change
+- add the usage of the `ubuntu-18.04` container instead of the native `ubuntu-18.04` of GitHub actions: I had to install docker in the container.
+
+Small additional changes
+- remove useless `fail-fast` and unused/irrelevant matrix inputs (`build`, `linker`, `os`, `use-cross`...)
+- Remove useless step in job
+
+Proof of work with this CI triggered on this current branch: https://github.com/meilisearch/meilisearch/actions/runs/4366233882
+
+3569: Enhance Japanese language detection r=dureuill a=ManyTheFish
+
+# Pull Request
+
+This PR is a prototype and can be tested by downloading [the dedicated docker image](https://hub.docker.com/layers/getmeili/meilisearch/prototype-better-language-detection-0/images/sha256-a12847de00e21a71ab797879fd09777dadcb0881f65b5f810e7d1ed434d116ef?context=explore):
+
+```bash
+$ docker pull getmeili/meilisearch:prototype-better-language-detection-0
+```
+
+## Context
+Some Languages are harder to detect than others, this miss-detection leads to bad tokenization making some words or even documents completely unsearchable. Japanese is the main Language affected and can be detected as Chinese which has a completely different way of tokenization.
+
+A [first iteration has been implemented for v1.1.0](https://github.com/meilisearch/meilisearch/pull/3347) but is an insufficient enhancement to make Japanese work. This first implementation was detecting the Language during the indexing to avoid bad detections during the search.
+Unfortunately, some documents (shorter ones) can be wrongly detected as Chinese running bad tokenization for these documents and making possible the detection of Chinese during the search because it has been detected during the indexing.
+
+For instance, a Japanese document `{"id": 1, "name": "東京スカパラダイスオーケストラ"}` is detected as Japanese during indexing, during the search the query `東京` will be detected as Japanese because only Japanese documents have been detected during indexing despite the fact that v1.0.2 would detect it as Chinese.
+However if in the dataset there is at least one document containing a field with only Kanjis like:
+_A document with only 1 field containing only Kanjis:_
+```json
+{
+ "id":4,
+ "name": "東京特許許可局"
+}
+```
+_A document with 1 field containing only Kanjis and 1 field containing several Japanese characters:_
+```json
+{
+ "id":105,
+ "name": "東京特許許可局",
+ "desc": "日経平均株価は26日 に約8カ月ぶりに2万4000円の心理的な節目を上回った。株高を支える材料のひとつは、自民党総裁選で3選を決めた安倍晋三首相の経済政策への期待だ。恩恵が見込まれるとされる人材サービスや建設株の一角が買われている。ただ思惑が先行して資金が集まっている面 は否めない。実際に政策効果を取り込む企業はどこか、なお未知数だ。"
+}
+```
+
+Then, in both cases, the field `name` will be detected as Chinese during indexing allowing the search to detect Chinese in queries. Therefore,  the query `東京` will be detected as Chinese and only the two last documents will be retrieved by Meilisearch.
+
+## Technical Approach
+
+The current PR partially fixes these issues by:
+1) Adding a check over potential miss-detections and rerunning the extraction of the document forcing the tokenization over the main Languages detected in it.
+ >  1) run a first extraction allowing the tokenizer to detect any Language in any Script
+ >  2) generate a distribution of tokens by Script and Languages (`script_language`)
+ >  3) if for a Script we have a token distribution of one of the Language that is under the threshold, then we rerun the extraction forbidding the tokenizer to detect the marginal Languages
+ >  4) the tokenizer will fall back on the other available Languages to tokenize the text. For example, if the Chinese were marginally detected compared to the Japanese on the CJ script, then the second extraction will force Japanese tokenization for CJ text in the document. however, the text on another script like Latin will not be impacted by this restriction.
+
+2) Adding a filtering threshold during the search over Languages that have been marginally detected in documents
+
+## Limits
+This PR introduces 2 arbitrary thresholds:
+1) during the indexing, a Language is considered miss-detected if the number of detected tokens of this Language is under 10% of the tokens detected in the same Script (Japanese and Chinese are 2 different Languages sharing the "same" script "CJK").
+2) during the search, a Language is considered marginal if less than 5% of documents are detected as this Language.
+
+This PR only partially fixes these issues:
+- ✅ the query `東京` now find Japanese documents if less than 5% of documents are detected as Chinese.
+- ✅ the document with the id `105` containing the Japanese field `desc` but the miss-detected field `name` is now completely detected and tokenized as Japanese and is found with the query `東京`.
+- ❌ the document with the id `4` no longer breaks the search Language detection but continues to be detected as a Chinese document and can't be found during the search.
+
+## Related issue
+Fixes #3565
+
+## Possible future enhancements
+- Change or contribute to the Library used to detect the Language
+  - the related issue on Whatlang: https://github.com/greyblake/whatlang-rs/issues/122
+
+Co-authored-by: curquiza <clementine@meilisearch.com>
+Co-authored-by: ManyTheFish <many@meilisearch.com>
+Co-authored-by: Many the fish <many@meilisearch.com>

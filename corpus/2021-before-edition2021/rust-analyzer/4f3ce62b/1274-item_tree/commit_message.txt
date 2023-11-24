@@ -1,0 +1,8 @@
+Merge #10402
+
+10402: fix: Don't show flyimport completions in use renames r=Veykril a=Veykril
+
+Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10367
+bors r+
+
+Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

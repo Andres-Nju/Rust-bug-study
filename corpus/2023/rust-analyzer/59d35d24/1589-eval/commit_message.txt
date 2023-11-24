@@ -1,0 +1,7 @@
+Auto merge of #15320 - lowr:fix/incorrect-name-case-for-inner-items, r=HKalbasi
+
+Report `incorrect-ident-case` for inner items
+
+Fixes #15319
+
+Although we have been collecting the diagnostics for inner items within function bodies, we were discarding them and never reported to the users. This PR makes sure that they are all reported and additionally collects the diagnostics for inner items within const bodies, static bodies, and enum variant bodies.

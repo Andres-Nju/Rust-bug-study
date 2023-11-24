@@ -1,0 +1,5 @@
+Auto merge of #13161 - ChayimFriedman2:pi-is-zero, r=jonas-schievink
+
+fix: Lower float literals with underscores
+
+Fixes #13155 (the problem was the `PI` is defined with `_f64` suffix). `PI` is still truncated, though, because `f64` cannot represent the value with full precision.

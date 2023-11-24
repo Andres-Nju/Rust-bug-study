@@ -1,0 +1,7 @@
+Merge #11200
+
+11200: Always put a space after dyn in macro pretty-printing r=Veykril a=jplatte
+
+Fixes #11100.
+
+Co-authored-by: Jonas Platte <jplatte+git@posteo.de>

@@ -1,0 +1,2 @@
+feat(plugin): implement proxy for `Mark` and `SyntaxContext` (#3511)
+

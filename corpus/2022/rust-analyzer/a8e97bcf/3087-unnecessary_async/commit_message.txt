@@ -1,0 +1,5 @@
+Auto merge of #13508 - koka831:fix/13492, r=jonas-schievink
+
+fix: async trait method for `unnecessary_async`
+
+Fix https://github.com/rust-lang/rust-analyzer/issues/13492

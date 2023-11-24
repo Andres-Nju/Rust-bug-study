@@ -1,5 +1,0 @@
-Fix crash with empty post-processed matches
-
-Fixes #5492.
-
-Co-authored-by: Christian Duerr <contact@christianduerr.com>

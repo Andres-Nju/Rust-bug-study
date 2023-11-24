@@ -1,0 +1,6 @@
+fix(es/parser): Fix parsing of regexp (#6469)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6322.
+ - Closes https://github.com/swc-project/swc/issues/6323.

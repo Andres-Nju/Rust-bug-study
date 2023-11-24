@@ -1,0 +1,10 @@
+Merge #11953
+
+11953: fix: `extract_module` is too eager r=Veykril a=iDawer
+
+Refactored `extract_module`.
+Searching for usages and import resolving are done lazily.
+
+Close #11944 
+
+Co-authored-by: iDawer <ilnur.iskhakov.oss@outlook.com>

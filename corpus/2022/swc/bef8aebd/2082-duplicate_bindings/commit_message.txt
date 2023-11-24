@@ -1,0 +1,2 @@
+fix(es/lints): Allow overload in typescript (#5116)
+

@@ -1,0 +1,9 @@
+Auto merge of #12789 - DorianListens:dscheidt/unused-param-overlapping, r=DorianListens
+
+fix: Prevent panic in Remove Unused Parameter assist
+
+Instead of calling `builder.delete` for every text range we find with
+`process_usage`, we now ensure that the ranges do not overlap before removing
+them. If a range is fully contained by a prior one, it is dropped.
+
+fixes #12784

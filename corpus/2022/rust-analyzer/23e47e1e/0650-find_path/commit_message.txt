@@ -1,0 +1,5 @@
+Auto merge of #12063 - iDawer:ide.signature_help, r=Veykril
+
+fix: Fall back to parameter definitions on error types in signature help
+
+Fixes  #10432

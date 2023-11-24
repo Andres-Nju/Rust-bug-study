@@ -1,0 +1,2 @@
+feat(es/lints): Mark catch params as binding patterns while checking duplicates (#3981)
+

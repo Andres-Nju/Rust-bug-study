@@ -1,0 +1,7 @@
+Auto merge of #14872 - lowr:fix/ref-pat-with-type-var, r=HKalbasi
+
+fix: introduce new type var when expectation for ref pat is not ref
+
+Fixes #14840
+
+When we infer the type of ref patterns, its expected type may not be reference type: 1) expected type is an unresolved inference variable, or 2) expected type is erroneously other kind of type. In either case, we should produce a reference type with a new type variable rather than an error type so that we can continue inferring the inner patterns without further errors because of the (possible) type mismatch of this pattern.

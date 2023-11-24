@@ -1,0 +1,2 @@
+fix(es/parser): Support import assertions in specifier-less imports (#3134)
+

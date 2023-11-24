@@ -1,0 +1,5 @@
+fix(es/minifier): Abort inliner on fn declarations used multiple time (#6473)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6463.

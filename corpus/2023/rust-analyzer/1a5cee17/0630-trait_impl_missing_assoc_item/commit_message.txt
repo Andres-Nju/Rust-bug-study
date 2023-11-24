@@ -1,0 +1,7 @@
+Auto merge of #15911 - Young-Flash:fix_missing_assoc_item, r=lnicola
+
+fix: handle default constant values in `trait_impl_missing_assoc_item` diagnostic
+
+A patch of https://github.com/rust-lang/rust-analyzer/pull/15895, close https://github.com/rust-lang/rust-analyzer/issues/15909
+
+cc `@Veykril`

@@ -1,0 +1,7 @@
+Merge #10794
+
+10794: fix: parse the range pat inside the tuple pat r=lnicola a=XFFXFF
+
+fixes #10784 
+
+Co-authored-by: zhoufan <1247714429@qq.com>

@@ -1,0 +1,2 @@
+fix(es/compat): Fix `new.target` in class properties (#3156)
+

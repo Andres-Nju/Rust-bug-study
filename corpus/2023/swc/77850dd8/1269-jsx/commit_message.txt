@@ -1,0 +1,5 @@
+fix(es/parser): Fix parsing of generic jsx element name (#7449)
+
+**Related issue:**
+
+ - Closes #7444.

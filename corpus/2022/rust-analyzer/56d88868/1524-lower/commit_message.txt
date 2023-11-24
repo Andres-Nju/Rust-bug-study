@@ -1,0 +1,13 @@
+Auto merge of #12793 - lowr:fix/12739, r=Veykril
+
+fix: sort and deduplicate auto traits in trait object types
+
+Fixes #12739
+
+Chalk solver doesn't sort and deduplicate auto traits in trait object types, so we need to handle them ourselves in the lowering phase, just like [`rustc`](https://github.com/rust-lang/rust/blob/880416180b0a9ee1141c07d4d17667edb77daebd/compiler/rustc_typeck/src/astconv/mod.rs#L1487-L1488) and [`chalk-integration`](https://github.com/rust-lang/chalk/blob/master/chalk-integration/src/lowering.rs#L575) do.
+
+Quoting from [the Chalk book](https://rust-lang.github.io/chalk/book/types/rust_types.html#dyn-types):
+
+> Note that -- for this purpose -- ordering of bounds is significant. That means that if you create a `dyn Foo + Send` and a `dyn Send + Foo`, chalk would consider them distinct types. The assumption is that bounds are ordered in some canonical fashion somewhere else.
+
+Also, trait object types with more than one non-auto traits were previously allowed, but are now disallowed with this patch.

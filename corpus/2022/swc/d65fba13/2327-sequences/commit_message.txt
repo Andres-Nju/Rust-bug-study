@@ -1,0 +1,9 @@
+fix(es/minifier): Fix infection analysis of sequential inliner (#6053)
+
+**Description:**
+
+This PR fixes the callee issue by fixing the infection analyzer.
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6047

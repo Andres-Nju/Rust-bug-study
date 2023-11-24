@@ -1,0 +1,10 @@
+fix(css/modules): Aggregate class names when composes is chained. (#7917)
+
+**Description:**
+
+aggregate class names when composes is chained.
+
+**Related issue:**
+
+ - Closes #7737
+ - https://github.com/web-infra-dev/rspack/issues/3875

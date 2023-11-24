@@ -1,0 +1,4 @@
+fix(es/transforms/compat): Fix `destructuring` (#2866)
+
+swc_ecma_transforms_compat:
+ - Check length correctly. (Closes #2819, Closes #2821, Closes #2843)

@@ -1,3 +1,0 @@
-Fix `font.glyph_offset` not live reloading
-
-Fixes #5944.

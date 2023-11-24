@@ -1,0 +1,8 @@
+Merge #10401
+
+10401: minor: Test runnables check for test prefix and suffix in attributes only r=Veykril a=Veykril
+
+Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10393
+bors r+
+
+Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

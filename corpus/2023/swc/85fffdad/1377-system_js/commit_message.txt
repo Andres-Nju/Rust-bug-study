@@ -1,0 +1,5 @@
+fix(es/module): Fix SystemJS imports (#6879)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/5922.

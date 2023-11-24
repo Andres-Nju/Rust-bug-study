@@ -1,0 +1,16 @@
+fix(es/compat): Preserve constructor parameters (#2975)
+
+swc_ecma_visit:
+ - Add cargo feature `debug`.
+ - Add more context for `tracing` when `debug` is enabled.
+
+swc_ecma_utils:
+ - Add some logging.
+
+swc_ecma_transforms_compat:
+ - Add some logging.
+ - `destructuring`: Don't drop patterns. (Closes #2139)
+
+testing:
+ - Enable logging by default.
+ - Configure logging for `Tester`.

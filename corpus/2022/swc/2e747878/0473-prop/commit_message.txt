@@ -1,0 +1,2 @@
+fix(es/compat): Memorize computed props in logical assignment (#4525)
+

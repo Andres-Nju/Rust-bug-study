@@ -1,0 +1,4 @@
+refactor(es/transforms/compat): Migrate to `VisitMut` (#2751)
+
+swc_ecma_transforms_compat:
+ - `export_namespace_from`: Migrate to `VisitMut`.

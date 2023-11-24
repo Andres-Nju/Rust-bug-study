@@ -1,0 +1,4 @@
+fix(es/minifier): Drop unreachable statements eagerly (#3204)
+
+swc_ecma_minifier:
+ - `pure`: Drop unreachable statements. (Closes #3173)

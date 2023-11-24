@@ -1,0 +1,2 @@
+fix(es/codegen): Exclude synthesized files from sourcemap (#4714)
+

@@ -1,0 +1,11 @@
+Auto merge of #12626 - CuriousCorrelation:fix/empty-reasons, r=flodiebold
+
+fix: trailing ':' on empty inactive reasons
+
+## Description
+Fixes trailing ':' even when there is no explanation. e.g.
+``` sh
+code is inactive due to #[cfg] directives:
+```
+## Issue
+Fixes: #12615

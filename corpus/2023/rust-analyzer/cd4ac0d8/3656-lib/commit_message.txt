@@ -1,0 +1,5 @@
+Auto merge of #14020 - Veykril:search-fix, r=Veykril
+
+fix: Fix assoc item search finding unrelated definitions
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/14014

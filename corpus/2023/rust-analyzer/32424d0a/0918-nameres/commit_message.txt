@@ -1,0 +1,15 @@
+Auto merge of #14176 - lowr:fix/assoc-func-vis-in-local-impl, r=Veykril
+
+Fix associated item visibility in block-local impls
+
+Fixes #14046
+
+When we're resolving visibility of block-local items...
+
+> `self` normally refers to the containing non-block module, and `super` to its parent (etc.). However, visibilities must only refer to a module in the DefMap they're written in, so we restrict them when that happens. ([link])
+
+ ...unless we're resolving visibility of associated items in block-local impls, because that impl is semantically "hoisted" to the nearest (non-block) module. With this PR, we skip the adjustment for such items.
+
+Since visibility representation of those items is modified, this PR also adjusts visibility rendering in `HirDisplay`.
+
+[link]: https://github.com/rust-lang/rust-analyzer/blob/a6603fc21d50b3386a488c96225b2d1fd492e533/crates/hir-def/src/nameres/path_resolution.rs#L101-L103

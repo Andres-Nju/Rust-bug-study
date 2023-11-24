@@ -1,0 +1,5 @@
+fix(es/minifier): Remove more side-effect-free expressions. (#3301)
+
+swc_ecam_minifier:
+- `pure`: Drop more binary expressions.
+- `pure`: Drop more literals.

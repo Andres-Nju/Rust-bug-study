@@ -2,8 +2,9 @@ import os
 
 def create_class_file(commit_folder):
     class_file_path = os.path.join(commit_folder, 'class.txt')
-    with open(class_file_path, 'w') as class_file:
-        class_file.write(os.path.basename(commit_folder))
+    if os.path.exists(class_file_path) == False:
+        with open(class_file_path, 'w') as class_file:
+            class_file.write(os.path.basename(commit_folder))
 
 def process_commits(repo_folder):
     for commit_folder in os.listdir(repo_folder):

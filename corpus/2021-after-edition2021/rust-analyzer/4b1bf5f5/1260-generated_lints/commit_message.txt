@@ -1,0 +1,8 @@
+Merge #10849
+
+10849: fix: Disable string highlight injection for macros changing string literals r=Veykril a=Veykril
+
+Fixes #10845
+bors r+
+
+Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

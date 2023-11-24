@@ -1,0 +1,5 @@
+Auto merge of #14538 - Veykril:project-link-fix, r=Veykril
+
+fix: Fix project linking popup appearing for modules that can be linked to a crate
+
+should fix https://github.com/rust-lang/rust-analyzer/issues/14523

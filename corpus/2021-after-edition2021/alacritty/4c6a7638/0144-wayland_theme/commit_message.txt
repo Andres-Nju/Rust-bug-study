@@ -1,8 +1,0 @@
-Bump glutin to 0.28.0
-
-Fixes #5603.
-Fixes #5422.
-Fixes #5350.
-Fixes #4105.
-
-Co-authored-by: Christian Duerr <contact@christianduerr.com>

@@ -1,0 +1,5 @@
+Auto merge of #13552 - Veykril:flycheck-process-group, r=Veykril
+
+internal: Use a process group for flycheck
+
+Should fix https://github.com/rust-lang/rust-analyzer/issues/13348

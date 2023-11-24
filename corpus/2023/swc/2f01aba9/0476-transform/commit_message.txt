@@ -1,0 +1,6 @@
+fix(es/typescript): Handle qualified access in assign pat (#8012)
+
+**Related issue:**
+
+ - Closes #8011
+ - https://github.com/swc-project/swc/discussions/5186

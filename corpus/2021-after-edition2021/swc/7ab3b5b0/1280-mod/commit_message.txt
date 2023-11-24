@@ -1,0 +1,4 @@
+fix(es/transforms/react): Fix handling of whitespaces (#2638)
+
+swc_ecma_transforms_react:
+ - `jsx`: Preserve more whitespaces in input. (Closes #2208)

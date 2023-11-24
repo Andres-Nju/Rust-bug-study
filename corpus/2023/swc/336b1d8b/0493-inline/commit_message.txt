@@ -1,0 +1,6 @@
+fix(es/minifier): Don't inline conditionally initialized vars (#6751)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6750.
+ - Closes https://github.com/swc-project/swc/issues/6780.

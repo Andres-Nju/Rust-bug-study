@@ -1,0 +1,2 @@
+fix(es/compat): Handle super access in a private static property (#6361)
+

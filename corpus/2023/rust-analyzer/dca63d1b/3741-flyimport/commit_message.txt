@@ -1,0 +1,5 @@
+Auto merge of #15713 - Veykril:flyimport-completions-short, r=Veykril
+
+Do flyimport completions by prefix search for short paths
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/15711

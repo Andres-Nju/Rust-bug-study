@@ -1,0 +1,5 @@
+Auto merge of #14361 - Veykril:if-then-parse, r=Veykril
+
+fix: Fix `ast::IfExpr` child accessors
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/14360

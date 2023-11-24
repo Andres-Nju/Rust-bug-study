@@ -1,0 +1,4 @@
+fix(es/fixer): Preserve more parens (#2553)
+
+swc_ecma_transforms_base:
+ - `fixer`: Preserve parens of a binary expression if the LHS is an object literal. (#2550)

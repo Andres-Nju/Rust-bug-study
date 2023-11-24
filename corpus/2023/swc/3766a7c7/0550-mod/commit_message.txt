@@ -1,0 +1,5 @@
+fix(es/compat): Remove wrong logic for object patterns in `object_rest` (#7788)
+
+**Related issue:**
+
+ - Closes #7776

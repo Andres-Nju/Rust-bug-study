@@ -1,0 +1,12 @@
+Merge #11967
+
+11967: fix: Fix trait impl completions not triggering after `fn`/`const`/`type` r=jonas-schievink a=jonas-schievink
+
+![screenshot-2022-04-12-17:13:01](https://user-images.githubusercontent.com/1786438/162996087-56540f5e-a6be-4111-a4a5-8de21f483a5e.png)
+
+Fixes https://github.com/rust-analyzer/rust-analyzer/issues/11467
+cc https://github.com/rust-analyzer/rust-analyzer/issues/11860
+
+bors r+
+
+Co-authored-by: Jonas Schievink <jonas.schievink@ferrous-systems.com>

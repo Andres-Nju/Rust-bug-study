@@ -1,0 +1,7 @@
+fix(es/typescript): Run `resolver` before `typescript::strip` (#2951)
+
+swc_ecma_transforms_base:
+ - `resolver`: Handle some typescript nodes.
+
+swc_ecma_transforms_typescript:
+ - `strip`: Use identifier span hygiene information for stripping types.

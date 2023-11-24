@@ -1,0 +1,2 @@
+feat(es/modules/amd): Convert ts import equals to normal AMD import (#4906)
+

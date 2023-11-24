@@ -1,0 +1,14 @@
+Merge #3904
+
+3904: Sort by lexicographic order after normalization r=dureuill a=dureuill
+
+# Pull Request
+
+## Related issue
+Fixes https://github.com/meilisearch/meilisearch/issues/3893
+
+## What does this PR do?
+- Re-sort stop words after normalization so they're not sent out-of-order to the FST
+
+
+Co-authored-by: Louis Dureuil <louis@meilisearch.com>

@@ -1,0 +1,3 @@
+Merge pull request #1213 from ljedrz/fix_disjoint_metric_sources
+
+Align 2 queue metrics between RPC and prometheus

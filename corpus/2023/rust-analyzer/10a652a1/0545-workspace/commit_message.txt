@@ -1,0 +1,7 @@
+Auto merge of #14300 - lnicola:rustc-flycheck, r=lnicola
+
+fix: Watch both stdout and stderr in flycheck
+
+Fixes #14217
+
+This isn't great because it un-mixes the messages from the two streams, but maybe it's not such a big problem?

@@ -1,0 +1,2 @@
+fix(es/module): Fix `jsc.paths` (#3879)
+

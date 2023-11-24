@@ -1,0 +1,12 @@
+Auto merge of #14952 - lowr:fix/assignments-are-right-associative, r=HKalbasi
+
+fix: assignment operators are right associative
+
+Fixes #14944
+
+Assignment operators, be they simple or complex, are right associative in Rust ([reference]). We need to consider that fact when computing [binding power][bp] of infix operators.
+
+The changes in `0072_destructuring_assignment.{rs,rast}` are unexpected, but I'm pretty sure it's a typo and fixed the `.rs` file accordingly.
+
+[reference]: https://doc.rust-lang.org/reference/expressions.html#expression-precedence
+[bp]: https://matklad.github.io/2020/04/13/simple-but-powerful-pratt-parsing.html

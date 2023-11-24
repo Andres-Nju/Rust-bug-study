@@ -1,0 +1,15 @@
+fix(es/minifier): Parse a file as a module only if `opts.module` is `true` (#7943)
+
+**Description:**
+
+Previously it was impossible to minify non-strict code (e.g. `delete identifier;`) because `minify()` unconditionally parsed the input as a module regardless of the `module` setting.
+
+**BREAKING CHANGE:**
+
+`minify()` now respects the `module` parameter instead of ignoring it, so users who had been processing modules with `minify()` without passing `{ module: true }` will now need to pass it.
+
+**Related issue**
+
+ - Closes #6130.
+
+Signed-off-by: Anders Kaseorg <andersk@mit.edu>

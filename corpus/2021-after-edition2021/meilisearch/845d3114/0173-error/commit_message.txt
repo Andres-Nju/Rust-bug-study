@@ -1,0 +1,8 @@
+Merge #2008
+
+2008: bug(lib): fix get dumps bad error code r=curquiza a=MarinPostma
+
+fix bad error code being returned whet getting a dump status, and add a test
+close #1994
+
+Co-authored-by: Marin Postma <postma.marin@protonmail.com>

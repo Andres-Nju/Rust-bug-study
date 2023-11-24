@@ -1,0 +1,11 @@
+Merge #11694
+
+11694: fix: "Extract to function" assist preserves `break` and `continue` labels r=Veykril a=m0rg-dev
+
+Adds a label / lifetime parameter to `ide_assists::handlers::extract_function::FlowKind::{Break, Continue}`, adds support for emitting labels to `syntax::ast::make::{expr_break, expr_continue}`, and implements the required machinery to let `extract_function` make use of them.
+
+This does modify the external API of the `syntax` crate, but the changes there are simple, not used outside `ide_assists`, and, well, we should probably support emitting `break` and `continue` labels through `syntax` anyways, they're part of the language spec.
+
+Closes #11413.
+
+Co-authored-by: Morgan Thomas <corp@m0rg.dev>

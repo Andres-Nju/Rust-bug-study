@@ -1,0 +1,2 @@
+fix(es/decorators): Make legacy decorator identical to `tsc` (#4496)
+

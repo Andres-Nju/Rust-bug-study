@@ -1,0 +1,4 @@
+fix(es/transforms): Update helpers about array (#2970)
+
+swc_ecma_transforms_base:
+ - Update helpers. (Closes #2689)

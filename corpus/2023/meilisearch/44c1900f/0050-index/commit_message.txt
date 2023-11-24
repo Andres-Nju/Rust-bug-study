@@ -1,0 +1,21 @@
+Merge #3986
+
+3986: Fix geo bounding box with strings r=ManyTheFish a=irevoire
+
+# Pull Request
+
+When sending a document with one geofield of type string (i.e.: `{ "_geo": { "lat": 12, "lng": "13" }}`), the geobounding box would exclude this document.
+
+This PR fixes this issue by automatically parsing the string value in case we're working on a geofield.
+
+## Related issue
+Fixes https://github.com/meilisearch/meilisearch/issues/3973
+
+## What does this PR do?
+- Automatically parse the facet value iif we're working on a geofield.
+- Make insta works with snapshots in loops or closure executed multiple times. (you may need to update your cli if it panics after this PR: `cargo install cargo-insta`).
+- Add one integration test in milli and in meilisearch to ensure it works forever.
+- Add three snapshots for the dump that mysteriously disappeared I don't know how
+
+
+Co-authored-by: Tamo <tamo@meilisearch.com>

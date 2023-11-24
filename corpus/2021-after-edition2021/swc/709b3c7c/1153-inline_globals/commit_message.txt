@@ -1,0 +1,4 @@
+fix(es/transforms/optimization): Fix `inline_globals` (#2524)
+
+swc_ecma_transforms_optimization:
+ - `inline_globals`: Skip assignment to `process.env.FOO`. (#2499)

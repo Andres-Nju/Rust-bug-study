@@ -1,0 +1,2 @@
+fix(es/modules): Use a private context for `export from` (#5262)
+

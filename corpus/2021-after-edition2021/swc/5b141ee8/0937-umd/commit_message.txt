@@ -1,0 +1,4 @@
+fix(es/transforms/cjs): Allow using multiple `export *` (#2598)
+
+swc_ecma_transforms_module:
+ - Preserve order of imports for reexports. (#2594)

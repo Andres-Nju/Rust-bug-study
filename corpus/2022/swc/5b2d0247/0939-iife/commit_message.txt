@@ -1,0 +1,2 @@
+feat(es/minifier): Relax requirement for IIFE invokation (#5721)
+

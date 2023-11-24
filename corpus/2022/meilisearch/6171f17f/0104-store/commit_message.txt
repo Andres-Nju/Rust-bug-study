@@ -1,0 +1,15 @@
+Merge #2468
+
+2468: Update milli 0.29 r=Kerollmops a=ManyTheFish
+
+- [x] Update milli to 0.29
+- [x] Integrate charabia
+- [x] Set disabled_words to default when Index::exact_words returns None
+- [x] Fix ranking rules integration test
+
+fixes #2375
+fixes #2144
+fixes #2417
+fixes #2407
+
+Co-authored-by: ManyTheFish <many@meilisearch.com>

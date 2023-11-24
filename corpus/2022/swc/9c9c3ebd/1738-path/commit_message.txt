@@ -1,0 +1,5 @@
+fix(es/modules): Fix `jsc.paths` of `.ts` imports (#6431)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6432.

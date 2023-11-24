@@ -1,0 +1,7 @@
+Auto merge of #13548 - lowr:fix/tt-punct-spacing, r=Veykril
+
+Fix `tt::Punct`'s spacing calculation
+
+Fixes #13499
+
+We currently set a `tt::Punct`'s spacing to `Spacing::Joint` unless its next token is a trivia (i.e. whitespaces or comment). As I understand it, rustc only [sets `Spacing::Joint` if the next token is an operator](https://github.com/rust-lang/rust/blob/5b3e9090757da9a95b22f589fe39b6a4b5455b96/compiler/rustc_parse/src/lexer/tokentrees.rs#L77-L78) and we should follow it to guarantee the consistent behavior of proc macros.

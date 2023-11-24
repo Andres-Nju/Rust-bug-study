@@ -1,0 +1,6 @@
+refactor(es/ast): Reimplement optional chaining (#7441)
+
+**Related issue:**
+
+ - Closes #7003.
+ - Closes #7156.

@@ -1,0 +1,2 @@
+fix(es/compat): Handle arrow parameters in class fields (#3556)
+

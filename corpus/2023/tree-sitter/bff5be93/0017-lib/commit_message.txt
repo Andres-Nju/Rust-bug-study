@@ -1,3 +1,0 @@
-Merge pull request #2422 from amaanq/query-err-range-bug
-
-fix: take the last range element by default if the query error isn't found

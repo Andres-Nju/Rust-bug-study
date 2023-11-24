@@ -1,0 +1,9 @@
+Merge #11660
+
+11660: Insert dummy values for const generics in subst r=flodiebold a=HKalbasi
+
+fix #11659 
+
+This is a band-aid until proper const generic support.
+
+Co-authored-by: hkalbasi <hamidrezakalbasi@protonmail.com>

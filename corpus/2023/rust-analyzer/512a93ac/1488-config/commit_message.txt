@@ -1,0 +1,5 @@
+Auto merge of #14100 - Veykril:load_cargo-proc-macro-srv-config, r=Veykril
+
+Allow specifying what proc-macro server to run in rust_analyzer::load_cargo API
+
+Closes https://github.com/rust-lang/rust-analyzer/issues/10516

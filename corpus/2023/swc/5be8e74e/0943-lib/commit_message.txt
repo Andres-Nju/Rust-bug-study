@@ -1,0 +1,5 @@
+chore(es/module): Remove `serde(deny_unknown_fields)` (#8163)
+
+**Related issue:**
+
+ - Closes #7979

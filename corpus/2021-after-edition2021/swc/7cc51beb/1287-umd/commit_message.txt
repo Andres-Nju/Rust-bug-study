@@ -1,0 +1,4 @@
+fix(es/transforms/cjs): Allow reassignment to exported functions (#2569)
+
+swc_ecma_transforms_module:
+ - `common_js`: Reassign exports for the functions. (#2549)

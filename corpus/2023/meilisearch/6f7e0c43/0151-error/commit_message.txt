@@ -1,0 +1,12 @@
+Merge #3341
+
+3341: add functionnal + error tests on the swap_indexes route and fix a confusing error message r=loiclec a=irevoire
+
+Fix https://github.com/meilisearch/meilisearch/issues/3340
+Fix part of https://github.com/meilisearch/meilisearch/issues/3325
+Fix https://github.com/meilisearch/meilisearch/issues/3381
+
+Test both the functionality and the error codes
+
+Co-authored-by: Tamo <tamo@meilisearch.com>
+Co-authored-by: Loïc Lecrenier <loic.lecrenier@me.com>

@@ -1,0 +1,5 @@
+Auto merge of #13891 - bvanjoi:reverse-whitespace-in-assists, r=Veykril
+
+fix: keep whitespace in extract function handler
+
+Fixed #13874

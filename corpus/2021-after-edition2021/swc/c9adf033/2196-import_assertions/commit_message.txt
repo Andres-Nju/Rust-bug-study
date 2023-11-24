@@ -1,0 +1,13 @@
+fix(es): Handle import assertions correctly (#3113)
+
+swc_ecma_codegen:
+ - Implement codegen for static import assertions.
+
+swc_ecma_transforms_proposal:
+  - `import_assertions`: Support `export`s.
+
+swc:
+ - Add `jsc.experimental.keep_import_assertions`.
+
+node-swc:
+ - Fix typo.

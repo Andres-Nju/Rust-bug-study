@@ -1,0 +1,5 @@
+Auto merge of #14828 - lowr:fix/macro_use_prelude_is_in_scope, r=Veykril
+
+fix: process `macro_use` prelude in semantic scope resolver
+
+Fixes #14826

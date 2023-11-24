@@ -1,0 +1,4 @@
+fix(es/transforms): Fix `descturcturing` (#3098)
+
+swc_ecma_transforms_compat:
+ - `destructuring`: Handle exports of bindings with object pattern properties correctly. (Closes #2858)

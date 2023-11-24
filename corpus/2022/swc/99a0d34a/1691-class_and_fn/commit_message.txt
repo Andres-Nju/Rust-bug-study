@@ -1,0 +1,2 @@
+fix(es/parser): Fix parsing of an arrow and a conditional expression (#4199)
+

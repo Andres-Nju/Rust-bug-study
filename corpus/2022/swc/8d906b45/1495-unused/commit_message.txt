@@ -1,0 +1,2 @@
+fix(es/minifier): Preserve classes with side effects in static fields (#6480)
+

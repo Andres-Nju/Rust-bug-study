@@ -1,0 +1,7 @@
+Auto merge of #12992 - lowr:fix/type-inference-for-byte-string-pat, r=Veykril
+
+fix: infer byte string pattern as `&[u8]` when matched against slices
+
+Fixes #12630
+
+c.f. [rustc_typeck](https://github.com/rust-lang/rust/blob/1603a70f82240ba2d27f72f964e36614d7620ad3/compiler/rustc_typeck/src/check/pat.rs#L388-L404)

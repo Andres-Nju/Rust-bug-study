@@ -1,0 +1,5 @@
+fix(es/compat): Use `async` and `await` correctly in `block-scoping` pass (#8056)
+
+**Related issue:**
+
+ - Closes #7989

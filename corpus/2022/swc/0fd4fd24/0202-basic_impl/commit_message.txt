@@ -1,0 +1,2 @@
+feat(es/codegen): Add sourcemap entry for injected semicolons (#3750)
+

@@ -1,0 +1,2 @@
+fix(es/modules): Resolve `jsc.paths` for export alls (#6170)
+

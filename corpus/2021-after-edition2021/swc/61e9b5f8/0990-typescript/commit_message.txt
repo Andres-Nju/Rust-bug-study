@@ -1,0 +1,5 @@
+fix(es/lexer): Don't report lexer errors while backtracking (#3051)
+
+swc_ecma_parser:
+ - Share backtracking state with the lexer.
+ - Don't report lexing errors while backtracking (Closes #2896)

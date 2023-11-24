@@ -1,0 +1,9 @@
+fix(es/compat): Handle `useDefineForClassFields: false` (#7055)
+
+**BREAKING CHANGE:**
+
+IMPORTANT NOTE: Users of decorators are recommended to configure `"useDefineForClassFields": false` to ensure that your code is properly transpiled.
+
+
+**Related issue:**
+ - Closes https://github.com/swc-project/swc/issues/6985.

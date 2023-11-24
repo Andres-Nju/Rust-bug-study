@@ -1,0 +1,7 @@
+Auto merge of #12089 - lowr:fix/move-raw-ident-module-to-file, r=jonas-schievink
+
+fix: handle raw identifiers in move_module_to_file
+
+Fixes #12045
+
+Note that I special case'd mod named `r#mod` as commented in the code. Although it's very unlikely that one would use such name, I included it in this fix for the sake of completeness.

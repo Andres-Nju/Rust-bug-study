@@ -1,3 +1,0 @@
-Fix hint label with start above viewport
-
-Fixes #4960.

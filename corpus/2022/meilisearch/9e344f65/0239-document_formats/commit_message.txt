@@ -1,0 +1,28 @@
+Merge #2207
+
+2207: Fix: avoid embedding the user input into the error response. r=Kerollmops a=CNLHC
+
+# Pull Request
+
+## What does this PR do?
+Fix #2107. 
+
+The problem is meilisearch embeds the user input to the error message. 
+
+The reason for this problem is `milli` throws a `serde_json: Error` whose `Display` implementation will do this embedding.  
+
+I tried to solve this problem in this PR by manually implementing the `Display` trait for `DocumentFormatError` instead of deriving automatically.
+
+<!-- Please link the issue you're trying to fix with this PR, if none then please create an issue first. -->
+
+## PR checklist
+Please check if your PR fulfills the following requirements:
+- [x] Does this PR fix an existing issue?
+- [x] Have you read the contributing guidelines?
+- [x] Have you made sure that the title is accurate and descriptive of the changes?
+
+Thank you so much for contributing to Meilisearch!
+
+
+Co-authored-by: Liu Hancheng <cn_lhc@qq.com>
+Co-authored-by: LiuHanCheng <2463765697@qq.com>

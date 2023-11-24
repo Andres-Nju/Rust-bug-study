@@ -1,0 +1,15 @@
+Merge #11883
+
+11883: fix(ide): move moudle directory when rename r=rainy-me a=rainy-me
+
+fix: #10992
+
+Added `FileSystemEdit::MoveDir` variant for move dirs. Original implemented as recursively move child mod files but had many issues like
+
+1. left empty dir after rename file
+2. only affect rust file
+3. not performant
+
+so changed to current version
+
+Co-authored-by: rainy-me <github@yue.coffee>

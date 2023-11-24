@@ -1,0 +1,7 @@
+Merge #11477
+
+11477: fix: Fix cases where `Merge Imports` would drop imports. r=DropDemBits a=DropDemBits
+
+Fixes #11466 
+
+Co-authored-by: DropDemBits <r3usrlnd@gmail.com>

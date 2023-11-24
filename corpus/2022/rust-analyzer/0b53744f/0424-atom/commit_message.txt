@@ -1,0 +1,54 @@
+Merge #11461
+
+11461: Extract struct from enum variant filters generics r=jo-goro a=jo-goro
+
+Fixes #11452.
+
+This PR updates extract_struct_from_enum_variant. Extracting a struct `A` form an enum like
+```rust
+enum X<'a, 'b> {
+    A { a: &'a () },
+    B { b: &'b () },
+}
+```
+will now be correctly generated as
+```rust
+struct A<'a> { a: &'a () }
+
+enum X<'a, 'b> {
+    A(A<'a>),
+    B { b: &'b () },
+}
+```
+instead of the previous
+```rust
+struct A<'a, 'b>{ a: &'a () } // <- should not have 'b
+
+enum X<'a, 'b> {
+    A(A<'a, 'b>),
+    B { b: &'b () },
+}
+```
+
+This also works for generic type parameters and const generics.
+
+Bounds are also copied, however I have not yet implemented a filter for unneeded bounds. Extracting `B` from the following enum
+```rust
+enum X<'a, 'b: 'a> {
+    A { a: &'a () },
+    B { b: &'b () },
+}
+```
+will be generated as 
+```rust
+struct B<'b: 'a> { b: &'b () } // <- should be `struct B<'b> { b: &'b () }`
+
+enum X<'a, 'b: 'a> {
+    A { a: &'a () },
+    B(B<'b>),
+}
+```
+
+Extracting bounds with where clauses is also still not implemented.
+
+Co-authored-by: Jonas Goronczy <goronczy.jonas@gmail.com>

@@ -1,0 +1,92 @@
+Merge #2745 #2789 #2814 #2826
+
+2745: Config file support r=curquiza a=mlemesle
+
+# Pull Request
+
+## What does this PR do?
+Fixes #2558
+
+## PR checklist
+Please check if your PR fulfills the following requirements:
+- [x] Does this PR fix an existing issue?
+- [x] Have you read the contributing guidelines?
+- [x] Have you made sure that the title is accurate and descriptive of the changes?
+
+Thank you so much for contributing to Meilisearch!
+
+
+2789: Fix typos r=Kerollmops a=kianmeng
+
+# Pull Request
+
+## What does this PR do?
+
+Found via `codespell -L crate,nam,hart`.
+
+## PR checklist
+Please check if your PR fulfills the following requirements:
+- [ ] Does this PR fix an existing issue?
+- [x] Have you read the contributing guidelines?
+- [x] Have you made sure that the title is accurate and descriptive of the changes?
+
+Thank you so much for contributing to Meilisearch!
+
+
+2814: Skip dashboard test if mini-dashboard feature is disabled r=Kerollmops a=jirutka
+
+Fixes #2813
+
+Fixes the following error:
+
+    cargo test --no-default-features
+    ...
+    error: couldn't read target/debug/build/meilisearch-http-ec029d8c902cf2cb/out/generated.rs: No such file or directory (os error 2)
+     --> meilisearch-http/tests/dashboard/mod.rs:8:9
+      |
+    8 |         include!(concat!(env!("OUT_DIR"), "/generated.rs"));
+      |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      |
+      = note: this error originates in the macro `include` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+    error: could not compile `meilisearch-http` due to previous error
+
+2826: Rename receivedDocumentIds into matchedDocuments r=Kerollmops a=Ugzuzg
+
+# Pull Request
+
+## What does this PR do?
+
+Fixes #2799 
+Changes DocumentDeletion task details response.
+
+## PR checklist
+Please check if your PR fulfills the following requirements:
+- [x] Does this PR fix an existing issue?
+- [x] Have you read the contributing guidelines?
+- [x] Have you made sure that the title is accurate and descriptive of the changes?
+
+Tested with curl:
+```
+curl \
+  -X POST 'http://localhost:7700/indexes/movies/documents/delete-batch' \
+  -H 'Content-Type: application/json' \
+  --data-binary '[
+    23488,
+    153738,
+    437035,
+    363869
+  ]'
+
+{"taskUid":1,"indexUid":"movies","status":"enqueued","type":"documentDeletion","enqueuedAt":"2022-10-01T20:06:37.105416054Z"}%
+
+curl \
+  -X GET 'http://localhost:7700/tasks/1'
+
+{"uid":1,"indexUid":"movies","status":"succeeded","type":"documentDeletion","details":{"matchedDocuments":4,"deletedDocuments":2},"duration":"PT0.005708322S","enqueuedAt":"2022-10-01T20:06:37.105416054Z","startedAt":"2022-10-01T20:06:37.115562733Z","finishedAt":"2022-10-01T20:06:37.121271055Z"}
+```
+
+Co-authored-by: mlemesle <lemesle.martin@hotmail.fr>
+Co-authored-by: Kian-Meng Ang <kianmeng@cpan.org>
+Co-authored-by: Jakub Jirutka <jakub@jirutka.cz>
+Co-authored-by: Jarasłaŭ Viktorčyk <ugzuzg@gmail.com>

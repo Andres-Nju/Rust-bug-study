@@ -1,0 +1,2 @@
+fix(es/compat): Preserve this in function with block scoped vars (#5056)
+

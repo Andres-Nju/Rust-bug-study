@@ -1,0 +1,5 @@
+fix(es): Enable resolver if `jsc.baseUrl` is specified (#7998)
+
+**Related issue:**
+
+ - Closes #7990

@@ -1,0 +1,5 @@
+feat(es/minifier): Drop unused properties (#7534)
+
+**Related issue:**
+
+ - Closes #7472.

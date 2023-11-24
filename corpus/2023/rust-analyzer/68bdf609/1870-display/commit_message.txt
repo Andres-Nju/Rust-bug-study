@@ -1,0 +1,9 @@
+Auto merge of #14974 - max-heller:issue-14958, r=lowr
+
+Properly format documentation for `SignatureHelpRequest`s
+
+Properly formats function documentation instead of returning it raw when responding to `SignatureHelpRequest`s.
+
+I added a test in `crates/rust-analyzer/tests/slow-tests/main.rs` -- not sure if this is the best location given the relevant code is in `crates/rust-analyzer` or if it's possible to test in a less heavyweight manner.
+
+Closes #14958

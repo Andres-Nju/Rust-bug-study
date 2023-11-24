@@ -1,0 +1,10 @@
+Merge #1184
+
+1184: normalize synonyms during indexation r=MarinPostma a=LegendreM
+
+fix #1135 #964
+
+Normalizes the synonyms before indexing them, so they are not case sensitive anymore. Then normalization also involves deunicoding is some cases, such as accents, so `été` and `ete` are considered equivalent in a search for synonyms.
+
+Co-authored-by: many <maxime@meilisearch.com>
+Co-authored-by: Many <legendre.maxime.isn@gmail.com>

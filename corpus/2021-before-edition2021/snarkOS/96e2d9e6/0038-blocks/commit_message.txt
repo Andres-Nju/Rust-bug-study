@@ -1,0 +1,3 @@
+Merge pull request #774 from ljedrz/fix_block_height_prometheus_metric
+
+Increment the block height metric

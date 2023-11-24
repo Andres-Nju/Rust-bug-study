@@ -1,0 +1,4 @@
+fix(es/transforms/async_to_generator): Fix handling of `this` (#2667)
+
+swc_emca_transforms_compat:
+ - `async_to_generator`: Do not bind `this` to generator for prototypes.

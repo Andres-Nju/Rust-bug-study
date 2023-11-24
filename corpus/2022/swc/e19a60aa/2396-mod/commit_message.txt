@@ -1,0 +1,9 @@
+fix(es/compat): Change pass ordering of `es2015` (#4029)
+
+**Description:**
+
+We should apply `regenerator` after `block_scoping` because `regenerator` does not know how to handle `const`s.
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/3006

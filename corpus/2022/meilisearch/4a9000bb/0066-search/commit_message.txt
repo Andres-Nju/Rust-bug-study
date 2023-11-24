@@ -1,0 +1,7 @@
+Merge #2332
+
+2332: fix(search): formatted field r=curquiza a=irevoire
+
+fix #2318
+
+Co-authored-by: Irevoire <tamo@meilisearch.com>

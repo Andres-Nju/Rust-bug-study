@@ -1,0 +1,5 @@
+fix(es/typescript): Treat export default declarations as declarations (#7017)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6953.

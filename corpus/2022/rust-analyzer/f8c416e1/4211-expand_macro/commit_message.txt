@@ -1,0 +1,7 @@
+Auto merge of #12650 - lowr:fix/12591, r=lnicola
+
+fix: improve whitespace insertion in pretty printer
+
+Fixes #12591
+
+The `=>` token in the macro_rules! should be parsed as one fat arrow, but it ["requires a lot of changes in r-a"](https://github.com/rust-analyzer/ungrammar/commit/143cc528b11290bf2463de1fb5a97a15f9b2ed44), so I left it for the larger refactoring in the future and put a FIXME note.

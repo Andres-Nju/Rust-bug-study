@@ -1,0 +1,21 @@
+Auto merge of #14536 - ClSlaid:feat/reorder-impl-items/not-applicative-editing-assoc-items, r=Veykril
+
+fix: restrict applicable range of `reorder-impl-trait-items`
+
+This PR should complete the need for restricting the applicable range of `reorder-impl-trait-items`.
+
+When the cursor is in the associated items of the `impl` range, the assist will be disabled.
+
+Fix: #14515
+
+## Showcases
+Note: If there is any available `code-action` (`ide-assist`) available, a lightbulb icon from `lspsaga` will show in the left.
+
+- cursor in `impl` headers
+![code action available](https://user-images.githubusercontent.com/44747719/230756854-7b236018-cfa8-4005-b589-2996ec42917f.png)
+Code action is available. And it is reordering impl items.
+![code action detail](https://user-images.githubusercontent.com/44747719/230756971-341c7fbc-f2ba-4715-a1e5-b1add984d4dd.png)
+
+- cursor in `impl` associated items
+![code action unavailable](
+https://user-images.githubusercontent.com/44747719/230756906-bee7784e-bd9d-49b2-801b-743c94b4af54.png)

@@ -1,0 +1,8 @@
+Auto merge of #12942 - lowr:fix/concat-with-char, r=Veykril
+
+fix: make `concat!` work with char
+
+Fixes #12921
+
+- I avoided making `unquote_str()` take char literals as well because it's depended on by another function `parse_string()` that's only supposed to take strings.
+- Even with this patch, we don't output `\0` as `\u{0}` which #12921 pointed out ~~, but we're not actually responsible for serializing it but rowan is~~. They are functionally equivalent and I don't think it'd cause any confusion, but we *could* try escaping them before serialization (for reference, `rustc -Zunpretty=expanded`, which `cargo expand` uses under the hood, [makes use of `str::escape_default()`](https://github.com/rust-lang/rust/blob/3830ecaa8db798d2727cbdfa4ddf314ff938f268/compiler/rustc_ast/src/util/literal.rs#L161).

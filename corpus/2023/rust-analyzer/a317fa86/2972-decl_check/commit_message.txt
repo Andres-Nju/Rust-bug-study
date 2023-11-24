@@ -1,0 +1,7 @@
+Auto merge of #15325 - HKalbasi:mir, r=flodiebold
+
+Normalize expected ty in call arguments
+
+fix #15321
+
+I'm not sure if we should do this, or add a normalize in the beginning of `infer_expr_inner`, or somewhere else. r? `@lowr`

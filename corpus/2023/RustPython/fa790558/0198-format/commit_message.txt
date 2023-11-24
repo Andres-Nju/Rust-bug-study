@@ -1,2 +1,0 @@
-Format d bool support (#4948)
-

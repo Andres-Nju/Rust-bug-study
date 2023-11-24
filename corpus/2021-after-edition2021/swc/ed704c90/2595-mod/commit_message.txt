@@ -1,0 +1,2 @@
+fix(es/react): Implement proper `development` handling (#2741)
+

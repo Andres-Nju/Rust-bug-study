@@ -1,0 +1,5 @@
+feat(es/jest): Support chaining of jest function calls (#6747)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6540.

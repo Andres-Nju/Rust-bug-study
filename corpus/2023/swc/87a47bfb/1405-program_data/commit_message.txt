@@ -1,0 +1,4 @@
+fix(es/minifier): Report `is_fn_local` even if var is hoisted (#7876)
+
+**Related issue:**
+ - Closes #7847

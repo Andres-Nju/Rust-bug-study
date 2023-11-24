@@ -1,0 +1,5 @@
+fix(es/codegen): Don't strip necessary escape characters (#7687)
+
+**Related issue:**
+
+ - Closes #7678.

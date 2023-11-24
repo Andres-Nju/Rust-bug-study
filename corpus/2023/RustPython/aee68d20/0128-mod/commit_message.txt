@@ -1,5 +1,0 @@
-Fix `freeze-stdlib` + `Interpreter::without_stdlib` (#5051)
-
-* Fix pylib invalidation config
-
-* Fix Interpreter::without_stdlib with frozen-stdlib feature

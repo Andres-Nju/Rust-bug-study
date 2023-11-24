@@ -1,0 +1,16 @@
+Auto merge of #13602 - lowr:fix/nameres-transitive-visibility, r=Veykril
+
+fix: check visibility of each path segment
+
+Upon path resolution, we have not been checking if every def pointed to by each segment of the path is visible from the original module. This leads to incorrect import resolutions, in particular when one uses glob imports and names collide.
+
+There is decent amount of changes in this PR because:
+- some of our tests were not correct in terms of visibility
+  - I left several basic nameres tests as-is (with expect test updated) since I thought it would be nice to ensure we don't resolve defs that are not visible.
+- `fix_visibility` assist relied on `Semantics::resolve_path()`, which uses the name resolution procedure I'm fixing and wouldn't be able to "see through" the items with strict visibility with this patch
+
+The first commit is the gist of the fix itself.
+
+Fixes #10991
+Fixes #11473
+Fixes #13252

@@ -1,0 +1,7 @@
+Merge #11252
+
+11252: Fix documentation of snippet r=Veykril a=weirane
+
+Closes #11234
+
+Co-authored-by: Wang Ruochen <wrc@ruo-chen.wang>

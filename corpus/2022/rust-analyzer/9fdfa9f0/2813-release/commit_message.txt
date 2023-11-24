@@ -1,0 +1,5 @@
+Auto merge of #12596 - Veykril:completions, r=Veykril
+
+fix: Don't trigger pattern completions when typing a wildcard pattern
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/12592

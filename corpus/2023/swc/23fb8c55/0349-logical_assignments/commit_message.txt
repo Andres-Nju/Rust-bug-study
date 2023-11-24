@@ -1,0 +1,2 @@
+fix(es/compat): Fix the position for temp var injection (#7171)
+

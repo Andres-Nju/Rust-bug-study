@@ -1,0 +1,5 @@
+fix(es/minifier): Preserve `cooked` while compressing template literals (#7773)
+
+**Related issue:**
+
+ - Closes #7770

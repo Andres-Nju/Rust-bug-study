@@ -1,0 +1,2 @@
+fix(es/loader): Support fully-specified ESM import specifiers (#3050)
+

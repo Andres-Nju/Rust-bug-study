@@ -1,0 +1,7 @@
+Auto merge of #14353 - lowr:fix/inline-call-bad-ast, r=Veykril
+
+fix: don't replace `SyntaxToken` with `SyntaxNode`
+
+Fixes #14339
+
+When we inline method calls, we replace the `self` parameter with a local variable `this`. We have been replacing the `self` **tokens** with `NameRef` **nodes**, which makes the AST malformed. This leads to crash when we apply path transformation after the replacement (which only takes place when the method is generic and such scenario was not tested).

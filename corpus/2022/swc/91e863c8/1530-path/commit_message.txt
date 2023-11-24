@@ -1,0 +1,5 @@
+fix(es/modules): Preserve extensions (#6339)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6209.

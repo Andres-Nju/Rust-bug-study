@@ -1,0 +1,7 @@
+Merge #11629
+
+11629: fix: Fix macro-calls expanding to items in if/while conditions r=Veykril a=Veykril
+
+Fixes https://github.com/rust-analyzer/rust-analyzer/issues/11617
+
+Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

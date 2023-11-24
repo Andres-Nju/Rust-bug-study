@@ -1,0 +1,6 @@
+fix(es/compat): Don't add pure annotations to dummy spans (#8172)
+
+**Related issue:**
+
+ - Closes #8155.
+ - Closes #8173.

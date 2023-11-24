@@ -1,0 +1,16 @@
+feat(es/compat): Implement decorator metadata proposal (#8097)
+
+**Description:**
+
+This PR implements the [decorator
+metadata](https://github.com/tc39/proposal-decorator-metadata) proposal,
+that is now at Stage 3.
+
+As the decorator metadata proposal is a small extension of the decorator
+proposal and is not possible to compile the metadata without transpiling
+decorators, I opted to implement it into the existing decorator
+transformer (and helper)
+
+**Related issue:**
+
+ - Closes #7957

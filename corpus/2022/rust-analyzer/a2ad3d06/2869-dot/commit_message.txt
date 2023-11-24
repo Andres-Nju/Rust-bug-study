@@ -1,0 +1,11 @@
+Auto merge of #13064 - Veykril:rustfmt-err, r=Veykril
+
+Log rustfmt parsing errors as warnings
+
+We unconditionally pass an edition parameter to rustfmt, for some crates
+this might fail rustfmt so instead of swallowing the error, at least Log
+it on a level that is logged by default so users won't be completely
+confused about it.
+See for context https://github.com/rust-lang/rust-analyzer/issues/10209
+
+Closes https://github.com/rust-lang/rust-analyzer/issues/10209

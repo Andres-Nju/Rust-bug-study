@@ -1,0 +1,3 @@
+Merge pull request #1005 from ljedrz/update_snarkvm
+
+Update snarkVM to 0.7.6

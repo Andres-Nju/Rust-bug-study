@@ -1,0 +1,5 @@
+fix(es/typescript): Preserve default value of an exported binding in a namespace (#8029)
+
+**Related issue:**
+
+ - Closes: #8025

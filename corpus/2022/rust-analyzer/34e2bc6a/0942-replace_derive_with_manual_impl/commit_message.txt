@@ -1,0 +1,32 @@
+Auto merge of #13611 - yue4u:fix/completion-after-colon, r=yue4u
+
+fix: filter unnecessary completions after colon
+
+close #13597
+related: #10173
+
+This PR also happens to fix two extra issues:
+
+1. The test case in https://github.com/rust-lang/rust-analyzer/blob/master/crates/ide-completion/src/tests/attribute.rs#L778-L801 was never triggered in previous behavior.
+
+after:
+
+https://user-images.githubusercontent.com/26110087/201476995-56adf955-0fa7-4f75-ab32-28a8e6cb9504.mp4
+
+<del>
+2. completions were triggered even in invalid paths, like
+
+```rust
+fn main() {
+    core:::::$0
+}
+```
+
+```rust
+#[:::::$0]
+struct X;
+```
+
+</del>
+
+only `:::` is excluded as discussed in https://github.com/rust-lang/rust-analyzer/pull/13611#discussion_r1031845205

@@ -1,0 +1,7 @@
+Merge #3396
+
+3396: Update our error message about negative integer r=dureuill a=irevoire
+
+Fix https://github.com/meilisearch/meilisearch/issues/3394
+
+Co-authored-by: Tamo <tamo@meilisearch.com>

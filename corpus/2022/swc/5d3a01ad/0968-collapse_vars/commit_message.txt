@@ -1,0 +1,2 @@
+fix(es/minifier): Skip getter/setter when collapsing vars (#4557)
+

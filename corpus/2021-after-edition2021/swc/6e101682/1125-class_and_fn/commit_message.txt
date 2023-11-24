@@ -1,0 +1,4 @@
+fix(es/parser): Check for more typescript class names (#2732)
+
+swc_ecma_parser:
+ - Check for more invalid typescript class names. (Closes #1218)

@@ -1,0 +1,9 @@
+Auto merge of #14735 - Veykril:forbid-relative-json, r=Veykril
+
+internal: Forbid canonicalization of paths and normalize all rust-project.json paths
+
+Closes https://github.com/rust-lang/rust-analyzer/issues/14728
+cc https://github.com/rust-lang/rust-analyzer/pull/14430
+
+- Removes canonicalization (and forbids it from being used in a sense, clippy could help here again with its lint in the future)
+- Normalizes all paths in rust-project.json which we weren't doing in some cases

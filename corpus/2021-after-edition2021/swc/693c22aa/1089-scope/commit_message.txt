@@ -1,0 +1,4 @@
+fix(es/optimization): Fix inlining (#3132)
+
+swc_ecma_transforms_optimization:
+ - `inlining`: Mark all usages as modification. (Closes #2108)

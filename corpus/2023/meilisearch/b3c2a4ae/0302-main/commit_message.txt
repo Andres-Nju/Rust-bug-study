@@ -1,0 +1,10 @@
+Merge #3412
+
+3412: When adding documents, trying to update the primary-key now throw an error r=Kerollmops a=irevoire
+
+While updating the test suite, I also noticed an issue with the indexed_documents value of failed tasks and had to update it. I also named a bunch of snapshots that had no name, sorry 😬
+
+Fixes https://github.com/meilisearch/meilisearch/issues/3385
+Fixes https://github.com/meilisearch/meilisearch/issues/3411
+
+Co-authored-by: Tamo <tamo@meilisearch.com>

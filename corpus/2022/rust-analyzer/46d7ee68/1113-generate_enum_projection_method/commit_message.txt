@@ -1,0 +1,22 @@
+Merge #11865
+
+11865: Fix: Select correct insert position for disabled group import r=jonasbb a=jonasbb
+
+The logic for importing with and without `group_imports` differed
+significantly when no previous group existed. This lead to the problem
+of using the wrong position when importing inside a module (#11585) or
+when inner attributes are involved.
+The existing code for grouped imports is better and takes these things
+into account.
+
+This PR changes the flow to use the pre-existing code for adding a new
+import group even for the non-grouped import settings.
+Some coverage markers are updated and the `group` is removed, since they
+are now invoked in both cases (grouping and no grouping).
+
+Tests are updated and two tests (empty module and inner attribute) are
+added.
+
+Fixes #11585
+
+Co-authored-by: Jonas Bushart <jonas@bushart.org>

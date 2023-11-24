@@ -1,0 +1,5 @@
+fix(es/compat): Fix destructuring handling of `block_scoping` (#7425)
+
+**Related issue:**
+
+ - Closes #7418.

@@ -1,0 +1,14 @@
+Auto merge of #12993 - lowr:patch/swap-name-and-escaped-name, r=Veykril
+
+Make `Name` hold escaped name
+
+Resolves #12787
+Resolves rust-lang/rust#99361
+
+This PR effectively swaps `Name` and `EscapedName` in hir. In other words, it makes `Name` hold and print escaped raw identifiers and introduces another struct `UnescapedName` for cases where you need to print names without "r#" prefix.
+
+My rationale is that it makes it easier for us to format an escaped name into string, which is what we want when we serialize names in general. This is because we format a name into string usually when we are presenting it to the users and arguably they expect its escaped form as that's what they see and write in the source code.
+
+I split the change for `Name` into 3 commits to make it easier to follow but it also made some tests fail in the intermediate commits. I can squash them into a commit after the review if desired. I've also made similar changes for `ModPath` and `EscapedModPath` as it makes them consistent with `Name`.
+
+For reference, there was a brief discussion on this in [a zulip thread](https://rust-lang.zulipchat.com/#narrow/stream/185405-t-compiler.2Frust-analyzer/topic/escaping.20.60Name.60s).

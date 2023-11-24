@@ -1,0 +1,5 @@
+Auto merge of #14559 - Veykril:version-code-lens, r=Veykril
+
+internal: Skip code lens resolution for mismatched document versions
+
+Closes https://github.com/rust-lang/rust-analyzer/issues/12718

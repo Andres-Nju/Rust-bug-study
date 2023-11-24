@@ -1,0 +1,2 @@
+fix(es/compat): Handle private fields in nested classes (#3431)
+

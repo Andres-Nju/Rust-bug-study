@@ -1,0 +1,2 @@
+fix(es/parser): Fix parsing of TS `satisfies` expressions (#6354)
+

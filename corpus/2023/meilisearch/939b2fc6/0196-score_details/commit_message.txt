@@ -1,0 +1,10 @@
+Merge #3949
+
+3949: Fix score details casing r=Kerollmops a=ManyTheFish
+
+# Pull Request
+
+Fixes #3941
+
+
+Co-authored-by: ManyTheFish <many@meilisearch.com>

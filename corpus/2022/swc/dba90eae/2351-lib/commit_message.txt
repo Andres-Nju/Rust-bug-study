@@ -1,0 +1,2 @@
+fix(es/codegen): Fix escaping of unicodes in es5 (#3636)
+

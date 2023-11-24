@@ -1,0 +1,2 @@
+feat(es/compat): Support iterator protocol on loose mode (#6034)
+

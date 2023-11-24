@@ -1,0 +1,13 @@
+Auto merge of #13239 - mdx97:mathew/fix-add-reference-for-macros, r=Veykril
+
+Fix add reference action on macros.
+
+Before we were using the range of the corresponding expression node in the macro expanded file, which is obviously incorrect as we are setting the text in the original source.
+
+For some reason, the test I added is failing and I haven't found a way to fix it. Does anyone know why `check_fix` wouldn't work with macros? Getting this error:
+
+```text
+thread 'handlers::type_mismatch::tests::test_add_reference_to_macro_call' panicked at 'no diagnostics', crates/ide-diagnostics/src/handlers/type_mismatch.rs:317:9
+```
+
+closes #13219

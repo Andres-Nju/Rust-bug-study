@@ -1,0 +1,2 @@
+fix(es/minifier): Don't skip expressions with side effects from seq inliner (#7007)
+

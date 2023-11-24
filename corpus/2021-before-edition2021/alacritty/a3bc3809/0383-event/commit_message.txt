@@ -1,7 +1,0 @@
-Fix damage tracking on Wayland
-
-Since the Wayland event loop might delay rendering across event loop
-callback executions, it's necessary to track the global damage globally
-rather than just within a single loop execution.
-
-Fixes #4736.

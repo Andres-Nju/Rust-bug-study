@@ -1,0 +1,9 @@
+fix(es/preset-env): Fix default target (#6921)
+
+**Description:**
+
+Previously the default value of `targets` was `""`, which is not deterministic.
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6888.

@@ -1,0 +1,2 @@
+fix(es/resolver): Fix handling of decorators (#4084)
+

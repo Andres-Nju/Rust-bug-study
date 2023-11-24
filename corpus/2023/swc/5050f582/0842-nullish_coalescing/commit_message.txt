@@ -1,0 +1,5 @@
+fix(es/compat): Handle nullish in fn expr scope (#7980)
+
+**Related issue:**
+
+  - Closes: #7977

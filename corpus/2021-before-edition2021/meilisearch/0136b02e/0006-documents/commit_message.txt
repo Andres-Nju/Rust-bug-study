@@ -1,0 +1,7 @@
+Merge #1498
+
+1498: Show the filterable and not the faceted attributes in the settings r=Kerollmops a=Kerollmops
+
+Fixes #1497
+
+Co-authored-by: Clément Renault <clement@meilisearch.com>

@@ -1,0 +1,5 @@
+fix(es/react): Fix handling of whitespaces (#6935)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6931.

@@ -1,0 +1,5 @@
+Auto merge of #14890 - HKalbasi:dev, r=HKalbasi
+
+use `::core` instead of `$crate` in `option_env!`
+
+fix #14885

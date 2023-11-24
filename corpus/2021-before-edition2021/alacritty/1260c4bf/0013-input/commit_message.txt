@@ -1,3 +1,0 @@
-Fix jumping between matches in reverse vi search
-
-Fixes #4676.

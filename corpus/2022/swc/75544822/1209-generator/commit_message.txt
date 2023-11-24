@@ -1,0 +1,2 @@
+fix(es/compat): Fix handling of op-assignment in `generator` (#6036)
+

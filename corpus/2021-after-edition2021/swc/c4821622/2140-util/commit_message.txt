@@ -1,0 +1,2 @@
+feat(es/transforms/module): Fix transform of `this` for classes (#2514)
+

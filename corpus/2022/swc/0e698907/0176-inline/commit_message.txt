@@ -1,0 +1,9 @@
+feat(es/minifier): Evaluate more literals in comparison (#5976)
+
+**Description:**
+
+I'll fix the performance issue with a follow-up PR.
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/4415.

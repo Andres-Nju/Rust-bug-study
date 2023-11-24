@@ -1,0 +1,2 @@
+fix(es/compat): Use define for non-spread props (#4754)
+

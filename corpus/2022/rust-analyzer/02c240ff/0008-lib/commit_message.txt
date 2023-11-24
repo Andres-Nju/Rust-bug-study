@@ -1,0 +1,5 @@
+Auto merge of #12898 - Veykril:compl-pat-brace, r=Veykril
+
+fix: Fix pattern completions adding unnecessary braces
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/12852

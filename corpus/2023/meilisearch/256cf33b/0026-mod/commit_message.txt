@@ -1,0 +1,7 @@
+Merge #4039
+
+4039: Fix multiple vectors dimensions r=ManyTheFish a=Kerollmops
+
+This PR fixes #4035, making providing multiple vectors in documents possible. This is fixed by extracting the vectors from the non-flattened version of the documents.
+
+Co-authored-by: Kerollmops <clement@meilisearch.com>

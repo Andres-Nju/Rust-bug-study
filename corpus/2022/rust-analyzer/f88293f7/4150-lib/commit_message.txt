@@ -1,0 +1,5 @@
+Auto merge of #13324 - Veykril:trait-impl-completion, r=Veykril
+
+Fix trait impl item completions using macro file text ranges
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/13323

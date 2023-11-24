@@ -1,3 +1,0 @@
-Merge pull request #4399 from branai/shell-continuing-fix
-
-Fix IndentationError works differently with cpython in interective shell

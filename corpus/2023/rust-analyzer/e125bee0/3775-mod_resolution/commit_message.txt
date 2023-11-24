@@ -1,0 +1,5 @@
+Auto merge of #13890 - lowr:fix/unescape-inline-mod-name, r=Veykril
+
+fix: unescape inline module names in module resolution
+
+Fixes #13884

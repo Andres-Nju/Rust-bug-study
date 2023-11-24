@@ -1,0 +1,3 @@
+Merge pull request #1656 from ljedrz/testnet3_fix_1354
+
+Allow miner stats to be retrieved while the node is running

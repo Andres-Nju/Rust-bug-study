@@ -1,0 +1,7 @@
+Merge #10592
+
+10592: Fix: only shows one # when we encounter ## r=Veykril a=dzvon
+
+Fixes #10584
+
+Co-authored-by: Dezhi Wu <wu543065657@163.com>

@@ -1,0 +1,5 @@
+fix(es/minifier): Do not drop properties used via `this` (#7785)
+
+**Related issue:**
+
+ - Closes #7783.

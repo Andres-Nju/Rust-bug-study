@@ -1,0 +1,5 @@
+fix(es/compat): Handle single expression case in static block (#7944)
+
+**Related issue:**
+
+ - Closes #7922

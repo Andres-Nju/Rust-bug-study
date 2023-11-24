@@ -1,0 +1,9 @@
+Auto merge of #13223 - lowr:fix/hir-proj-normalization, r=flodiebold
+
+fix: handle lifetime variables in projection normalization
+
+Fixes #12674
+
+The problem is that we've been skipping the binders of normalized projections assuming they should be empty, but the assumption is unfortunately wrong. We may get back lifetime variables and should handle them before returning them as normalized projections. For those who are curious why we get those even though we treat all lifetimes as 'static, [this comment in chalk](https://github.com/rust-lang/chalk/blob/d875af0ff196dd6430b5f5fd87a640fa5ab59d1e/chalk-solve/src/infer/unify.rs#L888-L908) may be interesting.
+
+I thought using `InferenceTable` would be cleaner than the other ways as it already has the methods for canonicalization, normalizing projection, and resolving variables, so moved goal building and trait solving logic to a new `HirDatabase` query. I made it transparent query as the query itself doesn't do much work but the eventual call to `HirDatabase::trait_solve_query()` does.

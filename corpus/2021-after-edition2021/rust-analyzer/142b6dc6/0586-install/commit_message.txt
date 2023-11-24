@@ -1,0 +1,8 @@
+Merge #10631
+
+10631: fix: Fix postfix completions panicking r=Veykril a=Veykril
+
+Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10243, I couldn't reproduce the panic with the given snippet, but this change should still guard against it.
+bors r+
+
+Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

@@ -1,0 +1,5 @@
+fix(es/compat): Generate `OptCall` for `OptCall` for private fields (#8031)
+
+**Related issue:**
+
+ - Closes #8003

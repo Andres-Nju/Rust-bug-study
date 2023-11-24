@@ -1,0 +1,5 @@
+Auto merge of #12678 - Veykril:flyimport, r=Veykril
+
+fix: Trigger flyimport completions in item lists again
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/12656

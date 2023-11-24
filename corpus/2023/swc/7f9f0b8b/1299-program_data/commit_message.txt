@@ -1,0 +1,2 @@
+fix(es/minifier): Infect mutation when assigning a property (#7503)
+

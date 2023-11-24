@@ -1,0 +1,5 @@
+fix(es/utils): Fix string evaluation of array literals (#7731)
+
+**Related issue:**
+
+ - Closes #7714.

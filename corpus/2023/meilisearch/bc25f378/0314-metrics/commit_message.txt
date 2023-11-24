@@ -1,0 +1,13 @@
+Merge #3647
+
+3647: Improve the health route by ensuring lmdb is not down r=irevoire a=irevoire
+
+Fixes #3644
+
+In this PR, I try to make a small read on the `AuthController` and `IndexScheduler` databases.
+The idea is not to validate that everything works but just to avoid the bug we had last time when lmdb was stuck forever.
+
+In order to get access to the `AuthController` without going through the extractor, I need to wrap it in the `Data` type from `actix-web`.
+And to do that, I had to patch our extractor so it works with the `Data` type as well.
+
+Co-authored-by: Tamo <tamo@meilisearch.com>

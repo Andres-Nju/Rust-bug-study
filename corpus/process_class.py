@@ -2,15 +2,25 @@ import os
 
 safety = ["unsafe", "safe", "Interior unsafe"]
 
+not_general_bug_cnt = 0
+un_checked_cnt = 0
+checked_bug = 0
+
 def process_class_file(class_file_path, repo_commit):
+    global not_general_bug_cnt
+    global un_checked_cnt
+    global checked_bug
     with open(class_file_path, 'r') as file:
         # print(class_file_path)
         lines = file.readlines()
         if len(lines[0].split()) == 1:
+            un_checked_cnt += 1
             return None
         root_cause, symptom = map(int, lines[0].split())
         if root_cause == 0 and symptom == 0:
+            not_general_bug_cnt += 1
             return None
+        checked_bug += 1
         code_add, code_remove = map(int, lines[1].split())
         platform_related = int(lines[2])
         error_handling = int(lines[3])
@@ -52,3 +62,6 @@ if __name__ == "__main__":
     corpus_folder = "."  # 替换为你的语料库文件夹路径
     output_file = "result_summary.csv"  # 输出文件名
     process_corpus(corpus_folder, output_file)
+    print("unchecked count: ", un_checked_cnt)
+    print("0 0 count: ", not_general_bug_cnt)
+    print("checked bug: ", checked_bug)

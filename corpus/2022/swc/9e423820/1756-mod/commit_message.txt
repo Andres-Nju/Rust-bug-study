@@ -1,0 +1,2 @@
+feat(es/minifier): Implement `pure_funcs` (#4710)
+

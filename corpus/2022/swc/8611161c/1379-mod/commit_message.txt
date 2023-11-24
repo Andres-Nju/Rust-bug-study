@@ -1,0 +1,2 @@
+fix(es/minifier): Ignore member expression without side-effects in assign position (#5344)
+

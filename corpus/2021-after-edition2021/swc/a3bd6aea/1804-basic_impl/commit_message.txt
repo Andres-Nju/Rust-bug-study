@@ -1,0 +1,4 @@
+fix(es/codegen): Fix sourcemap (#3003)
+
+swc_ecma_codegen:
+ - Handle source map of multi-line template literals. (Closes #2185, Closes #2362, Closes #2900)

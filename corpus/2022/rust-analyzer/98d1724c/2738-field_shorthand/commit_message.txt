@@ -1,0 +1,9 @@
+Merge #11786
+
+11786: fix: fill_match_arms doesn't add wildcard pat for local enums r=Veykril a=OleStrohm
+
+Fix #11783 
+
+This adds similar logic to non_exhaustive as is currently on doc(hidden)
+
+Co-authored-by: Ole Strohm <strohm99@gmail.com>

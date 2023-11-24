@@ -1,0 +1,8 @@
+Merge #1554
+
+1554: Fix dump v1 (attributesForFaceting, and criteria) r=curquiza a=MarinPostma
+
+close #1553
+
+
+Co-authored-by: mpostma <postma.marin@protonmail.com>

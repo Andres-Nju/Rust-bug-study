@@ -1,0 +1,18 @@
+Merge #3530
+
+3530: Fix highlighter bug r=Kerollmops a=ManyTheFish
+
+# Pull Request
+
+There was a highlighting issue on CJK's character, we were highlighting too many characters and these additional characters were duplicated after the highlight tag.
+
+## Related issue
+Fixes #3517 
+Fixes #3526 
+
+## What does this PR do?
+- add a test showcasing the bug
+- fix the bug by activating the char_map creation of the tokenizer during the highlighting process
+
+
+Co-authored-by: ManyTheFish <many@meilisearch.com>

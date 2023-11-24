@@ -1,0 +1,2 @@
+fix(es/compat): Fix `new.target` in a nested scope (#6296)
+

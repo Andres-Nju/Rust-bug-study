@@ -1,0 +1,2 @@
+fix(es/compat): Fix evaluation order of computed class keys (#5621)
+

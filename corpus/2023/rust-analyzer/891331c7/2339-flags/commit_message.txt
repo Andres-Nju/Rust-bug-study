@@ -1,0 +1,5 @@
+Auto merge of #15101 - alibektas:14780, r=Veykril
+
+Check Workspace Edit ResourceOps
+
+PR fixes #14780

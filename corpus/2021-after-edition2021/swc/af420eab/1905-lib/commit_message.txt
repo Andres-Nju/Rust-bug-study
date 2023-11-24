@@ -1,0 +1,4 @@
+fix(es/utils): Fix `collect_decls` (#2792)
+
+swc_ecma_utils:
+ - `collect_decls`: Handle assignment pattern property. (Closes #2785)

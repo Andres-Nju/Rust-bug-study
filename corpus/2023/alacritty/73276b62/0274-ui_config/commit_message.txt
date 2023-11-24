@@ -1,3 +1,0 @@
-Update regex-automata to v0.3.6
-
-This seems like a sensible first step before looking into #7097.

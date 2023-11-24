@@ -1,0 +1,6 @@
+fix(es): Fix a crash related to source map (#7307)
+
+**Related issue:**
+
+ - Reverts #7229.
+ - Closes #7301.

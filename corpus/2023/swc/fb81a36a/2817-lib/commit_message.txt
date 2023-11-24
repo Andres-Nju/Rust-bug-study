@@ -1,0 +1,5 @@
+fix(es/utils): Skip var declarator name in `RefRewriter` (#8125)
+
+**Related issue:**
+
+ - Closes #8124

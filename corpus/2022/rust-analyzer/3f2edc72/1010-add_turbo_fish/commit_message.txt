@@ -1,0 +1,9 @@
+Merge #11136
+
+11136: Turbo fish assist supports multiple type arguments r=matklad a=Vannevelj
+
+This fixes #11135 (changelog: bug).
+
+I've only started using Rust a few days ago but saw this issue on the top of the list when I looked at this repo. I based myself on [this blog post](https://techblog.tonsser.com/posts/what-is-rusts-turbofish) to understand what a "turbo fish" is so let me know if I missed anything.
+
+Co-authored-by: Jeroen Vannevel <jer_vannevel@outlook.com>

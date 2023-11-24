@@ -1,0 +1,4 @@
+fix(es/transforms/cjs): Allow mixing named exports and export stars. (#2583)
+
+swc_ecma_transforms_module:
+ - `common_js`: Fix _exportNames when exporting aliases and using `export *`s . (#2548)

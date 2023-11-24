@@ -1,0 +1,9 @@
+fix(es/minifier): Preserve more side effects (#5853)
+
+**Description:**
+
+We now preserve more side effects.
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/5680.

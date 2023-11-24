@@ -1,0 +1,6 @@
+Auto merge of #14659 - Veykril:dedup-crates, r=Veykril
+
+Deduplicate crates when extending crate graphs
+
+This is quadratic in runtime per deduplication attempt, but I don't think that'll be a problem for the workload here. Don't be scared of the diff, the actual diff is +42 -22, the rest is tests and test data.
+Fixes https://github.com/rust-lang/rust-analyzer/issues/14476

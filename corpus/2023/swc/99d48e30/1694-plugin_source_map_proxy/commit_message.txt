@@ -1,0 +1,6 @@
+fix(plugin): Make `span_to_source` use dedicated function (#6853)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6852.
+ - Closes https://github.com/swc-project/swc/issues/6404.

@@ -1,0 +1,5 @@
+fix(es/resolver): Correctly resolve global value (#7893)
+
+**Related issue:**
+
+ - Closes #7685

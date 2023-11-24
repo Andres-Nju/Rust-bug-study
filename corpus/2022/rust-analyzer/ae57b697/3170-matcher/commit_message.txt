@@ -1,0 +1,7 @@
+Auto merge of #13049 - lowr:fix/bare-dyn-assoc-type, r=Veykril
+
+fix: resolve associated types of bare dyn types
+
+Fixes #13031
+
+We've been dropping the associated type bindings of trait object types that were written without the `dyn` keyword. This patch reuses the lowering logic for `TypeRef::DynTrait` so the associated type bindings are properly lowered.

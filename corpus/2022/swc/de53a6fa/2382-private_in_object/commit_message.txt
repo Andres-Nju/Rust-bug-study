@@ -1,0 +1,2 @@
+feat(es/compat): Verify private property access (#4465)
+

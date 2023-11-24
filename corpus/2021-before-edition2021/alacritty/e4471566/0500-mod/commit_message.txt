@@ -1,3 +1,0 @@
-Fix copying interrupted tab characters
-
-Fixes #5084.

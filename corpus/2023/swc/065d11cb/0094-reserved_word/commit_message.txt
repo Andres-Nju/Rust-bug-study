@@ -1,0 +1,2 @@
+fix(es/compat): Handle import/export in `reserved_word` (#7165)
+

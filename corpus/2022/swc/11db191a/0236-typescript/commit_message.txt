@@ -1,0 +1,2 @@
+fix(es/parser): Allow negative bigint literal in types (#4938)
+

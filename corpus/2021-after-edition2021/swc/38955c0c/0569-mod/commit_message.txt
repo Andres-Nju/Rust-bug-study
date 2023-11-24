@@ -1,0 +1,2 @@
+refactor(es/ast): Change type or the `key` of `ClassProp` to `PropName` (#3038)
+

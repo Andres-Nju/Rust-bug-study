@@ -1,0 +1,6 @@
+Auto merge of #13853 - veber-alex:diag_fix, r=Veykril
+
+Use diagnostic code as link to full message
+
+fixes #13823 by adding a vscode setting that will keeping the existing diagnostic code and use it as a link to the full compiler error message.
+While I was there I also fixed `index` to fallback to `rendered.length` to make the previewRustcOutput feature work.

@@ -1,3 +1,0 @@
-Merge pull request #4598 from DimitrisJim/fix_ensurepip
-
-Fix ensurepip install issues and add a CI check to ensure it gets caught if broken.

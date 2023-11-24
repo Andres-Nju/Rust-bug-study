@@ -1,0 +1,7 @@
+Auto merge of #12689 - Veykril:macro-rec, r=Veykril
+
+internal: Record all macro definitions in ItemScope
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/12100
+
+Doesn't resolve the shadowing issues though, fixing those is gonna be really tricky I believe unless we can come up with a nice scheme to "order" item tree items (using syntax ranges and file ids would be a pain and also a bad idea since that'll require us to potentially reparse files in collection).

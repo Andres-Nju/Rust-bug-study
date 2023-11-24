@@ -1,0 +1,6 @@
+refactor(es/ast): Remove unused fields (#7518)
+
+**Related issue:**
+
+ - Closes #7347.
+ - Closes #7487.

@@ -1,5 +1,0 @@
-Fix crash when Atlas is full
-
-This fixes the regression introduced by 2d27fff.
-
-Fixes #6688.

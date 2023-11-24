@@ -1,0 +1,13 @@
+Merge #11442 #11460
+
+11442: fix(rename): Use text range of a mod name after macro expansion r=Veykril a=tysg
+
+Fixes #11417. 
+
+11460: fix: documentation of SsrParams r=Veykril a=nemethf
+
+Fix #11429 by extending the documentation of SsrParms with the
+mandatory field 'selections'.  Copy its description from lsp_ext.rs.
+
+Co-authored-by: Tianyi Song <42670338+tysg@users.noreply.github.com>
+Co-authored-by: Felicián Németh <felician.nemeth@gmail.com>

@@ -1,9 +1,0 @@
-Fix mouse point crash on resize
-
-This resolves an issue with Alacritty crashing after a resize, due to
-the last cached mouse point being out of bounds.
-
-Instead of caching the mouse point, it is now computed on demand to make
-sure it can never be invalid.
-
-Fixes #4977.

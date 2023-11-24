@@ -1,0 +1,2 @@
+fix(es/ast): Revert removal of `definite` in `PrivateProp` (#4051)
+

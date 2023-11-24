@@ -1,0 +1,17 @@
+Merge #11195 #11202
+
+11195: Correctly pass through reference modifiers when extracting a variable r=Veykril a=Vannevelj
+
+Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10034
+
+This will parse the field expression and look at whether it is marked `&` or `&mut` and include a modifier if appropriate. The original issue only mentions `&mut params` but I've found that this issue also occurs for `&mut locals` as well as `&params` and `&locals` so I've also added tests for them.
+
+I'd definitely be interested in hearing where I can make my code more idiomatic for Rust.
+
+11202: fix: Fix `apply_demorgan` assist hanging for certain binary expressions r=Veykril a=Veykril
+
+Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10963
+bors r+
+
+Co-authored-by: Jeroen Vannevel <jer_vannevel@outlook.com>
+Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

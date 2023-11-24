@@ -1,0 +1,5 @@
+Auto merge of #14359 - Veykril:opt-out-retry, r=Veykril
+
+fix: Do not retry inlay hint requests
+
+Should close https://github.com/rust-lang/rust-analyzer/issues/13372, retrying the way its currently implemented is not ideal as we do not adjust offsets in the requests, but doing that is a major PITA, so this should at least work around one of the more annoying issues stemming from it.

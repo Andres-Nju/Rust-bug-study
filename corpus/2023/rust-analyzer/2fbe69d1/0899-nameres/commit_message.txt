@@ -1,0 +1,5 @@
+Auto merge of #15438 - Veykril:eager-parser-stuck, r=Veykril
+
+fix: Fix parser being stuck in eager macro inputs
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/15437

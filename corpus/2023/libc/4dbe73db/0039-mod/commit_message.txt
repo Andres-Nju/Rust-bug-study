@@ -1,0 +1,7 @@
+Auto merge of #3332 - w1redch4d:fuchisa_ether, r=JohnTitor
+
+Added additional Ethernet Protocol Ids for fuchsia
+
+Added all of the Ethernet Protocol ID's as per [fuchsia](https://cs.opensource.google/fuchsia/fuchsia/+/main:zircon/third_party/ulib/musl/include/netinet/if_ether.h)
+
+Fixes #3331

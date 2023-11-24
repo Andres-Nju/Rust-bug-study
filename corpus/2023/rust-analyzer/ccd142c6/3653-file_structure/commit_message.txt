@@ -1,0 +1,5 @@
+Auto merge of #14058 - gftea:master, r=Veykril
+
+fix negative trait bound in outline view (#14044)
+
+try to fix and close #14044

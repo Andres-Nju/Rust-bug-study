@@ -1,0 +1,2 @@
+fix(es/typescript): Don't generate class field for abstract properties (#6174)
+

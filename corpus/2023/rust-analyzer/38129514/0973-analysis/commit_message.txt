@@ -1,0 +1,5 @@
+Auto merge of #14123 - dqkqd:discard-postfix-completion-for-indivisble-expr, r=Veykril
+
+fix: Don't trigger postfix completion in `if` block which has an `else` block
+
+Fix #14096

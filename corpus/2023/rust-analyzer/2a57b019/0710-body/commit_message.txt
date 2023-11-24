@@ -1,0 +1,21 @@
+Auto merge of #14122 - lowr:patch/abort-macro-expansion-on-overflow, r=Veykril
+
+fix: Don't expand macros in the same expansion tree after overflow
+
+This patch fixes 2 bugs:
+
+- In `Expander::enter_expand_id()` (and in code paths it's called), we never check whether we've reached the recursion limit. Although it hasn't been reported as far as I'm aware, this may cause hangs or stack overflows if some malformed attribute macro is used on associated items.
+- We keep expansion even when recursion limit is reached. Take the following for example:
+
+  ```rust
+  macro_rules! foo { () => {{ foo!(); foo!(); }} }
+  fn main() { foo!(); }
+  ```
+
+  We keep expanding the first `foo!()` in each expansion and would reach the limit at some point, *after which* we would try expanding the second `foo!()` in each expansion until it hits the limit again. This will (by default) lead to ~2^128 expansions.
+
+  This is essentially what's happening in #14074. Unlike rustc, we don't just stop expanding macros when we fail as long as it produces some tokens so that we can provide completions and other services in incomplete macro calls.
+
+This patch provides a method that takes care of recursion depths (`Expander::within_limit()`) and stops macro expansions in the whole macro expansion tree once it detects recursion depth overflow. To be honest, I'm not really satisfied with this fix because it can still be used in unintended ways to bypass overflow checks, and I'm still seeking ways such that misuses are caught by the compiler by leveraging types or something.
+
+Fixes #14074

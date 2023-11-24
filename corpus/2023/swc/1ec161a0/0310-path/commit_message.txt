@@ -1,0 +1,6 @@
+fix(es/module): Fix `jsc.paths` on Windows (#6930)
+
+**Related issue:**
+
+ - Reverts https://github.com/swc-project/swc/pull/6716.
+ - Closes https://github.com/swc-project/swc/issues/6782.

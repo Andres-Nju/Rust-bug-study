@@ -1,0 +1,2 @@
+feat(es/compat): Add pure comments for class fields keys (#3939)
+

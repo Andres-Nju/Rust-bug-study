@@ -1,0 +1,14 @@
+fix(es/minifier): Abort seq inliner if var is not fn_local or reassigned (#7804)
+
+**Description:**
+
+It turns out that the original implementation of `infect`is incomplete
+because it cannot cover function param, and the new implementation
+introduced in #7772 is redundant because what
+[terser](https://github.com/terser/terser/blob/master/lib/compress/tighten-body.js#L909C18-L909C28)
+do is basically checking `fn_local`
+
+
+**Related issue:**
+
+ - Closes #7784

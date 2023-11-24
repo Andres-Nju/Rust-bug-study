@@ -1,0 +1,5 @@
+fix(es/minifier): Do not reuse identifier used for import bindings (#7639)
+
+**Related issue:**
+
+ - Closes #7634.

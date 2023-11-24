@@ -1,0 +1,5 @@
+fix(es/minifier): Prevent inlining vars assigned outside current function scope (#7414)
+
+**Related issue:**
+
+ - Closes #7412. 

@@ -1,3 +1,0 @@
-Merge pull request #3990 from moreal/correct-union-hash
-
-Correct union hash

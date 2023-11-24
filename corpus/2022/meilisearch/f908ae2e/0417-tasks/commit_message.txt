@@ -1,0 +1,7 @@
+Merge #3068
+
+3068: Prepend question mark to the `originalFilters` of the task deletion and cancelation r=irevoire a=Kerollmops
+
+This pull request fixes #3064 by prepending [the HTTP query question mark](https://en.wikipedia.org/wiki/Question_mark#Computing) to the `originalFilters` of the task deletion and cancelation.
+
+Co-authored-by: Kerollmops <clement@meilisearch.com>

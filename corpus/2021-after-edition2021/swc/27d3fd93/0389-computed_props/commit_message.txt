@@ -1,0 +1,4 @@
+fix(es/compat): Fix `computed_properties` (#3120)
+
+swc_ecma_transforms_compat:
+ - `computed_properties`: Fix handling of getter/setter properties. (Closes #2680)

@@ -1,0 +1,9 @@
+fix(es/minifier): Fix analysis of var declaration after usage (#6043)
+
+**Description:**
+
+`var_initialized` should be `true` even if the declaration of variable comes after its usage.
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6039.

@@ -1,0 +1,8 @@
+Merge #10720
+
+10720: fix: Don't ascribe types in pattern completion for param patterns twice r=Veykril a=Veykril
+
+Fixes #10323
+bors r+
+
+Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

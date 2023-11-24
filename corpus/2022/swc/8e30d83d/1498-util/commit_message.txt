@@ -1,0 +1,2 @@
+fix(es/module): Revert fix for `jest.spyOn`
+

@@ -1,0 +1,8 @@
+Merge #2135
+
+2135: bug(auth): Make API keys accept Null descriptions r=curquiza a=ManyTheFish
+
+Fix #2116
+
+
+Co-authored-by: ManyTheFish <many@meilisearch.com>

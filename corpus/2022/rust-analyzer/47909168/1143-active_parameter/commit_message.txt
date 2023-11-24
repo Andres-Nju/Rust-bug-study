@@ -1,0 +1,5 @@
+Auto merge of #13139 - Austaras:enum, r=Veykril
+
+Suggest struct when completing enum
+
+closes #13107

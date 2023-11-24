@@ -1,0 +1,5 @@
+Auto merge of #14102 - Veykril:bump-lexer, r=Veykril
+
+minor: Bump `rustc-ap-rustc_lexer`
+
+Closes https://github.com/rust-lang/rust-analyzer/issues/9554

@@ -1,0 +1,19 @@
+Merge #2316
+
+2316: Add version flag r=Kerollmops a=sanders41
+
+# Pull Request
+
+## What does this PR do?
+Fixes #2315
+
+## PR checklist
+Please check if your PR fulfills the following requirements:
+- [x] Does this PR fix an existing issue?
+- [x] Have you read the contributing guidelines?
+- [x] Have you made sure that the title is accurate and descriptive of the changes?
+
+Thank you so much for contributing to Meilisearch!
+
+
+Co-authored-by: Paul Sanders <psanders1@gmail.com>

@@ -1,0 +1,5 @@
+Auto merge of #14407 - Veykril:rename-fix, r=Veykril
+
+fix: Fix renames of locals being broken in macro calls
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/14379

@@ -1,0 +1,10 @@
+fix(es/compat): Fix `finally` handling of `generator` (#7215)
+
+**Description:**
+
+Update generator implementation to match
+https://github.com/microsoft/TypeScript/blob/e83d61398ea0e4231e882121dd6c6bcfe4fdc9e4/src/compiler/transformers/generators.ts
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/5913.

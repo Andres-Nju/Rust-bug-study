@@ -1,0 +1,9 @@
+Auto merge of #13147 - lowr:fix/dyn-ty-inherent-methods, r=Veykril
+
+fix: handle trait methods as inherent methods for trait-related types
+
+Fixes #10677
+
+When resolving methods for trait object types and placeholder types that are bounded by traits, we need to count the methods of the trait and its super traits as inherent methods. This matters because these trait methods have higher priority than the other traits' methods.
+
+Relevant code in rustc: [`assemble_inherent_candidates_from_object()`](https://github.com/rust-lang/rust/blob/0631ea5d73f4a3199c776687b12c20c50a91f0d2/compiler/rustc_typeck/src/check/method/probe.rs#L783-L792) for trait object types, [`assemble_inherent_candidates_from_param()`](https://github.com/rust-lang/rust/blob/0631ea5d73f4a3199c776687b12c20c50a91f0d2/compiler/rustc_typeck/src/check/method/probe.rs#L838-L847) for placeholder types. Notice the second arg of `push_candidate()` is `is_inherent`.

@@ -1,0 +1,2 @@
+fix(es/resolver): Hoist namespaces (#4902)
+

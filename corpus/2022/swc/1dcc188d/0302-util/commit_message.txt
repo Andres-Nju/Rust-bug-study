@@ -1,0 +1,2 @@
+fix(es/modules): Allow using dynamic import with a name from another import (#3390)
+

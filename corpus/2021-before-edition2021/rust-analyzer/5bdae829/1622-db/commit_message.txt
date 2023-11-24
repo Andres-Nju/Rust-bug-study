@@ -1,0 +1,11 @@
+Merge #10456
+
+10456: fix: Avoid cycle when lowering predicates for associated item lookup r=flodiebold a=jonas-schievink
+
+Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10386
+
+(the salsa bug persists, but this lets us avoid it by fixing the underlying bug)
+
+This reimplements the rustc logic in https://github.com/rust-lang/rust/blob/b27661eb33c74cb514dba059b47d86b6582ac1c2/compiler/rustc_typeck/src/collect.rs#L556: When resolving an associated type `T::Item`, we've previously lowered all predicates that could affect `T`, but we actually have to look only at those predicates whose traits define an associated type of the right name.
+
+Co-authored-by: Jonas Schievink <jonasschievink@gmail.com>

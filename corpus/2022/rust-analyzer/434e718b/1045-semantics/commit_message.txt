@@ -1,0 +1,14 @@
+Auto merge of #12605 - erhuve:fix/determine-doc-link-type-at-start, r=erhuve
+
+fix: doc_links link type - Determine link type at start (fixes #12601)
+
+fixes #12601
+Looked like autolink/inline mismatch happened because end_link_type was parsed from the Text/Code events.
+I changed it to be determined from the Start event, which should hopefully remain accurate while staying true to the cases where link type may need to be changed, according to the comment
+```
+// normally link's type is determined by the type of link tag in the end event,
+// however in some cases we want to change the link type, for example,
+// `Shortcut` type doesn't make sense for url links
+```
+Hopefully this is the desired behavior?
+![Untitled](https://user-images.githubusercontent.com/59463268/174696581-3b1140a5-cdf0-4eda-9a11-ec648e4e7d21.gif)

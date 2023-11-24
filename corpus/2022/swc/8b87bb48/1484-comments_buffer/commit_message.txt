@@ -1,0 +1,2 @@
+fix(es/parser): Don't attach comments to `;` (#3720)
+

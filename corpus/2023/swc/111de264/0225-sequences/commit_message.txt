@@ -1,0 +1,5 @@
+fix(es/minifier): Abort seq inliner if `b` can short-circuit (#8128)
+
+**Related issue:**
+
+ - Closes #8119

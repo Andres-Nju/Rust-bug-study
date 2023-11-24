@@ -1,0 +1,5 @@
+fix(es): Resolve `jsc.baseUrl` for `.swcrc` specified by `--config-file` (#7801)
+
+**Related issue:**
+
+ - Closes #7800

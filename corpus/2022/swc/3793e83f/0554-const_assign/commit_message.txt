@@ -1,0 +1,2 @@
+fix(es/lints): Disallow reassignment to a class (#6362)
+

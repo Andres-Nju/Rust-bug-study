@@ -1,0 +1,5 @@
+fix(es/compat): Fix scoping of `explicit-resource-management` (#8044)
+
+**Related issue:**
+
+ - Closes #8020

@@ -1,0 +1,26 @@
+Merge #2057
+
+2057: fix(dump): Uncompress the dump IN the data.ms  r=irevoire a=irevoire
+
+When loading a dump with docker, we had two problems.
+After creating a tempdirectory, uncompressing and re-indexing the dump:
+1. We try to `move` the new “data.ms” onto the currently present
+   one. The problem is that if the `data.ms` is a mount point because
+   that's what peoples do with docker usually. We can't override
+   a mount point, and thus we were throwing an error.
+2. The tempdir is created in `/tmp`, which is usually quite small AND may not
+   be on the same partition as the `data.ms`. This means when we tried to move
+   the dump over the `data.ms`, it was also failing because we can't move data
+   between two partitions.
+------------------
+1 was fixed by deleting the *content* of the `data.ms` and moving the *content*
+of the tempdir *inside* the `data.ms`. If someone tries to create volumes inside
+the `data.ms` that's his problem, not ours.
+2 was fixed by creating the tempdir *inside* of the `data.ms`. If a user mounted
+its `data.ms` on a large partition, there is no reason he could not load a big
+dump because his `/tmp` was too small. This solves the issue; now the dump is
+extracted and indexed on the same partition the `data.ms` will lay.
+
+fix #1833
+
+Co-authored-by: Tamo <tamo@meilisearch.com>

@@ -1,0 +1,5 @@
+fix(es/minifier): Don't drop assignments to unused top-level variables (#7581)
+
+**Related issue:**
+
+ - Closes #7568

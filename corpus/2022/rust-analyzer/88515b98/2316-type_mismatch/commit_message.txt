@@ -1,0 +1,5 @@
+Auto merge of #12809 - lnicola:empty-diagnostics, r=lnicola
+
+fix: Work around Code bug with empty diagnostics
+
+Closes #11404

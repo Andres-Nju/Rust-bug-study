@@ -1,0 +1,22 @@
+Merge #3945
+
+3945: Do not leak field information on error r=Kerollmops a=vivek-26
+
+# Pull Request
+
+## Related issue
+Fixes #3865
+
+## What does this PR do?
+This PR ensures that `InvalidSortableAttribute`and `InvalidFacetSearchFacetName` errors do not leak field information i.e. fields which are not part of `displayedAttributes` in the settings are hidden from the error message.
+
+## PR checklist
+Please check if your PR fulfills the following requirements:
+- [x] Does this PR fix an existing issue, or have you listed the changes applied in the PR description (and why they are needed)?
+- [x] Have you read the contributing guidelines?
+- [x] Have you made sure that the title is accurate and descriptive of the changes?
+
+Thank you so much for contributing to Meilisearch!
+
+
+Co-authored-by: Vivek Kumar <vivek.26@outlook.com>

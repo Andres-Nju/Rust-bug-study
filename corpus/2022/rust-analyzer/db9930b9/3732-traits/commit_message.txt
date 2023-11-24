@@ -1,0 +1,5 @@
+Auto merge of #12357 - Veykril:find-ref-macro, r=Veykril
+
+fix: When reference searching macro inputs, don't search everything that was downmapped
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/11668

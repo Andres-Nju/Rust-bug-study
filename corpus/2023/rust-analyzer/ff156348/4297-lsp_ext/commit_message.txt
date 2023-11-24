@@ -1,0 +1,5 @@
+Auto merge of #15245 - HKalbasi:mir, r=HKalbasi
+
+Fix missing terminator in pattern matching of consts
+
+fix #15238

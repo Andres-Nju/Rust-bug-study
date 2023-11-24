@@ -1,0 +1,2 @@
+feat(es/preset-env): Add `.js` to generated imports (#3077)
+

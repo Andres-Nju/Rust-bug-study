@@ -1,0 +1,2 @@
+fix(es/resolver): Fix handling of block scoped functions (#5092)
+

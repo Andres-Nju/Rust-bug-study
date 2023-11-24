@@ -1,7 +1,0 @@
-Fix search freezing Alacritty
-
-This resolves a regression introduced in 530de00 where searching would
-cause a deadlock when the viewport is at the bottom of the scrollback
-and a match ends in the last cell.
-
-Fixes #4800.

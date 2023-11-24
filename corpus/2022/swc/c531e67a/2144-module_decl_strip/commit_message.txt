@@ -1,0 +1,2 @@
+fix(es/modules): Support lazy for `export from` (#5103)
+

@@ -1,0 +1,5 @@
+Auto merge of #12470 - Veykril:output-ch, r=Veykril
+
+fix: Cleanup output channels when restarting server
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/12469

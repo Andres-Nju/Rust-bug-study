@@ -1,0 +1,5 @@
+Auto merge of #13454 - justinmmott:master, r=flodiebold
+
+Fixed local shadowing the caller's argument issue
+
+fix https://github.com/rust-lang/rust-analyzer/issues/12536

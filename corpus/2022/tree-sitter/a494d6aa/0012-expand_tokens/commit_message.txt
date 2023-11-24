@@ -1,3 +1,0 @@
-Merge pull request #1668 from tree-sitter/remember-lookahead-bytes-on-error-detection
-
-Remember lookahead bytes on error detection

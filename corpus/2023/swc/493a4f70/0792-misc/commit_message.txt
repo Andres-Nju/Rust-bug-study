@@ -1,0 +1,2 @@
+fix(es/minifier): Remove wrong optimization of `new RegExp(…)` (#7091)
+

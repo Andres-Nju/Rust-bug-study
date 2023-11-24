@@ -1,0 +1,9 @@
+fix(es/resolver): Hoist parameter in arrow and constructor (#7292)
+
+**Related issue:**
+
+ - Closes #7248.
+
+---
+
+Co-authored-by: Donny/강동윤 <kdy1997.dev@gmail.com>

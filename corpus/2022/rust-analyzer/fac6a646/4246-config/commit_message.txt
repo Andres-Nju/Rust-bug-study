@@ -1,0 +1,7 @@
+Auto merge of #12804 - jonas-schievink:config-watcher, r=Veykril
+
+fix: make file watcher config a drop-down (and clarify the options)
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/12794
+
+Also renames "notify" to "server", since that's clearer ("notify" is still accepted for compatibility).

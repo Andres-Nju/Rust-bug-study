@@ -1,0 +1,7 @@
+Auto merge of #15105 - dfireBird:fix-15096, r=HKalbasi
+
+Change comparsion for checking if number is negative to include 128
+
+The last byte in Little-Endian representation of negative integers start at 128 (Ox80) till 255 (OxFF). The comparison before the fix didn't check for 128 which made is_negative variable as false.
+
+Potentially fixes #15096

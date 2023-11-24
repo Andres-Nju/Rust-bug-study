@@ -1,0 +1,2 @@
+fix(es/minifier): Allow single-thread mode (#5353)
+

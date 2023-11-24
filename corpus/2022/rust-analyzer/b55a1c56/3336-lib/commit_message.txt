@@ -1,0 +1,7 @@
+Merge #11353
+
+11353: Set current working directory for procedural macros r=vlad20012 a=vlad20012
+
+Fixes #11079
+
+Co-authored-by: vlad20012 <beskvlad@gmail.com>

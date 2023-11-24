@@ -1,0 +1,7 @@
+Auto merge of #14715 - Veykril:symbol-index, r=Veykril
+
+Refactor symbol index
+
+Closes https://github.com/rust-lang/rust-analyzer/issues/14677
+
+instead of eagerly fetching the source data in symbol index we do it lazily now, this shouldn't make it much more expensive as we had to parse the source most of the time anyways even after fetching.

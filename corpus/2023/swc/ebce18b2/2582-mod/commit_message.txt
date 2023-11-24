@@ -1,0 +1,5 @@
+fix(es/renamer): Handle rest params correctly (#6821)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6819.

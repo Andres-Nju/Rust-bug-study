@@ -1,0 +1,6 @@
+Auto merge of #15250 - lowr:fix/extract-fn-no-control-flow-with-tail-expr, r=Veykril
+
+fix: don't use control flow when extracted fn contains tail expr of original fn
+
+Fixes #10113
+Fixes #15061

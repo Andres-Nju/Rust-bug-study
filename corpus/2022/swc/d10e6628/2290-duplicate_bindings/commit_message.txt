@@ -1,0 +1,2 @@
+fix(es/lints): Ignore identifiers used as types while checking for duplicate bindings (#3869)
+

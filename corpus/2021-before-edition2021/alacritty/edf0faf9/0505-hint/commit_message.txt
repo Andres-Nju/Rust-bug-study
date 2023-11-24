@@ -1,3 +1,0 @@
-Fix highlighting multiple hints in the same line
-
-Fixes #5010.

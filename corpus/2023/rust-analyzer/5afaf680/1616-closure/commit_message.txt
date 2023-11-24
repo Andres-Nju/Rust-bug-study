@@ -1,0 +1,7 @@
+Auto merge of #15864 - Young-Flash:find_self, r=lnicola
+
+fix: find `Self` reference
+
+took a lot of time to debug to find the problem, here should compare the actual `Adt` type
+
+close https://github.com/rust-lang/rust-analyzer/issues/12693

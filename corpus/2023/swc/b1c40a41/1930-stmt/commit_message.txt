@@ -1,0 +1,5 @@
+fix(es/parser): Use a hard error for missing r-paren in an if stmt (#7223)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/7104.

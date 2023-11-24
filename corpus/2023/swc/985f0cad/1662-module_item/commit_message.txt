@@ -1,0 +1,2 @@
+fix(es/parser): Parse decorators after `export` (#7340)
+

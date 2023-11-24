@@ -1,0 +1,7 @@
+Auto merge of #12636 - xuhongxu96:fix-12148, r=Veykril
+
+complete raw identifier with "r#" prefix
+
+Fix #12148
+
+Escape Names and Paths used in `insert_text`/`insert_snippet` while rendering the completion items.

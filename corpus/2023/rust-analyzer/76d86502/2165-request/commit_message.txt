@@ -1,0 +1,5 @@
+Auto merge of #14912 - Veykril:cargo-alltargets, r=Veykril
+
+Don't add --all-targets to runnables for no-std crates
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/14155

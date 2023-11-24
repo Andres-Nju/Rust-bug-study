@@ -1,0 +1,7 @@
+Merge #2433
+
+2433: Fix the documents route r=Kerollmops a=irevoire
+
+fix #2428
+
+Co-authored-by: Irevoire <tamo@meilisearch.com>

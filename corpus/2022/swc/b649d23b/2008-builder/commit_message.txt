@@ -1,0 +1,4 @@
+feat(es/compat): Implement object super (#3127)
+
+swc_ecma_transforms_compat:
+ - Implement object super. (Closes #2684)

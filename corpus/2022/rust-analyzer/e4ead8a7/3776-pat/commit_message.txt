@@ -1,0 +1,18 @@
+Auto merge of #12412 - yue4u:fix/visibility-completion, r=Veykril
+
+fix: Retrigger visibility completion after parentheses
+
+close #12390
+
+This PR add `(` to trigger_characters as discussed in original issue.
+
+Some questions:
+
+1. Is lsp's `ctx.trigger_character` from `params.context` is the same as `ctx.original_token` inside actually completions?
+    1. If not what's the difference?
+    2. if they are the same, it's unnecessary to pass it down from handler at all.
+    3.  if they are the same, maybe we could parse it from fixture directly instead of using the `check_with_trigger_character` I added.
+2. Some completion fixtures written as `($0)` ( https://github.com/rust-lang/rust-analyzer/blob/master/crates/ide-completion/src/tests/fn_param.rs#L105 as an example), If I understand correctly they are not invoked outside tests at all?
+    1. using `ctx.original_token` directly would break these tests as well as parsing trigger_character from fixture for now.
+    2. I think it make sense to allow `(` triggering these cases?
+3. I hope this line up with #12144

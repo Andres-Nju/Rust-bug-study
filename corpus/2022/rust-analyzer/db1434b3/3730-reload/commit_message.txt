@@ -1,0 +1,5 @@
+Auto merge of #12171 - lnicola:proc-macros-dont-invalidate-state, r=Veykril
+
+fix: Try not to invalidate state when the proc macro preference didn't change
+
+This appears to fix #12027, but I'm not sure.

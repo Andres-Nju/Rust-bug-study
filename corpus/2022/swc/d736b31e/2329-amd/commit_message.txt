@@ -1,0 +1,2 @@
+fix(es/typescript): Preserve `export = ` for AMD (#4995)
+

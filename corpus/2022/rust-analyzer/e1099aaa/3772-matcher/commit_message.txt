@@ -1,0 +1,9 @@
+Merge #11169
+
+11169: internal: Handle macro calls better in highlighting r=Veykril a=Veykril
+
+Introduces a new semantic highlighting tag for the `!` character of macro calls.
+
+Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10962
+
+Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

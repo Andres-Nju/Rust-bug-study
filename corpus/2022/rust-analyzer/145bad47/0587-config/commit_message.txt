@@ -1,0 +1,8 @@
+Auto merge of #12341 - vemoo:exclude_dirs, r=Veykril
+
+make `files.excludeDirs` work
+
+There's a small issue because if all projects are excluded, this: https://github.com/rust-lang/rust-analyzer/blob/01d412f4d7bd7ef21a7e8f0461e9ba3439e3c4bf/crates/rust-analyzer/src/main_loop.rs#L114 will be shown.
+I thought about not showing it if `files.excludeDirs` is set, but that is not necessarily correct.
+
+Fixes #7755

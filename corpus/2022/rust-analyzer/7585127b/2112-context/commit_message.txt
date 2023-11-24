@@ -1,0 +1,9 @@
+Merge #11208
+
+11208: feat: expand attribute macros on impl and trait items r=jonas-schievink a=jonas-schievink
+
+fixes https://github.com/rust-analyzer/rust-analyzer/issues/11104
+
+bors r+
+
+Co-authored-by: Jonas Schievink <jonas.schievink@ferrous-systems.com>

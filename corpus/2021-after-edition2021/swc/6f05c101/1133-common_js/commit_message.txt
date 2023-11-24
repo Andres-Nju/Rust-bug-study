@@ -1,0 +1,4 @@
+fix(es/transforms/module): Fix overriding of `export *` (#2883)
+
+swc_ecma_transforms_module:
+ - Emit correct value for `_exportNames`. (Closes #2101)

@@ -1,0 +1,2 @@
+fix(es/lexer): Drop `ClassExpr` context in object properties (#5729)
+

@@ -1,0 +1,32 @@
+Merge #3023
+
+3023: Update error codes related to tasks cancelation + add canceledBy filter r=Kerollmops a=Kerollmops
+
+<details>This PR changes the error codes [to follow the specification](https://github.com/meilisearch/specifications/pull/195).
+
+ - [x] The `missing_filters` error code is renamed `missing_task_filters` to be more accurate and follow the `invalid_task_*` convention.
+ - [x] The error code `invalid_task_uids_filter` is added.
+ - [x] The error code `invalid_task_canceled_by_filter` is added.
+ - [x] The error code `invalid_task_date_filter` is added.
+      -  The error message is the same as for expires_at in the API Key  EXCEPT that it does not explicitly mention that a date must be given in the future.
+</details>
+
+Edit by `@loiclec` :
+I have added a few more changes into this PR. The related issues are:
+
+- Fixes https://github.com/meilisearch/meilisearch/issues/3029
+- Implements https://github.com/meilisearch/meilisearch/issues/3026
+- Fixes https://github.com/meilisearch/meilisearch/issues/2940
+- Fixes https://github.com/meilisearch/meilisearch/issues/2939
+
+Additionally:
+- Fixes a bug where global tasks were returned by `GET /tasks` queries even if the user did not have the `index.*` API key action.
+- Rename `originalQuery` to `originalFilters`
+- Display `error: null` and `canceledBy: null` in the task views
+- Allow using the star operator in the task filters in the `DELETE /tasks` and `POST /tasks/cancel` routes
+- Make sure that the index scheduler keeps making progress even when a grave error occurs.
+
+
+Co-authored-by: Kerollmops <clement@meilisearch.com>
+Co-authored-by: Clément Renault <clement@meilisearch.com>
+Co-authored-by: Loïc Lecrenier <loic.lecrenier@me.com>

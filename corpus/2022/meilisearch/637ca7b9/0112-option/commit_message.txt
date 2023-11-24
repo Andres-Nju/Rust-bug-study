@@ -1,0 +1,20 @@
+Merge #3067
+
+3067: Fix task details serialization r=Kerollmops a=ManyTheFish
+
+# Pull Request
+
+- document addition task details always contain the field `indexedDocuments`
+  - value is set to `null` when the task is enqueued or processing
+  - value is set to `0` when the task is canceled or failed
+- the field `deletedDocuments` of the document deletion task details is set to `0` when the task is canceled or failed
+- the field `deletedDocuments` of the document clearAll task details is set to `0` when the task is canceled or failed
+- the field `deletedTasks` of the task deletion task details is set to `0` when the task is canceled or failed
+- the field `canceledTasks` of the task cancelation task details is set to `0` when the task is canceled or failed
+
+## Related issue
+Fixes #3057
+Fixes #3058
+
+
+Co-authored-by: ManyTheFish <many@meilisearch.com>

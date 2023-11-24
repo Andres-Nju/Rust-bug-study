@@ -1,0 +1,7 @@
+Merge #10587
+
+10587: fix: Fix `add_missing_match_arm` panicking on failed upmapping r=Veykril a=Veykril
+
+Closes https://github.com/rust-analyzer/rust-analyzer/issues/10580#issuecomment-946170475
+
+Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

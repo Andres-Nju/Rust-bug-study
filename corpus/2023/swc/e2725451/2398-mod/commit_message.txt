@@ -1,0 +1,5 @@
+fix(es/fixer): Don't change default decls to default expr exports (#7585)
+
+**Related issue:**
+
+ - Closes #7584.

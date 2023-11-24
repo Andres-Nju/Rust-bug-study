@@ -1,0 +1,15 @@
+Auto merge of #15157 - HKalbasi:tokio-test, r=HKalbasi
+
+Fix runnable detection for `#[tokio::test]`
+
+fix #15141
+
+It is hacky, and it wouldn't work for e.g. this case:
+```Rust
+use ::core::prelude;
+
+#[prelude::v1::test]
+fn foo() {
+}
+```
+But it works for the tokio case. We should use the name resolution here somehow, and after that we should probably also get rid of the ast based `test_related_attribute` function.

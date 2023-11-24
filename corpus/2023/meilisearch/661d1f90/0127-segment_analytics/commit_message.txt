@@ -1,0 +1,18 @@
+Merge #3866
+
+3866: Update charabia v0.8.0 r=dureuill a=ManyTheFish
+
+# Pull Request
+
+Update Charabia:
+- enhance Japanese segmentation
+- enhance Latin Tokenization
+  - words containing `_` are now properly segmented into several words
+  - brackets `{([])}` are no more considered as context separators so word separated by brackets are now considered near together for the proximity ranking rule
+- fixes #3815
+- fixes #3778
+- fixes [product#151](https://github.com/meilisearch/product/discussions/151)
+
+> Important note: now the float numbers are segmented around the `.` so `3.22` is segmented as [`3`, `.`, `22`] but the middle dot isn't considered as a hard separator, which means that if we search `3.22` we find documents containing `3.22`
+
+Co-authored-by: ManyTheFish <many@meilisearch.com>

@@ -1,0 +1,4 @@
+fix(es/transform/compat): Preserve more span (#2766)
+
+swc_ecma_transforms_compat:
+ - `async_to_generator`: Use correct span for async methods. (Closes #2701)

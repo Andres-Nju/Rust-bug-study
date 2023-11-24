@@ -1,0 +1,8 @@
+Auto merge of #14960 - jneem:group-delim-span, r=Veykril
+
+Add span to group.
+
+This appears to fix #14959, but I've never contributed to rust-analyzer before and there were some things that confused me:
+
+- I had to add the `fn byte_range` method to get it to build. This was added to rust in [April](https://github.com/rust-lang/rust/pull/109002), so I don't understand why it wasn't needed until now
+- When testing, I ran into the fact that rust recently updated its `METADATA_VERSION`, so I had to test this with nightly-2023-05-20. But then I noticed that rust has its own copy of `rust-analyzer`, and the metadata version bump has already been [handled there](https://github.com/rust-lang/rust/commit/60e95e76d059e3bbeb19d819914df3bcf7684a82). So I guess I don't really understand the relationship between the code there and the code here.

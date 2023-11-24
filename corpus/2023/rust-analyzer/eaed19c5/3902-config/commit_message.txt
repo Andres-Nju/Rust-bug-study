@@ -1,0 +1,5 @@
+Auto merge of #14104 - Veykril:castable-expect, r=Veykril
+
+fix: Implement Expactation::Castable and add a test case for it
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/11571

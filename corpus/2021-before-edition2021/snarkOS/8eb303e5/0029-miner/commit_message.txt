@@ -1,0 +1,3 @@
+Merge pull request #1074 from ljedrz/avoid_mempool_syncs_when_syncing_blocks
+
+Do a better job avoiding mempool syncs and mining when syncing blocks

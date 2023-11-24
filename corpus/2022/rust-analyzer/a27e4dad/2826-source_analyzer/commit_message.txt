@@ -1,0 +1,5 @@
+Auto merge of #13571 - Veykril:unique-references, r=Veykril
+
+minor: Deduplicate reference search results
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/13407

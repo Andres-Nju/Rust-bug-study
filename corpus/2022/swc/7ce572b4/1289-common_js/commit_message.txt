@@ -1,0 +1,2 @@
+fix(es/modules): Fix reassignment of exported vars (#4688)
+

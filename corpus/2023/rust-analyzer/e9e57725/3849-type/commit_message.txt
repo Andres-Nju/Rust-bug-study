@@ -1,0 +1,5 @@
+Auto merge of #14505 - Veykril:block-trait-impls, r=Veykril
+
+fix: Fix block local impl trait solving regressions
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/14443

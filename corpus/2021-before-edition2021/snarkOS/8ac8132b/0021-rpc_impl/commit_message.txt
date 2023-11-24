@@ -1,0 +1,3 @@
+Merge pull request #1172 from ljedrz/fix_get_node_info_for_non_clients
+
+Make the getnodeinfo RPC work for non-client nodes

@@ -1,0 +1,5 @@
+fix(es/module): Use `jsc.baseUrl` while resolving absolute paths (#7775)
+
+**Related issue:**
+
+ - Closes #7761

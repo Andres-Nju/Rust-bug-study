@@ -1,0 +1,5 @@
+fix(es/compat): Visit children of `while` statement in the `generator` pass (#7624)
+
+**Related issue:**
+
+ - Closes #7622.

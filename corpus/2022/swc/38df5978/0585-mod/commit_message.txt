@@ -1,0 +1,5 @@
+fix(es/minifier): Mark `delete` as a property mutation (#6063)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6004.

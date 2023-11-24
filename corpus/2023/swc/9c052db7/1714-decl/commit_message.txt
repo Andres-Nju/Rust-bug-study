@@ -1,0 +1,5 @@
+feat(es/compat): Support `export class` from stage 3 decorator pass (#7363)
+
+**Related issue:**
+
+ - Closes #7358.

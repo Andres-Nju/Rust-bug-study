@@ -1,0 +1,2 @@
+fix(es/parser): Emit an error for non-last rest element in an object pattern (#3675)
+

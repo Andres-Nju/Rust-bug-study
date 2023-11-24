@@ -1,0 +1,2 @@
+feat(es/compat): Check for duplicate private names and undefined private names (#3613)
+

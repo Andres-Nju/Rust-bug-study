@@ -1,3 +1,0 @@
-Merge pull request #2183 from joelspadin/fix-windows-build-wasm
-
-fix: use / paths in docker when building WASM on Windows

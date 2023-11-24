@@ -1,0 +1,2 @@
+feat(es/parser): Improve jsx lexer (#5805)
+

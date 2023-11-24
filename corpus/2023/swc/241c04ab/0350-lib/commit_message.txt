@@ -1,0 +1,5 @@
+fix(es/minifier): Only cast global `Infinity`/`undefined`/`NaN` (#7684)
+
+**Related issue:**
+
+ - Closes #7683.

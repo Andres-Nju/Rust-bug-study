@@ -1,0 +1,2 @@
+fix(es/compat): Don't move variables from object-rest pass (#5673)
+

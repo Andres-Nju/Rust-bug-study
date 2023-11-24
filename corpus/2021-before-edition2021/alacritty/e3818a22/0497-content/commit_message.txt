@@ -1,5 +1,0 @@
-Use cell colors for focused match CellRgb
-
-Fixes #5022.
-
-Co-authored-by: Christian Duerr <contact@christianduerr.com>

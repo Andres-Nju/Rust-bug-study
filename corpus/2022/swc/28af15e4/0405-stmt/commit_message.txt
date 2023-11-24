@@ -1,0 +1,2 @@
+fix(es/parser): Fix parsing of `await` (#6316)
+

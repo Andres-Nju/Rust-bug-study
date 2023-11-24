@@ -1,0 +1,5 @@
+Auto merge of #2817 - devnexen:macos_arm64_context_upd, r=JohnTitor
+
+ucontext usage update on macos 64 bits.
+
+closes #2812

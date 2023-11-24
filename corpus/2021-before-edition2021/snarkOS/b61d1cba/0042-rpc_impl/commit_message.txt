@@ -1,0 +1,3 @@
+fix(metrics): the number of connected peers metric returns the valid figure
+
+Signed-off-by: ljedrz <ljedrz@gmail.com>

@@ -1,0 +1,9 @@
+fix(es/minifier): Preserve return values of recursive IIFE (#6142)
+
+**Description:**
+
+This PR fixes the logic for dropping return values of IIFE.
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6141.

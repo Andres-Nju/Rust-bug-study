@@ -1,0 +1,7 @@
+Auto merge of #15405 - lowr:patch/doc-links-to-fields, r=Veykril
+
+Support doc links that resolve to fields
+
+Fixes #15331
+
+Also removes `Resolver::resolve_module_path_in_trait_assoc_items()` and reimplements it in hir with other `Resolver` methods to decouple things a bit.

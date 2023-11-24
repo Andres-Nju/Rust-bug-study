@@ -1,0 +1,5 @@
+fix(es/minifier): Preserve `this` of tagged template literals (#6165)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6146

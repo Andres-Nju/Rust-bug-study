@@ -1,0 +1,2 @@
+fix(es/parser): Allow arrows without parenthesized param in typescript (#4138)
+

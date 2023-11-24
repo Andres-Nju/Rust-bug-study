@@ -1,0 +1,7 @@
+Auto merge of #14248 - XFFXFF:let_else_right_curly_brace, r=Veykril
+
+fix: show diagnostic for } token followed by else in let else statement
+
+fix #14221
+
+My thinking is to check if the `expr` after `=` is block like when parse `let ... lese` , and if so, emit error.

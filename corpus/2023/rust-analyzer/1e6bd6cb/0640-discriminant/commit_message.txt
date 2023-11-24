@@ -1,0 +1,5 @@
+Auto merge of #14794 - Veykril:inlay-kind-refac, r=Veykril
+
+Restructure InlayHint, no longer derive properties from its kind
+
+Closes https://github.com/rust-lang/rust-analyzer/issues/14595

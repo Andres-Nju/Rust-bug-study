@@ -1,3 +1,0 @@
-Fix crash when copying out of bounds selections
-
-Fixes #5067.

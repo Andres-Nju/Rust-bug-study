@@ -1,0 +1,5 @@
+fix(es/react): Don't panic on `key` without a value (#6945)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6939.

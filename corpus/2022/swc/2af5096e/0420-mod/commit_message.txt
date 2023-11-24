@@ -1,0 +1,4 @@
+fix(es/resolver): Fix handling of for statements (#3446)
+
+swc_ecma_transforms_base:
+ - `resolver`: Visit the body of a for statement in a nested visitor.

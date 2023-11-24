@@ -1,0 +1,30 @@
+Merge #11490
+
+11490: Correctly fix formatting doc tests with generics r=Veykril a=KarlWithK
+
+Before the doc_test would be outputted like this:
+```zsh
+"Foo<T, U>::t"
+```
+However, this would cause problems with shell redirection. I've changed it
+so when generics are involved we simply wrap the expression under quotes as so:
+```zsh
+"\"Foo<T, U>::t\""
+```
+
+Note:
+At the cost of adding this, I had to allocate a new string via
+`format!{}`. However, I argue this is alright as this for just for
+outputting the name of the doc test.
+
+The following tests have been changed:
+```
+runnables::tests::doc_test_type_params
+runnables::tests::test_doc_runnables_impl_mod
+runnables::tests::test_runnables_doc_test_in_impl
+```
+
+Closes  https://github.com/rust-analyzer/rust-analyzer/issues/11489
+
+Co-authored-by: KarlWithK <jocelinc60@outlook.com>
+Co-authored-by: SeniorMars <jocelinc60@outlook.com>

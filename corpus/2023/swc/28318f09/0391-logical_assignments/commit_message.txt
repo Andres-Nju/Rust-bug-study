@@ -1,0 +1,5 @@
+fix(es/compat): Handle `PrivateName` in `logical_assignments` (#7958)
+
+**Related issue:**
+
+ - Closes #7956

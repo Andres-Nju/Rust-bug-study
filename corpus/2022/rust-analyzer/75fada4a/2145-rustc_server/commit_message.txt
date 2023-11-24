@@ -1,0 +1,7 @@
+Merge #11805
+
+11805: fix: Don't try to resolve methods on unknown types r=Veykril a=flodiebold
+
+Fixes #10454, and some type mismatches.
+
+Co-authored-by: Florian Diebold <flodiebold@gmail.com>

@@ -1,0 +1,4 @@
+fix(es/parser): Fix parser (#2903)
+
+swc_ecma_parser:
+ - Fix `skip_ts_parameter_start`. (Closes #2160)

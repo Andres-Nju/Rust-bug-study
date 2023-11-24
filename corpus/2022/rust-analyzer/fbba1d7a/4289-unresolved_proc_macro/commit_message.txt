@@ -1,0 +1,5 @@
+Auto merge of #12691 - Veykril:proc-macro-diag, r=Veykril
+
+fix: Fix unresolved proc macro diagnostics pointing to macro expansions
+
+Fixes https://github.com/rust-lang/rust-analyzer/issues/12657

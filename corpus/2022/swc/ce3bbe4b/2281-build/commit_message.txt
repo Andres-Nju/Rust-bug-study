@@ -1,0 +1,2 @@
+fix(cli): Update plugin template (#5421)
+

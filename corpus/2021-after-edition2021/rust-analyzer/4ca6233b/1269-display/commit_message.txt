@@ -1,0 +1,11 @@
+Merge #10847
+
+10847: fix: derive attr path handling in `replace_derive_with_manual_impl` r=rainy-me a=rainy-me
+
+partially fixes #10666
+
+renaming issues mentioned in https://github.com/rust-analyzer/rust-analyzer/issues/10666#issuecomment-955671021 doesn't seem to be fixable at this moment since it's not searchable?(not recorded?) by name.
+
+<del>I'm not sure if it's appropriate to move `parse_comma_sep_paths` function to a method in `ast/node_ext`, maybe `ide_db::helpers` also make sense.</del> put into `ide_db::` instead.
+
+Co-authored-by: rainy-me <github@yue.coffee>

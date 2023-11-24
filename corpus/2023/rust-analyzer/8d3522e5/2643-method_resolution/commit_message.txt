@@ -1,0 +1,5 @@
+Auto merge of #15825 - Austaras:master, r=flodiebold
+
+fix: better resolve assoc item with type bound
+
+Closes #15772

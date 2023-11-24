@@ -1,0 +1,5 @@
+fix(es/parser): Handle class members with `accessor` as the name (#7046)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/7042.

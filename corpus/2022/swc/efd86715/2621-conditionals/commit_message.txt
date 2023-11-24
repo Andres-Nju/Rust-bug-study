@@ -1,0 +1,5 @@
+fix(es/minifier): Preserve side effects in correct position (#3263)
+
+swc_ecma_minifier:
+ - Add `fake_block` mark.
+ - Inject statements for side effects from `visit_mut_stmt` instead of `visit_mut_stmt_likes`. (Closes #2926)

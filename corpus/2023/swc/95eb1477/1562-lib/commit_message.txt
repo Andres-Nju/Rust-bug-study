@@ -1,0 +1,5 @@
+refactor(es/preset-env): Rename parameter to avoid confusion (#8106)
+
+**Related issue:**
+
+ - Closes #8103

@@ -1,0 +1,10 @@
+fix(es/helpers): Don't transpile `_typeof` helper (#3208)
+
+swc_ecma_transforms_base:
+ - Add a directive to `_typeof` helper.
+
+swc_ecma_transforms_compat:
+ - Don't transpile `_typeof` helper. (Closes #3201)
+
+swc_ecma_minifier:
+ - Drop swc/babel directives.

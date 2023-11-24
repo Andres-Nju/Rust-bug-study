@@ -1,0 +1,5 @@
+fix(es/compat): Visit transformed expression in optional chaining pass (#7614)
+
+**Related issue:**
+
+ - Closes #7612.

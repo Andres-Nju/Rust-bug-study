@@ -1,0 +1,5 @@
+fix(cli): Configure `GLOBALS` (#6061)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6059.

@@ -1,0 +1,4 @@
+fix(es/minifier): Inline into interpolations in tagged template literals (#3287)
+
+swc_ecma_minifier:
+ - Inline into tagged template literals. (Closes #2923)

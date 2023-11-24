@@ -1,0 +1,3 @@
+fix(es/parser) Throw a syntax error for `const` without initializer in strict mode (#3742)
+
+Co-authored-by: Donny/강동윤 <kdy1997.dev@gmail.com>

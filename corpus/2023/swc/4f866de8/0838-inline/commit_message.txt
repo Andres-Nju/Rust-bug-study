@@ -1,0 +1,5 @@
+fix(es/minifier): Add usage to inlined ident eagerly (#7597)
+
+**Related issue:**
+
+ - Closes #7591.

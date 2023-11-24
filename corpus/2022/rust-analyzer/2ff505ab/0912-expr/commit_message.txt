@@ -1,0 +1,18 @@
+Auto merge of #12428 - lowr:experimental/destructuring-assignment, r=flodiebold
+
+feat: implement destructuring assignment
+
+This is an attempt to implement destructuring assignments, or more specifically, type inference for [assignee expressions](https://doc.rust-lang.org/reference/expressions.html#place-expressions-and-value-expressions).
+
+I'm not sure if this is the right approach, so I don't even expect this to be merged (hence the branch name :wink:) but rather want to propose one direction we could choose. I don't mind getting merged if this is good enough though!
+
+Some notes on the implementation choices:
+
+- Assignee expressions are **not** desugared on HIR level unlike rustc, but are inferred directly along with other expressions. This matches the processing of other syntaxes that are desugared in rustc but not in r-a. I find this reasonable because r-a only needs to infer types and it's easier to relate AST nodes and HIR nodes, so I followed it.
+- Assignee expressions obviously resemble patterns, so type inference for each kind of pattern and its corresponding assignee expressions share a significant amount of logic. I tried to reuse the type inference functions for patterns by introducing `PatLike` trait which generalizes assignee expressions and patterns.
+  - This is not the most elegant solution I suspect (and I really don't like the name of the trait!), but it's cleaner and the change is smaller than other ways I experimented, like making the functions generic without such trait, or making them take `Either<ExprId, PatId>` in place of `PatId`.
+
+in case this is merged:
+Closes #11532
+Closes #11839
+Closes #12322

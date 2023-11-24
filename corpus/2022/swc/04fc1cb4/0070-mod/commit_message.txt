@@ -1,0 +1,2 @@
+fix(es/compat): Fix name conflict of `Array` (#5034)
+

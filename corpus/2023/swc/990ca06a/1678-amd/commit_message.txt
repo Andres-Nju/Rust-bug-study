@@ -1,0 +1,5 @@
+fix(es/module): Sort the exported ESM bindings (#8024)
+
+**Related issue:**
+
+ - Closes: #8023

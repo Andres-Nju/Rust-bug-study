@@ -1,0 +1,6 @@
+Auto merge of #14689 - Veykril:patch-vscode-paths, r=Veykril
+
+fix: Force InitializeParams windows path drives to uppercase
+
+Should fix https://github.com/rust-lang/rust-analyzer/issues/14683
+cc `@jyn514`

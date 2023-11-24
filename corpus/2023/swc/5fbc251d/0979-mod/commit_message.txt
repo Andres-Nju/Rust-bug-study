@@ -1,0 +1,5 @@
+fix(es/module): Don't create absolute paths for `jsc.paths` on Windows (#7892)
+
+**Related issue:**
+
+ - Closes #7806

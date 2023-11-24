@@ -1,3 +1,0 @@
-User timer based rendering instead of vsync
-
-Fixes #824.

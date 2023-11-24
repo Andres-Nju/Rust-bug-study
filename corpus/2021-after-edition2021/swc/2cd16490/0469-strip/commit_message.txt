@@ -1,0 +1,2 @@
+fix(es/typescript): Support declaration merging of exported enums and namespaces (#2982)
+

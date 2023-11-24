@@ -1,0 +1,5 @@
+Auto merge of #13028 - yue4u:fix/literal-lookup, r=jonas-schievink
+
+fix: record completion filtering
+
+close #12975

@@ -1,0 +1,2 @@
+feat(es/compat): Add loose mode for `classes` (#3474)
+

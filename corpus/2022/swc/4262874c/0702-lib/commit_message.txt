@@ -1,0 +1,2 @@
+fix(es/preset-env): Do not import new features when using old core-js (#4458)
+

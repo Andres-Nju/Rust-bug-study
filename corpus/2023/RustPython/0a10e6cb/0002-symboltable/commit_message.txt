@@ -1,3 +1,0 @@
-Merge pull request #4963 from matthew-hagemann/fix/silent-if-error-in-trace()
-
-Set trace_func / profile_func to none on error

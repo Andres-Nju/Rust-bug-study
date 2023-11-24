@@ -1,0 +1,11 @@
+Auto merge of #13523 - lowr:fix/adjust-expectation-for-if, r=lnicola
+
+fix: disregard type variable expectation for if expressions
+
+Fixes #13522
+
+As [the comment](https://github.com/rust-lang/rust-analyzer/blob/8142d1f606dc2e52b1d2b8992671e2bd73379f28/crates/hir-ty/src/infer.rs#L1087-L1090) on `Expectation::adjust_for_branches` explains:
+
+> If the expected type is just a type variable, then don't use an expected type. Otherwise, we might write parts of the type when checking the 'then' block which are incompatible with the 'else' branch.
+
+Note that we already use it in match expressions. I've added tests for them too nevertheless.

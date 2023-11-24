@@ -1,0 +1,2 @@
+feat(es/compat): Support more regex expressions (#4205)
+

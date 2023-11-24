@@ -1,0 +1,2 @@
+fix(es/transform/react): Allow multiple JSX pragmas in single `Comment` (#2561)
+

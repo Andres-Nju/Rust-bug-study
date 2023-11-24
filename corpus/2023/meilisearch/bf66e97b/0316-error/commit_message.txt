@@ -1,0 +1,31 @@
+Merge #3749
+
+3749: Fix back: sort error message r=ManyTheFish a=ManyTheFish
+
+This PR reintroduces the error message modified in https://github.com/meilisearch/milli/pull/375.
+However, this added double-quotes around `sort` in the message. I don't think another message contains double-quotes, so I have added a separate commit replacing the double-quotes with back-ticks, which seems more consistent with the other error messages, this last change can be reverted easily.
+
+## Detailed changes
+#### v1.2-rc0
+```
+The sort ranking rule must be specified in the ranking rules settings to use the sort parameter at search time.
+```
+#### [Reintroduce fix (previous and expected behavior)](https://github.com/meilisearch/meilisearch/pull/3749/commits/23d1c868259c3a7224e0df00e1469eb76a707851)
+```
+You must specify where "sort" is listed in the rankingRules setting to use the sort parameter at search time
+```
+#### [Replace double-quotes with back-ticks (my suggestion)](https://github.com/meilisearch/meilisearch/pull/3749/commits/4d691d071a700f5391364b16b286049973e3c494)
+```
+You must specify where `sort` is listed in the rankingRules setting to use the sort parameter at search time
+```
+
+## Related
+
+Fixes #3722
+
+## Reviewers
+
+- technical review: `@irevoire`
+- to validate the replacement: `@macraig`
+
+Co-authored-by: ManyTheFish <many@meilisearch.com>

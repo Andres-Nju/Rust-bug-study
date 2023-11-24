@@ -1,0 +1,5 @@
+fix(es/transforms): Handle member object in missing else branch (#7027)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/7025.

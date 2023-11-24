@@ -1,0 +1,4 @@
+fix(es/resolver): Ignore names of jsx attributes (#3289)
+
+swc_ecma_transforms_base:
+ - Ignore names of jsx attributes. (Closes #2854)

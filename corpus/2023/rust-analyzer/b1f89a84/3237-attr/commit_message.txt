@@ -1,0 +1,11 @@
+Auto merge of #15600 - davidbarsky:davidbarsky/broken-rustfmt-in-ra, r=Veykril
+
+fix: ensure `rustfmt` runs when configured with `./`
+
+(Hopefully) resolves https://github.com/rust-lang/rust-analyzer/issues/15595. This change kinda approaches canonicalization—which I am not a fan of—but only in service of making `./`-configured commands run correctly.
+
+Longer-term, I feel like this code should be removed once `rustfmt` supports recursive searches of configuration files or interpolation of values like `${workspace_folder}` lands in rust-analyzer.
+
+## Testing
+
+I cloned `rustc`, setup rust-analyzer as suggested in the [`rustc` dev guide](https://rustc-dev-guide.rust-lang.org/building/suggested.html#configuring-rust-analyzer-for-rustc), saved and formatted files in `src/tools/miri` and `compiler`, and saw `rustfmt` (seemingly) correctly.

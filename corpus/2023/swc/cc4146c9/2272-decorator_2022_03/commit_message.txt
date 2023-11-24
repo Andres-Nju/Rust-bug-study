@@ -1,0 +1,5 @@
+fix(es/compat): Make stage 3 decorator pass use correct state for inner classes (#7508)
+
+**Related issue:**
+
+ - Closes #7499.

@@ -1,0 +1,15 @@
+Auto merge of #15587 - dfireBird:fix-15128, r=Veykril
+
+Fix autoimport does nothing when importing trait that is as _ imports
+
+Potentially fixes #15128
+
+There are two cases of imports:
+1. With simple path
+2. With use tree list (or say complex path).
+
+On deeper inspection, the [`recursive_merge`](https://github.com/rust-lang/rust-analyzer/blob/994df3d6a31d39f11600f30a6df0b744b13937c1/crates/ide-db/src/imports/merge_imports.rs#L87) function (called by [`try_merge_trees_mut`)](https://github.com/rust-lang/rust-analyzer/blob/994df3d6a31d39f11600f30a6df0b744b13937c1/crates/ide-db/src/imports/merge_imports.rs#L69) is meaningful only in the case of complex path (i.e when the UseTree contains a UseTreeList).
+
+The [`recursive_merge`](https://github.com/rust-lang/rust-analyzer/blob/994df3d6a31d39f11600f30a6df0b744b13937c1/crates/ide-db/src/imports/merge_imports.rs#L87) function has [match with `Ok` arm](https://github.com/rust-lang/rust-analyzer/blob/994df3d6a31d39f11600f30a6df0b744b13937c1/crates/ide-db/src/imports/merge_imports.rs#L106), that is only executed when both LHS and RHS has `PathSegment` with same `NameRef`. The removal of underscore is implemented in this arm in the case of complex path.
+
+For simple paths, the underscore is removed by checking if both LHS and RHS are simple paths and if their `Path` is same (the check is done [here](https://github.com/rust-lang/rust-analyzer/blob/994df3d6a31d39f11600f30a6df0b744b13937c1/crates/ide-db/src/imports/merge_imports.rs#L74)) and remove the underscore if one is found (I made an assumption here that RHS will always be what rust-analyzer suggests to import, because at this point I'm not sure how to remove underscore with help of `ted::replace`).

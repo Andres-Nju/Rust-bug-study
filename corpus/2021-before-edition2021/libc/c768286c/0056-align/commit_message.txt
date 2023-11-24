@@ -1,0 +1,5 @@
+Auto merge of #2445 - JohnTitor:fix-msrv-on-win, r=JohnTitor
+
+Fix MSRV issue on Windows
+
+Fixes #2436

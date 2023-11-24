@@ -1,0 +1,2 @@
+feat(es/modules/amd): Support local-scoped amd requires (#4727)
+

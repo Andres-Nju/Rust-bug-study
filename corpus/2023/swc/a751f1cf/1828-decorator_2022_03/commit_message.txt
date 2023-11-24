@@ -1,0 +1,9 @@
+fix(es/compat): Transform default-exported class decorators correctly (#8050)
+
+**Description:**
+
+Process decorators on the class expression on `export default` declaration and ensure to execute tests for the feature.
+
+**Related issue:**
+
+ - Closes #8049

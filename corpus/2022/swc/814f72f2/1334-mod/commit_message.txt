@@ -1,0 +1,2 @@
+fix(es/decorators): Fix syntax context of decorated classes (#4905)
+

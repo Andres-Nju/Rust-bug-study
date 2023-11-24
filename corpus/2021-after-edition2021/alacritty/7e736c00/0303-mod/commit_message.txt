@@ -1,3 +1,0 @@
-Fix crash when vi cursor in history during clear
-
-Fixes #5544.

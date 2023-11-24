@@ -1,0 +1,5 @@
+Auto merge of #15854 - alibektas:15782/relax_hidden_attr, r=lnicola
+
+fix: Ignore doc(hidden) attr if no body is present
+
+fixes #15782

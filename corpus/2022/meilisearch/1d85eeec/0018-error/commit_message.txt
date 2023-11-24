@@ -1,0 +1,22 @@
+Merge #2930
+
+2930: fix wrong variant returned for invalid_api_key_indexes error r=ManyTheFish a=vishalsodani
+
+# Pull Request
+
+## Related issue
+Fixes #2924 
+
+## What does this PR do?
+- ...
+
+## PR checklist
+Please check if your PR fulfills the following requirements:
+- [x] Does this PR fix an existing issue, or have you listed the changes applied in the PR description (and why they are needed)?
+- [x] Have you read the contributing guidelines?
+- [x] Have you made sure that the title is accurate and descriptive of the changes?
+
+Thank you so much for contributing to Meilisearch!
+
+
+Co-authored-by: vishalsodani <vishalsodani@rediffmail.com>

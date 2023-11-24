@@ -1,0 +1,11 @@
+fix(es/codegen): Use `emitAssertForImportAttributes` (#7936)
+
+**Description:**
+
+ - Add `format.emitAssertForImportAttributes` to `minify()`
+ - Use `jsc.experimental. emitAssertForImportAttributes`.
+
+**Related issue (if exists):**
+
+ - Closes #7926
+ - Closes #7928

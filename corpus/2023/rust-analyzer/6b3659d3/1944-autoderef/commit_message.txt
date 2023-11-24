@@ -1,0 +1,8 @@
+Auto merge of #15026 - lowr:fix/deduplicate-compl-fields, r=Veykril
+
+fix: deduplicate fields and types in completion
+
+Fixes #15024
+
+- `hir_ty::autoderef()` (which is only meant to be used outside `hir-ty`) now deduplicates types and completely resolves inference variables within.
+- field completion now deduplicates fields of the same name and only picks such field of the first type in the deref chain.

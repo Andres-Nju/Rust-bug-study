@@ -1,0 +1,5 @@
+fix(es/transform): Apply `hygiene` and `resolver` if minify is specified (#6793)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/6791.

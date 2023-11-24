@@ -1,0 +1,13 @@
+Merge #1965
+
+1965: Reintroduce engine version file r=MarinPostma a=irevoire
+
+Right now if you boot up MeiliSearch and point it to a DB directory created with a previous version of MeiliSearch the existing indexes will be deleted. This [used to be](https://github.com/meilisearch/MeiliSearch/commit/51d7c84e7327b14f84522a1f5521f6d98c398a6f) prevented by a startup check which would compare the current engine version vs what was stored in the DB directory's version file, but this functionality seems to have been lost after a few refactorings of the code.
+
+In order to go back to the old behavior we'll need to reintroduce the `VERSION` file that used to be present; I considered reusing the `metadata.json` file used in the dumps feature, but this seemed like the simpler and more approach. As the intent is just to restore functionality, the implementation is quite basic. I imagine that in the future we could build on this and do things like compatibility across major/minor versions and even migrating between formats.
+
+This PR was made thanks to `@mbStavola` and is basically a port of his PR #1860 after a big refacto of the code #1796.
+
+Closes #1840
+
+Co-authored-by: Matt Stavola <m.freitas@offensive-security.com>

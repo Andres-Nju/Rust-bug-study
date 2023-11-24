@@ -1,0 +1,3 @@
+Merge pull request #920 from ljedrz/fix_metric_outbound
+
+Fix outbound metrics

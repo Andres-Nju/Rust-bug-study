@@ -1,0 +1,5 @@
+fix(es/resolver): Resolve parameters correctly (#6890)
+
+**Related issue:**
+
+ - Closes https://github.com/swc-project/swc/issues/5622.

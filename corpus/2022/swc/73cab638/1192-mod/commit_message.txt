@@ -1,0 +1,9 @@
+fix(es/minifier): Preserve unresolved references (#3780)
+
+swc_ecma_minifier:
+ - `pure`: Add an optional list of bindings.
+ - `pure`: Drop identifier only if we have the complete list of bindings.
+ - `pure`: Allow using `GLOBALS`.
+ - `pure`: Drop some pure member expressions.
+ - Move identifier dropping logic from the stateful optimizer to the pure optimizer.
+ - `pure`: Drop more references to global declarations.

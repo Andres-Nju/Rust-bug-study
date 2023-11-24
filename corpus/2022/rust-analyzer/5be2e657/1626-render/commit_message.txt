@@ -1,0 +1,7 @@
+Auto merge of #13185 - ChayimFriedman2:insert-ws-in-static-const-macro, r=Veykril
+
+fix: Insert whitespaces into static & const bodies if they are expanded from macro on hover
+
+Partially fixes #13143.
+
+To resolve the other part we need to expand macros in unevaluated static & const bodies, and I'm not sure we want to. If for example it includes a call to `assert!()`, expanding it will lead to worse hover.

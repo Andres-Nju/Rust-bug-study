@@ -1,0 +1,5 @@
+fix(es/minifier): Fix bugs (#3238)
+
+swc_ecma_minifier:
+ - `collapse_vars`: Respect `mutated`. (Closes #2679)
+ - Add a test for https://github.com/vercel/next.js/issues/31084.

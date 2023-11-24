@@ -1,0 +1,9 @@
+Merge #11878
+
+11878: fix: Paper over GAT panic r=flodiebold a=flodiebold
+
+TIL that Chalk expects the arguments to a generic associated type to come *before* the ones for the parent trait, not *after* as we have been doing with all other nested generics. Fixing this requires a larger refactoring, so for now this just papers over the problem by completely ignoring parameters of associated types.
+
+Fixes #11769.
+
+Co-authored-by: Florian Diebold <flodiebold@gmail.com>

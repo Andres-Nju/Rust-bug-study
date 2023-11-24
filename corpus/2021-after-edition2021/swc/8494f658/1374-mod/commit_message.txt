@@ -1,0 +1,4 @@
+fix(swc): Allow overriding specified parser config using `.swcrc` (#2547)
+
+swc:
+ - Merge parser config by enabling each feature. (#2546)

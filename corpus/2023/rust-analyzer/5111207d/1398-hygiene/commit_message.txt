@@ -1,0 +1,9 @@
+Auto merge of #14591 - justahero:gh-14516, r=Veykril
+
+Restrict "sort items" assist for traits & impls
+
+This restricts the "sort items alphabetically" assist when the selection is inside a `Impl` or `Trait` node & intersects with one of the associated items.
+
+It re-orders the conditional checks of AST nodes in the `sort_items` function to check for more specific nodes first before checking `Trait` or `Impl` nodes. The `AssistContext` is passed into the `add_sort_methods_assist` function to check if the selection intersects with any inner items, e.g. associated const or type alias, function. In this case the assist does not apply.
+
+Fixes: #14516

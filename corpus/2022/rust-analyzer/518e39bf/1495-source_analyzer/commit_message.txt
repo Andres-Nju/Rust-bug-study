@@ -1,0 +1,7 @@
+Auto merge of #13742 - lowr:fix/assoc-type-shorthand-with-gats, r=flodiebold
+
+fix: only shift `BoundVar`s that come from outside lowering context
+
+Fixes #13734
+
+There are some free functions `TyLoweringContext` methods call, which do not know anything about current binders in scope. We need to shift in the `BoundVar`s in substitutions that we get from them (#4952), but not those we get from `TyLoweringContext` methods.

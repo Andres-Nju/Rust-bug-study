@@ -1,0 +1,7 @@
+Auto merge of #12863 - lowr:fix/missing-fields-on-destructuring-assignment, r=Veykril
+
+Fix missing fields check on destructuring assignment
+
+Fixes #12838
+
+When checking if the record literal in question is an assignee expression or not, the new fn `is_assignee_record_literal` iterates over its ancestors until it is sure. This isn't super efficient, as we don't cache anything and does the iteration for every record literal during missing fields check. Alternatively, we may want to have a field like `assignee` on `hir_def::Expr::{RecordLit, Array, Tuple, Call}` to tell if it's an assignee expression, which would be O(1) when checking later but have some memory overhead for the field.

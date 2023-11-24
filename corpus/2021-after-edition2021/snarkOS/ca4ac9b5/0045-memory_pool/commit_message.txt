@@ -1,0 +1,3 @@
+Merge pull request #1238 from ljedrz/calculate_mempool_rtt_even_if_theres_no_reply
+
+Calculate the internal mempool RTT even if no response is sent

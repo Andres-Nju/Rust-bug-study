@@ -1,0 +1,5 @@
+Auto merge of #14011 - bvanjoi:fix-unwrap-block, r=jonas-schievink
+
+fix(ide-assists): unwrap block when it parent is let stmt
+
+fix #13990

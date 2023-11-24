@@ -1,0 +1,5 @@
+Auto merge of #14299 - Veykril:local-search, r=Veykril
+
+fix: Fix search not searching bodies of attributed items
+
+Closes https://github.com/rust-lang/rust-analyzer/issues/14229
