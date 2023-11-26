@@ -1,0 +1,3 @@
+Merge pull request #1896 from ljedrz/retry_block_parse_errors
+
+Retry on Block parse errors when syncing

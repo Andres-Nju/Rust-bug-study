@@ -1,0 +1,3 @@
+Merge pull request #1954 from ljedrz/reqwest_client
+
+Don't keep recreating the reqwest Client while syncing

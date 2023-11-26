@@ -1,6 +1,6 @@
 import os
 
-safety = ["unsafe", "safe", "Interior unsafe"]
+safety = ["unsafe", "safe", "Interior unsafe", "unknown"]
 
 not_general_bug_cnt = 0
 un_checked_cnt = 0

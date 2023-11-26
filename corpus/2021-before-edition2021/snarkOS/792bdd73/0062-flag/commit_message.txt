@@ -1,0 +1,3 @@
+Merge pull request #888 from ljedrz/ad_hoc_storage_validator_runs
+
+Add a command line argument that runs the storage validator

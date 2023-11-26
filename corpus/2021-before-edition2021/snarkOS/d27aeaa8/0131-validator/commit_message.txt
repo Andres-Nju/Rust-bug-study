@@ -1,0 +1,3 @@
+Merge pull request #1059 from ljedrz/return_error_vec_from_storage_validator
+
+Return a vec of errors when validating storage
