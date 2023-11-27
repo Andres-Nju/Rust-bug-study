@@ -1,3 +1,0 @@
-macros: fix empty `join!` and `try_join!` (#5504)
-
-Fixes: #5502

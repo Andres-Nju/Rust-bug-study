@@ -1,3 +1,0 @@
-Merge pull request #719 from ljedrz/lockless_writes
-
-Lockless connection writes, fix a peering error

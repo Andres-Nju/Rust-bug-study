@@ -1,5 +1,0 @@
-Auto merge of #12965 - DesmondWillowbrook:assoc-method-dimming, r=Veykril
-
-feat: make trait assoc items become inactive due to cfg
-
-fixes #12394

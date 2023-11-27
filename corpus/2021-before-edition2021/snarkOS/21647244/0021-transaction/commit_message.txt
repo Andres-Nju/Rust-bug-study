@@ -1,3 +1,0 @@
-Merge pull request #1036 from niklaslong/block-height-fix
-
-Fix the block height metric

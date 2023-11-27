@@ -1,5 +1,0 @@
-fix(es/minifier): Check if object shorthand is skippable for seq inliner (#8036)
-
-**Related issue:**
-
- - Closes #7984

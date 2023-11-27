@@ -1,2 +1,0 @@
-net: make `try_io` methods call mio's `try_io` internally (#4582)
-

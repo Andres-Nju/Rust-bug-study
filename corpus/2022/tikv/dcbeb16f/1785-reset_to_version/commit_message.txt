@@ -1,5 +1,0 @@
-dr-auto-sync: judge whether `RocksWriteBatchVec` is empty (#13238)
-
-close tikv/tikv#13194
-
-Signed-off-by: lhy1024 <admin@liudos.us>

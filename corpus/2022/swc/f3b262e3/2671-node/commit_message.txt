@@ -1,2 +1,0 @@
-fix(es/modules): Preserve extensions (#4524)
-

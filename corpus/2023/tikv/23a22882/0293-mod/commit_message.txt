@@ -1,9 +1,0 @@
-resolved_ts: reduce network traffic by filter regions (#14098)
-
-close tikv/tikv#14092
-
-resolved_ts: reduce network traffic by filter regions
-
-Signed-off-by: Neil Shen <overvenus@gmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

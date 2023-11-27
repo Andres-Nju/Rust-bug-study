@@ -1,5 +1,0 @@
-fix(es/minifier): Fix analysis of assignments (#5924)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/5910

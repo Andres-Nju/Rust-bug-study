@@ -1,2 +1,0 @@
-feat(es/parser): Add an option to allow `super` outside of class methods (#3427)
-

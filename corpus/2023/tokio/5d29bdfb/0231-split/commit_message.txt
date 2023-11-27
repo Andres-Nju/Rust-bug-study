@@ -1,2 +1,0 @@
-io: delegate `WriteHalf::poll_write_vectored` (#5914)
-

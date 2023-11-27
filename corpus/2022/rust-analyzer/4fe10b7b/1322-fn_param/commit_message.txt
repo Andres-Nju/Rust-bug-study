@@ -1,8 +1,0 @@
-Merge #11265
-
-11265: fix: Fix postfix completion panic r=lnicola a=Veykril
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/11233
-bors r+
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

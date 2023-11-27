@@ -1,2 +1,0 @@
-fix(css/modules): Support composes when using multiple subclass selectors (#7949)
-

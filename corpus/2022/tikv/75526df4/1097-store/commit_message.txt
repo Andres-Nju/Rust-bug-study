@@ -1,5 +1,0 @@
-raftstore:Fix memory metrics overflow on raft msgs (#12186)
-
-Signed-off-by: tier-cap <zhengxiaojin@pingcap.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

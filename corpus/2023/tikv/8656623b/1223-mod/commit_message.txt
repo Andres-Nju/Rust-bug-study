@@ -1,9 +1,0 @@
-txn: Check whether the primary matches when handling check_txn_status requests (#14637)
-
-close tikv/tikv#14636, ref pingcap/tidb#42937
-
-Makes TiKV support checking whether the lock is primary when handling check_txn_status.
-
-Signed-off-by: MyonKeminta <MyonKeminta@users.noreply.github.com>
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

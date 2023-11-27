@@ -1,9 +1,0 @@
-Auto merge of #13681 - lowr:fix/extract-function-tail-expr, r=Veykril
-
-fix: check tail expressions more precisely in `extract_function`
-
-Fixes #13620
-
-When extracting expressions with control flows into a function, we can avoid wrapping tail expressions in `Option` or `Result` when they are also tail expressions of the container we're extracting from (see #7840, #9773). This is controlled by `ContainerInfo::is_in_tail`, but we've been computing it by checking if the tail expression of the range to extract is contained in the container's syntactically last expression, which may be a block that contains both tail and non-tail expressions (e.g. in #13620, the range to be extracted is not a tail expression but we set the flag to true).
-
-This PR tries to compute the flag as precise as possible by utilizing `for_each_tail_expr()` (and also moves the flag to `Function` struct as it's more of a property of the function to be extracted than of the container).

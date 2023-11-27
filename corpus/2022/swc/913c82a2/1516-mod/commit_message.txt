@@ -1,7 +1,0 @@
-fix(es/lints): Fix incorrect duplicate binding error (#3194)
-
-swc_ecma_transforms_base:
- - `resolver`: Fix resolving of `const` and `let`.
-
-swc_ecma_lints:
- - `duplicate_bindings`: Don't mark ambient function declararions as a binding. (Closes #3193)

@@ -1,8 +1,0 @@
-Auto merge of #14208 - Kohei316:master, r=Veykril
-
-fix:add a case in which remainig is None in resolveing types when resolving hir path.
-
-fix #14030 The variable type is being determined incorrectly
-This PR fixed a problem in which `go to definition` is jumping to the incorrect position because it was failing to resolve the type in case it defined in the module when resolving hir.
-In addition, I added a test for this issue and refactored the related code.
-This is my first PR and I am using a translation tool to write this text. Let me know if you have any problems.

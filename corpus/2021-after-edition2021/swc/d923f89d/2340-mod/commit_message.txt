@@ -1,7 +1,0 @@
-fix(es/compat): Fix `classes` pass (#3107)
-
-swc_ecma_ast:
- - Add `Ident::verify_symbol`.
-
-swc_ecma_transforms_compat:
- - Don't generate invalid identifiers. (Closes #3106)

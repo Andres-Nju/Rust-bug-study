@@ -1,2 +1,0 @@
-fix(es/minifier): Avoid dropping statements which has side-effects (#6476)
-

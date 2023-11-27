@@ -1,2 +1,0 @@
-fix(es/parser): Throw an error when function body has use strict and paramaters is not simple (#3278)
-

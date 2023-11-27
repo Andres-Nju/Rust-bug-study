@@ -1,5 +1,0 @@
-fix(es/parser): Fix stack overflow due to deeply nested if (#6910)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6813.

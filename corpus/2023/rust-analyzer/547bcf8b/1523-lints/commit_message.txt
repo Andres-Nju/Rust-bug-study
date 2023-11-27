@@ -1,5 +1,0 @@
-Auto merge of #15688 - Veykril:rustc_layout_scalar_valid_range, r=Veykril
-
-Make rustc_layout_scalar_valid_range attributes work for non-decimal literals
-
-Closes https://github.com/rust-lang/rust-analyzer/issues/15687

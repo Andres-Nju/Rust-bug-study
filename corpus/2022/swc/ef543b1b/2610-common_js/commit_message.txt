@@ -1,2 +1,0 @@
-fix(es/modules): Handle `this` in class methods (#5065)
-

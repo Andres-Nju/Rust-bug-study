@@ -1,7 +1,0 @@
-update default value for end_point_request_max_handle_duration (#15029)
-
-close tikv/tikv#15022
-
-Update default end_point_request_max_handle_duration for big region size
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

@@ -1,9 +1,0 @@
-raftstore-v2: implement replica read (#14706)
-
-close tikv/tikv#14701
-
-raftstore-v2: implement replica read
-
-Signed-off-by: Neil Shen <overvenus@gmail.com>
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

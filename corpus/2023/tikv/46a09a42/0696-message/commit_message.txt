@@ -1,8 +1,0 @@
-raftstorev2: fix transfer leader rejection due to admin cmd (#14790)
-
-close tikv/tikv#14785
-
-raftstorev2: fix transfer leader rejection due to admin cmd
-
-Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

@@ -1,2 +1,0 @@
-fix(es/minifier): Inline vars declared in conditional paths (#5392)
-

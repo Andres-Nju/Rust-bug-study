@@ -1,3 +1,0 @@
-Merge pull request #779 from ljedrz/tighter_connected_accounting
-
-Improve the accounting of connected peers

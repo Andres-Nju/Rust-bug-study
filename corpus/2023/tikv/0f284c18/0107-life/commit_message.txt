@@ -1,7 +1,0 @@
-resolved ts: update read progress when peer destroyed or merged (#15102)
-
-close tikv/tikv#15031
-
-Signed-off-by: 3pointer <luancheng@pingcap.com>
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

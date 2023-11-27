@@ -1,5 +1,0 @@
-fix(es/parser): Parse types in `CallExpression` inside templates (#6611)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6601.

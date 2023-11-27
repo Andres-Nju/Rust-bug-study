@@ -1,7 +1,0 @@
-sst_importer: add wire extra bytes into the packed size (#14312)
-
-close tikv/tikv#14313
-
-Signed-off-by: hillium <yujuncen@pingcap.com>
-
-Co-authored-by: Xinye Tao <xy.tao@outlook.com>

@@ -1,5 +1,0 @@
-Auto merge of #14025 - Veykril:changekind-fix, r=jonas-schievink
-
-fix: Fix process-changes not deduplicating changes correctly
-
-probably fixes https://github.com/rust-lang/rust-analyzer/issues/12873 (will close it with this nevertheless as its not really reproducible)

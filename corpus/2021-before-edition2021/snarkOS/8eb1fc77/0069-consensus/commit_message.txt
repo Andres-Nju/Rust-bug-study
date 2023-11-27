@@ -1,3 +1,0 @@
-Merge pull request #913 from ljedrz/fix_metric_block_height
-
-Fix the block height metric

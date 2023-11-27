@@ -1,3 +1,0 @@
-Merge pull request #1208 from ljedrz/faster_peer_list_collection
-
-Enforce a timeout to speed up peer list collection

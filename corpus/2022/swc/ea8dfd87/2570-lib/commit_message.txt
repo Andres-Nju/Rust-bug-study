@@ -1,6 +1,0 @@
-fix(es/codegen): Fix bugs (#3436)
-
-swc_ecma_codegen:
- - Emit `;` after do-while statemnts. (#3426)
- - Don't emit two dots for minified numeric literals. (#3428)
- - Handle semicolons correctly. (#3420)

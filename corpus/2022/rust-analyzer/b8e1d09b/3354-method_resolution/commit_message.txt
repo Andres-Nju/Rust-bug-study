@@ -1,8 +1,0 @@
-Merge #11806
-
-11806: fix: Fix async block type inference using containing function return type r=Veykril a=Veykril
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/11804
-Should fix https://github.com/rust-analyzer/rust-analyzer/issues/11798#issuecomment-1076880521
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

@@ -1,9 +1,0 @@
-tikv_util: handle cgroup path building error (#12485)
-
-close tikv/tikv#12479, ref tikv/tikv#12585
-
-Handle cgroup path building error gracefully
-
-Signed-off-by: tabokie <xy.tao@outlook.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

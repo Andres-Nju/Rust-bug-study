@@ -1,7 +1,0 @@
-Auto merge of #13027 - jonas-schievink:fix-mismatch-with-trailing-empty-macro, r=jonas-schievink
-
-fix: Fix incorrect type mismatch with `cfg_if!` and other macros in expression position
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/12940
-
-This is a bit of a hack, ideally `MacroStmts` would not exist at all after HIR lowering, but that requires changing how the lowering code works.

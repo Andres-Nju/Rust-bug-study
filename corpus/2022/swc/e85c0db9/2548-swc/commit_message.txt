@@ -1,2 +1,0 @@
-feat(es/config): Add `isModule` to `.swcrc` (#4993)
-

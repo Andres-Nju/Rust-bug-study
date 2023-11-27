@@ -1,7 +1,0 @@
-test: make test test_destroy_missing more stable (#15616)
-
-close tikv/tikv#15615
-
-Signed-off-by: glorv <glorvs@163.com>
-
-Co-authored-by: Spade  A <71589810+SpadeA-Tang@users.noreply.github.com>

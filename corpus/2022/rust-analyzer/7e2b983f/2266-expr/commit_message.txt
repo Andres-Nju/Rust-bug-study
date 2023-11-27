@@ -1,5 +1,0 @@
-Auto merge of #12861 - DorianListens:dscheidt/complete-field, r=DorianListens
-
-fix: Autocomplete for struct fields includes receiver
-
-fixes #12857

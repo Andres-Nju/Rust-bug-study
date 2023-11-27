@@ -1,2 +1,0 @@
-fix(es/modules): Use an indirect call for a tagged template (#5382)
-

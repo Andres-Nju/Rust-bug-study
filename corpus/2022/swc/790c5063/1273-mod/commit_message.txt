@@ -1,7 +1,0 @@
-fix(es/minifier): Fix for modules (#3170)
-
-swc_ecma_minifier:
- - Handle exported declarations correctly.
-
-swc:
- - Change default of `compress.toplevel` and `mangle.top_level` to true for modules. (Closes #3169)

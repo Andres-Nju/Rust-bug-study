@@ -1,5 +1,0 @@
-fix(css/modules): Preserve attr selectors used with `:global` (#7670)
-
-**Related issue:**
-
- - Closes #7669

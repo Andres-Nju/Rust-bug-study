@@ -1,5 +1,0 @@
-Auto merge of #14642 - jakhh8:master, r=Veykril
-
-minor: Use `CargoConfig.extra_args` for fetching metadata
-
-Fixes #14510

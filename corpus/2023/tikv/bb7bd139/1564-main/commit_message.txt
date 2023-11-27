@@ -1,5 +1,0 @@
-ctl: remove success flashback in retry loop (#15116)
-
-close tikv/tikv#15107
-
-Signed-off-by: husharp <jinhao.hu@pingcap.com>

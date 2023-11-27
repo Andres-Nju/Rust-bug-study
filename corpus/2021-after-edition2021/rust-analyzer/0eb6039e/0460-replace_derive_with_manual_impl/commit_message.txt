@@ -1,7 +1,0 @@
-Merge #10987
-
-10987: fix: respect inner attributes for Structs and Enums r=lnicola a=rainy-me
-
-fix: #10980 (the allow/deny issue is not fully resolved though.)
-
-Co-authored-by: rainy-me <github@yue.coffee>

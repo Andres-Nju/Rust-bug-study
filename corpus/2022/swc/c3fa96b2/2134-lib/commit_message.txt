@@ -1,2 +1,0 @@
-fix(es/minifier): Fix unicode handling (#5875)
-

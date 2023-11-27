@@ -1,8 +1,0 @@
-log-backup: make initial scanning more robust    (#14403)
-
-close tikv/tikv#14451
-
-Signed-off-by: hillium <yujuncen@pingcap.com>
-Signed-off-by: 山岚 <36239017+YuJuncen@users.noreply.github.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

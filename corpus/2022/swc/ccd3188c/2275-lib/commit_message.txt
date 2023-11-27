@@ -1,2 +1,0 @@
-fix(es/codegen): Handle comments on the argument of `throw` (#4254)
-

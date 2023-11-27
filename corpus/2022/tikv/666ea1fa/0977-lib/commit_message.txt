@@ -1,9 +1,0 @@
-pd_client: Do not reconnect on store tombstone error (#12629)
-
-close tikv/tikv#12506
-
-do not reconnect PD on store tombstone error
-
-Signed-off-by: Connor1996 <zbk602423539@gmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

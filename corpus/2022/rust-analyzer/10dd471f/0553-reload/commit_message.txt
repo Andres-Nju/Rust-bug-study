@@ -1,5 +1,0 @@
-Auto merge of #12175 - Veykril:completion-rev, r=Veykril
-
-fix: Fix snippets triggering where they shouldn't
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/12169

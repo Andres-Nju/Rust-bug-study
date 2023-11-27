@@ -1,2 +1,0 @@
-fix(es/minifier): Don't remove comments if `compress` is not configured (#3866)
-

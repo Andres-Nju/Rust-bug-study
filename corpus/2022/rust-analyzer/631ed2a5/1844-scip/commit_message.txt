@@ -1,5 +1,0 @@
-Auto merge of #13092 - Veykril:ref-match-completion, r=Veykril
-
-fix: Fix reference autocompletions using incorrect offsets in macro inputs
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/13035

@@ -1,7 +1,0 @@
-log-backup: fix slow flush in GCP (#13674)
-
-close tikv/tikv#13688, close pingcap/tidb#38642
-
-Signed-off-by: hillium <yujuncen@pingcap.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

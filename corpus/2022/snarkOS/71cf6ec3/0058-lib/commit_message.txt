@@ -1,3 +1,0 @@
-Merge pull request #1664 from ljedrz/testnet3_trusted_peers
-
-Introduce a notion of trusted peers

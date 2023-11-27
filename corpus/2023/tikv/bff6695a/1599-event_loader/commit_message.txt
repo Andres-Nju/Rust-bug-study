@@ -1,5 +1,0 @@
-log-backup: Fix sub tracking (#14185)
-
-close tikv/tikv#14184
-
-Signed-off-by: hillium <yujuncen@pingcap.com>

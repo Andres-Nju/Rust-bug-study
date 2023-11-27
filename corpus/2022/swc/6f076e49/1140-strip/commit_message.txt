@@ -1,2 +1,0 @@
-feat(es/transform): Unify logic for handling class properties (#3766)
-

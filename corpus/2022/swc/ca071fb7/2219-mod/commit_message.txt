@@ -1,2 +1,0 @@
-fix(es): Adjust tracing span level (#3911)
-

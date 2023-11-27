@@ -1,5 +1,0 @@
-tablet: fix the potential dead lock in open_tablet (#13165)
-
-close tikv/tikv#13213
-
-Signed-off-by: SpadeA-Tang <u6748471@anu.edu.au>

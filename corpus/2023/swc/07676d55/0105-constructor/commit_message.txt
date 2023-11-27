@@ -1,5 +1,0 @@
-fix(es/compat): Ignore `this` in nested scopes in `classes` pass (#6796)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6506.

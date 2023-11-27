@@ -1,7 +1,0 @@
-copr: fix a wrong check in time parsing (#12740)
-
-ref tikv/tikv#12739, close tikv/tikv#12739
-
-See #12739
-
-Signed-off-by: gengliqi <gengliqiii@gmail.com>

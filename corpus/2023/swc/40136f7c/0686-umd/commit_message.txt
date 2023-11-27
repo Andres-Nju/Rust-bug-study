@@ -1,5 +1,0 @@
-fix(es/module): Do not determine module name for modules without exports in UMD (#7718)
-
-**Related issue:**
-
- - Closes #6263.

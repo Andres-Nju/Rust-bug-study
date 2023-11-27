@@ -1,9 +1,0 @@
-fix(es): Use `paren_remover` pass (#5753)
-
-**Description:**
-
-We now apply the paren_remover pass before applying other transforms.
-
-**Related issue:**
- - Closes #5652 
- - Closes #5752

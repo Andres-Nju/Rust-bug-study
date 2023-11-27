@@ -1,8 +1,0 @@
-Merge #10382
-
-10382: fix: Fix inline_call breaking RecordExprField shorthands r=Veykril a=Veykril
-
-Fixes #10349
-bors r+
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

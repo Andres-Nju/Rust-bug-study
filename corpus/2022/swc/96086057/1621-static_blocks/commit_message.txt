@@ -1,2 +1,0 @@
-build(node-swc): Fix GLIBC < 2.18 compatible issues and android arm binary loading issue (#3314)
-

@@ -1,7 +1,0 @@
-Merge #4038
-
-4038: Fix filter escaping issues r=ManyTheFish a=Kerollmops
-
-This PR fixes #4034 by always escaping the sequences. Users must always put quotes (simple or double) to escape the filter values.
-
-Co-authored-by: Kerollmops <clement@meilisearch.com>

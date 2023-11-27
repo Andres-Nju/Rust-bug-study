@@ -1,7 +1,0 @@
-Merge #1686
-
-1686: Bump milli r=curquiza a=irevoire
-
- fixes #1685, #1678, #1671, #1677 and #1680
-
-Co-authored-by: Tamo <tamo@meilisearch.com>

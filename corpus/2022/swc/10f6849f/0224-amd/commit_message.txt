@@ -1,2 +1,0 @@
-fix(es/modules/amd): Support `export * as foo from 'foo'` (#4904)
-

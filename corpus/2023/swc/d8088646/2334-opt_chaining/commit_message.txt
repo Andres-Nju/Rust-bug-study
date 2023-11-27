@@ -1,5 +1,0 @@
-fix(es/compat): Fix optional chaining pass (#6875)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6762.

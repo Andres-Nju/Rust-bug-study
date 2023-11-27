@@ -1,5 +1,0 @@
-fix(es/module): Add `"use strict"` while preserving directives (#7537)
-
-**Related issue:**
-
- - Closes #7536.

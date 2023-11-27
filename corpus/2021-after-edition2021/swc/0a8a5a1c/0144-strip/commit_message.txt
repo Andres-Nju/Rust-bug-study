@@ -1,4 +1,0 @@
-fix(es/typescript): transform namespace with multiple identifiers in name (#2952)
-
-swc_ecma_transforms_typescript:
- - Allow using typescript namespace with mutli-identifer name. (Closes #2810)

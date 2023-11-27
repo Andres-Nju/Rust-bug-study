@@ -1,5 +1,0 @@
-fix(es/minifier): Always consider `reassigned` when inlining (#8168)
-
-**Related issue:**
-
- - Closes #8161.

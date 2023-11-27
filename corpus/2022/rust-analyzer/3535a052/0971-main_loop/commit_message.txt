@@ -1,5 +1,0 @@
-Auto merge of #12346 - rainy-me:fix/builtin-type-docs-links, r=Veykril
-
-fix: special case base url of `BuiltinType` to core
-
-fix #12250

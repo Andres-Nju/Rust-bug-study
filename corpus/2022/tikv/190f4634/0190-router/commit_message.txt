@@ -1,5 +1,0 @@
-log-backup: fix the missing sha256 calculation in a flush retry (#13033)
-
-ref tikv/tikv#208, close tikv/tikv#13034
-
-Signed-off-by: 3pointer <luancheng@pingcap.com>

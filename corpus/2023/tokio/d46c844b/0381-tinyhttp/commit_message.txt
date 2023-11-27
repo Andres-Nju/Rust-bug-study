@@ -1,4 +1,0 @@
-examples: fix panic in tinyhttp example (#5328)
-
-As method in httparse result is no longer part of input buffer it needs
-to be handled separately.

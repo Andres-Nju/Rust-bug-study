@@ -1,2 +1,0 @@
-fix(es/compat): Handle spreads of string literials (#4191)
-

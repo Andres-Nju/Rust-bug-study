@@ -1,5 +1,0 @@
-fix(es/typescript): Fix handling of optional chaining (#7660)
-
-**Related issue:**
-
- - Closes #7659.

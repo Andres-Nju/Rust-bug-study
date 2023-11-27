@@ -1,2 +1,0 @@
-fix(es/module): Make exported vars follow specification (#3906)
-

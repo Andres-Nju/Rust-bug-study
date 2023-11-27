@@ -1,5 +1,0 @@
-fix(es/minifier): Make name mangler respect `toplevel` (#6774)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6418.

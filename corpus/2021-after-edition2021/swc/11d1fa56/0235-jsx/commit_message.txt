@@ -1,4 +1,0 @@
-fix(es/lexer): Fix handling of jsx escapes (#2723)
-
-swc_ecma_parser:
- - Remove logic for unescaping jsx escapes. (Closes #2162)

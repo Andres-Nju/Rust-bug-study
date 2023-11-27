@@ -1,2 +1,0 @@
-fix(es/compat): Mark reserved function names private (#7298)
-

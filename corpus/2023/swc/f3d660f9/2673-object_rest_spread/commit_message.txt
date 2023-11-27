@@ -1,5 +1,0 @@
-fix(es/compat): Fix variable scoping of object rest pass. (#7437)
-
-**Related issue:**
-
- - Closes #6988.

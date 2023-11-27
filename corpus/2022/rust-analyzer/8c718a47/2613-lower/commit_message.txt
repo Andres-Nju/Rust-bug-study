@@ -1,9 +1,0 @@
-Merge #11517
-
-11517: fix: Fix qualfiied record literal completion triggering too eagerly r=Veykril a=Veykril
-
-Supercedes https://github.com/rust-analyzer/rust-analyzer/pull/10909
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10889
-bors r+
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

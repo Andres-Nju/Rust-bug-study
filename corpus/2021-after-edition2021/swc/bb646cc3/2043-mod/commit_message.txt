@@ -1,2 +1,0 @@
-fix(es/transforms/compat): Apply `block_scoping` before `regenerator` (#2740)
-

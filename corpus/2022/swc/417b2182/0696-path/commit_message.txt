@@ -1,2 +1,0 @@
-fix(es/loader): Fix `jsc.paths` on windows (#4739)
-

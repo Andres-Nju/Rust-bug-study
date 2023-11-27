@@ -1,9 +1,0 @@
-file_system: bypass file allocate implementation in fs2 (#11700)
-
-Close #10688
-
-Patch fs2 to https://github.com/tabokie/fs2-rs/tree/tikv. In which, `posix_fallocate` is replaced with `fallocate` (https://github.com/danburkert/fs2-rs/pull/42).
-
-* bypass file allocate implementation in fs2
-
-Signed-off-by: tabokie <xy.tao@outlook.com>

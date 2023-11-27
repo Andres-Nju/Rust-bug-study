@@ -1,5 +1,0 @@
-fix(es/compat): Insert the variable declaration nearest to the available statements (#7067)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/7064.

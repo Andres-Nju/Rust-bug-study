@@ -1,2 +1,0 @@
-fix(es/codegen): Add `;` for a generator function (#5292)
-

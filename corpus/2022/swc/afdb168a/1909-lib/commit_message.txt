@@ -1,2 +1,0 @@
-fix(es/loader): Add an option to resolve symlinks with `true` as a default (#3340)
-

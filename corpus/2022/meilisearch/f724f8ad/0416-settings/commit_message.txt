@@ -1,7 +1,0 @@
-Merge #3122
-
-3122: Display the `dumpUid` as `null` until we create it r=irevoire a=Kerollmops
-
-This PR fixes #3117 by displaying the `DumpCreation` `dumpUid` details field as `null` until we compute the dump and the task is finished.
-
-Co-authored-by: Kerollmops <clement@meilisearch.com>

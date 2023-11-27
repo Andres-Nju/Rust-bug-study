@@ -1,5 +1,0 @@
-pd-client:  pd client should update if the grpc stream sender failed. (#13094)
-
-close tikv/tikv#12934
-
-Signed-off-by: bufferflies <1045931706@qq.com>

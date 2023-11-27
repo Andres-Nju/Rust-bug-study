@@ -1,5 +1,0 @@
-fix(es/codegen): Fix codegen of string literals with `\x000` (#6838)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6836.

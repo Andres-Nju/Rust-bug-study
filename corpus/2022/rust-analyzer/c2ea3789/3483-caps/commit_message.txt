@@ -1,7 +1,0 @@
-Merge #11795
-
-11795: fix: Correctly suggest auto importing traits from aliases r=Veykril a=unexge
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/11506
-
-Co-authored-by: unexge <unexge@gmail.com>

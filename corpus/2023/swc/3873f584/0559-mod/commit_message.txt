@@ -1,5 +1,0 @@
-fix(es/minifier): Mark args of `new`s as references (#7743)
-
-**Related issue:**
-
- - Closes #7739.

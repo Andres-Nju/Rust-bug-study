@@ -1,2 +1,0 @@
-fix(es/compat): Handle a nullish coalescing in a switch case (#6363)
-

@@ -1,2 +1,0 @@
-fix(es/typescript): Mark namespaces as concrete (#4736)
-

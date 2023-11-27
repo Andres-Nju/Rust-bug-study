@@ -1,5 +1,0 @@
-fix(es/parser): Fix parsing of generics (#6859)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6851.

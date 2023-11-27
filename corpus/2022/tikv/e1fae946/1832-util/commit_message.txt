@@ -1,7 +1,0 @@
-Fix logic of error string match in `bad-ssts` (#12049)
-
- 
-
-Signed-off-by: Xintao <hunterlxt@live.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

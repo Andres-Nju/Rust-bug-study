@@ -1,4 +1,0 @@
-fix(es/compat): Visit assign expr in generator (#7932)
-
-**Related issue:**
- - Closes #7809

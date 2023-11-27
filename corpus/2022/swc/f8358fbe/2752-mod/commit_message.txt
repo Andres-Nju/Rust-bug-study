@@ -1,9 +1,0 @@
-fix(es/minifier): Remove wrong variable joiner pass (#5992)
-
-**Description:**
-
-We had two passes for joining variables. This PR removes one in the full optimizer, which is wrong.
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/5989.

@@ -1,2 +1,0 @@
-fix(es/typescript): Mark `A` as a type in `export { type A }` (#7196)
-

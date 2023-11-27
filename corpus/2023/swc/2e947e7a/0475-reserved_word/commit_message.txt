@@ -1,2 +1,0 @@
-fix(es/compat): Handle export function in `reserved_word` (#7251)
-

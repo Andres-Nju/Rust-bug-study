@@ -1,5 +1,0 @@
-Rollup merge of #110770 - m-ou-se:fmt-temp-lifetime, r=oli-obk
-
-Limit lifetime of format_args!() with inlined args.
-
-Fixes #110769

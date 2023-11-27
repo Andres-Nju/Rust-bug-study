@@ -1,6 +1,0 @@
-fix(es/renamer): Don't use symbols used by declarations if `eval` exists (#7116)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6971.
- - Closes https://github.com/swc-project/swc/issues/7094.

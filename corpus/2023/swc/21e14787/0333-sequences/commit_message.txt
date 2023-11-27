@@ -1,5 +1,0 @@
-fix(es/minifier): Don't inline into `await` from sequential inliner (#6839)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6837.

@@ -1,9 +1,0 @@
-tests: fix flaky test_rate_limited_*_flow (#10304)
-
-* Reduce job count in test_rate_limited_hybrid_flow
-
-Signed-off-by: tabokie <xy.tao@outlook.com>
-
-* tune up tolerance
-
-Signed-off-by: tabokie <xy.tao@outlook.com>

@@ -1,9 +1,0 @@
-raftstorev2: fix miss ready after handling read index (#14789)
-
-close tikv/tikv#14786
-
-raftstorev2: fix miss ready after handling read index
-
-Signed-off-by: Neil Shen <overvenus@gmail.com>
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

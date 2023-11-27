@@ -1,9 +1,0 @@
-Raftstore: fix the config of region_split_check_diff (#12599)
-
-close tikv/tikv#12598
-
-fix the config of region_split_check_diff with min(region_size/16, bucket_size)
-
-Signed-off-by: qi.xu <tonxuqi@outlook.com>
-
-Co-authored-by: qi.xu <tonxuqi@outlook.com>

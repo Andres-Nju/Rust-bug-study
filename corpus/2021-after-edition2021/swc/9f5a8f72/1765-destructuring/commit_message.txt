@@ -1,4 +1,0 @@
-fix(es/compat): Fix `destructuring` (#3104)
-
-swc_ecma_transforms_compat:
- - `destructuring`: Handle assignment expressions in rhs of variable declarators correctly. (Closes #2850)

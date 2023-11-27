@@ -1,9 +1,0 @@
-raftstore: allow a read-only flashback request to be propsed (#13871)
-
-close tikv/tikv#13870, fix tikv/tikv#13870
-
-Because the flashback read request must be proposed after the `PrepareFlashback`
-and it won't have any side effects, it's safe to allow a read-only flashback request to
-be proposed. In this way, we can also fix #13870.
-
-Signed-off-by: JmPotato <ghzpotato@gmail.com>

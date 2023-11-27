@@ -1,5 +1,0 @@
-fix(es/parser): Fix priority of `>>>` (#6748)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6739.

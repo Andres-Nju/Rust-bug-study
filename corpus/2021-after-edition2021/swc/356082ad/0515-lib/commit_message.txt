@@ -1,2 +1,0 @@
-fix(es/utils): Fix handling of `new.target` (#3145)
-

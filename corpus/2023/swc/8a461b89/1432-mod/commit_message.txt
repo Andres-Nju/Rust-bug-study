@@ -1,5 +1,0 @@
-feat(es/minifier): Drop empty static blocks (#8152)
-
-**Related issue:**
-
- - Closes #8136

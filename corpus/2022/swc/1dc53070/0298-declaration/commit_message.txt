@@ -1,7 +1,0 @@
-feat(css/minifier): Minify the name of `@keyframes` (#5894)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/5889.
-
-Co-authored-by: 一丝 <percyley@qq.com>

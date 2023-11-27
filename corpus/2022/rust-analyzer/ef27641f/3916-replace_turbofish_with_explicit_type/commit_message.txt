@@ -1,9 +1,0 @@
-Auto merge of #13154 - Veykril:ty-mac-expander, r=Veykril
-
-Drop the expander borrow in all control flow paths
-
-The change in https://github.com/rust-lang/rust-analyzer/pull/13123
-actually re-uses the RefMut borrow instead of dropping it so we need to
-drop it manually where required.
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/13153

@@ -1,7 +1,0 @@
-Auto merge of #13237 - Veykril:process-changes, r=Veykril
-
-Amalgamate file changes for the same file ids in process_changes
-
-When receiving multiple change events for a single file id where the last change is a delete the server panics, as it tries to access the file contents of a deleted file. This occurs due to the VFS changes and the in memory file contents being updated immediately, while `process_changes` processes the events afterwards in sequence which no longer works as it will only observe the final file contents. By folding these events together, we will no longer try to process these intermediate changes, as they aren't relevant anyways.
-
-Potentially fixes https://github.com/rust-lang/rust-analyzer/issues/13236

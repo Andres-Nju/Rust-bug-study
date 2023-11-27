@@ -1,5 +1,0 @@
-fix(es/codegen): Don't print trailing coma for a rest argument (#6610)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6589.

@@ -1,2 +1,0 @@
-fix(es/minifier): Check if an inlined value is mutated (#5318)
-

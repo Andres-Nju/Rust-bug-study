@@ -1,8 +1,0 @@
-fix(es/minifier): Remove `fake_block` while calculating next scope (#5869)
-
-**Description:**
-
-We now remove `fake_block` mark from `with_ctx`.
-
-**Related issue:**
- - Closes https://github.com/swc-project/swc/issues/5865

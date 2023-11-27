@@ -1,9 +1,0 @@
-raftstore-v2: support flashback region (#14685)
-
-close tikv/tikv#14684
-
-raftstore-v2: support flashback region
-
-Signed-off-by: Neil Shen <overvenus@gmail.com>
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

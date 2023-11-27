@@ -1,7 +1,0 @@
-raftstore-v2: persist applied index after ingset sst (#15538)
-
-close tikv/tikv#15461
-
-Signed-off-by: glorv <glorvs@163.com>
-
-Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

@@ -1,5 +1,0 @@
-feat(es/preset-env): Update builtin definitions for `core-js` imports (#7715)
-
-**Related issue:**
-
- - Closes #7712.

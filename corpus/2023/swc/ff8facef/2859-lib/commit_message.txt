@@ -1,2 +1,0 @@
-fix(es/parser): Allow parsing `import.meta` as an expression (#6783)
-

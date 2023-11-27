@@ -1,8 +1,0 @@
-fix(es/compat): Fix handling of hoisted functions in regenerator (#3119)
-
-swc_ecma_ast:
- - Implement `Take` for `FnDecl`.
-
-swc_ecma_transforms_compat:
- - `regenerator`: Handle hoisted function declarations properly. (Closes #2556)
- - `regenerator`: Fix handling of class properties with an async function as the initializer. (Closes #2620)

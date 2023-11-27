@@ -1,4 +1,0 @@
-fix(es/transforms/compat): Fix `async_to_generator` (#2526)
-
-swc_ecma_transforms_compat:
- - `async_to_generator`: Handle `for-await` correctly. (#2306)

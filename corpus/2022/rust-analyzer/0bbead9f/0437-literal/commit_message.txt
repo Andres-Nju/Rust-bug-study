@@ -1,5 +1,0 @@
-Auto merge of #12473 - yue4u:fix/no-enum-parens-in-use, r=Veykril
-
-fix: avoid adding enum parens in use path
-
-close #12420

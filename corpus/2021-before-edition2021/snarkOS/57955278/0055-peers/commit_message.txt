@@ -1,3 +1,0 @@
-Merge pull request #997 from ljedrz/fix_network_crawler_peering
-
-Make network crawlers disregard their connection count when requesting peer lists

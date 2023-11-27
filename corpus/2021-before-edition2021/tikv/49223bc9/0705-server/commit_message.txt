@@ -1,3 +1,0 @@
-start gc after node to fetch node id (#9486)
-
-Signed-off-by: qupeng <qupeng@pingcap.com>

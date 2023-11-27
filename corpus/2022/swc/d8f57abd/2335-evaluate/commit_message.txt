@@ -1,2 +1,0 @@
-perf(es/minifier): Remove wrong logic (#5178)
-

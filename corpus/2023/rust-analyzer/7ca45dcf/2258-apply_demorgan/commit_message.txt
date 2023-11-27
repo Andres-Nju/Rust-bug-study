@@ -1,5 +1,0 @@
-Auto merge of #15410 - alibektas:15240/invalid-demorgan, r=Veykril
-
-internal : rewrite DeMorgan assist
-
-fixes #15239 , #15240 . This PR is a rewrite of the DeMorgan assist that essentially rids of all the string manipulation and modifies syntax trees to apply demorgan on a binary expr. The main reason for the rewrite is that I wanted to use `Expr::needs_parens_in` method to see if the expr on which the assist is applied would still need the parens it had once the parent expression's operator had equal precedence with that of the expression. I used `.clone_(subtree|for_update)` left and right and probably more than I should have, so I would also be happy to hear how I could have prevented redundant cloning.

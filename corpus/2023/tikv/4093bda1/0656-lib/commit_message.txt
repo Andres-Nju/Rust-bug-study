@@ -1,5 +1,0 @@
-tidb_query_expr: fix the behavior of `field` function (#15879)
-
-close tikv/tikv#15878
-
-Signed-off-by: Yang Keao <yangkeao@chunibyo.icu>

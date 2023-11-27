@@ -1,5 +1,0 @@
-fix(es/ast): Fix memory layout (#7062)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/7061.

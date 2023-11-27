@@ -1,3 +1,0 @@
-Auto merge of #14340 - Veykril:expand, r=lnicola
-
-internal: Rename AstDatabase to ExpandDatabase

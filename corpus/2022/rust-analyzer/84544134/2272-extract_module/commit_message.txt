@@ -1,9 +1,0 @@
-Auto merge of #12811 - TopGunSnake:12790, r=Veykril
-
-fix: Insert `pub(crate)` after doc comments and attribute macros
-
-Fixes #12790
-
-Original behavior was to insert `pub(crate)` at the `first_child_or_token`, which for an item with a comment or attribute macro, would put the visibility marker before the comment or macro, instead of after.
-
-This merge request alters the call to find the node with appropriate `SyntaxKind` in the `children_or_tokens`. It also adds a test case to the module to verify the behavior. Test case verifies function, module, records, enum, impl, trait, and type cases.

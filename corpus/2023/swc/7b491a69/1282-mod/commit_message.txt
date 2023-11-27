@@ -1,5 +1,0 @@
-fix(es/react): Align to `babel@8` behavior (#7081)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/7044.

@@ -1,6 +1,0 @@
-Auto merge of #14705 - HKalbasi:mir, r=lnicola
-
-Fix some mir related bugs
-
-fix #14701
-fix #14704

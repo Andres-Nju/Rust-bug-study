@@ -1,5 +1,0 @@
-fix(es/module): Handle directives (#8048)
-
-**Related issue:**
-
- - Closes: #8047

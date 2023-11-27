@@ -1,2 +1,0 @@
-fix(es/compat): Refer this in constructor when `super_is_callable_constructor` is set (#3944)
-

@@ -1,5 +1,0 @@
-perf(es/compat): Improve time complexity of `class_properties` (#7786)
-
-**Related issue:**
-
- - Closes #7780

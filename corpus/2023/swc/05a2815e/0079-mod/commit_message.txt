@@ -1,9 +1,0 @@
-feat(es/react): Support script within automatic runtime (#7126)
-
-**Description:**
-
-Inject `const { jsx: _jsx} = require("react/jsx-runtime")` when sourceType is `script`
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/7119.

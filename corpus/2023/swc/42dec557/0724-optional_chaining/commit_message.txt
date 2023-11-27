@@ -1,8 +1,0 @@
-fix(es/compat): Revert #7610  (#7813)
-
-**Related issue:**
-
- - Reverts #7610.
- - Closes #7798.
- - Closes #7789.
- - Opens #7561.

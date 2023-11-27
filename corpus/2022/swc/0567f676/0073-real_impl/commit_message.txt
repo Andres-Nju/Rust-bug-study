@@ -1,2 +1,0 @@
-fix(es/minifier): Apply name mangler for more cases (#4840)
-

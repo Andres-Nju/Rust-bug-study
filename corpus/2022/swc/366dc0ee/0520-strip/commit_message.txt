@@ -1,2 +1,0 @@
-fix(es/typescript): Declare the exported variables in a namespace (#3162)
-

@@ -1,2 +1,0 @@
-fix(es/parser): Report an error if `LeftHandSideExpression` is invalid (#4001)
-

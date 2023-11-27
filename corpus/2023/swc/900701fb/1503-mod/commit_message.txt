@@ -1,5 +1,0 @@
-feat(es): Add a validation for a wrong config (#7704)
-
-**Related issue:**
-
- - Closes #6956.

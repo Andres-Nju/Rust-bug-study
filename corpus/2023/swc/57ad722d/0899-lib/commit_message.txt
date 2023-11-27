@@ -1,5 +1,0 @@
-fix(es/parser): Fix parsing of `>` in typescript mode (#7407)
-
-**Related issue:**
-
- - Closes #7403.

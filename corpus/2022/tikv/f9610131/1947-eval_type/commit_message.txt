@@ -1,5 +1,0 @@
-copr: support Bit column push downBit column (#11968)
-
-close tikv/tikv#11893, ref tikv/tikv#11893, ref pingcap/tidb#31884
-
-Signed-off-by: xiejiandong <xiejiandong@pingcap.com>

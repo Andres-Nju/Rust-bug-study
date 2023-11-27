@@ -1,5 +1,0 @@
-Auto merge of #15054 - ponyii:fix/implement-missing-members-do-not-transform-const-params, r=lowr
-
-fix: implement missing members doesn't transform const params and default types
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/13363

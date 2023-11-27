@@ -1,2 +1,0 @@
-feat(es/compat): Support readonly and writeonly for private fields (#6182)
-

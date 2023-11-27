@@ -1,5 +1,0 @@
-fix(es/minifier): Fix analysis of nested function-like properties (#5963)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/5950.

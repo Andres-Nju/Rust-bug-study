@@ -1,2 +1,0 @@
-fix(es): Consume surrogate pairs (#4115)
-

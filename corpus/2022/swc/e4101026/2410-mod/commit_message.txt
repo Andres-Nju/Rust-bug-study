@@ -1,2 +1,0 @@
-fix(es/compat): Fix the order of initialization for decorators on computed keys (#5964)
-

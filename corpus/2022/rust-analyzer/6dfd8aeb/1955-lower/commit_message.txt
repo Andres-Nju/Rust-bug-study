@@ -1,7 +1,0 @@
-Auto merge of #13192 - lowr:fix/dyn-sort-all-bounds, r=Veykril
-
-fix: sort all bounds on trait object types
-
-Fixes #13181
-
-#12793 allowed different ordering of trait bounds in trait object types but failed to account for the ordering of projection bounds. I opted for sorting all the bounds at once rather than splitting them into `SmallVec`s so it's easier to do the same thing for other bounds when we have them.

@@ -1,5 +1,0 @@
-resolved-ts: speed up advancing when stores get partitioned (#15567)
-
-close tikv/tikv#15679
-
-Signed-off-by: qupeng <qupeng@pingcap.com>

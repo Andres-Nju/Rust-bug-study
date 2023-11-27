@@ -1,2 +1,0 @@
-fix(visit): Fix detection of `Option<Vec<T>>` (#6872)
-

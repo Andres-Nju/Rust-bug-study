@@ -1,7 +1,0 @@
-Auto merge of #14540 - AmrDeveloper:disallow_extract_fun_single_brace, r=Veykril
-
-Fix allow extracting function from single brace of block expression
-
-Fix allow extracting function when selecting either `{` or `}`
-
-Fix #14514

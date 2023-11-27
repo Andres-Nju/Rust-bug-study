@@ -1,9 +1,0 @@
-raftstore: only persist merge target if the merge is known to be succeeded (#12251)
-
-close tikv/tikv#12232
-
-raftstore: only persist merge target if the merge is known to be succeeded
-
-Signed-off-by: linning <linningde25@gmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

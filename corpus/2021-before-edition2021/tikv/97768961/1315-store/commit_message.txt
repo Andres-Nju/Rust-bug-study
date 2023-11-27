@@ -1,5 +1,0 @@
-raftstore: remove applying snapshot count (#10099)
-
-Signed-off-by: Ryan Leung <rleungx@gmail.com>
-
-Co-authored-by: qupeng <qupeng@pingcap.com>

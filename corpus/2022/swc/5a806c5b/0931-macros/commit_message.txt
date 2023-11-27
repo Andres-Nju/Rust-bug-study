@@ -1,4 +1,0 @@
-fix(es/parser): Fix parsing of decorators (#3449)
-
-swc_ecma_parser:
- - Parse decorators using `parse_subscripts`.

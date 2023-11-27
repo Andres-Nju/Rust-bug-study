@@ -1,5 +1,0 @@
-fix(es/compat): Handle export default decorator only if not empty (#8099)
-
-**Related issue:**
-
- - Closes: #8098

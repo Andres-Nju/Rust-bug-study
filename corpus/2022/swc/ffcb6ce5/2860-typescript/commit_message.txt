@@ -1,2 +1,0 @@
-fix(es/parser): Allow nested ambient context in `.d.ts` files (#4060)
-

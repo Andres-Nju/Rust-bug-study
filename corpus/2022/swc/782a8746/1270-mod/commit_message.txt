@@ -1,2 +1,0 @@
-fix(es/transform/optimization): Prevent inlining of vars used as RHS in logical expressions (#3907)
-

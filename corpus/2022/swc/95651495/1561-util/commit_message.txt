@@ -1,4 +1,0 @@
-fix(es/modules): Fix lazy import handling (#3211)
-
-swc_ecma_transforms_module:
- - `common_js`: Correctly track lazy imports. (Closes #3081)

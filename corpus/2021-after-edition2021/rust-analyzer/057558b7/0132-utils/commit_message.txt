@@ -1,7 +1,0 @@
-Merge #10595
-
-10595: internal: Fix a format error r=Veykril a=dzvon
-
-Fixes #10581
-
-Co-authored-by: Dezhi Wu <wu543065657@163.com>

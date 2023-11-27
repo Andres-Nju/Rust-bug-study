@@ -1,2 +1,0 @@
-fix(es/codegen): Remove redundant `;` after export default decl (#5851)
-

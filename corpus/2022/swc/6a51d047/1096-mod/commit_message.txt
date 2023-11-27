@@ -1,2 +1,0 @@
-fix(es/minifier): Handle empty RegExp (#4235)
-

@@ -1,5 +1,0 @@
-Auto merge of #12007 - edwin0cheng:restart-proc-macro-reload, r=jonas-schievink
-
-Restart proc-macro client when server reload
-
-Fix #10719

@@ -1,2 +1,0 @@
-feat(common): Reserve `BytePos(0)` for dummy spans (#4616)
-

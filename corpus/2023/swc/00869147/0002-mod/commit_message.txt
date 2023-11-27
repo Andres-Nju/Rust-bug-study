@@ -1,2 +1,0 @@
-fix(es/minifier): Accept `keep_fnames` and `keep_classnames` (#7090)
-

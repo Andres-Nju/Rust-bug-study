@@ -1,9 +1,0 @@
-raftstore: Fix compaction guard panic on non-data key (#11294)
-
-* close #11290 fix compaction guard panic on non-data key
-
-Signed-off-by: Connor1996 <zbk602423539@gmail.com>
-
-* add comment
-
-Signed-off-by: Connor1996 <zbk602423539@gmail.com>

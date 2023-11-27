@@ -1,5 +1,0 @@
-fix(es/minifier): Abort IIFE invoker completely on eval (#6659)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6628.

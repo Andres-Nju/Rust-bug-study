@@ -1,3 +1,0 @@
-Merge pull request #574 from niklaslong/network-refactor-ci
-
-Update CI to recent Rust versions

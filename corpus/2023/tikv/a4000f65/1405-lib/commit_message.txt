@@ -1,8 +1,0 @@
-snapshot-v2: delete idle snapshot file (#14590)
-
-close tikv/tikv#14581
-
-1. change `delete_snapshot` to delete some snapshot directory those has same region_id and to_peer_id
-2. the delete_snapshot will be happened in peer destory or send_snapshot finished.
-
-Signed-off-by: bufferflies <1045931706@qq.com>

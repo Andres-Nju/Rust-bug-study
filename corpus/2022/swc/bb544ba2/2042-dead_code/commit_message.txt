@@ -1,5 +1,0 @@
-fix(es/minifier): Fix code for dropping unreachable statements (#6429)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6405.

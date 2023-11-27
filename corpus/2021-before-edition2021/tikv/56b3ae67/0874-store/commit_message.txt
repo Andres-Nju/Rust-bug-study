@@ -1,5 +1,0 @@
-raftstore: continue GC  snapshot files when it encounters a corrupted snapshot (#10831)
-
-add a fail_point on get_snapshot_for_gc
-
-Signed-off-by: qi.xu <tonxuqi@outlook.com>

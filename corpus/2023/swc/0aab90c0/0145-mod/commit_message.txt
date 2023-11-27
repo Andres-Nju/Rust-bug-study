@@ -1,5 +1,0 @@
-fix(es/minifier): Fix a inliner bug related to `Script` (#7288)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/7287.

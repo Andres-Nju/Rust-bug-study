@@ -1,6 +1,0 @@
-fix(es/minifier): Do not drop used properties (#7702)
-
-**Related issue:**
-
- - Closes #7700.
- - Closes #7710.

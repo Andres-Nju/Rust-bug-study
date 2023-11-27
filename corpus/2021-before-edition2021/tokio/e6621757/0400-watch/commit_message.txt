@@ -1,2 +1,0 @@
-sync: document when watch::send fails (#4021)
-

@@ -1,7 +1,0 @@
-Merge #10776
-
-10776: fix: Remove validation of `super` in use paths r=Veykril a=lnicola
-
-Fixes #10770
-
-Co-authored-by: Laurențiu Nicola <lnicola@dend.ro>

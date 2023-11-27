@@ -1,5 +1,0 @@
-Auto merge of #15040 - lnicola:hash-state-name, r=Veykril
-
-fix: Use a more obscure hasher name in derive expansion
-
-Closes #15039

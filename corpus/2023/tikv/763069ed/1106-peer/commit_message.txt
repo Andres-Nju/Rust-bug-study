@@ -1,5 +1,0 @@
-raftstore: make release work (#15850)
-
-close tikv/tikv#15851
-
-Signed-off-by: bufferflies <1045931706@qq.com>

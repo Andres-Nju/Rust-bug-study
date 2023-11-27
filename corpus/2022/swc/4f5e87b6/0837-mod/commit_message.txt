@@ -1,2 +1,0 @@
-fix(es/compat): Fix legacy decorator pass (#3459)
-

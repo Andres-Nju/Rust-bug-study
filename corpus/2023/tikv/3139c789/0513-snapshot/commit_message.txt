@@ -1,9 +1,0 @@
-raftstore-v2: reset has_dirty_data after receiving snapshot from leader (#14804)
-
-close tikv/tikv#14798
-
-reset has_dirty_data after receiving snapshot from leader
-
-Signed-off-by: Spade A <u6748471@anu.edu.au>
-
-Co-authored-by: tonyxuqqi <tonyxuqi@outlook.com>

@@ -1,5 +1,0 @@
-Auto merge of #2622 - devnexen:fuse_super_magic, r=Amanieu
-
-linux GLIBC add FUSE_SUPER_MAGIC
-
-close #2621

@@ -1,7 +1,0 @@
-Auto merge of #12646 - lowr:fix/11897, r=lowr
-
-fix: escape receiver texts in completion
-
-This PR fixes #11897 by escaping '\\' and '$' in the text of the receiver position expression. See [here](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#snippet_syntax) for the specification of the snippet syntax (especially [this section](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#grammar) discusses escaping).
-
-Although not all occurrences of '\\' and '$' have to be replaced, I chose to replace all as that's simpler and easier to understand. There *are* more clever ways to implement it, but I thought they were premature optimization for the time being (maybe I should put FIXME notes?).

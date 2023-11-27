@@ -1,5 +1,0 @@
-fix(es/codegen): Fix codegen of optional chaining expr with a comment (#8005)
-
-**Related issue:**
-
- - Closes #8004

@@ -1,5 +1,0 @@
-Auto merge of #13333 - feniljain:fix_assists, r=Veykril
-
-fix(generate_method): correct method indentation inside generated impl and change gen loc
-
-should fix #10619

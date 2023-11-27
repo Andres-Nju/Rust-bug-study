@@ -1,4 +1,0 @@
-fix(es/compat): Fix private methods of a class (#3123)
-
-swc_ecma_transforms_compat:
- - `class_properties`: Handle private method calls properly. (Closes #3055)

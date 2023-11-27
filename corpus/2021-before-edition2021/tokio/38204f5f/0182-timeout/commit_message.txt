@@ -1,2 +1,0 @@
-time: fix Timeout size_hint (#3902)
-

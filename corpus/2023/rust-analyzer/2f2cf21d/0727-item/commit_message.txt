@@ -1,7 +1,0 @@
-Auto merge of #15348 - max-heller:issue-14692, r=lowr
-
-Exclude non-identifier aliases from completion filtering text
-
-When building `CompletionItem`s, this excludes aliases that aren't valid identifiers from the "lookup" text used to filter completions in the LSP client. Including them results in weird completion filtering behavior e.g. `Partial>` matching a completion for the `PartialOrd` trait because it has a doc alias of ">".
-
-Closes #14692

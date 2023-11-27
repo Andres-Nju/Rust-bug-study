@@ -1,9 +1,0 @@
-fix(es/minifier): Fix skipping logic of sequential inliner (#5956)
-
-**Description:**
-
-This PR implements `is_skippable_for_seq` fully.
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/5935.

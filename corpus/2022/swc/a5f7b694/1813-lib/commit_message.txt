@@ -1,9 +1,0 @@
-fix(es/minifier): Don't replace parameters of IIFE if it's recursive (#5852)
-
-**Description:**
-
-While investigating, I found that problem is not the analysis of recursive functions. Instead, it was a problem with the IIFE evaluator, which replaces parameters even if it's recursive.
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/5846

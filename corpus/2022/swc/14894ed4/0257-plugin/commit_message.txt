@@ -1,2 +1,0 @@
-fix(atoms): Workaround a bug of `rkyv` (#5323)
-

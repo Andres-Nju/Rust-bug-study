@@ -1,5 +1,0 @@
-fix(es/parser): Adjust context while parsing type arguments of TypeScript type queries (#7582)
-
-**Related issue:**
-
- - Closes #7580.

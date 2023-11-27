@@ -1,7 +1,0 @@
-Merge #11074
-
-11074: Bump default CHALK_SOLVER_MAX_SIZE to 150 r=lnicola a=lnicola
-
-Fixes #11072
-
-Co-authored-by: Laurențiu Nicola <lnicola@dend.ro>

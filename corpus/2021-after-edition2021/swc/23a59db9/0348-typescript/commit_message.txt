@@ -1,2 +1,0 @@
-fix(es/parser): Allow assignment assertions in typescript classes (#3047)
-

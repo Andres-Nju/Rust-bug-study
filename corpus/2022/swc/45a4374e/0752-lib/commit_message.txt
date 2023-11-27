@@ -1,2 +1,0 @@
-fix(wasm): Fix handling of `swc_common::GLOBALS` (#3936)
-

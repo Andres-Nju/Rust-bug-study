@@ -1,5 +1,0 @@
-log backup: fix the race of on events and do flush (#15618)
-
-close tikv/tikv#15602
-
-Signed-off-by: 3pointer <luancheng@pingcap.com>

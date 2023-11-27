@@ -1,2 +1,0 @@
-fix(es/compat): Handle `yield` in block scoping pass (#5668)
-

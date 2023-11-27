@@ -1,2 +1,0 @@
-fix(es/codegen): Mark bigint as an item starting with number (#5207)
-

@@ -1,2 +1,0 @@
-fix(es/codegen): Fix codegen of some non-ascii characters (#5108)
-

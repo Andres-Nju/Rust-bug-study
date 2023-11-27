@@ -1,2 +1,0 @@
-fix(es/compat): Handle `super` in a private method (#5613)
-

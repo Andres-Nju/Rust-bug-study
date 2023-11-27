@@ -1,2 +1,0 @@
-fix(es/compat): Apply `new.target` before `classes` (#3555)
-

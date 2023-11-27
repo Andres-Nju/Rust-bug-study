@@ -1,2 +1,0 @@
-fix(es/minifier): Don't create invalid property names (#7010)
-

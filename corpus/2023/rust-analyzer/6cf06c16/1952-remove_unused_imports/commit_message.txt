@@ -1,8 +1,0 @@
-Auto merge of #15445 - Veykril:worl-symbols-traits, r=Veykril
-
-fix: Fix `only_types` config filtering out traits from world symbols
-
-It is a bit confusing that this apparently did not filter every trait out though...
-
-Closes https://github.com/rust-lang/rust-analyzer/issues/15444
-Closes https://github.com/rust-lang/rust-analyzer/issues/15200

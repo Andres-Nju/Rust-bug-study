@@ -1,5 +1,0 @@
-fix(es/compat): Make `SwitchCase` handler of `block-scoping` stateless (#7888)
-
-**Related issue:**
-
- - Closes #7885

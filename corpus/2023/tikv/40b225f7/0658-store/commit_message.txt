@@ -1,9 +1,0 @@
-raftstore: fix meta inconsistency issue (#15423)
-
-close tikv/tikv#13311
-
-Fix the possible meta inconsistency issue.
-
-Signed-off-by: cfzjywxk <lsswxrxr@163.com>
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

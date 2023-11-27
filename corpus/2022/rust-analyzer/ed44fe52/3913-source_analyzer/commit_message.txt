@@ -1,5 +1,0 @@
-Auto merge of #12668 - Veykril:mac-source-map, r=Veykril
-
-fix: Simplify macro statement expansion handling
-
-I only meant to fix https://github.com/rust-lang/rust-analyzer/issues/12644 but that somehow turned into a rewrite of the statement handling ... at least this fixes a few more issues in the IDE layer now

@@ -1,7 +1,0 @@
-Auto merge of #12851 - DorianListens:dscheidt/if-completion-match-guard, r=Veykril
-
-fix: Don't add braces to 'if' completion in match guard position
-
-fixes #12823
-
-Is this what you were thinking of here, `@Veykril` ? I haven't done any work on completions before, so I could definitely be misunderstanding the issue.

@@ -1,2 +1,0 @@
-fix(es/minifier): Make `if_return` to not drop required returns (#4847)
-

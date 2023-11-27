@@ -1,8 +1,0 @@
-raftstore: make sure PrepareFlashback will get the latest region meta (#13664)
-
-close tikv/tikv#13643
-
-* Use `self.region` while executing `PrepareFlashback` command to ensure it gets the latest region meta.
-* Check the epoch before executing the `PrepareFlashback`.
-
-Signed-off-by: JmPotato <ghzpotato@gmail.com>

@@ -1,7 +1,0 @@
-tikv_util: Allow building on FreeBSD (#15016)
-
-close tikv/tikv#15015
-
-Building tikv_util is now possible on FreeBSD
-
-Signed-off-by: Daniël van Eeden <git@myname.nl>

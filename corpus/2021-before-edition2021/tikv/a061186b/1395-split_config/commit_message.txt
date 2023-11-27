@@ -1,5 +1,0 @@
-fix backward compatibility in load base split config (#9820)
-
-Signed-off-by: lhy1024 <admin@liudos.us>
-
-Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

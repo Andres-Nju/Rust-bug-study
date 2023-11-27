@@ -1,5 +1,0 @@
-fix(es/compat): Fix handling of union of the legacy decorator pass (#3057)
-
-swc_ecma_transforms_proposal:
- - Use `Object` for `null`/`undefined`.
- - Fix the type for union types. (Closes #2461)

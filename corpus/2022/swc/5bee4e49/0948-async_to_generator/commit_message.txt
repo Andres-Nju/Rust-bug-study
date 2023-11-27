@@ -1,2 +1,0 @@
-refactor(es/compat): Preserve length of functions in `async_generator` (#3202)
-

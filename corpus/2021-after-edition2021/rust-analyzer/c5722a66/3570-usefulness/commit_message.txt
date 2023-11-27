@@ -1,7 +1,0 @@
-Merge #11073
-
-11073: fix: Fix windows not finding the pdb file r=lnicola a=Veykril
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10371
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

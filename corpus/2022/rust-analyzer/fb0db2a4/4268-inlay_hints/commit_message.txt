@@ -1,5 +1,0 @@
-Auto merge of #13831 - bvanjoi:fix_bound_type_in_trait_insert, r=Veykril
-
-fix(completion): remove bound insert of type in trait
-
-Fixed https://github.com/rust-lang/rust-analyzer/issues/13819

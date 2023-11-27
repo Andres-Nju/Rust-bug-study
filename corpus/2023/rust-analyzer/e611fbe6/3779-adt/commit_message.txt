@@ -1,5 +1,0 @@
-Auto merge of #14355 - Veykril:completion-ref-strip, r=Veykril
-
-fix: Fix reference completions being emitted in places other than argument lists
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/14331

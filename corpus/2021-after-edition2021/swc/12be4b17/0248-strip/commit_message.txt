@@ -1,4 +1,0 @@
-fix(es/transforms/typescript): Allow `(foo as any) = bar` (#2631)
-
-swc_ecma_transforms_typescript:
- - `strip`: Handle paren in the LHS of assignment expressions properly. (Closes https://github.com/swc-project/swc/issues/2606)

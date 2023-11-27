@@ -1,5 +1,0 @@
-Auto merge of #13053 - lowr:fix/pat-sole-Self, r=Veykril
-
-fix: resolve path `Self` alone in value namespace
-
-Fixes #12968

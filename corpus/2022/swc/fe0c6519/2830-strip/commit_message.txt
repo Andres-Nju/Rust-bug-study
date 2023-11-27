@@ -1,2 +1,0 @@
-fix(es/typescript): Strip inline type declarations (#6600)
-

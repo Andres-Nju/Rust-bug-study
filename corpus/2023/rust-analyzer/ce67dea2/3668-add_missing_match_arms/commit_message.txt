@@ -1,5 +1,0 @@
-Auto merge of #13988 - Veykril:hover-no-markdown, r=Veykril
-
-Fix markdown removal in hover handling whitespace weirdly
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/10028

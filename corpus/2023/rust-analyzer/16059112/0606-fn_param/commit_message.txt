@@ -1,5 +1,0 @@
-Auto merge of #14560 - Veykril:view-crate-graph, r=Veykril
-
-fix: Fix view crate graph being broken due to webworker usage
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/14457

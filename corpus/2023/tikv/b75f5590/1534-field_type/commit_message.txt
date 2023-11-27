@@ -1,5 +1,0 @@
-tidb_query_datatype,collation: remove utf8mb4_0900_bin from need_restored_data (#15572)
-
-close tikv/tikv#15571
-
-Signed-off-by: Yang Keao <yangkeao@chunibyo.icu>

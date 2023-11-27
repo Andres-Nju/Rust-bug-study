@@ -1,5 +1,0 @@
-Add tikv_channel_full metric (#10901)
-
-Signed-off-by: sampras lopes <sampraslop995@gmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

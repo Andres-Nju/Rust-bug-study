@@ -1,3 +1,0 @@
-sync: fix `broadcast::channel` link (#6100)
-
-Co-authored-by: Xianhua Zhou <xianhua.zhou@mdpi.com>

@@ -1,3 +1,0 @@
-Merge pull request #923 from ljedrz/fix_900
-
-Only catch up the secondary storage if the block height is behind the primary one

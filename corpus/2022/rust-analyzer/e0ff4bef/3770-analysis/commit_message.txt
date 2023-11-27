@@ -1,5 +1,0 @@
-Auto merge of #12913 - Veykril:attr-merge, r=Veykril
-
-fix: Fix ast-id up when merging raw attributes
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/12912

@@ -1,8 +1,0 @@
-Merge #10668
-
-10668: fix: Fix for-loop expressions breaking with BlockExpr iterable r=Veykril a=Veykril
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10665
-bors r+
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

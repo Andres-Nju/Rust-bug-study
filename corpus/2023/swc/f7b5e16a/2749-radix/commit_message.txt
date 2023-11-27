@@ -1,5 +1,0 @@
-refactor(es/lint): Remove usage of `box_patterns` (#7966)
-
-**Related issue:**
- 
- - Closes #7964

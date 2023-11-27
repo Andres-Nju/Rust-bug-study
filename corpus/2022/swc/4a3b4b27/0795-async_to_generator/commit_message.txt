@@ -1,2 +1,0 @@
-refactor(es/compat): Respect MSRV (#5473)
-

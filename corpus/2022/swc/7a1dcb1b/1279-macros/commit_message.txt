@@ -1,2 +1,0 @@
-fix(es): Make `ErrorConfig.filename` default to true (#4150)
-

@@ -1,5 +1,0 @@
-fix(es): Fix default value of `jsc.minify.format.comments` (#7853)
-
-**Related issue:**
-
- - Closes #7842

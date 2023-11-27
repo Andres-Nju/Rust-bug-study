@@ -1,5 +1,0 @@
-Auto merge of #13725 - bvanjoi:resolve-const-triat-impls, r=flodiebold
-
-feat: resolve const for trait impls
-
-Fixed #13694

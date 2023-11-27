@@ -1,7 +1,0 @@
-engine: update rust-rocksdb (#13393)
-
-close tikv/tikv#13095
-
-Update rust-rocksdb
-
-Signed-off-by: tabokie <xy.tao@outlook.com>

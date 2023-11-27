@@ -1,4 +1,0 @@
-fix(es/transforms/compat): Apply `regenerator` for default function declarations (#2681)
-
-swc_ecma_transforms_compat:
- - `regenerator`: Handle `DefaultDecl::Fn`. (Closes #2677)

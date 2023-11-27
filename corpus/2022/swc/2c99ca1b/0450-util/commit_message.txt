@@ -1,4 +1,0 @@
-fix(es/modules): Fix span of imports (#3418)
-
-swc_ecma_transforms_module:
- - `common_js`: Use original span with the syntax conext of an import specifier.

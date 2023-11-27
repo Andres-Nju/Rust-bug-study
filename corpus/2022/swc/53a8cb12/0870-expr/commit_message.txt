@@ -1,2 +1,0 @@
-fix(es/parser): Don't panic on an invalid import meta property (#4994)
-

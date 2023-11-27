@@ -1,5 +1,0 @@
-backup: do not recycle backup threads (#10288)
-
-Signed-off-by: Neil Shen <overvenus@gmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

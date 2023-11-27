@@ -1,5 +1,0 @@
-fix(es/decorator): Preserve evaluation order (#6972)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6951.

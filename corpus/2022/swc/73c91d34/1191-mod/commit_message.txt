@@ -1,9 +1,0 @@
-fix(es/helpers): Inject helpers for scripts (#4025)
-
-**Description:**
-
-This PR adds support for helpers in script mode. For now, we does not support `externalHelpers` for scripts, as there is no standard for importing other files from a script.
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/2385

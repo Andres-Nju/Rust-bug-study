@@ -1,5 +1,0 @@
-Auto merge of #12490 - yue4u:fix/show-enum-in-fresh-use-tree, r=Veykril
-
-fix: complete non-std enum at the start of `use` completions
-
-close: #12421

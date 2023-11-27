@@ -1,7 +1,0 @@
-Auto merge of #15698 - rmehri01:15695_make_guarded_return_more_lenient, r=Veykril
-
-fix: allow more kinds of if let patterns in guarded return assist
-
-Removes the checks that require the pattern to be a tuple struct with exactly 1 field that is unqualified and has an identifier pattern in it. I'm not sure if there should be more checks in place but they seem unnecessary now?
-
-Closes #15695

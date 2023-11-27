@@ -1,9 +1,0 @@
-feat(es/transforms/compat): Add more loose mode (#2611)
-
-swc_ecma_transforms_compat:
-- `computed_properties`: Add loose mode.
-- `template_literals`: Add loose mode.
-- `object_spread`: Add loose mode.
-- `optional_chaining`: Add loose mode.
-- `nullish_coalescing`: Add loose mode.
-- `optional_chaining`: Fix #2734.

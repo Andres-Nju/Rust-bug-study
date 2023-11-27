@@ -1,3 +1,0 @@
-io: fix doc for `write_i8` to use signed integers (#5040)
-
-Fixes: #5039

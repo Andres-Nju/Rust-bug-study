@@ -1,5 +1,0 @@
-Auto merge of #14713 - jhgg:fix/do-not-highlight-escapes-in-raw-strings, r=Veykril
-
-fix: ide: do not highlight escapes in raw strings
-
-fixes #14688

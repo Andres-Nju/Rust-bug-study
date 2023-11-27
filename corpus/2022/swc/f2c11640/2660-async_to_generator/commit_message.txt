@@ -1,2 +1,0 @@
-fix(es/compat): Handle `async` in class method parameters (#5560)
-

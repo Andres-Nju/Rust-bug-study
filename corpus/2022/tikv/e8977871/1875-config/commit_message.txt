@@ -1,9 +1,0 @@
-config: fix startup error when upgrade storage.api-version from 1 to 2 (#12614)
-
-ref tikv/tikv#12600, close tikv/tikv#12600
-
-Fix startup error when upgrade storage.api-version from 1 to 2.
-
-Signed-off-by: pingyu <yuping@pingcap.com>
-
-Co-authored-by: iosmanthus <dengliming@pingcap.com>

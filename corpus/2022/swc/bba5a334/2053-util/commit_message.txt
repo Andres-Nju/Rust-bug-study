@@ -1,2 +1,0 @@
-fix(node-swc): Disable logging of `warn` level by default (#4033)
-

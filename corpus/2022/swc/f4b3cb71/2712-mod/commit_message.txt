@@ -1,2 +1,0 @@
-fix(es/resolver): Treat a switch statement as a block scope (#3275)
-

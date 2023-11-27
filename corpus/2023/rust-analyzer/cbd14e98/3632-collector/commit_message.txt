@@ -1,5 +1,0 @@
-Auto merge of #14801 - Veykril:process-changes-fix, r=Veykril
-
-fix: Fix process-changes duplicating change events
-
-Should fix https://github.com/rust-lang/rust-analyzer/issues/14791

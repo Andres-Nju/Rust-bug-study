@@ -1,9 +1,0 @@
-txn: Let commit rollback pessimistic lock instead of committing as WriteType::Lock (#14557)
-
-close tikv/tikv#14551
-
-Changes the behavior of `commit` meeting pessimistic lock, from committing as WriteType::Lock to rolling-back. It's correct considering that the key is nolonger part of that transaction. This change fixes the problem that stale pessimistic lock requests with force-locking enabled (which is used by TiDB in fair-locking mode) may overwrite the commit record of another transaction and cause data loss.
-
-Signed-off-by: MyonKeminta <MyonKeminta@users.noreply.github.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

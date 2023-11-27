@@ -1,7 +1,0 @@
-gc_worker: Limit the key range to scan for GcKeys tasks (#11922)
-
-close tikv/tikv#11752, close tikv/tikv#11902
-
-Signed-off-by: MyonKeminta <MyonKeminta@users.noreply.github.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

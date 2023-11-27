@@ -1,2 +1,0 @@
-fix(es/compat): Prepend generated `_loop` to the correct scope (#6604)
-

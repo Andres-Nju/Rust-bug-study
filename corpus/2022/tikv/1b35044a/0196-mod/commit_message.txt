@@ -1,7 +1,0 @@
-res_meter: fix assertion failure (#12252)
-
-close tikv/tikv#12234
-
-Signed-off-by: mornyx <mornyx.z@gmail.com>
-
-Co-authored-by: Zhenchi <zhongzc_arch@outlook.com>

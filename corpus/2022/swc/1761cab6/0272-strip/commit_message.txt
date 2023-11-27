@@ -1,2 +1,0 @@
-fix(es/typescript): Support heterogeneous enums (#3721)
-

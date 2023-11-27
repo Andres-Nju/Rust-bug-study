@@ -1,2 +1,0 @@
-fix(es/lints): Don't visit types while collecting `const` (#3967)
-

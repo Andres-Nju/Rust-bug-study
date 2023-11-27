@@ -1,7 +1,0 @@
-Auto merge of #12899 - Veykril:compl-qualifier, r=Veykril
-
-fix: Do completions in path qualifier position
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/12566
-
-Not too happy with the duplication needed for this, but it is what it is. Completions in path qualifiers will have to be filtered properly still, but its better to show too many completions for this than too few for now.

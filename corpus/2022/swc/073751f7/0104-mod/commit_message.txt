@@ -1,2 +1,0 @@
-fix(es/optimization): Support jsx in `dce` (#4203)
-

@@ -1,9 +1,0 @@
-Merge #11218
-
-11218: fix: Correct has_ref detection, avoiding duplicate &mut insertion on parameter completion r=Veykril a=weirane
-
-The original code fails to detect there's a ref in scenarios such as `&mut s` and `& s` because `WHITESPACE` and `IDENT` got reversed.
-
-Closes #11199.
-
-Co-authored-by: Wang Ruochen <wrc@ruo-chen.wang>

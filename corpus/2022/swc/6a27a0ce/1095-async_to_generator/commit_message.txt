@@ -1,2 +1,0 @@
-fix(es/compat): Hoist env in function params (#4210)
-

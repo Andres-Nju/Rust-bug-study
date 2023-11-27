@@ -1,7 +1,0 @@
-Auto merge of #2944 - thomcc:apple-iconv, r=JohnTitor
-
-Don't link against iconv on apple targets when used by `std`
-
-See https://github.com/rust-lang/libc/issues/2870 (and specifically my, erm, rant in https://github.com/rust-lang/libc/issues/2870#issuecomment-1271104762). I think we should probably remove it outright, but we definitely shouldn't have it in every Rust program by giving it to `std`.
-
-FIxes https://github.com/rust-lang/libc/issues/2870

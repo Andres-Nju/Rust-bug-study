@@ -1,5 +1,0 @@
-fix(es/compat): Make `block-scoping` pass rename exports correctly (#8175)
-
-**Related issue:**
-
- - Closes #8148

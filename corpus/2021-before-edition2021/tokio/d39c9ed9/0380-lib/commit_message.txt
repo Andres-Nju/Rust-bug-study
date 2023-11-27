@@ -1,3 +1,0 @@
-chore: prepare tokio-macros 1.4.1 (#4142)
-
-This reverts commit 33f0a1fd2e5dd2c9f8bc3066fda38911828d26f5.

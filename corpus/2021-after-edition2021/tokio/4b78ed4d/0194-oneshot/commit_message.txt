@@ -1,2 +1,0 @@
-sync: fix racy `UnsafeCell` access on a closed oneshot (#4226)
-

@@ -1,7 +1,0 @@
-Auto merge of #14939 - Veykril:nav-focus-ranges, r=Veykril
-
-fix: Fix nav target calculation discarding file ids from differing macro upmapping
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/14792
-
-Turns out there was the assumption that upmapping from a macro will always end in the same root file, which is no longer the case thanks to `include!`

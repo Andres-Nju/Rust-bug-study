@@ -1,9 +1,0 @@
-fix(es/module): Fix handling of continuous assignments in `systemjs` (#7741)
-
-**Description:**
-
-Fix transpile the continuous assignment code like `d.a = d.b = d.c = d.d = ... = void 0;` to SystemJS may cause Infinite loop.
-
-**Related issue:**
-
- - Closes #7143.

@@ -1,4 +1,0 @@
-fix(es/transforms/compat): Fix `arrow` (#2882)
-
-swc_ecma_transforms_compat:
- - Handle arrow expressions in constructors of classes with a super class. (Closes #2811)

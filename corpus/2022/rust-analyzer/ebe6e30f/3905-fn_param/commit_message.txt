@@ -1,5 +1,0 @@
-Auto merge of #12054 - HKalbasi:const_generic, r=flodiebold
-
-Fix const generic panic in dyn trait
-
-fix #12048

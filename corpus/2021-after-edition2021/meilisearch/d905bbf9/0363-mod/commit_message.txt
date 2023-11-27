@@ -1,7 +1,0 @@
-Merge #1787
-
-1787: Handle empty dump r=MarinPostma a=irevoire
-
-Fixes #1701
-
-Co-authored-by: Tamo <tamo@meilisearch.com>

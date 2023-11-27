@@ -1,5 +1,0 @@
-fix(es/minifier): Preserve more analysis data upon inlining (#7823)
-
-**Related issue:**
-
- - Closes #7821.

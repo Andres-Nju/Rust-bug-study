@@ -1,5 +1,0 @@
-feat(es/minifier): Improve simplification of `?.` (#6681)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6492.

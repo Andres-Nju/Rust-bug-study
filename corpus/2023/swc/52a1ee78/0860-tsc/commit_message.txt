@@ -1,5 +1,0 @@
-fix(es/module): Fix logic for exact matches in `jsc.paths` (#7860)
-
-**Related issue:**
-
- - Closes #7829

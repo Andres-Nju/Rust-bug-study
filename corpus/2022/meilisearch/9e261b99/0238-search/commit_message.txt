@@ -1,7 +1,0 @@
-Merge #2543
-
-2543: fix all the array on the search get route and improve the tests r=curquiza a=irevoire
-
-fix #2527
-
-Co-authored-by: Tamo <tamo@meilisearch.com>

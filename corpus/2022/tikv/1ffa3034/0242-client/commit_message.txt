@@ -1,7 +1,0 @@
-pd-client:  remove `call_option` to avoid  deadlock(RWR). (#13249)
-
-close tikv/tikv#13191, ref rust-lang/rust#93740
-
-Signed-off-by: bufferflies <1045931706@qq.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

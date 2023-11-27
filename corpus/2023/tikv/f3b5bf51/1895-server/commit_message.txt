@@ -1,7 +1,0 @@
-config: support changed adjust max-background-compactions dynamically (#15425)
-
-close tikv/tikv#15424
-
-Signed-off-by: glorv <glorvs@163.com>
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

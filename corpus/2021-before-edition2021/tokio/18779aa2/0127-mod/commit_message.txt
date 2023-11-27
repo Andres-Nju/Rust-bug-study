@@ -1,8 +1,0 @@
-time: fix time::advance() with sub-ms durations (#3852)
-
-Instead of using sleep in time::advance, this fixes the root of the issue. When futures passed
-to `Runtime::block_on` are woken, it bypassed all the machinery around advancing time. By
-intercepting wakes in the time driver, we know when the block_on task is woken and skip
-advancing time in that case.
-
-Fixes #3837

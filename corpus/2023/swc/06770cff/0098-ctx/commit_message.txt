@@ -1,5 +1,0 @@
-fix(es/minifier): Make AST compressor respect `toplevel` (#6775)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/4386.

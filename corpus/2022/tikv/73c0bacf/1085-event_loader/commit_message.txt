@@ -1,7 +1,0 @@
-log-backup: fix early return (#13288)
-
-close tikv/tikv#13281
-
-Fixed a bug that may cause data loss in log backup.
-
-Signed-off-by: Yu Juncen <yu745514916@live.com>

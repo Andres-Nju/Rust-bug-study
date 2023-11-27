@@ -1,3 +1,0 @@
-Merge pull request #777 from ljedrz/tighter_connecting_accounting
-
-Improve the accounting of the connecting peers metric

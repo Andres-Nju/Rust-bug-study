@@ -1,2 +1,0 @@
-fix(es/compat): Fix capturing of block scoping pass (#5279)
-

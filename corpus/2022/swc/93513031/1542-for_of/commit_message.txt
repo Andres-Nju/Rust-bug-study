@@ -1,2 +1,0 @@
-fix(es/compat): Optimize `for-of` loops for array literals (#5141)
-

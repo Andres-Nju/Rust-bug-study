@@ -1,5 +1,0 @@
-fix(es/transforms): Fix `this` in async arrow class properties (#3252)
-
-swc_ecma_transforms_compat:
- - `async_to_generator`: Fix `this` in async class properties. (https://github.com/vercel/next.js/issues/33283)
- - Add a test for #3228 (Closes #3228).

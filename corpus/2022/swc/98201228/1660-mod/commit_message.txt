@@ -1,2 +1,0 @@
-fix(es/compat): Fix `this` in computed class method names (#6364)
-

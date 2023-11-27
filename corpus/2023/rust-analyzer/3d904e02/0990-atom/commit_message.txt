@@ -1,5 +1,0 @@
-Auto merge of #14286 - Veykril:block-def-tail-mac, r=Veykril
-
-fix: Fix block defmap not looking into tail expressions for macro calls
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/14263

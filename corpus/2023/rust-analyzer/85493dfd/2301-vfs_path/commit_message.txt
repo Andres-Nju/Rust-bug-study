@@ -1,7 +1,0 @@
-Auto merge of #15104 - Veykril:mir-borrow-synthetic, r=Veykril
-
-Skip mutable diagnostics on synthetic bindings
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/15099
-
-We probabnly need to look into this in a more general manner in the future now that we desugar more things

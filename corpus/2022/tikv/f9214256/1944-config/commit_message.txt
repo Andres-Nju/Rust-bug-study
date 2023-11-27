@@ -1,7 +1,0 @@
-engine: support setting memory limit for raft engine (#12458)
-
-close tikv/tikv#12255
-
-Support setting memory limit for raft engine
-
-Signed-off-by: tabokie <xy.tao@outlook.com>

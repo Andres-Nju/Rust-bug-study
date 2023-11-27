@@ -1,5 +1,0 @@
-Auto merge of #12464 - harpsword:fix-inline-variable-mismatched-type, r=Veykril
-
-feat: fix inline variable produce mismatched type
-
-wrap reference for RefExpr initializer to fix #12453

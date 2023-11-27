@@ -1,2 +1,0 @@
-feat(es/minifier): Remove extra parens in `BinExpr` (#4878)
-

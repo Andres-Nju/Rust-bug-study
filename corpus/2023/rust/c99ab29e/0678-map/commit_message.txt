@@ -1,7 +1,0 @@
-Rollup merge of #111238 - workingjubilee:fix-btree-cursormut-peek-prev, r=Amanieu
-
-btree_map: `Cursor{,Mut}::peek_prev` must agree
-
-Our `Cursor::peek_prev` and `CursorMut::peek_prev` must agree on how to behave when they are called on the "null element". This will fix rust-lang#111228.
-
-r? `@Amanieu`

@@ -1,5 +1,0 @@
-feat(es/compat): Support `pure_getters` for `optional_chaining` (#7933)
-
-**Related issue:**
-
- - Closes #7921

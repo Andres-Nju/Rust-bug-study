@@ -1,5 +1,0 @@
-Revert "RocksDB: change compaction-guard-min-output-file-size to 1MB" (#15211)
-
-close tikv/tikv#15177
-
-Revert "RocksDB: change compaction-guard-min-output-file-size to 1MB"

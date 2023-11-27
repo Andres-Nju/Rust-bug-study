@@ -1,3 +1,0 @@
-Merge pull request #1212 from ljedrz/fix_some_dangling_metrics
-
-Fix some dangling metrics

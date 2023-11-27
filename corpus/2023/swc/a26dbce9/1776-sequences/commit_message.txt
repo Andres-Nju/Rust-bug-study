@@ -1,5 +1,0 @@
-fix(es/minifier): Abort seq inliner using visitor (#7699)
-
-**Related issue:**
-
- - Closes #7697.

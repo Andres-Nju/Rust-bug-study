@@ -1,2 +1,0 @@
-fix(css/parser): Fix infinite loop about `@import` and `layer`  (#5919)
-

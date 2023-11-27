@@ -1,7 +1,0 @@
-split_controller: fix the bug that may cause the stats_monitor to fall into a dead loop (#12419)
-
-close tikv/tikv#12416
-
-split_controller: fix the bug that may cause the stats_monitor to fall into a dead loop
-
-Signed-off-by: JmPotato <ghzpotato@gmail.com>

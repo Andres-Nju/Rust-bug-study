@@ -1,9 +1,0 @@
-build(cargo): Update `rustc` to `nightly-2023-03-28` (#7154)
-
-**Description:**
-
-This PR also updates `rkyv` to `=0.7.40`.
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6807.

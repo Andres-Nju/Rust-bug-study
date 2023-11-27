@@ -1,2 +1,0 @@
-fix(es/modules): Handle module references in binding idents (#5055)
-

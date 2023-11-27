@@ -1,7 +1,0 @@
-raftstore-v2: disable coprocessor cache (#15090)
-
-ref tikv/tikv#14997, close tikv/tikv#15091
-
-Disable coprocessor cache temporarily because of issue #15091
-
-Signed-off-by: Neil Shen <overvenus@gmail.com>

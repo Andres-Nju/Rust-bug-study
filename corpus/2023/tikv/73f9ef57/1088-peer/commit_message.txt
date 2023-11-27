@@ -1,9 +1,0 @@
-raftstore-v2: actively handle ResCmdChannel after peer is destroyed (#14863)
-
-close tikv/tikv#14675, ref tikv/tikv#14675
-
-actively handle ResCmdChannel after peer is destroyed.
-
-Signed-off-by: Spade A <u6748471@anu.edu.au>
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

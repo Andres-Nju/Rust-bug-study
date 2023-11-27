@@ -1,5 +1,0 @@
-fix(es/minifier): Don't drop unused properties of top-level vars (#7638)
-
-**Related issue:**
-
- - Closes #7635.

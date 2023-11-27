@@ -1,7 +1,0 @@
-Rollup merge of #102721 - nbdd0121:panic, r=Amanieu
-
-Prevent foreign Rust exceptions from being caught
-
-Fix #102715
-
-Use the address of a static variable (which is guaranteed to be unique per copy of std) to tell apart if a Rust exception comes from local or foreign Rust code, and abort for the latter.

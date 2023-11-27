@@ -1,7 +1,0 @@
-feat(es/transforms/compat): Add loose mode to `parameters` (#2911)
-
-swc_ecma_utils:
- - Make `WrapperState` implement `Clone`.
-
-swc_ecma_transforms_compat:
- - `paramters`: Fix handling of non-loose mode. (Closes #2800, Closes #2825)

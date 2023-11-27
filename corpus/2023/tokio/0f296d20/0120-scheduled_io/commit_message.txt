@@ -1,2 +1,0 @@
-io: allow `clear_readiness` after io driver shutdown (#6067)
-

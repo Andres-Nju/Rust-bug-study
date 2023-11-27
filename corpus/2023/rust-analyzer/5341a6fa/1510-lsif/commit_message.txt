@@ -1,5 +1,0 @@
-Auto merge of #14103 - Veykril:typing-semi, r=Veykril
-
-fix: Don't insert a semicolon when typing = if parse errors are encountered
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/11005

@@ -1,7 +1,0 @@
-server: fix memory trace's leak metrics (#15353)
-
-close tikv/tikv#15357
-
-Correct the raft_router/apply_router's alive and leak metrics.
-
-Signed-off-by: tonyxuqqi <tonyxuqi@outlook.com>

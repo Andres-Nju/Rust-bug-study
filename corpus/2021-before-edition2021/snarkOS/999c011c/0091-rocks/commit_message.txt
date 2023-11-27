@@ -1,3 +1,0 @@
-Merge pull request #958 from niklaslong/initial_peers
-
-feat: seedable initial peers that aren't marked as bootnodes 

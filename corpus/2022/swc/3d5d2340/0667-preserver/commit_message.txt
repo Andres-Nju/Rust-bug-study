@@ -1,3 +1,0 @@
-fix(es/minifier): Respect `keepClassNames` for class expressions (#4536)
-
-Co-authored-by: Keith Cirkel <keithamus@users.noreply.github.com>

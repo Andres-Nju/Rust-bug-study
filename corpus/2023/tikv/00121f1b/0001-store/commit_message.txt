@@ -1,9 +1,0 @@
-raftstore-v2: reuse sending failed snapshot (#14957)
-
-close tikv/tikv#14740
-
-reuse sending failed snapshot:
-1. snapshot don't drop if sending failed, only drop after sending success or snapshot is stale
-2. new timing task will response for clean up snapshot
-
-Signed-off-by: bufferflies <1045931706@qq.com>

@@ -1,7 +1,0 @@
-Auto merge of #13750 - lowr:fix/rpit-in-projection, r=flodiebold
-
-fix: normalize projection after discarding free `BoundVar`s in RPIT
-
-Fixes #13307
-
-When we lower the return type of a function, it may contain free `BoundVar`s in `OpaqueType`'s substitution, which would cause panic during canonicalization as part of projection normalization. Those `BoundVar`s are irrelevant in this context and will be discarded, and we should defer projection normalization until then.

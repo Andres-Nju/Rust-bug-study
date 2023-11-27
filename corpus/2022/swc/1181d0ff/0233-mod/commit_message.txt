@@ -1,2 +1,0 @@
-fix(es/compat): Ignore invalid class method names (#5612)
-

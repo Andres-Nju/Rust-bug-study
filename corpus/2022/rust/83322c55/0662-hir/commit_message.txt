@@ -1,5 +1,0 @@
-Auto merge of #93675 - name1e5s:fix/strip_prefix_panic, r=Mark-Simulacrum
-
-fix panic in Path::strip_prefix
-
-close #93586

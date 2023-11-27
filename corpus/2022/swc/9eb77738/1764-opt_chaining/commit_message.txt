@@ -1,2 +1,0 @@
-fix(es/compat): Add the missing span in `optional_chaining` (#3384)
-

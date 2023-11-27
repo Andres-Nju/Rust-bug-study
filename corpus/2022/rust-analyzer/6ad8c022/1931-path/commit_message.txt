@@ -1,8 +1,0 @@
-Merge #11750
-
-11750: fix: Fix runnables trying to add doc tests in the crate root from #[macro_export] macros r=Veykril a=Veykril
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/11746
-bors r+
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

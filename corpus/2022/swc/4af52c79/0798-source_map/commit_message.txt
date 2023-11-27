@@ -1,9 +1,0 @@
-fix(common): Fix handling of input source maps (#6561)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/4578.
- - Closes https://github.com/swc-project/swc/issues/6244.
- - https://github.com/vercel/next.js/issues/39878.
-
-Co-authored-by: Justin Ridgewell <justin@ridgewell.name>

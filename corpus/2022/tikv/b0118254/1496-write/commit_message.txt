@@ -1,9 +1,0 @@
-raftstore: clean up stale logs when recovering from applying state (#12603)
-
-close tikv/tikv#12470
-
-Clean up stale logs when recovering from applying state.
-
-Signed-off-by: tabokie <xy.tao@outlook.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

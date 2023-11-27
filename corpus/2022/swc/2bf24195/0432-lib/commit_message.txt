@@ -1,2 +1,0 @@
-feat(css/parser): Parse more math functions in `@media` (#5904)
-

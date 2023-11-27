@@ -1,2 +1,0 @@
-fix(es/minifier): Fix optimization of expressions in numeric context (#6965)
-

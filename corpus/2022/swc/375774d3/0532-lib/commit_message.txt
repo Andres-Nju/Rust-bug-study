@@ -1,2 +1,0 @@
-fix(es): Check the syntax context of `arguments` (#5174)
-

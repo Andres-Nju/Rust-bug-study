@@ -1,4 +1,0 @@
-fix(swc/hygiene): Prefer not renaming top level variables (#2940)
-
-swc_ecma_transforms_base:
- - `hygiene`: Use concept of depth to prevent renaming top level nodes.

@@ -1,5 +1,0 @@
-fix(es/minifier): Don't remove used var decl (#7200)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/7194.

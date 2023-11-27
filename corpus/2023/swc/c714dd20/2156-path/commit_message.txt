@@ -1,6 +1,0 @@
-fix(es/module): Make `jsc.paths` fully resolve TypeScript files (#7901)
-
-**Related issue:**
-
- - Closes #7861
- - Closes #7898

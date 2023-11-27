@@ -1,7 +1,0 @@
-coprocessor: fix panic on `analyze` when `max_sample_size == 0` (#12696)
-
-close tikv/tikv#11192, ref tikv/tikv#11425
-
-Signed-off-by: Lucasliang <nkcs_lykx@hotmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

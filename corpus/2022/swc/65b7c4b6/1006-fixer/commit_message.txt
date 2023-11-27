@@ -1,2 +1,0 @@
-fix(es/fixer): Preserve the paren in a spread element (#4771)
-

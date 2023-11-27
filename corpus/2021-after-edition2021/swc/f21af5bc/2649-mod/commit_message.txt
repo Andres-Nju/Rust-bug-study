@@ -1,9 +1,0 @@
-feat(es/lints): Implement simple validations (#2763)
-
-swc_ecma_lint:
- - Implement `const-assign`. (Closes #2016)
- - Implement `duplicate-bindings`. (Closes #2795)
- - Implement `duplicate-exports`. (Closes #3056)
-
-swc:
- - Use linter.

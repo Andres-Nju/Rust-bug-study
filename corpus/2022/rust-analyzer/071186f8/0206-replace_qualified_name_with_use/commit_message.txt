@@ -1,7 +1,0 @@
-Merge #11525
-
-11525: fix(assist): Drop generic args in path before insert use in `replace_qualified_name_with_use` r=Veykril a=tysg
-
-Fixes #11505. also removed an unnecessary `clone_for_update` call.
-
-Co-authored-by: Tianyi Song <42670338+tysg@users.noreply.github.com>

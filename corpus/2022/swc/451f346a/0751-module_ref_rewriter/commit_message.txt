@@ -1,2 +1,0 @@
-fix(es/modules): Handle top level this (#5159)
-

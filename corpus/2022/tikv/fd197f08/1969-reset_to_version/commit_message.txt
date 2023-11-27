@@ -1,7 +1,0 @@
-server: wait for reset-to-version task completion (#13830)
-
-close tikv/tikv#13829
-
-Fix a segfault when executing reset-to-version with tikv-ctl
-
-Signed-off-by: tabokie <xy.tao@outlook.com>

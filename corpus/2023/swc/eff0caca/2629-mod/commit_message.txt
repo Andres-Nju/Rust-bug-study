@@ -1,5 +1,0 @@
-feat(es/minifier): Support `mangle.eval` (#7777)
-
-**Related issue:**
-
- - Closes #7754

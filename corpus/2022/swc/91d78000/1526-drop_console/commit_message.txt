@@ -1,5 +1,0 @@
-feat(es/minifier): Implement `drop_console` (#3392)
-
-swc_ecma_minifier:
- - Merge `drop_console` into pure optimizer.
- - Implement `drop_console`. (Closes #2321)

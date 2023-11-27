@@ -1,3 +1,0 @@
-Merge pull request #994 from ljedrz/add_connect_rpc
-
-Add a private RPC to connect to multiple peers

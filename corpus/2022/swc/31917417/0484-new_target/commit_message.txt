@@ -1,2 +1,0 @@
-fix(es/compat): Handle `super` and `new.target` in class properties (#3594)
-

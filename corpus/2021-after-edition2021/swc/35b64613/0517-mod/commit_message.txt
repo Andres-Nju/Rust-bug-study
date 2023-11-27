@@ -1,2 +1,0 @@
-fix(es/compat): Visit all private class methods (#3150)
-

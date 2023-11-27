@@ -1,5 +1,0 @@
-fix(es/minifier): Preserve `delete` of unresolved variables (#7072)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/7045.

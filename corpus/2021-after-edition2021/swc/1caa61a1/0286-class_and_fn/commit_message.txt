@@ -1,2 +1,0 @@
-fix(es/parser): Allow `static`/`declare` to be optional class property name (#2782)
-

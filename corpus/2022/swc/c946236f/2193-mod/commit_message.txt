@@ -1,2 +1,0 @@
-fix(es/compat): Fix label handling of `block_scoping` (#4198)
-

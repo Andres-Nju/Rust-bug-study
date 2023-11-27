@@ -1,9 +1,0 @@
-raftstore: use force_send to send ApplyRes (#13168)
-
-close tikv/tikv#13160
-
-Use force_send to send ApplyRes
-
-Signed-off-by: 5kbpers <hustmh@gmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

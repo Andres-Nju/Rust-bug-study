@@ -1,2 +1,0 @@
-fix(es/parser): Allow `Expr::TsInstantiation` in extends clause (#3696)
-

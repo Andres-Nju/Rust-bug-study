@@ -1,2 +1,0 @@
-fix(es/fixer): Wrap first `function` or `class` of a sequence expression (#5508)
-

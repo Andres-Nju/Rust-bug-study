@@ -1,5 +1,0 @@
-Auto merge of #14486 - HKalbasi:dev, r=Veykril
-
-Desugar async fn completely
-
-fix #14479

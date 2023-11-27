@@ -1,2 +1,0 @@
-fix(es/compat): Fix span of `instanceof` (#4757)
-

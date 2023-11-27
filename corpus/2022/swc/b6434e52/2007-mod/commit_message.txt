@@ -1,2 +1,0 @@
-fix(es/compat): Throw an error if a private property is initialized multiple times (#3665)
-

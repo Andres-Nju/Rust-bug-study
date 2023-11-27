@@ -1,5 +1,0 @@
-fix(es/parser): Fix parsing of tsx with a type annotation in a conditional expression (#7440)
-
-**Related issue:**
-
- - Closes #7224.

@@ -1,9 +1,0 @@
-Auto merge of #14493 - lowr:fix/ws-between-text-and-pound, r=Veykril
-
-fix: insert whitespace between text and pound
-
-Because `text#`, `text"..."`, and `text'...'` are [reserved syntax since Rust 2021][guide]. Note that the latter two are already handled correctly.
-
-Fixes #14487
-
-[guide]: https://doc.rust-lang.org/edition-guide/rust-2021/reserving-syntax.html

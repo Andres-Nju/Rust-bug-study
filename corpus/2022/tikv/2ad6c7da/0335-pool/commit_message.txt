@@ -1,7 +1,0 @@
-causal_ts: batch up renew requests (#12490)
-
-close tikv/tikv#12489
-
-Batch up causal timestamp renew requests.
-
-Signed-off-by: pingyu <yuping@pingcap.com>

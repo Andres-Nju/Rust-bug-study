@@ -1,2 +1,0 @@
-fix(es/typescript): Fix `name` of decorated classes (#3689)
-

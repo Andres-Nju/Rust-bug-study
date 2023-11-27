@@ -1,5 +1,0 @@
-fix(es/decorators): Fix a regression about class expressions (#8102)
-
-**Related issue:**
-
- - Closes #8095

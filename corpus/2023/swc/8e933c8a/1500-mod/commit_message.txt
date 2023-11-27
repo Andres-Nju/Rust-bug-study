@@ -1,5 +1,0 @@
-fix(es/react): Default to empty string when emitting refresh signature (#7514)
-
-**Related issue:**
-
- - Closes #7471.

@@ -1,5 +1,0 @@
-Auto merge of #14544 - HKalbasi:dev, r=Veykril
-
-Infer types of nested RPITs
-
-fix https://github.com/rust-lang/rust-analyzer/issues/14474#issuecomment-1501235394

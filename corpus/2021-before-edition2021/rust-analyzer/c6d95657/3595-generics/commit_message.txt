@@ -1,7 +1,0 @@
-Merge #10305
-
-10305: Move `GenericParams`'s handling of `impl Trait` into `fn_data_query` r=flodiebold a=SkiFire13
-
-Fixes #10286
-
-Co-authored-by: Giacomo Stevanato <giaco.stevanato@gmail.com>

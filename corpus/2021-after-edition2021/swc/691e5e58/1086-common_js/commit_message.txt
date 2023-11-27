@@ -1,4 +1,0 @@
-fix(es/transforms/common_js): Allow reassignment to functions exported as default (#2705)
-
-swc_ecma_transforms_module:
- - Mark a function exported using `default` as reassignable target.

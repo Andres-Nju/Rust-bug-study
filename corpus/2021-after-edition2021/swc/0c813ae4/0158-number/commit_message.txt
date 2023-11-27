@@ -1,4 +1,0 @@
-fix(es/lexer): Fix lexing of numbers with large exponent (#3061)
-
-swc_ecma_parser:
- - Fix lexing of numbers where exponents are large enough to be parsed as `Infinity`. (Closes #3060)

@@ -1,5 +1,0 @@
-Auto merge of #15819 - wasd96040501:feat/skip_tt_count_limit, r=lnicola
-
-feat: skip checking token tree count for include! macro call
-
-fix #15335 #15648

@@ -1,2 +1,0 @@
-fix(es/typescript): Mark a namespace as concrete only if it is (#5670)
-

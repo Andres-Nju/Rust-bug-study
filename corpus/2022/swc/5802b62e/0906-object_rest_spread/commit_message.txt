@@ -1,2 +1,0 @@
-fix(es/compat): Allow destructuring assignment to an object property (#3544)
-

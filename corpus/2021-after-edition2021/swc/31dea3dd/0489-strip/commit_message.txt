@@ -1,2 +1,0 @@
-fix(es/typescript): Export destructured properties in typescript namespaces (#3084)
-

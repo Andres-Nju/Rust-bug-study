@@ -1,7 +1,0 @@
-Rollup merge of #112464 - eval-exec:exec/fix-connect_timeout-overflow, r=ChrisDenton
-
-Fix windows `Socket::connect_timeout` overflow
-
-This PR want to close #112405
-
-- [x] add unit test

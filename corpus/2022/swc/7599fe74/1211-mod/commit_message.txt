@@ -1,2 +1,0 @@
-fix(es/parser): Enable static blocks by default (#4334)
-

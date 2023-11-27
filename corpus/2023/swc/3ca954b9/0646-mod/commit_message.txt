@@ -1,6 +1,0 @@
-fix(es/helpers): Use snake_case for helpers (#7147)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/7144.
- - Closes https://github.com/swc-project/swc/issues/7118.

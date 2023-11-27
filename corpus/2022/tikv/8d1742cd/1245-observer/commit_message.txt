@@ -1,9 +1,0 @@
-causal_ts: fix issue #12680 (#12697)
-
-close tikv/tikv#12680, ref tikv/tikv#12680
-
-Fix issue #12680.
-
-Signed-off-by: pingyu <yuping@pingcap.com>
-
-Co-authored-by: iosmanthus <dengliming@pingcap.com>

@@ -1,5 +1,0 @@
-fix(es/codegen): Add quotes to property names when `ascii_only` is `true` (#7820)
-
-**Related issue:**
-
- - Closes #7805.

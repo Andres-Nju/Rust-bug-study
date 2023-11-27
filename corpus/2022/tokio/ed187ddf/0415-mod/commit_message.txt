@@ -1,2 +1,0 @@
-doc: Created a simple example for tokio::process::ChildStdin (#4479)
-

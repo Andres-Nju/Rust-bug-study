@@ -12,11 +12,15 @@ def process_class_file(class_file_path, repo_commit):
     global checked_bug
     with open(class_file_path, 'r') as file:
         # print(class_file_path)
+        len_panic = -1
         lines = file.readlines()
         if len(lines[0].split()) == 1:
             un_checked_cnt += 1
             return None
-        root_cause, symptom = map(int, lines[0].split())
+        if len(lines[0].split()) == 3:
+            root_cause, symptom, len_panic = map(int, lines[0].split())
+        else:
+            root_cause, symptom = map(int, lines[0].split())
         if root_cause == 0 and symptom == 0:
             not_general_bug_cnt += 1
             return None
@@ -35,12 +39,13 @@ def process_class_file(class_file_path, repo_commit):
             platform_related,
             error_handling,
             safety[propagation_chain[0]],
-            safety[propagation_chain[1]]
+            safety[propagation_chain[1]],
+            len_panic
         ]
 
 def process_corpus(corpus_folder, output_file):
     with open(output_file, 'w', newline='') as csv_file:
-        csv_file.write("repo_commit,root_cause,symptom,code_add,code_remove,platform_related,error_handling,propagation_chain_1,propagation_chain_2\n")
+        csv_file.write("repo_commit,root_cause,symptom,code_add,code_remove,platform_related,error_handling,propagation_chain_1,propagation_chain_2, len_panic\n")
 
         for year_folder in os.listdir(corpus_folder):
             year_path = os.path.join(corpus_folder, year_folder)

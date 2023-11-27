@@ -1,5 +1,0 @@
-Auto merge of #15574 - alibektas:15572/false_crate_name_env, r=Veykril
-
-minor : use crate name for `CARGO_CRATE_NAME`
-
-fixes #15572 . Until now we used the package name as a replacement of crate name. With this PR r-a first sets all the env variables it set before and on top of those it tries to set `CARGO_CRATE_NAME` to crates name, following envvar's naming convention.

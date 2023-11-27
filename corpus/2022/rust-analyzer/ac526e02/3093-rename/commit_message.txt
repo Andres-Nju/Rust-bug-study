@@ -1,5 +1,0 @@
-Auto merge of #12712 - harpsword:fix-rename-crate-root, r=Veykril
-
-fix: ignore renames for crate root
-
-close #12684 . I just ignore renames for crate root in `rename_mod` func.

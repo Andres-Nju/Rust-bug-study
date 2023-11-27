@@ -1,9 +1,0 @@
-Merge #3160
-
-3160: Clamp databases max size to the page size r=irevoire a=Kerollmops
-
-This PR fixes #3150 (again #2662). We fix it again, here, as we entirely rewrote the index scheduler and forgot about this little detail.
-
-`@irevoire` Can I have your input on where we create the indexes in the tests? I want to use a non-page-size rounded value in the tests. This way, we can see this issue in the tests next time.
-
-Co-authored-by: Kerollmops <clement@meilisearch.com>

@@ -1,9 +1,0 @@
-raftstore: check store id before sending wakeup message (#12482)
-
-close tikv/tikv#12478
-
-check store id before sending wakeup message
-
-Signed-off-by: 5kbpers <hustmh@gmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

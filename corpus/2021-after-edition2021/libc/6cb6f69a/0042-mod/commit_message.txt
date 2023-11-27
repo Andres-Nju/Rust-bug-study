@@ -1,5 +1,0 @@
-Auto merge of #2490 - devnexen:macos_build_fix, r=JohnTitor
-
-malloc_zone darwin build fix.
-
-closes #2484

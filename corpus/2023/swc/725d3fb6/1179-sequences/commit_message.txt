@@ -1,5 +1,0 @@
-fix(es/minifier): Don't skip shorthand properties from sequential inliner (#6918)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6914.

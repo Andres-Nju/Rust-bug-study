@@ -1,7 +1,0 @@
-raftstore-v2: filter read index msg when sending from self (#14396)
-
-close tikv/tikv#14388
-
-filter read index msg when sending from self
-
-Signed-off-by: Spade A <u6748471@anu.edu.au>

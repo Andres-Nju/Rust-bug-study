@@ -1,5 +1,0 @@
-fix(es/parser): Fix parsing of `await using` (#8101)
-
-**Related issue:**
-
- - Closes #8096

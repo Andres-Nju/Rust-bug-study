@@ -1,3 +1,0 @@
-avoid deadlock for GC in compaction filter (#9694)
-
-Signed-off-by: qupeng <qupeng@pingcap.com>

@@ -1,2 +1,0 @@
-fix(es/codegen): Preserve parens for `new` in optional chaining (#6484)
-

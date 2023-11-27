@@ -1,7 +1,0 @@
-fix: ebs volume snapshot support tikv node equipped with 2 cpu or less configuration (#14153)
-
-close tikv/tikv#14017
-
-Signed-off-by: fengou1 <feng.ou@pingcap.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,5 +1,0 @@
-log-backup: fix bug about restoring point at TiCloud with KMS (#12757)
-
-close tikv/tikv#12750, close tikv/tikv#12751
-
-Signed-off-by: joccau <zak.zhao@pingcap.com>

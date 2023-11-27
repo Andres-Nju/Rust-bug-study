@@ -1,9 +1,0 @@
-Fix serialized format of ReadableSize (#12532)
-
-close tikv/tikv#12518
-
-Fix serialized format of ReadableSize
-
-Signed-off-by: 5kbpers <hustmh@gmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,2 +1,0 @@
-doc: clarify limits on return values of AsyncWrite::poll_write (#3820)
-

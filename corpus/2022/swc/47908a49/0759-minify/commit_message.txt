@@ -1,9 +1,0 @@
-perf(common): Fix perf bug of sourcemap for inputs with multi-byte chars (#6523)
-
-**Description:**
-
-This PR makes the source map generator cache the previous position instead of searching it from 0 every time.
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6411.

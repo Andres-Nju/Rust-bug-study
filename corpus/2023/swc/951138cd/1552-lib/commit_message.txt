@@ -1,5 +1,0 @@
-fix(es/minifier): Drop line comments starting with `!` (#7689)
-
-**Related issue:**
-
- - Closes #7653

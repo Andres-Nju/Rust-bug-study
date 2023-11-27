@@ -1,2 +1,0 @@
-fix(bundler): Handle star export with top-level `await` (#5707)
-

@@ -1,2 +1,0 @@
-fix(es/react): Don't panic on invalid react pragma (#5101)
-

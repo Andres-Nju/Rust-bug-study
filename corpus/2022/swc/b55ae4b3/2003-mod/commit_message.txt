@@ -1,4 +1,0 @@
-fix(es/minifier): Fix analysis of unary expressions (#3286)
-
-swc_ecma_minifier:
- - Mark update as usage and assignment. (Closes #3265)

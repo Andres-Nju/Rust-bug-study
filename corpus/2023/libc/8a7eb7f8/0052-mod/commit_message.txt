@@ -1,5 +1,0 @@
-Auto merge of #3086 - howjmay:add-PR_SET_PTRACER_ANY, r=JohnTitor
-
-linux: add PR_SET_PTRACER_ANY
-
-fixed #3085

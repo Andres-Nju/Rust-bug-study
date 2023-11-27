@@ -1,9 +1,0 @@
-fix(es/minifier): Fix optimization of numeric keys (#6052)
-
-**Description:**
-
-We should not optimize if the key starts with `0`.
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6051.

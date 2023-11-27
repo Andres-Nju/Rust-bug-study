@@ -1,5 +1,0 @@
-Auto merge of #14855 - HKalbasi:mir, r=HKalbasi
-
-Consider block impls in `lookup_impl_assoc_item_for_trait_ref`
-
-fix #14782

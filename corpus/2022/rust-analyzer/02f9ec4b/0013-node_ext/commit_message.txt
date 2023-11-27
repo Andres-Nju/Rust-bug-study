@@ -1,5 +1,0 @@
-Auto merge of #12895 - Veykril:compl-anchor, r=Veykril
-
-fix: Calculate completions after type anchors
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/12892

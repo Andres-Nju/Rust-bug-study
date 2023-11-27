@@ -1,5 +1,0 @@
-fix(es/compat): Skip function scope in `block-scoped-fns` pass (#7975)
-
-**Related issue:**
-
- - Closes: #2793

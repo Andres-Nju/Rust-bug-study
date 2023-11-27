@@ -1,8 +1,0 @@
-Merge #10289
-
-10289: fix: Only strip derive attributes when preparing macro input r=Veykril a=Veykril
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10246
-cc https://github.com/rust-analyzer/rowan/pull/114, follow up to https://github.com/rust-analyzer/rust-analyzer/pull/10025
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

@@ -1,2 +1,0 @@
-fix(es/minifier): Fix default values of `toplevel` (#4366)
-

@@ -1,5 +1,0 @@
-Auto merge of #14297 - Veykril:proc-macro-deps, r=Veykril
-
-Add core lib to proc_macro dependencies
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/14292

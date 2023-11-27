@@ -1,5 +1,0 @@
-Auto merge of #15754 - alibektas:15656/linked_projects_are_local_too, r=Veykril
-
-fix: Dedup duplicate crates with differing origins in CrateGraph construction
-
-Partially fixes #15656 . Until now the condition for deduplication in crate graphs were the strict equality of two crates. One problem that arises from this is that in certain conditions when we see the same crate having different `CrateOrigin`s the first occurrence would be kept. This approach however results in some unwanted results such as making renaming forbidden as this has been recently only made available for local crates. The given example in #15656 can still not be resolved with this PR as that involves taking inconsistencies between dependencies into consideration. This will be addressed in a future PR.

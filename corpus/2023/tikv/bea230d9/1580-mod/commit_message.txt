@@ -1,7 +1,0 @@
-raftstore: fix unwrap panic of region_compact_redundant_rows_percent (#15440)
-
-close tikv/tikv#15438
-
-fix unwrap panic of region_compact_redundant_rows_percent
-
-Signed-off-by: SpadeA-Tang <u6748471@anu.edu.au>

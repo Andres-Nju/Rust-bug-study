@@ -1,5 +1,0 @@
-Auto merge of #15611 - Veykril:stability-import, r=Veykril
-
-Prefer stable paths over unstable ones in import path calculation
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/15610

@@ -1,7 +1,0 @@
-sst_import: keep import sst if the ingest apply index has not flush the rocksdb. (#14669)
-
-close tikv/tikv#14663
-
-record the sst apply index  and delete them when the flushed index is higher than the apply index.
-
-Signed-off-by: bufferflies <1045931706@qq.com>

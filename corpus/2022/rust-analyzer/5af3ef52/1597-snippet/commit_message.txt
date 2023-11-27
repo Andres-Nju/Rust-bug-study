@@ -1,6 +1,0 @@
-Auto merge of #12735 - feniljain:fix-completions, r=feniljain
-
-fix(completion): `super::` completion at crate root and module depth aware
-
-- should close #12439
-- Suggest super according to the depth in tree

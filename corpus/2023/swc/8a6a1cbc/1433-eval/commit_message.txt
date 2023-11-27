@@ -1,5 +1,0 @@
-feat(es/minifier): Handle boolean in `Evaluator` (#6756)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/5953.

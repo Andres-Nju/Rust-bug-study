@@ -1,5 +1,0 @@
-Auto merge of #3003 - devnexen:musl_pidfd_nonblock, r=JohnTitor
-
-linux musl adding `PIDFD_NONBLOCK` constant.
-
-closes #3002

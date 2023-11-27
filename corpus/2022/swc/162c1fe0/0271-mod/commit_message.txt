@@ -1,2 +1,0 @@
-fix(es/transforms): Remove unsafe `new String("...")` optimization (#3284)
-

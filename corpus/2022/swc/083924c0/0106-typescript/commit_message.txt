@@ -1,2 +1,0 @@
-fix(es/codegen): Emit `readonly` for `TsIndexSignature` (#6172)
-

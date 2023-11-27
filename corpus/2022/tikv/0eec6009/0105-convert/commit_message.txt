@@ -1,5 +1,0 @@
-copr: fix get_valid_int_prefix() to be compatible with TiDB(#13045) (#13046)
-
-close tikv/tikv#13045
-
-Signed-off-by: guo-shaoge <shaoge1994@163.com>

@@ -1,9 +1,0 @@
-raftstore: Observe when applying snapshot is cancelled (#15226)
-
-close tikv/tikv#15227
-
-Deliver message to observer when applying snapshot is cancelled
-
-Signed-off-by: CalvinNeo <calvinneo1995@gmail.com>
-
-Co-authored-by: ti-chi-bot[bot] <108142056+ti-chi-bot[bot]@users.noreply.github.com>

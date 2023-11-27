@@ -1,9 +1,0 @@
-Auto merge of #14971 - lowr:fix/captured-item-ty-outer-binder, r=HKalbasi
-
-fix: consider outer binders when folding captured items' type
-
-Fixes #14966
-
-Basically, the crash is caused by us producing a broken type and passing it to chalk: `&dyn for<type> [for<> Implemented(^1.0: A<^0.0>)]` (notice the innermost bound var `^0.0` has no corresponding binder). It's created in `CapturedItemWithoutTy::with_ty()`, which didn't consider outer binders when folding types to replace placeholders with bound variables.
-
-The fix is one-liner, but I've also refactored the surrounding code a little.

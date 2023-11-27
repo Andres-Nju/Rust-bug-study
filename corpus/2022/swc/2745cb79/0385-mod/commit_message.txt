@@ -1,2 +1,0 @@
-fix(es/resolver): Ensure that a parameter type is resolved to parent (#4645)
-

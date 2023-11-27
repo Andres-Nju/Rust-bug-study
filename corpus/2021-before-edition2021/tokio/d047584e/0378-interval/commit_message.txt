@@ -1,2 +1,0 @@
-time: document `Interval::tick` cancel safety (#4152)
-

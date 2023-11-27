@@ -1,2 +1,0 @@
-sync: document that broadcast capacity is a lower bound (#6042)
-

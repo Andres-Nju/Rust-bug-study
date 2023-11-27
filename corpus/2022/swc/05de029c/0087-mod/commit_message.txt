@@ -1,2 +1,0 @@
- fix(es/compat): Fix handling of private getters and setters (#3695)
-

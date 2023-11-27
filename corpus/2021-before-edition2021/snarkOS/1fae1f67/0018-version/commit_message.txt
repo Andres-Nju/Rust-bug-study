@@ -1,3 +1,0 @@
-Merge pull request #1007 from niklaslong/docs-update
-
-Relink external md docs where possible

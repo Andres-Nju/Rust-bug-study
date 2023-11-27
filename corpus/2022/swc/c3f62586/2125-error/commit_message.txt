@@ -1,2 +1,0 @@
-fix(es/parser): Fix false-positives of yield used as a parameter in generator (#5564)
-

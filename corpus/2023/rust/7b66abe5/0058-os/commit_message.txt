@@ -1,9 +1,0 @@
-Rollup merge of #114968 - ShE3py:unix-getsetenv-ub, r=thomcc
-
-Fix UB in `std::sys::os::getenv()`
-
-Fixes #114949.
-
-Reduced the loops to 1k iterations (100k was taking way too long), Miri no longer shows any UB.
-
-`@rustbot` label +A-process +C-bug +I-unsound +O-unix

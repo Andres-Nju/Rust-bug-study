@@ -1,8 +1,0 @@
-br: recovering_mark interface block tikv startup when tikv v6.3.0 connect to pd v6.2.0 (#13498)
-
-close tikv/tikv#13497
-
-Signed-off-by: fengou1 <feng.ou@pingcap.com>
-Signed-off-by: fengou1 <85682690+fengou1@users.noreply.github.com>
-
-Co-authored-by: Xinye Tao <xy.tao@outlook.com>

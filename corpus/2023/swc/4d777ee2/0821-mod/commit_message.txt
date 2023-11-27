@@ -1,5 +1,0 @@
-feat(es/config): Accept `jsc.experimental.keepImportAssertions` (#7995)
-
-**Related issue:**
-
- - Closes #7923.

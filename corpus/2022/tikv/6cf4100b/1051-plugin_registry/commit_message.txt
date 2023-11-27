@@ -1,8 +1,0 @@
-coprocessor_v2: fix incorrect shared library name (#13707)
-
-ref tikv/tikv#13585, close tikv/tikv#13708
-
-This commit fixes test `registry_unload_plugin`. The test has been failing
-since the example crate renamed its name in #13585.
-
-Signed-off-by: Yilin Chen <sticnarf@gmail.com>

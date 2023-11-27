@@ -1,5 +1,0 @@
-fix(es/codegen): Preserve more parens (#6268)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6266.

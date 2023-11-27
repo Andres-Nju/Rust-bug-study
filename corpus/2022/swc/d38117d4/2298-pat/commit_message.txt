@@ -1,2 +1,0 @@
-fix(es/parser): Allow parentheses in assignment target (#4105)
-

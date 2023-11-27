@@ -1,5 +1,0 @@
-fix(es/minifier): Don't generate generator arrows (#7466)
-
-**Related issue:**
-
- - Closes #7457.

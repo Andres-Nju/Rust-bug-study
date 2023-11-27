@@ -1,7 +1,0 @@
-log_backup: move all download request into the same runtime (#14286)
-
-ref hyperium/hyper#2112, close tikv/tikv#14285
-
-Download tasks will executed in a tiny runtime for now.
-
-Signed-off-by: hillium <yujuncen@pingcap.com>

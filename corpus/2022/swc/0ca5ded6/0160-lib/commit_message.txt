@@ -1,5 +1,0 @@
-fix(es/parser): Fix parsing of arrow in cond (#6067)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/4911.

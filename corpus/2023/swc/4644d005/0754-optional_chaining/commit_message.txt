@@ -1,5 +1,0 @@
-fix(es/compat): Fix handling of `this` of optional chaining pass (#7527)
-
-**Related issue:**
-
- - Closes #7526.

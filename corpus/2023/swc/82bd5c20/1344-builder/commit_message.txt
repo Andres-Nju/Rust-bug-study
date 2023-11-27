@@ -1,5 +1,0 @@
-feat(es/renamer): Rename synthesized identifiers even on `eval` (#6818)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/5068.

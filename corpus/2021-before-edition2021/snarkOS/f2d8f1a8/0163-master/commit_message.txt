@@ -1,3 +1,0 @@
-Merge pull request #1047 from niklaslong/feat/block-hashes
-
-Use `hash_hasher` for hash maps and sets in sync

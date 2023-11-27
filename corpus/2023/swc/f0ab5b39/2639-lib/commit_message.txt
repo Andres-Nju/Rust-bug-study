@@ -1,5 +1,0 @@
-fix(css/modules): Fix `:local` and `:global` (#7600)
-
-**Related issue:**
-
- - Close #7599.

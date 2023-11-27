@@ -1,5 +1,0 @@
-Auto merge of #14316 - HKalbasi:master, r=HKalbasi
-
-Fix stack overflow when derefrencing `&!`
-
-fix #14310

@@ -1,5 +1,0 @@
-fix(es/react): Allow spread children (#6505)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/2037.

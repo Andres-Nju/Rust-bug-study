@@ -1,8 +1,0 @@
-components/pd_client: fix double-read-lock in client (#13188)
-
-close tikv/tikv#12933
-
-Signed-off-by: Burton Qin <bobbqqin@gmail.com>
-
-Co-authored-by: Shirly <AndreMouche@126.com>
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

@@ -1,3 +1,0 @@
-Merge pull request #1241 from niklaslong/dup-syncblocks
-
-Remove the duplicate syncblocks metric

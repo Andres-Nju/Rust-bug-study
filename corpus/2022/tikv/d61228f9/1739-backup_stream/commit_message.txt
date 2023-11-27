@@ -1,9 +1,0 @@
-log-backup: make test more stable, and fix panics (#12511)
-
-close tikv/tikv#12507, close tikv/tikv#12508, close tikv/tikv#12513
-
-make test more stable, fix panics, give up initial scanning when epoch not match
-
-Signed-off-by: Yu Juncen <yujuncen@pingcap.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

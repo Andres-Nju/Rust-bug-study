@@ -1,5 +1,0 @@
-fix(es/minifier): Don't inline invalid LHS into an update argument (#6680)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6641.

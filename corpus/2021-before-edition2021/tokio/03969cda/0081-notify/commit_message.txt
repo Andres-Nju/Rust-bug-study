@@ -1,3 +1,0 @@
-doc: conversion of doc comments to indicative mood (#4174)
-
-Co-authored-by: Antonello Palazzi <antonello.palazzi@gmail.com>

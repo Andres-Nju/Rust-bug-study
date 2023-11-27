@@ -1,7 +1,0 @@
-Auto merge of #14357 - Veykril:rustc-priv, r=Veykril
-
-fix: Don't pass feature flags to rustc private crates metadata invocation
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/14327
-
-Better error reporting I'll do in a follow up

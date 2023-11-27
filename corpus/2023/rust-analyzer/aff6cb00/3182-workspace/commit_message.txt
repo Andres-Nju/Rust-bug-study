@@ -1,7 +1,0 @@
-Auto merge of #14282 - Veykril:rustc_private-proc-macro, r=Veykril
-
-fix: Load proc-macros for rustc_private crates
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/13591
-
-Verified that this makes things work in the clippy repo (like resolving `sym` things for example)

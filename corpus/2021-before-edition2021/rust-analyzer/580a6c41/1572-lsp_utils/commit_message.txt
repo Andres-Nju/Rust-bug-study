@@ -1,8 +1,0 @@
-Merge #10568
-
-10568: fix(assist): fix #10566 and #10567 r=bnjjj a=bnjjj
-
-close #10566
-close #10567
-
-Co-authored-by: Benjamin Coenen <5719034+bnjjj@users.noreply.github.com>

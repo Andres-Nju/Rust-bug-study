@@ -1,6 +1,0 @@
-Auto merge of #12202 - iDawer:ide.sig_help-fix, r=lnicola
-
-fix: don't panic at fully qualified call syntax in signature help
-
-Closes  #12200
-Regressed from #12082

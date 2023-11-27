@@ -1,7 +1,0 @@
-raftstore: fix stale message cause panic (#12054)
-
-close tikv/tikv#12023
-
-raftstore: fix stale message cause panic
-
-Signed-off-by: linning <linningde25@gmail.com>

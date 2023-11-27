@@ -1,7 +1,0 @@
-Quota limiter: make method to delay cpu more precise (#12219)
-
-close tikv/tikv#12218
-
-Use the results returned by the cpu limiter directly without extra processing
-
-Signed-off-by: Xintao <hunterlxt@live.com>

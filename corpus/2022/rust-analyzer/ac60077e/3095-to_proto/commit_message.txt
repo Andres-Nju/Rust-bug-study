@@ -1,5 +1,0 @@
-Auto merge of #13639 - Veykril:macro-diags, r=Veykril
-
-fix: Fix proc-macro-srv search paths for Arch Linux
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/13616

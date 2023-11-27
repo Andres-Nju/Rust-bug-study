@@ -1,7 +1,0 @@
-resource_control: fix virtual time overflow (#14509)
-
-close tikv/tikv#14507
-
-Signed-off-by: glorv <glorvs@163.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

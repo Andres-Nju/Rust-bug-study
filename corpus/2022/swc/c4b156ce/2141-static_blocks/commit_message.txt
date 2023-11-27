@@ -1,2 +1,0 @@
-fix(es/compat): Visit default export in `static_block` (#4500)
-

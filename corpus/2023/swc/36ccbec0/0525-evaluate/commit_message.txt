@@ -1,5 +1,0 @@
-fix(es/minifier): Abort on `Array.slice` with `start >= end` (#7745)
-
-**Related issue:**
-
- - Closes #7742.

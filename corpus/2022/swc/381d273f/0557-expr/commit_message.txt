@@ -1,2 +1,0 @@
-fix(es/parser): Check for line break after async (#4940)
-

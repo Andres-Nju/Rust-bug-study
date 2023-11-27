@@ -1,5 +1,0 @@
-Auto merge of #12765 - Veykril:import-insert-fix, r=Veykril
-
-fix: Fix imports being inserted before doc comments in inline modules
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/12758

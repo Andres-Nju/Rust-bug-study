@@ -1,5 +1,0 @@
-Auto merge of #2733 - vityafx:add-pthread-functions-to-bsd, r=Amanieu
-
-Expose more thread bindings for BSD-like OSes.
-
-Fixes https://github.com/rust-lang/libc/issues/2721

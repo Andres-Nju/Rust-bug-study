@@ -1,7 +1,0 @@
-Auto merge of #14138 - lowr:fix/rename-raw-ident-mod, r=Veykril
-
-fix: don't include `r#` prefix in filesystem changes
-
-Fixes #14131
-
-In addition to fix for #14131, this PR adds raw ident validity checks in rename functionality that we've been missing.

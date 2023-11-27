@@ -1,2 +1,0 @@
-io: make `read_to_end` not grow unnecessarily (#5610)
-

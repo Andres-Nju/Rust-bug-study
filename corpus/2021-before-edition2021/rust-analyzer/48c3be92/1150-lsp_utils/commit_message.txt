@@ -1,9 +1,0 @@
-Merge #10574
-
-10574: fix: Fix PartialOrd codegen r=lnicola a=yoshuawuyts
-
-Closes https://github.com/rust-analyzer/rust-analyzer/issues/10571#issuecomment-945516462. Thanks!
-
-r? `@lnicola` 
-
-Co-authored-by: Yoshua Wuyts <yoshuawuyts@gmail.com>

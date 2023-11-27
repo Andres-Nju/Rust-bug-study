@@ -1,8 +1,0 @@
-Merge #10260
-
-10260: fix: fix names generation in `Generate function` r=Veykril a=iDawer
-
-- Improve fn name computation (close #10176).
-- Handle tuple indexing expressions in argument position (should close  #10241)
-
-Co-authored-by: Dawer <7803845+iDawer@users.noreply.github.com>

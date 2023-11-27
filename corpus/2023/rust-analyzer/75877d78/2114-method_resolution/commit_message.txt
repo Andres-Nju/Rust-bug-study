@@ -1,5 +1,0 @@
-Auto merge of #13897 - bvanjoi:nearest-block-search, r=Veykril
-
-fix(ty): should query impls in nearest block
-
-fix https://github.com/rust-lang/rust-analyzer/issues/13895

@@ -1,5 +1,0 @@
-Auto merge of #12766 - Veykril:completion-vis, r=Veykril
-
-fix: Don't show qualified path completions for private items
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/12703

@@ -1,5 +1,0 @@
-Auto merge of #12098 - jonas-schievink:macro-rules-snippet, r=jonas-schievink
-
-fix: show `macro_rules` snippet in blocks
-
-fixes https://github.com/rust-lang/rust-analyzer/issues/12092

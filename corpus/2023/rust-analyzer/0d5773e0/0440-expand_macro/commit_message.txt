@@ -1,5 +1,0 @@
-Auto merge of #14725 - HKalbasi:derive-impls, r=HKalbasi
-
-Emit function bodies in expanding builtin derives
-
-fix #14235

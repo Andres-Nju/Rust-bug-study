@@ -1,5 +1,0 @@
-RocksDB: change compaction-guard-min-output-file-size to 1MB (#14889)
-
-close tikv/tikv#14888
-
-Change compaction-guard-min-output-file-size to 1MB

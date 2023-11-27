@@ -1,8 +1,0 @@
-Merge #10430
-
-10430: fix: Fix rename trying to edit the same range multiple times for certain macro inputs r=Veykril a=Veykril
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/10324
-bors r+
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

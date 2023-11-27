@@ -1,2 +1,0 @@
-fix(es/compat): Support updating a private field with bigint value (#4136)
-

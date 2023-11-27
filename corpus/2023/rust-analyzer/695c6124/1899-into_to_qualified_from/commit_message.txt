@@ -1,5 +1,0 @@
-Auto merge of #15641 - alibektas:15598/fix_into_to_from, r=Veykril
-
-fix: preceding QualifiedPathType for into_to_from assist
-
-fixes #15598

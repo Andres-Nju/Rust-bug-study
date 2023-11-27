@@ -1,7 +1,0 @@
-raftstore: fix missing CheckLongUncommitted tick (#14894)
-
-close tikv/tikv#14893
-
-raftstore: fix missing CheckLongUncommitted tick
-
-Signed-off-by: Neil Shen <overvenus@gmail.com>

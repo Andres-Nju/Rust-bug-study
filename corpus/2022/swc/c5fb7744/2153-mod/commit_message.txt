@@ -1,5 +1,0 @@
-fix(es/minifier): Don't skip unresolved identifiers (#6050)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/6049

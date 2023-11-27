@@ -1,5 +1,0 @@
-update gc can't work alert (#9914)
-
-Signed-off-by: qupeng <qupeng@pingcap.com>
-
-Co-authored-by: Ti Chi Robot <71242396+ti-chi-bot@users.noreply.github.com>

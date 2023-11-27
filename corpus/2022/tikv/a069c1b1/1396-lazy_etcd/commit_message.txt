@@ -1,9 +1,0 @@
-log-backup: make PITR available when using partial cert chain (#13961)
-
-close tikv/tikv#13959
-
-This PR sets X509_V_FLAG_PARTIAL_CHAIN, so we would trust the CA even there isn't a root CA provided.
-
-Signed-off-by: hillium <yu745514916@live.com>
-
-Co-authored-by: qupeng <qupeng@pingcap.com>

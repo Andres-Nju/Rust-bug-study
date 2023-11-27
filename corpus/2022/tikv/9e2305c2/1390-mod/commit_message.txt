@@ -1,8 +1,0 @@
-storage: fix the flashback dead loop caused by a deleted key (#13744)
-
-close tikv/tikv#13743
-
-The original thought is that when a key's latest MVCC record type is DELETE and the corresponding flashback operation is also DELETE, we skip it to avoid duplicated writing.
-However, this will cause the flashback to fall into a dead loop since the key doesn't have the written record with the flashback `commit_ts` and the flashback will always try to write it forever.
-
-Signed-off-by: JmPotato <ghzpotato@gmail.com>

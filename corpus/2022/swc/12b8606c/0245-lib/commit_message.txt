@@ -1,2 +1,0 @@
-fix(es/compat/es2015): Fix span handling of `arrow` and `classes` (#3921)
-

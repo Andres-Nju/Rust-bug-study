@@ -1,5 +1,0 @@
-Auto merge of #3029 - devnexen:pidfd_nonblock_uclibc, r=JohnTitor
-
-PIDFD_NONBLOCK addition into uclibc.
-
-closes #3026.

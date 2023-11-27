@@ -1,4 +1,0 @@
-fix(es/compat): Fix length of async functions (#3136)
-
-swc_ecma_transforms_compat:
- - `async_to_generator`: Preserve function length. (Closes #3135)

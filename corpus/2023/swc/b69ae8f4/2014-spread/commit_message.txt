@@ -1,2 +1,0 @@
-fix(es/compat): Fix loose mode of the `spread` pass (#7760)
-

@@ -1,7 +1,0 @@
-log-backup: an ad-hoc way for hot reloading TLS certs (#14072)
-
-close tikv/tikv#14071
-
-Log backup would aware TLS certifications changing.
-
-Signed-off-by: hillium <yujuncen@pingcap.com>

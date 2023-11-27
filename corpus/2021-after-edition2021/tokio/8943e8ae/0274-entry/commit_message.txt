@@ -1,2 +1,0 @@
-macros: address remainging clippy::semicolon_if_nothing_returned warning (#4252)
-

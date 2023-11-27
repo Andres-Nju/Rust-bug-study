@@ -1,5 +1,0 @@
-Auto merge of #12309 - Veykril:completion, r=Veykril
-
-fix: Fix incorrect expected type in completions for trailing match arms
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/12264

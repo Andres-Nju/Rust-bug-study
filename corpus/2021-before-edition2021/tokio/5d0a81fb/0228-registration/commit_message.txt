@@ -1,7 +1,0 @@
-io: fix memory leak during shutdown (#3477)
-
-In some cases, a cycle is created between I/O driver wakers and the I/O
-driver resource slab. This patch clears stored wakers when an I/O
-resource is dropped, breaking the cycle.
-
-Fixes #3228

@@ -1,7 +1,0 @@
-ctl: detect raft db correctly (#11395)
-
-Close #11393.
-
-Signed-off-by: Jay Lee <BusyJayLee@gmail.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

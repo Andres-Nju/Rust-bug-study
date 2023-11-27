@@ -1,7 +1,0 @@
-Merge #11455
-
-11455: Handle proc-macro functions as the proc-macro they resolve to r=Veykril a=Veykril
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/11212
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

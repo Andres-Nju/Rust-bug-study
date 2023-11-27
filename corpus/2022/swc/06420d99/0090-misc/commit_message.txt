@@ -1,2 +1,0 @@
-fix(es/minifier): Don't drop `typeof` (#4883)
-

@@ -1,5 +1,0 @@
-Auto merge of #12002 - Veykril:proc-macro-change-panic, r=Veykril
-
-fix: Fix source root panic in global state when checking out older git revs
-
-Fixes https://github.com/rust-lang/rust-analyzer/issues/11357

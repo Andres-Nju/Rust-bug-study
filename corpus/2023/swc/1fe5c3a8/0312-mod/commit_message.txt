@@ -1,5 +1,0 @@
-feat(es): Use `minify.format.ascii_only` if `output.charset` is not specified (#7258)
-
-**Related issue:**
-
- - Closes https://github.com/swc-project/swc/issues/7240.

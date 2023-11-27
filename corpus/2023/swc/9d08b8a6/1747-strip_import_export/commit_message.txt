@@ -1,5 +1,0 @@
-fix(es/typescript): Handle `DeclareCollect` correctly (#8008)
-
-**Related issue:**
-
- - Closes #8007

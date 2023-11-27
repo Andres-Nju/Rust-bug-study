@@ -1,3 +1,0 @@
-cmd: make lock files accessible to all users (#12400)
-
-Signed-off-by: Xintao <hunterlxt@live.com>

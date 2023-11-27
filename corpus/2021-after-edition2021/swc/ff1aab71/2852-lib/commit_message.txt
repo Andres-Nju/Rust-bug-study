@@ -1,4 +1,0 @@
-fix(es/compat): Transform an optional eval call as an indirect eval call (#3068)
-
-swc_ecma_transforms_compat:
- - `optional_chaining`: Handle optional `eval` calls properly. (Closes #2735)

@@ -1,7 +1,0 @@
-Merge #10805
-
-10805: ide: dedupe or merge hover actions r=Veykril a=jhgg
-
-fixes #10780 
-
-Co-authored-by: Jake Heinz <jh@discordapp.com>

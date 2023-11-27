@@ -1,8 +1,0 @@
-tokio: fix remaining issues about atomic_u64_static_once_cell.rs (#5374)
-
-Fixes #5373
-Closes #5358 
-
-- Add check for no_atomic_u64 & no_const_mutex_new (condition to atomic_u64_static_once_cell.rs is compiled)
-- Allow unused_imports in TARGET_ATOMIC_U64_PROBE. I also tested other *_PROBE and found no other errors triggered by -D warning.
-- Fix cfg of util::once_cell module

@@ -1,2 +1,0 @@
-fix(es/compat): Fix regression of `es2015` (#4119)
-

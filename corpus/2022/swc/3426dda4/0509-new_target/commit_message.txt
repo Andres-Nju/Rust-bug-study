@@ -1,2 +1,0 @@
-fix(es/compat): Handle `new.target` in getter/setter properties (#4194)
-

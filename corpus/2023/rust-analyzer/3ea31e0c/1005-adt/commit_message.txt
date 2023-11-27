@@ -1,7 +1,0 @@
-Auto merge of #15216 - AmrDeveloper:stop_diagnostics_for_self, r=lowr
-
-Disable remove unnecessary braces diagnotics for self imports
-
-Disable `remove unnecessary braces` diagnostic if the there is a `self` inside the bracketed `use`
-
-Fix #15191

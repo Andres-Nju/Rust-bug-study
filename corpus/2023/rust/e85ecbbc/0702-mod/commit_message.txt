@@ -1,7 +1,0 @@
-Rollup merge of #110233 - nbdd0121:intrinsic, r=tmiasko
-
-Make rust-intrinsic ABI unwindable
-
-Fix #104451, fix https://github.com/rust-lang/miri/issues/2839
-
-r? `@RalfJung`

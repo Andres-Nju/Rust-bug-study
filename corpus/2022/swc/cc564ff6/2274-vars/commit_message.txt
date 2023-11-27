@@ -1,2 +1,0 @@
-fix(es/minifier): Skip exported vars while collapsing vars (#3928)
-

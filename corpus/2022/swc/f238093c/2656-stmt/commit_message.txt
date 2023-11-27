@@ -1,2 +1,0 @@
-fix(es/parser): Allow initializer of the var of for-in loop in non-strict mode (#5038)
-

@@ -1,2 +1,0 @@
-fix(es/codegen): Emit numeric value for Binary and Octal literals (#5083)
-

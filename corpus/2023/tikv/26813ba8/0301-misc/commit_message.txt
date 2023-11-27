@@ -1,7 +1,0 @@
-raftstore-v2: fix tablet gc issues (#14125)
-
-close tikv/tikv#14115
-
-Signed-off-by: tabokie <xy.tao@outlook.com>
-
-Co-authored-by: Ti Chi Robot <ti-community-prow-bot@tidb.io>

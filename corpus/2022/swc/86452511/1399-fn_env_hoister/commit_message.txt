@@ -1,2 +1,0 @@
-fix(es/compat): Fix destructuring assignments and updates of super properties in async method (#5580)
-

@@ -1,8 +1,0 @@
-Merge #10437
-
-10437: fix: Fix extract_variable not allowing to extract macro calls r=Veykril a=Veykril
-
-Fixes https://github.com/rust-analyzer/rust-analyzer/issues/6866
-bors r+
-
-Co-authored-by: Lukas Wirth <lukastw97@gmail.com>

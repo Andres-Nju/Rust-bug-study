@@ -1,9 +1,0 @@
-Auto merge of #13160 - ChayimFriedman2:parse-parenthesized-type-path-with-coloncolon, r=jonas-schievink
-
-fix: Parse TypePathFn with preceding `::`
-
-e.g. `impl Fn::() -> ()`.
-
-Fixes #13157. This was the problem, not that the path was not at the end.
-
-I could unify the parsing of `::` of TypePathFn with that of generic arg list, but some code relies on the `::` of generic arg list to be inside it.

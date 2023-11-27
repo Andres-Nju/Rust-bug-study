@@ -1,2 +1,0 @@
-sync: handle possibly dangling reference safely (#5812)
-

@@ -1,4 +1,0 @@
-fix(swc): Remove `wrong-target` (#3251)
-
-swc:
- - Remove the cargo feature `wrong-target`. (Closes #1108)

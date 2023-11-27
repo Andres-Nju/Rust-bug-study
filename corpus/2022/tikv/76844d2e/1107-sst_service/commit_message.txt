@@ -1,5 +1,0 @@
-log_backup: fix pitr panic (#13875)
-
-close tikv/tikv#13874
-
-Signed-off-by: hillium <yujuncen@pingcap.com>

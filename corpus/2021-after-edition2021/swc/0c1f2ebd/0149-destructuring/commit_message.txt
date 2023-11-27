@@ -1,4 +1,0 @@
-fix(es/transforms/compat): Fix `destructuring`  (#2904)
-
-swc_ecma_transforms_compat:
- - `desturcturing`: Fix non-loose mode. (Closes #2841, Closes #2863)

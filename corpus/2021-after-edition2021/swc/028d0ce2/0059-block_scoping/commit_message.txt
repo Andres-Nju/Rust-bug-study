@@ -1,6 +1,0 @@
-fix(es/transforms/compat): Fix block scoping (#2916)
-
-swc_ecma_transforms_compat:
- - `block_scoping`: Track if we are in nested loops.
- - `block_scoping`: Don't treat `break` nor `continue` in nested loops as leaper. (https://github.com/vercel/next.js/issues/31757, Closes #2799, Closes #2915)
- - `block_scoping`: Don't recurse into nested loops while looking for functions. (Closes #2622)
