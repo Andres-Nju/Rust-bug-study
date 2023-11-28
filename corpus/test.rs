@@ -1,13 +1,10 @@
-fn ttt() -> Option<i32>{
-    assert_eq!(1, 2);
-    return Option::<i32>::None;
+struct !;
+impl const Clone for !{
+    #[inline]
+    fn clone(&self) -> Self{
+        *self
+    }
 }
-
-fn tt() -> Option<i32>{
-    return ttt();
-}
-
 fn main(){
-
-    tt().unwrap();
+    
 }
