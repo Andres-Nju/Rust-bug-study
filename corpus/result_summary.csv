@@ -5,6 +5,9 @@ meilisearch/845d3114,8,1,28,4,0,1,safe,safe,-1
 meilisearch/c9f37264,1,1,7,2,0,1,safe,safe,-1
 meilisearch/cbb8805,7,3,19,10,0,0,safe,safe,-1
 meilisearch/d905bbf9,1,5,1,0,0,0,safe,safe,-1
+rust/9aade508,3,5,6,4,0,0,safe,unsafe,-1
+rust/a090c865,1,5,46,34,0,0,unsafe,safe,-1
+rust/f62984fc,8,1,7,4,1,0,safe,safe,-1
 rust-analyzer/0eb6039e,1,1,15,2,0,1,safe,safe,-1
 rust-analyzer/142b6dc6,1,3,36,18,0,1,safe,safe,1
 rust-analyzer/25074423,1,1,94,20,0,1,safe,safe,-1
@@ -15,7 +18,9 @@ rust-analyzer/8a084e6a,1,1,372,283,0,1,safe,safe,-1
 rust-analyzer/9f1e26c3,1,1,0,118,0,0,safe,safe,-1
 rust-analyzer/c5c11b87,1,1,50,9,0,0,safe,safe,-1
 rust-analyzer/c9c6fa8f,1,1,67,1,0,1,safe,safe,-1
-swc/0c813ae4,11,3,59,5,0,0,safe,safe,0
+snarkOS/ca4ac9b5,1,1,4,0,0,1,safe,safe,-1
+snarkOS/issue-1251,3,5,12,2,0,0,safe,safe,-1
+snarkOS/issue-1375,15,3,11,8,0,0,safe,safe,0
 tikv/0390c764,1,3,86,3,0,0,safe,safe,-1
 tikv/1a5efb86,5,1,46,21,0,1,safe,safe,-1
 tikv/1e9f0b3a,5,6,152,288,0,1,safe,safe,-1
@@ -46,7 +51,7 @@ tikv/e613c816,5,6,144,15,0,1,safe,unsafe,-1
 tikv/ec0f646c,16,3,29,1,0,0,safe,safe,-1
 tikv/fd24cc9e,1,3,78,2,0,1,safe,safe,-1
 tokio/1f810558,1,3,187,31,0,1,safe,safe,-3
-tokio/4b78ed4d,11,3,61,5,0,1,Interior unsafe,unsafe,3
+tokio/4b78ed4d,17,4,61,5,0,1,Interior unsafe,unsafe,3
 tokio/8943e8ae,1,1,27,5,0,1,safe,safe,-1
 tokio/94ee3057,13,2,109,2,0,1,safe,safe,-1
 tokio/9cb495cd,14,1,16,2,0,0,safe,safe,-1
@@ -62,6 +67,7 @@ meilisearch/7e3b2ddf,1,5,23,13,0,1,safe,safe,-1
 meilisearch/81e9fd89,1,1,97,2,0,0,safe,safe,-1
 meilisearch/c101b2a5,8,1,18,85,0,1,safe,safe,-1
 meilisearch/c984fa10,5,1,96,61,0,1,safe,safe,-1
+rust/issue-83618,3,5,27,11,0,0,unsafe,unsafe,-1
 rust-analyzer/26a10767,1,1,6,1,0,1,safe,safe,-1
 rust-analyzer/4675410f,1,3,24,7,0,0,safe,safe,-2
 rust-analyzer/48c3be92,1,1,10,253,0,0,safe,safe,-1
@@ -75,6 +81,25 @@ rust-analyzer/d44779f8,1,3,67,27,0,1,safe,safe,-3
 rust-analyzer/e504f8ae,1,3,55,7,0,0,safe,safe,3
 rust-analyzer/e77fc481,1,3,7,12,0,1,safe,safe,-3
 rust-analyzer/f30b62b7,7,3,13,70,0,0,safe,safe,3
+snarkOS/1fae1f67,8,1,74,89,0,0,safe,safe,-1
+snarkOS/21647244,8,1,16,24,0,0,safe,safe,-1
+snarkOS/3410160d,15,3,16,32,0,2,safe,safe,-1
+snarkOS/3698cc7d,1,1,2,0,0,1,safe,safe,-1
+snarkOS/39448912,1,1,2,0,0,0,safe,safe,-1
+snarkOS/487c7866,1,1,1,1,0,0,safe,safe,-1
+snarkOS/57955278,1,6,26,15,0,0,safe,safe,-1
+snarkOS/5db417ff,1,1,1,1,0,0,safe,safe,-1
+snarkOS/792bdd73,1,1,500,187,0,1,safe,safe,-1
+snarkOS/8ac8132b,1,1,1,1,0,1,safe,safe,-1
+snarkOS/8eb1fc77,1,1,30,27,0,1,safe,safe,-1
+snarkOS/8eb303e5,1,1,63,28,0,1,safe,safe,-1
+snarkOS/96300001,16,5,68,68,0,0,safe,safe,-1
+snarkOS/96c20381,1,1,35,25,0,0,safe,safe,-1
+snarkOS/96e2d9e6,1,1,10,3,0,1,safe,safe,-1
+snarkOS/979e341a,1,1,103,107,0,1,safe,safe,-1
+snarkOS/999c011c,1,1,65,90,0,0,safe,safe,-1
+snarkOS/b61d1cba,1,1,42,41,0,1,safe,safe,-1
+snarkOS/b7955055,1,6,12,3,0,0,safe,safe,-1
 tikv/045c8b3a,1,1,27,22,0,0,safe,safe,-1
 tikv/103f5ff4,11,3,47,5,0,1,safe,safe,-1
 tikv/13a59e0b,1,3,100,1,0,0,safe,safe,-1
@@ -188,6 +213,15 @@ meilisearch/e315547f,8,1,365,316,0,2,safe,safe,-1
 meilisearch/f724f8ad,1,1,32,39,0,1,safe,safe,-1
 meilisearch/f908ae2e,1,1,4,4,0,0,safe,safe,-1
 meilisearch/fcedce85,14,2,1,0,0,0,safe,safe,-1
+rust/0878bee3,8,1,65,1,0,0,safe,safe,-1
+rust/50a66b75,11,3,54,18,1,0,safe,safe,-1
+rust/59e7a308,17,1,36,11,0,0,unsafe,unsafe,-1
+rust/6dd64d38,17,1,101,20,0,0,unsafe,unsafe,-1
+rust/731e0bf7,8,1,107,48,0,1,safe,safe,-1
+rust/83322c55,7,3,13,1,0,0,safe,safe,-1
+rust/e7025347,1,1,125,5,0,0,unsafe,safe,-1
+rust/issue-104530,15,3,23,10,1,0,unsafe,unsafe,-1
+rust/issue-99878,14,3,0,2,0,0,safe,safe,-1
 rust-analyzer/029184d9,1,1,37,24,0,1,safe,safe,-1
 rust-analyzer/02c240ff,1,1,33,9,0,1,safe,safe,-1
 rust-analyzer/02f9ec4b,1,1,151,36,0,1,safe,safe,-1
@@ -304,6 +338,11 @@ rust-analyzer/fa133d06,8,1,339,26,0,1,safe,safe,-1
 rust-analyzer/fb0db2a4,1,1,105,6,0,1,safe,safe,-1
 rust-analyzer/fbba1d7a,8,1,63,41,0,1,safe,safe,-1
 rust-analyzer/fdc28b43,11,7,49,9,0,1,safe,safe,3
+snarkOS/89ec44e8,11,3,27,14,0,1,safe,safe,-1
+snarkOS/f7f0d120,11,3,4,5,0,0,safe,safe,-1
+snarkOS/issue-1583,1,4,157,84,0,1,safe,safe,-1
+snarkOS/issue-1604,16,2,70,34,0,0,safe,safe,-1
+snarkOS/issue-1973,11,3,4,8,0,1,safe,safe,-1
 tikv/005efd56,11,3,166,24,0,1,safe,safe,-1
 tikv/066a4222,1,6,2,0,0,0,safe,safe,-1
 tikv/0d9b7b33,1,6,1,1,0,0,safe,safe,-1
@@ -472,6 +511,12 @@ meilisearch/dc3d9c90,11,3,65,4,0,0,safe,safe,-2
 meilisearch/e664f090,8,1,3,3,0,0,safe,safe,-1
 meilisearch/ef3d098b,8,1,160,1,0,1,safe,safe,-1
 meilisearch/fb1260ee,2,1,178,45,0,1,safe,safe,-1
+rust/7a892ab,1,6,54,22,0,1,unsafe,unsafe,-1
+rust/7b66abe5,5,4,47,27,0,1,unsafe,safe,-1
+rust/816b6591,9,1,12,1,0,0,safe,safe,-1
+rust/824f915c,1,6,4,0,0,0,safe,safe,-1
+rust/cc3dce5,16,5,6,6,1,0,safe,safe,-1
+rust/issue-114814,8,1,95,4,0,0,safe,safe,-1
 rust-analyzer/037844c8,1,1,112,28,0,0,safe,safe,-1
 rust-analyzer/07baa176,1,1,32,4,0,0,safe,safe,-1
 rust-analyzer/07bc6cbc,8,1,9,9,0,0,safe,safe,-1
@@ -562,6 +607,9 @@ rust-analyzer/efd3094a,8,1,23,10,0,2,safe,safe,-1
 rust-analyzer/f6bffa4d,1,1,37,17,0,0,safe,safe,-1
 rust-analyzer/fa3db447,1,1,39,4,0,0,safe,safe,-1
 rust-analyzer/ff156348,1,5,22,1,0,1,safe,safe,-1
+snarkOS/issue-2250,16,3,1,1,0,0,safe,safe,-1
+snarkOS/issue-2390,14,2,7,0,1,0,safe,safe,-1
+snarkOS/issue-2412,16,2,248,93,0,0,safe,safe,-1
 tikv/0774262d,5,3,136,69,0,1,safe,safe,-1
 tikv/07b2bde1,1,3,162,17,0,0,safe,safe,-1
 tikv/0cb091d3,1,3,42,5,0,0,safe,safe,-1
@@ -648,6 +696,7 @@ tikv/e61b51df,1,1,171,55,0,1,safe,safe,-1
 tikv/fd2db9a7,1,3,70,1,0,1,safe,safe,-1
 tokio/0dc1b71e,1,6,38,185,0,0,safe,safe,-1
 tokio/0f296d20,15,3,19,2,0,0,safe,safe,-1
+tokio/171ce0f,17,4,16,5,0,0,safe,unsafe,-1
 tokio/1bfe778a,3,5,242,155,0,0,unsafe,safe,-1
 tokio/3dd5f7ae,5,6,76,2,0,0,safe,safe,-1
 tokio/40782efb,15,2,18,2,0,0,safe,safe,-1
@@ -667,3 +716,4 @@ tokio/ca9f7ee9,14,6,17,2,0,0,safe,safe,-1
 tokio/cbb3c155,1,3,162,21,0,1,safe,safe,-2
 tokio/d46c844b,9,3,6,3,0,1,safe,safe,0
 tokio/eaba9712,8,1,3,1,0,0,safe,safe,-1
+tokio/f5f2b58b,8,1,16,3,0,0,safe,safe,-1
