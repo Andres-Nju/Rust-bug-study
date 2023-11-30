@@ -16,6 +16,7 @@ def process_class_file(class_file_path, repo, commit):
         lines = file.readlines()
         if len(lines[0].split()) == 1:
             un_checked_cnt += 1
+            print(class_file_path)
             return None
         if len(lines[0].split()) == 3:
             root_cause, symptom, len_panic = map(int, lines[0].split())
