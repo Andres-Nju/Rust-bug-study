@@ -9,7 +9,7 @@ def count_occurrences(file_path, target_value, column_index):
             rows += 1
             if row[column_index] == target_value:
                 count += 1
-                print(row[0] + ', ' + row[1])
+                print(row[0] + ' ' + row[1])
     return count
 
 # 使用示例
