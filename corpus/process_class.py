@@ -6,7 +6,7 @@ not_general_bug_cnt = 0
 un_checked_cnt = 0
 checked_bug = 0
 
-def process_class_file(class_file_path, repo, commit):
+def process_class_file(class_file_path, repo, commit, year):
     global not_general_bug_cnt
     global un_checked_cnt
     global checked_bug
@@ -32,6 +32,7 @@ def process_class_file(class_file_path, repo, commit):
         propagation_chain = tuple(map(int, lines[4].split()))
 
         return [
+            year,
             repo,
             commit,
             root_cause,
@@ -47,7 +48,7 @@ def process_class_file(class_file_path, repo, commit):
 
 def process_corpus(corpus_folder, output_file):
     with open(output_file, 'w', newline='') as csv_file:
-        csv_file.write("repo,commit,root_cause,symptom,code_add,code_remove,platform_related,error_handling,propagation_chain_1,propagation_chain_2,len_panic\n")
+        csv_file.write("year,repo,commit,root_cause,symptom,code_add,code_remove,platform_related,error_handling,propagation_chain_1,propagation_chain_2,len_panic\n")
 
         for year_folder in os.listdir(corpus_folder):
             year_path = os.path.join(corpus_folder, year_folder)
@@ -61,7 +62,7 @@ def process_corpus(corpus_folder, output_file):
                                 repo_commit = f"{repo_folder}/{commit_folder}"
                                 class_file_path = os.path.join(commit_path, 'class.txt')
                                 if os.path.exists(class_file_path):
-                                    class_data = process_class_file(class_file_path, repo_folder, commit_folder)
+                                    class_data = process_class_file(class_file_path, repo_folder, commit_folder, year_folder)
                                     if class_data is not None:
                                         csv_file.write(','.join(map(str, class_data)) + '\n')
 

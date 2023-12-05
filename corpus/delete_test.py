@@ -15,10 +15,13 @@ for root, dirs, files in os.walk(current_dir):
             if os.path.isfile(test_file_path):
                 with open(current_file_path, 'r') as current_file:
                     lines = current_file.readlines()
-                
+                    if len(lines) < 5:
+                        continue
                 with open(test_file_path, 'r') as test_file:
                     test_line = test_file.readline()
                 
+                
+
                 # 获取当前目录中class.txt的第二行的数字
                 num1, num2 = map(int, lines[1].split())
                 # 获取test目录中class.txt的第一行的数字
