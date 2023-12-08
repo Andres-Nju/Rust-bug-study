@@ -24,6 +24,7 @@ def process_class_file(class_file_path, repo, commit, year):
             root_cause, symptom = map(int, lines[0].split())
         if root_cause == 0 and symptom == 0:
             not_general_bug_cnt += 1
+            print(repo + ' ' + commit)
             return None
         checked_bug += 1
         code_add, code_remove = map(int, lines[1].split())

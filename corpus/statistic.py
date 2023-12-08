@@ -14,5 +14,5 @@ def count_occurrences(file_path, target_value, column_index):
 
 # 使用示例
 file_path = './result_summary.csv'  # 替换为你的CSV文件路径
-target_value = '4'
-print(count_occurrences(file_path, target_value, 4))
+target_value = '3'
+print(count_occurrences(file_path, target_value, 3))

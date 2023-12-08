@@ -50,18 +50,21 @@ if __name__ == '__main__':
     # 13. 按照年份统计不同的root cause数量
     year_root_cause_count = df.groupby(['year', 'root_cause']).size().unstack(fill_value=0)
 
+    # 3. 为每一种symptom求平均的code add和code remove
+    avg_code_change_by_symptom = df.groupby('symptom')[['code_add', 'code_remove']].mean()
     # 保存结果到新的CSV文件
-    year_root_cause_count.to_csv('year_root_cause_count.csv')
+    avg_code_change_by_symptom.to_csv('avg_code_change_by_symptom.csv')
+    # year_root_cause_count.to_csv('year_root_cause_count.csv')
     # root_cause_arch_count.to_csv('root_cause_arch_count.csv')
     # repo_symptom_count.to_csv('repo_symptom_count.csv')
     # unwrap_len.to_csv('unwrao_len.csv')
-    #repo_root_cause_count.to_csv('repo_root_cause_count.csv')
-    #symptom_count.to_csv('symptom_count.csv')
-    #avg_code_change_by_root_cause.to_csv('avg_code_change_by_root_cause.csv')
-    #error_handling_count.to_csv('error_handling_count.csv')
-    #propagation_chain_count.to_csv('propagation_chain_count.csv')
-    #len_panic_count.to_csv('len_panic_count.csv')
-    #cause_panic_count.to_csv('cause_panic_count.csv')
-    #symptom_root_cause_count.to_csv('symptom_root_cause_count.csv')
+    # repo_root_cause_count.to_csv('repo_root_cause_count.csv')
+    # symptom_count.to_csv('symptom_count.csv')
+    # avg_code_change_by_root_cause.to_csv('avg_code_change_by_root_cause.csv')
+    # error_handling_count.to_csv('error_handling_count.csv')
+    # propagation_chain_count.to_csv('propagation_chain_count.csv')
+    # len_panic_count.to_csv('len_panic_count.csv')
+    # cause_panic_count.to_csv('cause_panic_count.csv')
+    # symptom_root_cause_count.to_csv('symptom_root_cause_count.csv')
 
-    #max_code_change_by_root_cause.to_csv('max_code_change_by_root_cause.csv')
+    # max_code_change_by_root_cause.to_csv('max_code_change_by_root_cause.csv')
