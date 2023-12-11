@@ -50,10 +50,19 @@ if __name__ == '__main__':
     # 13. 按照年份统计不同的root cause数量
     year_root_cause_count = df.groupby(['year', 'root_cause']).size().unstack(fill_value=0)
 
-    # 3. 为每一种symptom求平均的code add和code remove
+    # 14. 为每一种symptom求平均的code add和code remove
     avg_code_change_by_symptom = df.groupby('symptom')[['code_add', 'code_remove']].mean()
+    
+    # 15. 为每个safe/unsafe chain生成每种root_cause的数量
+    chain_root_cause_count = df.groupby(['propagation_chain_1', 'propagation_chain_2', 'root_cause']).size().unstack(fill_value=0)
+
+    # 16. 为每个safe/unsafe chain生成每种symptom的数量
+    chain_symptom_count = df.groupby(['propagation_chain_1', 'propagation_chain_2', 'symptom']).size().unstack(fill_value=0)
+
     # 保存结果到新的CSV文件
-    avg_code_change_by_symptom.to_csv('avg_code_change_by_symptom.csv')
+    chain_symptom_count.to_csv('chain_symptom_count.csv')
+    # chain_root_cause_count.to_csv('chain_root_cause_count.csv')
+    # avg_code_change_by_symptom.to_csv('avg_code_change_by_symptom.csv')
     # year_root_cause_count.to_csv('year_root_cause_count.csv')
     # root_cause_arch_count.to_csv('root_cause_arch_count.csv')
     # repo_symptom_count.to_csv('repo_symptom_count.csv')

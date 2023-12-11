@@ -1,7 +1,7 @@
 symptom,count
-1,392
-3,201
-6,95
-5,63
-2,32
-4,7
+Behavior,392
+Panic,201
+Performance,96
+Crash,62
+Compile,32
+Security,7

@@ -1,13 +1,13 @@
-fn ttt() -> Option<i32>{
-    assert_eq!(1, 2);
-    return Option::<i32>::None;
-}
-
-fn tt() -> Option<i32>{
-    return ttt();
-}
 
 fn main(){
 
-    tt().unwrap();
+    let mut a = [1, 2, 3];
+    let b = &mut a[..];
+    println!("{:?}", b);
+    b.swap(1, 1);
+    println!("{:?}", b);
+    let b1 = &mut b[1];
+    let b2 = &mut b[2];
+    println!("{:?}", b1);
+    println!("{:?}", b2);
 }

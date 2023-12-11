@@ -5,6 +5,8 @@ safety = ["unsafe", "safe", "Interior unsafe", "unknown"]
 not_general_bug_cnt = 0
 un_checked_cnt = 0
 checked_bug = 0
+causes = ['Alg', 'Cod', 'Mem', 'Type', 'Conc', 'Priv', 'Bound', 'Doc', 'Num', 'padding', 'Unwrap', 'Mut', 'Owner', 'Attr', 'Mac', 'Ver', 'Unsound', 'Other']
+symptoms = ['Behavior', 'Compile', 'Panic', 'Security', 'Crash', 'Performance']
 
 def process_class_file(class_file_path, repo, commit, year):
     global not_general_bug_cnt
@@ -16,7 +18,6 @@ def process_class_file(class_file_path, repo, commit, year):
         lines = file.readlines()
         if len(lines[0].split()) == 1:
             un_checked_cnt += 1
-            print(class_file_path)
             return None
         if len(lines[0].split()) == 3:
             root_cause, symptom, len_panic = map(int, lines[0].split())
@@ -24,20 +25,19 @@ def process_class_file(class_file_path, repo, commit, year):
             root_cause, symptom = map(int, lines[0].split())
         if root_cause == 0 and symptom == 0:
             not_general_bug_cnt += 1
-            print(repo + ' ' + commit)
             return None
         checked_bug += 1
         code_add, code_remove = map(int, lines[1].split())
         platform_related = int(lines[2])
         error_handling = int(lines[3])
         propagation_chain = tuple(map(int, lines[4].split()))
-
+        print(repo + ' ' + commit)
         return [
             year,
             repo,
             commit,
-            root_cause,
-            symptom,
+            causes[root_cause - 1],
+            symptoms[symptom - 1],
             code_add,
             code_remove,
             platform_related,
