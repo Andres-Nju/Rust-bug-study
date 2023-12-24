@@ -1,9 +1,0 @@
-propagation_chain_1,propagation_chain_2,Behavior,Compile,,Panic,,Security,Crash,Performance
-Interior unsafe,safe,0,0,,0,,0,2,2
-Interior unsafe,unsafe,0,0,,0,,1,0,0
-safe,Interior unsafe,0,0,,1,,0,0,0
-,,,,,,,,,
-safe,unsafe,0,0,,0,,1,1,1
-unsafe,safe,2,0,,3,,1,3,1
-unsafe,unsafe,4,1,,7,,0,1,1
-,,6,1,,11,,3,7,5

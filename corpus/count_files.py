@@ -31,9 +31,10 @@ def count_repo_commits(root_path):
     return count
 
 
-# 示例用法
-root_directory = '.'  # 替换为您的目录路径
-level = 3  # 您想要统计的层级
+# usage
+root_directory = '.'  # replace this to your root direct
+level = 3  # depth in which you want to search
+
 print(count_directories_at_level(root_directory, level))
 
 print(count_repo_commits(root_directory))

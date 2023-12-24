@@ -68,8 +68,8 @@ def process_corpus(corpus_folder, output_file):
                                         csv_file.write(','.join(map(str, class_data)) + '\n')
 
 if __name__ == "__main__":
-    corpus_folder = "."  # 替换为你的语料库文件夹路径
-    output_file = "result_summary.csv"  # 输出文件名
+    corpus_folder = "."  # corpus directory
+    output_file = "result_summary.csv"  # output
     process_corpus(corpus_folder, output_file)
     print("unchecked count: ", un_checked_cnt)
     print("0 0 count: ", not_general_bug_cnt)

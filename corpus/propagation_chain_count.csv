@@ -1,8 +1,0 @@
-propagation_chain_1,propagation_chain_2,0
-Interior unsafe,safe,4
-Interior unsafe,unsafe,1
-safe,Interior unsafe,1
-safe,safe,757
-safe,unsafe,3
-unsafe,safe,10
-unsafe,unsafe,14

@@ -1,8 +1,0 @@
-repo,Behavior,Compile,Crash,Panic,Performance,Security
-egui,33,7,3,19,4,0
-meilisearch,46,2,3,14,2,1
-rust,9,0,3,4,3,1
-rust-analyzer,185,2,7,35,1,0
-snarkOS,16,3,2,6,2,1
-tikv,66,5,43,105,73,2
-tokio,37,13,1,18,11,2

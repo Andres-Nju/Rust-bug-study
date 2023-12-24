@@ -12,7 +12,7 @@ def count_occurrences(file_path, target_value, column_index):
                 print(row[1] + ' ' + row[2])
     return count
 
-# 使用示例
-file_path = './result_summary.csv'  # 替换为你的CSV文件路径
+# 
+file_path = './result_summary.csv'  
 target_value = 'Owner'
 print(count_occurrences(file_path, target_value, 3))
