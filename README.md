@@ -31,7 +31,7 @@ tool
 
 **@bug-fix commit/issue:** the hash of bug-fix commit or the corresponding issue
 
-**class.txt:** information of the bug, detailed as:
+**class.txt:** information of the bug, detailed as following fields:  
 
 root cause, symptom, panic propagation length (if not panic issue, set the default -1)
 
@@ -43,7 +43,7 @@ whether error-handling-related,
 
 propagation chain of safe/unsafe. (0 represents unsafe, 1 safe)
 
-
+**Note:** if a class.txt contains only two 0's (i.e., 0 0), it means we filtered it.
 
 ##### scripts
 
@@ -57,3 +57,10 @@ propagation chain of safe/unsafe. (0 represents unsafe, 1 safe)
 
 
 #### tool
+
+**repos.py:**  define candidate repos and corresponding bug-related issue/pr labels
+**commit_crawler.py:**  crawl commit hashes by searching for commits with pre-defined labels
+**commit_filter.py:** filter non-Rust commit hash, and generate checklists
+**checklists_merge.py:** merge duplicate changes in checklists
+**checklist_filter.py:** filter test code and other noise like typo fix
+**generate_corpus.py:** generate the corpus and group them according to the time stamp
